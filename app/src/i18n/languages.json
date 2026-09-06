@@ -1,0 +1,114 @@
+{
+  "en": {
+    "nativeName": "English",
+    "short": "EN",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇺🇸🇬🇧"
+  },
+  "fr": {
+    "nativeName": "Français",
+    "short": "FR",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇫🇷"
+  },
+  "de": {
+    "nativeName": "Deutsch",
+    "short": "DE",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇩🇪"
+  },
+  "es": {
+    "nativeName": "Español",
+    "short": "ES",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇪🇸"
+  },
+  "pt-BR": {
+    "nativeName": "Português do Brasil",
+    "short": "PT-BR",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇧🇷"
+  },
+  "it": {
+    "nativeName": "Italiano",
+    "short": "IT",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇮🇹"
+  },
+  "tr": {
+    "nativeName": "Türkçe",
+    "short": "TR",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇹🇷"
+  },
+  "id": {
+    "nativeName": "Bahasa Indonesia",
+    "short": "ID",
+    "direction": "ltr",
+    "script": "latin",
+    "flag": "🇮🇩"
+  },
+  "ru": {
+    "nativeName": "Русский",
+    "short": "RU",
+    "direction": "ltr",
+    "script": "cyrillic",
+    "flag": "🇷🇺"
+  },
+  "ja": {
+    "nativeName": "日本語",
+    "short": "JA",
+    "direction": "ltr",
+    "script": "japanese",
+    "flag": "🇯🇵"
+  },
+  "ko": {
+    "nativeName": "한국어",
+    "short": "KO",
+    "direction": "ltr",
+    "script": "korean",
+    "flag": "🇰🇷"
+  },
+  "zh-Hans": {
+    "nativeName": "简体中文",
+    "short": "ZH",
+    "direction": "ltr",
+    "script": "simplified-chinese",
+    "flag": "🇨🇳"
+  },
+  "th": {
+    "nativeName": "ไทย",
+    "short": "TH",
+    "direction": "ltr",
+    "script": "thai",
+    "flag": "🇹🇭"
+  },
+  "hi": {
+    "nativeName": "हिन्दी",
+    "short": "HI",
+    "direction": "ltr",
+    "script": "devanagari",
+    "flag": "🇮🇳"
+  },
+  "bn": {
+    "nativeName": "বাংলা",
+    "short": "BN",
+    "direction": "ltr",
+    "script": "bengali",
+    "flag": "🇧🇩"
+  },
+  "ar": {
+    "nativeName": "العربية",
+    "short": "AR",
+    "direction": "rtl",
+    "script": "arabic",
+    "flag": "🇸🇦"
+  }
+}

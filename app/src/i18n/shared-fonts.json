@@ -1,0 +1,35 @@
+[
+  {
+    "url": "/fonts/math-b39956fcb757.woff2",
+    "bytes": 2992,
+    "sha256": "b39956fcb75702bcb08574b21a05cedf917722cb340d0ee04164a455a2455953",
+    "family": "Morpher Math",
+    "unicodeRange": "U+3BB,U+3C4",
+    "sourceSha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d",
+    "source": "https://raw.githubusercontent.com/google/fonts/5e35378e6bda803962ee6fd257e444a7d459660d/ofl/notosans/NotoSans%5Bwdth%2Cwght%5D.ttf",
+    "license": "/fonts/notosans-OFL.txt",
+    "weight": "400 700"
+  },
+  {
+    "url": "/fonts/symbols-59b21cd3d7e7.woff2",
+    "bytes": 2864,
+    "sha256": "59b21cd3d7e71c14c9a5068f18a84503f4c8a36b61ce77892536ed6d97a27ca2",
+    "family": "Morpher Symbols",
+    "unicodeRange": "U+2325,U+23CE,U+25B6,U+25C0,U+25C6",
+    "sourceSha256": "7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21",
+    "source": "https://raw.githubusercontent.com/google/fonts/5e35378e6bda803962ee6fd257e444a7d459660d/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf",
+    "license": "/fonts/notosanssymbols2-OFL.txt",
+    "weight": "400"
+  },
+  {
+    "url": "/fonts/arrows-77f146b4b244.woff2",
+    "bytes": 1560,
+    "sha256": "77f146b4b244c3aa37c552b31dd4cf0ef154aedf441745d294dac4da6f450306",
+    "family": "Morpher Arrows",
+    "unicodeRange": "U+2190,U+2192,U+2194",
+    "sourceSha256": "f7e7e04b4a24b6c78893d50cbfd2b2f6cae49617ab047bfef668d252adb128f7",
+    "source": "https://raw.githubusercontent.com/google/fonts/5e35378e6bda803962ee6fd257e444a7d459660d/ofl/notosanssymbols/NotoSansSymbols%5Bwght%5D.ttf",
+    "license": "/fonts/notosanssymbols-OFL.txt",
+    "weight": "400 700"
+  }
+]

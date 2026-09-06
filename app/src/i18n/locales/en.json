@@ -1,0 +1,1197 @@
+{
+  "topbar": {
+    "new": "New",
+    "newConfirmTitle": "New project",
+    "newConfirm": "Discard the current project and start a new one?",
+    "newConfirmAction": "Discard",
+    "load": "Load",
+    "save": "Save",
+    "export": "Export",
+    "help": "Help",
+    "language": "Language",
+    "loadErrorTitle": "Load error",
+    "loadError": "Could not load project.",
+    "videoSaveTitle": "Save project",
+    "videoSaveNote": "Video files are not embedded in the project. You will need to relink them when reopening it. Continue saving?",
+    "videoSaveAction": "Save anyway",
+    "loadErrors": {
+      "invalidJson": "This is not a valid project file.",
+      "unsupportedVersion": "This project version is not supported.",
+      "invalidStructure": "The project contains invalid or incomplete data.",
+      "limitExceeded": "The project exceeds the application's safety limits.",
+      "invalidReference": "The project contains broken layer or feature references.",
+      "invalidMask": "The project contains a damaged painted mask."
+    },
+    "tabs": {
+      "studio": "Studio",
+      "compare": "Compare"
+    },
+    "about": "About"
+  },
+  "sidebar": {
+    "tools": "Tools",
+    "assets": "Assets",
+    "features": "Features",
+    "layers": "Layers"
+  },
+  "tools": {
+    "select": "Select",
+    "point": "Point",
+    "line": "Line",
+    "polyline": "Polyline",
+    "region": "Region mask",
+    "brush": "Mask brush",
+    "push": "Push points",
+    "pan": "Pan"
+  },
+  "assets": {
+    "sourceA": "Source A",
+    "targetB": "Target B",
+    "replace": "Replace image/video",
+    "choose": "Choose image/video…",
+    "loading": "Loading…",
+    "video": "video",
+    "videoMissing": "Video file must be reconnected",
+    "relink": "Relink",
+    "replaceInstead": "Replace with a different image or video",
+    "relinkVideoOnly": "Choose the expected video file to relink this slot.",
+    "relinkMismatch": "This video does not match the saved file. Check its dimensions and duration, or replace the media instead.",
+    "relinkNoSavedVideo": "This project no longer expects a video in this slot.",
+    "relinkAlreadyLinked": "This video is already linked.",
+    "loadError": "The selected media could not be loaded."
+  },
+  "brush": {
+    "selectLayerHint": "Select a layer to paint its mask — the Global base layer has none.",
+    "diameter": "Diameter",
+    "hardness": "Hardness",
+    "strength": "Strength",
+    "eraser": "Eraser",
+    "eraserHold": "(hold ⌥)"
+  },
+  "features": {
+    "empty": "No features in this layer.",
+    "hide": "Hide",
+    "show": "Show",
+    "hideFeature": "Hide feature",
+    "showFeature": "Show feature",
+    "lock": "Lock",
+    "unlock": "Unlock",
+    "lockFeature": "Lock feature",
+    "unlockFeature": "Unlock feature",
+    "kinds": {
+      "point": "Point",
+      "segment": "Line",
+      "polyline": "Polyline",
+      "region": "Region"
+    },
+    "visible": "Visible",
+    "locked": "Locked",
+    "weight": "Weight",
+    "layer": "Layer",
+    "landmark": "Landmark",
+    "role": "Role",
+    "feather": "Feather",
+    "none": "none",
+    "semantics": {
+      "left-eye": "left eye",
+      "right-eye": "right eye",
+      "nose": "nose",
+      "mouth": "mouth",
+      "chin": "chin",
+      "jaw": "jaw",
+      "hairline": "hairline",
+      "custom": "custom"
+    },
+    "roles": {
+      "face": "face",
+      "hair": "hair",
+      "neck": "neck",
+      "body": "body",
+      "background": "background",
+      "custom": "custom"
+    },
+    "keyframes": "Keyframes",
+    "noKeyframes": "none",
+    "prevKeyframe": "Previous {{side}} keyframe",
+    "nextKeyframe": "Next {{side}} keyframe",
+    "toggleKeyframe": "Set / remove the {{side}} keyframe at the current time",
+    "keyframeCount_one": "{{count, number}} keyframe",
+    "keyframeCount_other": "{{count, number}} keyframes",
+    "keyframeHintStill": "Without a video, this feature is static. Add a first keyframe with ◆ to animate it: from then on, every move at another time adds one (a non-linear morph path).",
+    "selectedCount_one": "{{count, number}} feature selected",
+    "selectedCount_other": "{{count, number}} features selected",
+    "deleteSelected": "Delete selected",
+    "coordinates": "Coordinates",
+    "pts": "{{count, number}} pts"
+  },
+  "layers": {
+    "importFirst": "Import images first.",
+    "add": "Add layer",
+    "defaultName": "Layer {{index}}",
+    "hideLayer": "Hide layer",
+    "showLayer": "Show layer",
+    "lockLayer": "Lock layer",
+    "unlockLayer": "Unlock layer",
+    "moveUp": "Move layer up",
+    "moveDown": "Move layer down",
+    "featureCount_one": "{{count, number}} feature",
+    "featureCount_other": "{{count, number}} features",
+    "globalHint": "The Global base layer keeps the project defaults — select a user layer to edit its properties.",
+    "status": {
+      "base": "base",
+      "disabled": "disabled",
+      "hidden": "hidden",
+      "outside-clip": "outside clip",
+      "no-contribution": "no contribution",
+      "masked": "masked",
+      "full-frame": "full frame"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "Algorithm",
+    "selection": "Selection",
+    "selectionHint": "Select a feature to edit it.",
+    "overrideBadge": "override: {{name}}",
+    "soon": "soon",
+    "panel": "Properties"
+  },
+  "algorithms": {
+    "crossfade": "Linear dissolve, no warp",
+    "mesh": "Delaunay triangle warp",
+    "thin-plate-spline": "Smooth global RBF warp",
+    "beier-neely": "Line-field morphing"
+  },
+  "tps": {
+    "smoothing": "Smoothing (λ)",
+    "borderAnchors": "Border anchors",
+    "anchorsPerSide": "Anchors / side",
+    "samplePolylines": "Sample polylines",
+    "sampleSpacing": "Sample spacing"
+  },
+  "beier": {
+    "distanceSoftness": "Distance softness (a)",
+    "falloffExponent": "Falloff exponent (b)",
+    "lineLengthInfluence": "Line length influence (p)",
+    "maxLines": "Max lines",
+    "samplePolylines": "Sample polylines"
+  },
+  "layerInspector": {
+    "title": "Layer",
+    "enabled": "Enabled",
+    "visible": "Visible",
+    "locked": "Locked",
+    "scope": {
+      "base": "Base layer: renders the default morph underneath user layers.",
+      "disabled": "Disabled layer: it does not contribute to the preview or export.",
+      "hidden": "Hidden layer: it is skipped by preview and export.",
+      "outside-clip": "Outside clip: the playhead is not inside this layer block.",
+      "no-contribution": "No contribution: add features or assign a mask before this layer affects the render.",
+      "masked": "Masked layer: the mask defines which area is composited over lower layers.",
+      "full-frame": "Full-frame layer: without a mask, this layer covers the layers underneath."
+    },
+    "algorithm": "Algorithm",
+    "projectDefault": "Project default",
+    "opacity": "Opacity",
+    "blend": "Blend",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Multiply",
+      "screen": "Screen",
+      "lighter": "Add (Lighter)"
+    },
+    "mask": "Mask",
+    "none": "none",
+    "paintedMask": "Painted mask",
+    "clear": "Clear",
+    "maskMode": "Mask mode",
+    "maskModes": {
+      "hard": "hard",
+      "feathered": "feathered"
+    },
+    "maskFeather": "Mask feather",
+    "invertMask": "Invert mask",
+    "timelineClip": "Timeline clip",
+    "start": "Start",
+    "duration": "Duration",
+    "easing": "Easing",
+    "easings": {
+      "linear": "linear",
+      "ease-in": "ease-in",
+      "ease-out": "ease-out",
+      "ease-in-out": "ease-in-out",
+      "smoothstep": "smoothstep",
+      "bezier": "custom (bezier)"
+    },
+    "transition": "Transition",
+    "warpWindow": "Warp window (%)",
+    "warpStart": "Warp window start (%)",
+    "warpEnd": "Warp window end (%)",
+    "dissolveWindow": "Dissolve window (%)",
+    "dissolveStart": "Dissolve window start (%)",
+    "dissolveEnd": "Dissolve window end (%)",
+    "presets": {
+      "label": "Preset",
+      "standard": "Standard",
+      "classicMorph": "Classic morph",
+      "lateDissolve": "Late dissolve",
+      "custom": "Custom"
+    },
+    "distinctDissolveEasing": "Distinct dissolve curve",
+    "dissolveEasing": "Dissolve easing",
+    "bezierCurve": "{{name}} curve",
+    "bezierHandle1": "First bezier handle",
+    "bezierHandle2": "Second bezier handle",
+    "bezier": {
+      "x1": "Handle 1 x",
+      "y1": "Handle 1 y",
+      "x2": "Handle 2 x",
+      "y2": "Handle 2 y"
+    },
+    "stackPosition": "Stack position: {{position}}",
+    "delete": "Delete layer",
+    "confirmTitle": "Delete layer?",
+    "confirmBody": "Delete \"{{name}}\"? Its features will become global and will not be deleted.",
+    "cancel": "Cancel",
+    "closeConfirm": "Close delete confirmation"
+  },
+  "timeline": {
+    "videoMissing": "Relink the missing video files before playback.",
+    "time": "Time",
+    "layers": "Layers",
+    "outsideA": "outside A",
+    "outsideB": "outside B",
+    "position": "Timeline position",
+    "prevFrame": "Previous frame",
+    "prevFrameTitle": "Previous frame, Alt-click skips to start",
+    "nextFrame": "Next frame",
+    "nextFrameTitle": "Next frame, Alt-click skips to end",
+    "play": "Play",
+    "pause": "Pause",
+    "start": "start",
+    "in": "in",
+    "dur": "dur",
+    "timecodeAria": "{{label}} timecode",
+    "timecodeTitle": "{{label}} timecode (seconds:frames)",
+    "tauTitle": "Timeline position (seconds:frames)",
+    "syncWaiting": "rendering… {{elapsed}}",
+    "syncWaitingTitle": "The preview engine is waiting on: {{phase}}. Viewports still show the previous frame.",
+    "syncPhaseEngine": "opening the video engine (reading the file, initializing the decoder)",
+    "syncPhaseFrame": "seeking/decoding the frame and uploading to the GPU",
+    "syncLast": "last render {{elapsed}}",
+    "syncLastTitle": "Duration of the last frame render after a scrub (shown above 0.5 s)",
+    "keyframeTitle": "Keyframe {{time}} s — {{names}} · click: go there, drag: move, ⌥-click: delete",
+    "keyframeTitleShared": "Keyframe {{time}} s — {{names}} · click: go there, ⌥-click: delete",
+    "keyframeGroupTitle": "{{count, number}} keyframes between {{from}} and {{to}} s — too close to edit here · click: go to the first",
+    "transitionWindows": "{{name}} — dissolve {{dissolveStart}}–{{dissolveEnd}} %, warp {{warpStart}}–{{warpEnd}} %",
+    "imageClipName": "Image · {{name}}",
+    "mediaClip": "Clip {{slot}} — {{name}}",
+    "imageClipHelp": "Still image: drag to move, resize its edges, or select the clip to set Start and Duration. Extending the clip can lengthen the timeline.",
+    "altClick": "Alt-click"
+  },
+  "hud": {
+    "releaseToClose": "release to close",
+    "eraser": "eraser",
+    "maskBrushSelectLayer": "mask brush · select a layer",
+    "points_one": "{{count, number}} pt",
+    "points_other": "{{count, number}} pts",
+    "finishHint": "⏎ finish · esc cancel",
+    "cancelHint": "esc cancel"
+  },
+  "notices": {
+    "noWebgpu": "This demo uses WebGPU for rendering.\nYour browser or machine does not seem to support it.\n\nTry:\n- a recent Chrome or Edge\n- a recent Safari\n- a WebGPU-enabled Firefox",
+    "tooManyFeatures": "This project contains many features.\nThe preview will drop to half resolution.\nThe final export stays available.",
+    "deviceLost": "The GPU context was lost (low memory or a driver reset).",
+    "reload": "Reload",
+    "noWebcodecs": "Preview works, but MP4 video export is not available in this browser.",
+    "codecUnsupported": "The requested codec is not available at this resolution. Try a lower resolution, another format, or another browser."
+  },
+  "studio": {
+    "edit": "Edit",
+    "preview": "Preview",
+    "triple": "Triple",
+    "morphPreview": "Morph Preview",
+    "viewportsLinked": "Zoom/pan linked across views — click to unlink",
+    "viewportsUnlinked": "Zoom/pan independent per view — click to link",
+    "importPrompt": "Import a <a>source</a> and a <b>target</b> image/video to preview the morph.",
+    "importPromptEdit": "Import a <a>source</a> and a <b>target</b> image/video to start placing features.",
+    "preparingGpu": "Preparing GPU…",
+    "finishShape": "Finish shape",
+    "cancelShape": "Cancel shape",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "zoomReset": "Reset zoom (100%)"
+  },
+  "compare": {
+    "importPrompt": "Import a <a>source</a> and a <b>target</b> image (in Studio) to compare the algorithms."
+  },
+  "overlays": {
+    "features": "Points & paths",
+    "mesh": "Interpolated mesh",
+    "tpsGrid": "Warp grid",
+    "beierField": "Influence grid",
+    "slots": {
+      "source": "Source",
+      "preview": "Preview",
+      "target": "Target"
+    },
+    "slotLabel": "{{slot}} {{label}}",
+    "slotMesh": "{{slot}} mesh",
+    "overlayAria": "{{label}} overlay"
+  },
+  "layerDebug": {
+    "final": "Final",
+    "finalTitle": "Composite render",
+    "layer": "Layer",
+    "layerTitle": "Selected layer result",
+    "mask": "Mask",
+    "maskTitle": "Selected region or layer mask",
+    "contrib": "Contrib",
+    "contribTitle": "Contribution overlay",
+    "selected": "Selected",
+    "selectedTitle": "Show selected layer overlays",
+    "all": "All",
+    "allTitle": "Show all visible layer overlays",
+    "layerStack": "Layer stack",
+    "closeStack": "Close stack",
+    "opacity": "opacity",
+    "controls": "Preview controls"
+  },
+  "preview": {
+    "outsideVideoBoth": "outside video A/B",
+    "outsideVideoA": "outside video A",
+    "outsideVideoB": "outside video B",
+    "beforeClip": "before video clip",
+    "afterClip": "after video clip",
+    "emptyClip": "empty video clip"
+  },
+  "export": {
+    "videoMissing": "Relink every missing video file before exporting.",
+    "cancel": "Cancel export",
+    "limits": "Limits: 16–3840 × 16–2160 px, 12–60 fps, 1–15 s, 900 frames maximum.",
+    "errors": {
+      "unsupportedWebgpu": "WebGPU is required to export this project.",
+      "unsupportedWebcodecs": "WebCodecs is not available for video export in this browser.",
+      "unsupportedCodec": "This codec is not available at the selected resolution. Try another format or a lower resolution.",
+      "invalidDimensions": "Width must be 16–3840 px and height 16–2160 px.",
+      "deviceDimensionLimit": "The selected resolution exceeds this GPU's texture limit.",
+      "invalidFps": "Frame rate must be between 12 and 60 fps.",
+      "invalidDuration": "The selected timeline range must last between 1 and 15 seconds.",
+      "tooManyFrames": "An export can contain at most 900 frames.",
+      "invalidBitrate": "Video bitrate must be between 1 and 20 Mbit/s.",
+      "sequenceTooLarge": "This PNG sequence is too large for an in-memory browser export. Reduce resolution, duration, or frame rate.",
+      "mediaMissing": "Relink every missing video file before exporting.",
+      "cancelled": "Export cancelled.",
+      "gpuFailure": "The export failed while rendering or encoding. Try again with lower settings."
+    },
+    "title": "Export",
+    "subtitle": "Render the morph frame-by-frame to a downloadable file.",
+    "output": "Output",
+    "video": "Video",
+    "imageSequence": "Image sequence",
+    "resolution": "Resolution",
+    "presets": {
+      "project": "Project",
+      "source": "Source",
+      "target": "Target",
+      "custom": "Custom"
+    },
+    "effective": "Effective",
+    "timing": "Timing",
+    "duration": "Duration",
+    "videoDurationNote": "Video exports use the master timeline duration.",
+    "frameRate": "Frame rate",
+    "pingPong": "Ping-pong (A→B→A)",
+    "encoding": "Encoding",
+    "format": "Format",
+    "bitrate": "Bitrate",
+    "background": "Background",
+    "backgrounds": {
+      "black": "Black",
+      "white": "White",
+      "transparent": "Transparent"
+    },
+    "importPrompt": "Import a source and a target image/video in Studio to enable export.",
+    "exporting": "Exporting…",
+    "exportButton": "Export {{format}}",
+    "frameProgress": "frame {{index}} / {{count, number}}",
+    "done": "Export complete — the file has been downloaded.",
+    "share": "Share…",
+    "phases": {
+      "rendering": "Rendering",
+      "encoding": "Encoding",
+      "muxing": "Packaging video",
+      "zipping": "Creating archive"
+    },
+    "width": "Width",
+    "height": "Height",
+    "secondsValue": "{{value}} s",
+    "frameRateValue": "{{value}} fps",
+    "bitrateValue": "{{value}} Mbps"
+  },
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Cancel"
+  },
+  "mobile": {
+    "inspector": "Inspector",
+    "close": "Close",
+    "closeInspector": "Close inspector",
+    "more": "More",
+    "views": "Views"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Demo assets",
+    "subtitle": "Pick two images or videos to fill Source A and Target B.",
+    "slotEmpty": "empty — pick below",
+    "swap": "Swap A ↔ B",
+    "filterAll": "All",
+    "filterImages": "Images",
+    "filterVideos": "Videos",
+    "tabAssets": "Assets",
+    "tabPresets": "Presets",
+    "presetsEmpty": "No example projects yet.",
+    "load": "Load into project",
+    "loadError": "Could not load the demo assets.",
+    "manifestError": "Could not load the demo catalog.",
+    "cta": "…or load demo assets",
+    "kindImage": "Image",
+    "kindVideo": "Video",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "The same face pair, with points and lines. Compare eyes and mouth halfway through.",
+        "name": "Compare — four algorithms"
+      },
+      "crossfade-reference": {
+        "description": "No landmarks: observe the double contours, then try the comparison.",
+        "name": "Crossfade — see ghosting"
+      },
+      "faces-points-tps": {
+        "description": "Move a point, show the TPS grid and compare with border anchors disabled.",
+        "name": "Claire → Bunny — TPS landmarks"
+      },
+      "faces-lines-beier": {
+        "description": "Oriented lines on eyes, nose and mouth. Adjust their a, b, p influence.",
+        "name": "Faces — Beier–Neely lines"
+      },
+      "cars-mesh": {
+        "description": "Wheels and silhouette guide the triangles. Show the mesh to read the deformation.",
+        "name": "Cars — mesh"
+      },
+      "layer-full-frame": {
+        "description": "Hide the top layer: without a mask it replaces the entire Global image.",
+        "labels": {
+          "face": "Full-frame face"
+        },
+        "name": "Layer — full frame"
+      },
+      "layer-region-mask": {
+        "description": "TPS on the face, crossfade around it. Inspect Mask and Contribution; adjust the outline and feather.",
+        "labels": {
+          "face": "TPS face"
+        },
+        "name": "Region — one algorithm per area"
+      },
+      "mask-invert-blend": {
+        "description": "The mask protects the face. Toggle the layer to see Multiply at 40% opacity.",
+        "labels": {
+          "outside": "Multiply outside"
+        },
+        "name": "Inverted mask — Multiply"
+      },
+      "blend-light": {
+        "description": "Two layers brighten the image: Screen on the face and Add (Lighter) around it. View each layer on its own and adjust its opacity.",
+        "labels": {
+          "light": "Screen face",
+          "glow": "Lighter outside"
+        },
+        "name": "Blend — Screen and Lighter"
+      },
+      "painted-mask": {
+        "description": "The mask painted on A follows TPS. Inspect Mask at 25, 50 and 75%, then try the brush and eraser.",
+        "labels": {
+          "paint": "Painted TPS face"
+        },
+        "name": "Painted mask — follow the morph"
+      },
+      "combined-masks": {
+        "description": "The hard-edged region adds to the painted mask (union). Inspect Mask, then try the eraser outside the region.",
+        "labels": {
+          "paint": "Painted TPS face"
+        },
+        "name": "Combined masks — region and brush"
+      },
+      "contours-push": {
+        "description": "Select Push (K), reshape a cheek, then undo. Close a copy of the contour to explore polygons.",
+        "name": "Contours — sculpt with Push"
+      },
+      "transition-classic": {
+        "description": "Compare Standard and Classic morph: warp 0–100%, dissolve 30–70%. Watch the beginning and end.",
+        "name": "Transition — classic morph"
+      },
+      "layers-timing": {
+        "description": "The face dissolves before the hair. Separate windows and a Bézier; layers remain visible to the end.",
+        "labels": {
+          "face": "Face first"
+        },
+        "name": "Timing — face then surroundings"
+      },
+      "fruits-banana-pineapple": {
+        "description": "A closed outline animated on still images. Move the diamonds, then play ping-pong.",
+        "labels": {
+          "fruit": "Animated TPS outline"
+        },
+        "name": "Fruit — keyframes and ping-pong"
+      },
+      "fruit-to-fox": {
+        "description": "The crown becomes ears and the fruit becomes a face. Paired silhouettes, without human facial landmarks.",
+        "name": "Pineapple → Foxy — metamorphosis"
+      },
+      "transparent-cutout": {
+        "description": "4:3 images in a square canvas: the margins are transparent. Export PNG frames with Transparent background; video flattens the background.",
+        "name": "Export — transparent canvas"
+      },
+      "video-faces-keyframes": {
+        "description": "44 landmarks tracked on every frame: eyes, nose, lips and jaw. Clip B is trimmed to bring the expressions closer.",
+        "name": "Video — landmarks and keyframes"
+      },
+      "video-region-keyframes": {
+        "description": "The outline and mouth line follow every frame. Inspect the mask, then select the line and its keyframes.",
+        "labels": {
+          "videoFace": "Animated TPS face"
+        },
+        "name": "Video — animated mask and line"
+      },
+      "video-photo-alive": {
+        "description": "The photo becomes a video of the same face in one second. Only side B has keyframes; A landmarks stay fixed.",
+        "name": "Photo → video — come alive"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 s, B: 1.5–4.5 s. Landmarks follow media time through trims; the morph spans their overlap.",
+        "name": "Clips — trim and overlap"
+      },
+      "video-body-walk": {
+        "description": "16 landmarks per frame. Detected pose on the officer; manual anchors and optical flow on the robot. The layer acts during the overlap.",
+        "labels": {
+          "body": "Morph during overlap"
+        },
+        "name": "Walking — full-body morph"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Red sports car",
+      "red-city-car": "Red city car",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy singing",
+      "bunny-singing": "Bunny singing",
+      "claire-singing": "Claire singing",
+      "anna-singing": "Anna singing",
+      "cop-body-walk": "Cop walking",
+      "karl2000-body-walk": "Karl2000 walking",
+      "banana": "Banana",
+      "pineapple": "Pineapple"
+    },
+    "presetsNote": "These presets are automatically generated to demonstrate the studio’s features. Artistic results are not guaranteed."
+  },
+  "shell": {
+    "loading": "Loading workspace…",
+    "surfaceLoadError": "This part of the workspace could not be loaded.",
+    "retry": "Try again",
+    "panelAria": "{{tab}} panel",
+    "collapse": "Collapse",
+    "panels": {
+      "left": "Assets & features panel",
+      "right": "Properties panel",
+      "timeline": "Timeline panel"
+    },
+    "zen": "Zen mode",
+    "hideChrome": "Hide the UI overlaid on the images",
+    "showChrome": "Show the UI overlaid on the images"
+  },
+  "desktopGate": {
+    "title": "Morpher91 is built for a computer",
+    "body": "The morphing studio relies on WebGPU, a mouse and a large screen. Open this page on a Mac or PC, with a recent Chrome, Edge or Safari, for the full experience. iPad is supported too.",
+    "unsupported": "Mobile use is not supported: neither the interface nor the performance are guaranteed on a phone.",
+    "copyLink": "Copy the link",
+    "copied": "Link copied",
+    "continueAnyway": "Continue anyway (unsupported)"
+  },
+  "assist": {
+    "stepSatisfied": "Step complete. Continue when you’re ready.",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "quit": "Quit the guide",
+    "showMe": "Show me",
+    "step": "Step {{current}}/{{total}}",
+    "anchorMissing": "This element is not visible in the current view.",
+    "launcherTitle": "What do you want to do?",
+    "launcherDescription": "Browse or search the contextual guides.",
+    "searchPlaceholder": "Search guides…",
+    "noResults": "No guide matches.",
+    "suggestions": "Suggestions",
+    "categories": {
+      "start": "Getting started",
+      "features": "Features",
+      "layers-masks": "Layers & masks",
+      "timeline-video": "Timeline & video",
+      "output": "Output"
+    },
+    "shortcuts": {
+      "undo": "Undo",
+      "redo": "Redo",
+      "delete": "Delete selection",
+      "stepFrame": "Step one frame",
+      "jumpEnds": "Jump to start / end",
+      "zen": "Zen mode (hide the panels)",
+      "hideChrome": "Hide / show the UI overlaid on the images"
+    }
+  },
+  "about": {
+    "credits": "Credits",
+    "version": "v{{version}}",
+    "description": "A WebGPU & WebCodecs studio for 2D image and video morphing.",
+    "author": "Created by André Frélicot.",
+    "privacyTitle": "Privacy",
+    "privacy": "Your images, videos and projects are processed on your device. Rendering and export run in your browser, without uploading your media to a server.",
+    "close": "Close",
+    "date": "September 2026"
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Load two images",
+        "description": "Fill Source A and Target B — demo assets or your own files.",
+        "keywords": "load import images demo assets presets example source target open file",
+        "steps": {
+          "demo": {
+            "title": "Start with the demo assets",
+            "body": "Demo → Presets opens a teaching catalog. Each card shows its source/target pair and an exercise. Start with Compare — four algorithms, then explore masks, transitions, keyframes and video. Examples open at an authored time, with the useful view and layer selected. Landmark names stay in English in every interface language.\n\nThese presets are automatically generated to demonstrate the studio’s features. Artistic results are not guaranteed.",
+            "missingHint": "Open the Demo picker."
+          },
+          "source": {
+            "title": "Or import your own — Source A",
+            "body": "This slot accepts an image or a video file: it is the morph's starting side.",
+            "missingHint": "Open the Studio tab."
+          },
+          "target": {
+            "title": "Target B",
+            "body": "Fill the second slot — as soon as both sides exist the project is created and the preview renders.",
+            "missingHint": "Open the Studio tab."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Choose the morphing algorithm",
+        "description": "Pick the project algorithm and understand the four families.",
+        "keywords": "algorithm crossfade mesh tps thin-plate spline beier neely warp",
+        "preconditionHint": "Load two images first — the Demo button in the top bar is the fastest way.",
+        "steps": {
+          "algorithm-list": {
+            "title": "The four algorithms",
+            "body": "Crossfade dissolves without warping. Mesh warps Delaunay triangles. Thin-Plate Spline bends the whole image smoothly. Beier–Neely warps along oriented lines.",
+            "missingHint": "Open the Studio tab and the Algorithm section."
+          },
+          "pick-tps": {
+            "title": "Try Thin-Plate Spline",
+            "body": "Click the Thin-Plate Spline tile — the preview re-renders instantly with the new warp.",
+            "missingHint": "Open the Studio tab and the Algorithm section."
+          },
+          "settings": {
+            "title": "Algorithm settings",
+            "body": "The active algorithm's settings appear right below the tiles — for TPS, the λ slider trades exactness for smoothness.",
+            "missingHint": "Pick TPS or Beier–Neely to reveal their settings."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Navigate the studio views",
+        "description": "Edit, Preview and Triple; zoom, pan and reset the viewport.",
+        "keywords": "view edit preview triple zoom pan reset navigate viewport",
+        "preconditionHint": "Load two images first — the Demo button in the top bar is the fastest way.",
+        "steps": {
+          "toggle": {
+            "title": "Three views",
+            "body": "Edit shows A | B for placing features, Preview shows the morph full-size, Triple shows A | morph | B. On narrow views, choose the view from the menu.",
+            "missingHint": "Open the Studio tab."
+          },
+          "triple": {
+            "title": "Open the Triple view",
+            "body": "Click Triple — you edit on the sides while the center morphs live. When the preview pane is narrow, open Preview controls to choose Final, Layer, Mask or Contribution, show overlays or inspect the layer stack.",
+            "missingHint": "Open the Studio tab."
+          },
+          "zoom-pan": {
+            "title": "Zoom, pan, reset",
+            "body": "Scroll or pinch to zoom. Hold Space or select the Pan tool (H), then drag to pan. Double-click or double-tap to reset the viewport. On touch devices, the workspace stays fixed; only sheets and panels scroll.",
+            "missingHint": "Open the Studio tab in Edit or Triple view."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Save and reload a project",
+        "description": "Save project structure and embedded images; relink local videos after reopening.",
+        "keywords": "save load project file morph json export reopen",
+        "preconditionHint": "Load two images first — the Demo button in the top bar is the fastest way.",
+        "steps": {
+          "save": {
+            "title": "Save",
+            "body": "Save downloads a .morph.json with embedded images, features, layers and timeline. Video bytes stay local and are referenced by metadata — nothing leaves your machine."
+          },
+          "load": {
+            "title": "Load it back",
+            "body": "Load restores the project structure and embedded images. For each local video, use Relink on its A/B slot; playback and export resume once all required files are connected."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Credits",
+        "description": "Credits, app version and local media processing.",
+        "keywords": "About Credits Privacy",
+        "steps": {
+          "about": {
+            "title": "Open About",
+            "body": "About in the top bar shows the author, the build version and how your media stays on your device. On the compact layout, look in More.",
+            "missingHint": "Leave zen mode or open the More menu to find About."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Change the interface language",
+        "description": "Choose a language for the studio, examples and guides.",
+        "keywords": "language translation locale preferences international",
+        "stepTitle": "Choose your language",
+        "body": "Open the language selector in the top bar. Each card shows a flag and the language’s native name. Your choice is remembered on this device. Wait for loading to finish before the interface changes. A connection may be needed to download a language’s fonts. Your project and landmark names stay unchanged. If a saved language cannot be restored, the app opens in English with an explanation and a retry button. On narrower screens, the top bar can wrap onto multiple rows to keep all commands visible."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Load two images first — the Demo button in the top bar is the fastest way."
+      },
+      "studioHint": "Open the Studio tab in Edit view.",
+      "placePointsGuide": {
+        "title": "Place correspondence points",
+        "description": "Points tell Mesh and TPS which spot of A matches which spot of B.",
+        "keywords": "point landmark correspondence mesh tps place adjust",
+        "steps": {
+          "pick-tool": {
+            "title": "The Point tool",
+            "body": "Select the Point tool (shortcut P)."
+          },
+          "place-a": {
+            "title": "Click a landmark on A",
+            "body": "Click a distinctive spot (an eye, a corner…) in the Source A pane. A matching handle appears on B."
+          },
+          "adjust-b": {
+            "title": "Adjust side B",
+            "body": "Drag the twin handle in Target B onto the same landmark of the other image — that pairing drives the warp."
+          },
+          "preview": {
+            "title": "Watch the warp",
+            "body": "Switch to Preview or Triple to see Mesh/TPS bend the images through your points."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Draw oriented lines (Beier–Neely)",
+        "description": "Line pairs drive the Beier–Neely field morphing.",
+        "keywords": "line segment oriented beier neely edge draw",
+        "steps": {
+          "pick-tool": {
+            "title": "The Line tool",
+            "body": "Select the Line tool (shortcut L)."
+          },
+          "drag-line": {
+            "title": "Drag along an edge on A",
+            "body": "Press and drag to lay a line along a strong edge (jawline, roofline…). Its twin appears on B."
+          },
+          "orient-b": {
+            "title": "Match the direction on B",
+            "body": "Move both endpoints on B onto the same edge, keeping the SAME direction — Beier–Neely maps along and across each line."
+          },
+          "use-beier": {
+            "title": "Switch to Beier–Neely",
+            "body": "Lines only warp with the Beier–Neely algorithm — pick its tile.",
+            "missingHint": "Open the Studio tab and the Algorithm section."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Draw a polyline",
+        "description": "Tap-by-tap or freehand curves, resumable from an endpoint.",
+        "keywords": "polyline curve path freehand tap draw resume endpoint",
+        "steps": {
+          "pick-tool": {
+            "title": "The Polyline tool",
+            "body": "Select the Polyline tool (shortcut Y)."
+          },
+          "tap-by-tap": {
+            "title": "Tap by tap",
+            "body": "Click successive points along a contour. Press ⏎ to finish, Esc to cancel."
+          },
+          "freehand": {
+            "title": "Or freehand",
+            "body": "Press and drag in one continuous stroke — the path is simplified automatically on release."
+          },
+          "resume": {
+            "title": "Resume from an endpoint",
+            "body": "With the Polyline tool active, click an endpoint of an open polyline to keep drawing from there."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Close an open polyline",
+        "description": "Two ways to turn an open polyline into a closed polygon.",
+        "keywords": "close polygon polyline loop endpoint drop first point",
+        "steps": {
+          "intro": {
+            "title": "Two ways to close",
+            "body": "A polyline can be closed while you draft it, or later with the Select tool."
+          },
+          "close-first": {
+            "title": "While drafting: click point 1",
+            "body": "While drawing, click the FIRST point again — the loop closes and the draft finishes."
+          },
+          "drop-endpoint": {
+            "title": "Later: endpoint onto endpoint",
+            "body": "With the Select tool, drag one endpoint of an open polyline and drop it on the other endpoint — same result."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Draw a region",
+        "description": "A closed region can mask a layer; adjust the softness of its edge.",
+        "keywords": "region mask lasso outline feather draw",
+        "steps": {
+          "pick-tool": {
+            "title": "The Region mask tool",
+            "body": "Select the Region mask tool — its contour is always closed."
+          },
+          "outline": {
+            "title": "Outline the area on A",
+            "body": "Tap points or draw freehand around the area (a face, an object). Finish with ⏎ or by closing the loop."
+          },
+          "feather": {
+            "title": "Feather the edge",
+            "body": "Select the region and adjust Feather to soften its edge. A layer using this region as a mask also has its own mask mode and feather setting.",
+            "missingHint": "Open the Selection section of the right inspector."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Select, rename, lock, hide",
+        "description": "Manage features and read the A↔B hover beacon.",
+        "keywords": "select multi-select shift rename lock hide beacon hover feature",
+        "steps": {
+          "pick-tool": {
+            "title": "The Select tool",
+            "body": "Select the Select tool (shortcut V)."
+          },
+          "select": {
+            "title": "Click a handle",
+            "body": "Click a feature handle to select it — hold Shift to multi-select. Hovering shows a beacon on the matching handle in the OTHER pane."
+          },
+          "inspector": {
+            "title": "Rename, lock, hide",
+            "body": "The Selection section renames the feature and toggles Visible / Locked.",
+            "missingHint": "Open the Selection section of the right inspector."
+          },
+          "list": {
+            "title": "The Features list",
+            "body": "The left list mirrors everything: eye hides, padlock locks, and clicking selects."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Push points & undo",
+        "description": "Sculpt handles locally with the Push tool; undo/redo any step.",
+        "keywords": "push sculpt deform local radius undo redo",
+        "steps": {
+          "pick-tool": {
+            "title": "The Push tool",
+            "body": "Select the Push tool (shortcut K)."
+          },
+          "sculpt": {
+            "title": "Drag to sculpt",
+            "body": "Drag across the image: every handle inside the ring is pushed along, strongest at the center."
+          },
+          "undo": {
+            "title": "Undo / redo",
+            "body": "Cmd/Ctrl+Z undoes any feature edit; Cmd/Ctrl+Shift+Z redoes it."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Open the Layers section of the right inspector.",
+      "needsProject": {
+        "preconditionHint": "Load two images first — the Demo button in the top bar is the fastest way."
+      },
+      "activateLayerStep": {
+        "title": "Activate a user layer",
+        "body": "Click a layer other than Global in the Layers section — its properties appear right below the list."
+      },
+      "createLayerGuide": {
+        "title": "Create a layer",
+        "description": "Stack layers above the Global base and read their contribution badges.",
+        "keywords": "layer create add stack global order badge contribution",
+        "steps": {
+          "add": {
+            "title": "Add a layer",
+            "body": "Click Add layer — the new layer becomes active immediately."
+          },
+          "global-vs-layers": {
+            "title": "Global vs user layers",
+            "body": "Global renders the default morph underneath. User layers composite above it, in list order — the arrows reorder the stack."
+          },
+          "badges": {
+            "title": "Contribution badges",
+            "body": "Each row shows what the layer does right now: full frame (covers everything), masked, no contribution, outside clip…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Change a layer's algorithm",
+        "description": "Give one layer its own algorithm without touching the project default.",
+        "keywords": "layer algorithm override mesh tps beier per-layer",
+        "steps": {
+          "override": {
+            "title": "Pick an override",
+            "body": "The Algorithm dropdown in the layer properties replaces the project default for THIS layer only."
+          },
+          "badge": {
+            "title": "The override badge",
+            "body": "The Algorithm section header now shows an override badge — and everything stays reachable even with a feature selected.",
+            "missingHint": "Open the Algorithm section of the right inspector."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Mask a layer with a region",
+        "description": "Restrict a layer to an assigned region, hard or feathered, invertible.",
+        "keywords": "mask region assign layer hard feathered invert",
+        "preconditionHint": "Draw a region first (Region mask tool) — the mask dropdown lists regions.",
+        "steps": {
+          "assign": {
+            "title": "Assign a region",
+            "body": "Pick a region in the Mask dropdown: the layer now composites only inside it."
+          },
+          "modes": {
+            "title": "Hard, feathered, inverted",
+            "body": "Mask mode switches between a hard cut and a feathered edge (with its own feather value); Invert flips inside/outside."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Paint a mask",
+        "description": "Brush a mask directly on the image, watch it live in the preview.",
+        "keywords": "paint brush mask diameter hardness strength eraser clear live",
+        "steps": {
+          "pick-brush": {
+            "title": "The Mask brush",
+            "body": "Select the Mask brush (shortcut B) — it paints the ACTIVE layer's mask.",
+            "missingHint": "Open the Studio tab."
+          },
+          "settings": {
+            "title": "Brush settings",
+            "body": "Diameter, hardness and strength shape the stroke. Eraser removes paint — tick the box or hold ⌥ while dragging.",
+            "missingHint": "The settings appear under the tool grid while the brush is active."
+          },
+          "paint": {
+            "title": "Paint on the image",
+            "body": "Drag on a pane: the painted mask composites LIVE in the central preview (see the Final and Mask debug views). The paint is advected with the layer's warp, so it follows the content as it morphs.",
+            "missingHint": "Open the Studio tab in Edit view."
+          },
+          "clear": {
+            "title": "Clear it anytime",
+            "body": "Painted mask → Clear resets the layer's painted mask entirely."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opacity, blend, clip and transition",
+        "description": "Adjust a layer’s appearance, limit its time on the timeline, and choose when it dissolves.",
+        "keywords": "opacity blend mode composite clip timeline start duration easing transition warp dissolve window preset classic morph bezier curve ghosting",
+        "steps": {
+          "opacity": {
+            "title": "Opacity",
+            "body": "Slide the opacity below 1 to blend the layer with what is underneath."
+          },
+          "blend": {
+            "title": "Blend mode",
+            "body": "The Blend menu controls how the layer combines with those underneath: Normal, Multiply, Screen or Add (Lighter). Multiply multiplies colors; Screen brightens them; Add sums premultiplied colors and alpha, clamping the result to the maximum value."
+          },
+          "clip": {
+            "title": "Clip it in time",
+            "body": "Drag the layer's block in the timeline to move it, its edges to trim it — or set Start and Duration in the layer properties."
+          },
+          "windows": {
+            "title": "Warp long, dissolve short",
+            "body": "The Transition section defines two windows as percentages of the clip. Warp controls the change of shape; Dissolve controls the blend between images A and B. The Classic morph preset keeps Warp at 0–100% and limits Dissolve to 30–70%. This reduces ghosting from poorly aligned details at the beginning and end."
+          },
+          "windows-timeline": {
+            "title": "Read the windows in the timeline",
+            "body": "The layer's block draws both windows along its bottom edge: a light band for the dissolve, a hairline for the warp. You see at a glance where in the clip the crossfade happens."
+          },
+          "easing": {
+            "title": "Shape the curve",
+            "body": "Easing sets the rhythm of both windows: five named curves, or “custom (bezier)” for a two-handle CSS-style curve you drag. Tick “Distinct dissolve curve” to give the crossfade its own rhythm, independent of the warp."
+          },
+          "global-too": {
+            "title": "The Global layer too",
+            "body": "Select Global: it has the same Transition section. Its windows cover 0–100% by default. With Crossfade, only the dissolve window has an effect because this algorithm does not deform the images."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Load two images first — the Demo button in the top bar is the fastest way."
+      },
+      "timelineGuide": {
+        "title": "Drive the timeline",
+        "description": "Scrub, play, step frames and move layer clips.",
+        "keywords": "timeline scrub play pause frame timecode clip move trim zen tab collapse panels ruler playhead",
+        "steps": {
+          "scrub": {
+            "title": "Scrub the ruler",
+            "body": "Click or drag anywhere on the ruler — τ follows and the preview seeks that exact frame. With a stylus, touch any position and keep the tip down while dragging.",
+            "missingHint": "Open the Studio tab."
+          },
+          "transport": {
+            "title": "Play, pause, step",
+            "body": "Play runs the morph in real time. The arrow buttons (or ←/→) step one frame; Alt-click jumps to the ends. The timecode reads seconds:frames.",
+            "missingHint": "Open the Studio tab."
+          },
+          "clips": {
+            "title": "Move and trim clips",
+            "body": "Images and videos have clips on A/B, above the layer clips. Drag a block or resize its edges; selecting it exposes Start and Duration. A still image has no source-length limit: increasing its duration can extend the montage. Outside a media clip only the other side contributes; if neither is present, the background is shown.",
+            "missingHint": "Open the Studio tab."
+          },
+          "still-image-timing": {
+            "title": "Time a still image",
+            "body": "Select an image clip on A or B and enter its duration in seconds (or seconds:frames). Shortening a clip leaves the montage duration unchanged; extending it grows the timeline when needed. Still-image landmark keys keep their master times: moving or resizing the clip does not move or stretch their animation. Clips are saved with the project.",
+            "missingHint": "Open the Studio tab."
+          },
+          "zen": {
+            "title": "Zen mode keeps the ruler",
+            "body": "{{shortcut}} hides all three panels so the morph fills the screen. The timeline collapses to a single 40 px bar that still carries a compact ruler: ticks, timecodes and the playhead — and you can still click or drag it to scrub. Press {{shortcut}} again to bring the panels back."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Morph between videos",
+        "description": "Import videos, place the A/B clips and add feature keyframes.",
+        "keywords": "video clip import keyframe pose track sing diamond drag retime",
+        "steps": {
+          "get-videos": {
+            "title": "Get two videos",
+            "body": "The Demo dialog ships four singing clips and two walking clips (filter: Videos) — or drop your own video files on the A/B slots. Mixing an image with a video works too. Saved projects keep video metadata and ask you to relink the local files when reopened.",
+            "missingHint": "Open the Demo picker."
+          },
+          "place-clips": {
+            "title": "Place the A/B clips",
+            "body": "Each video lives on its track: drag to move, edges to trim, and the start/in/dur fields for exact values. Moving or trimming a clip refreshes the preview at the playhead, without having to move the playhead itself; the montage duration stays unchanged. Landmark keyframes stay tied to source-media time, including the trimmed-in portion, and are preserved when saving and reopening. Outside its clip that side is excluded from both preview and export; the other side fills the frame.",
+            "missingHint": "Open the Studio tab."
+          },
+          "keyframes": {
+            "title": "Add feature keyframes",
+            "body": "Select a feature: the Keyframes row has, per side, previous ◀, a diamond ◆ that adds or removes a keyframe at the current time, next ▶, and the count. Features then track the motion between keyframes. On still images a feature stays static until you add a first keyframe with ◆ — after that, moves at other times add keyframes and bend the morph path.",
+            "missingHint": "Open the Selection section of the right inspector."
+          },
+          "timeline-keyframes": {
+            "title": "Edit keyframes on the timeline",
+            "body": "The selected features' keyframes show as diamonds on the A and B tracks, at the time they play. Click one to jump there, drag it to retime it (frame-snapped, one undo step), Alt-click to delete it. Diamonds too close to tell apart merge into a bar with a count — use the inspector arrows to reach them.",
+            "missingHint": "Open the Studio tab."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Compare the algorithms",
+        "description": "See all four algorithms side by side on the same project.",
+        "keywords": "compare grid side by side crossfade mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "Open Compare",
+            "body": "The Compare tab renders a 2×2 grid sharing your images, features and τ."
+          },
+          "read": {
+            "title": "Read the grid",
+            "body": "Crossfade produces double contours where image details are misaligned. Mesh, TPS and Beier–Neely warp both images toward a shared intermediate shape to align corresponding details."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "Export MP4 or frames",
+        "description": "Render the morph to a video file or a ZIP of PNG frames.",
+        "keywords": "export mp4 webm av1 zip frames video render download",
+        "steps": {
+          "open": {
+            "title": "Open Export",
+            "body": "Everything renders locally — nothing is uploaded."
+          },
+          "settings": {
+            "title": "Pick the output",
+            "body": "Video needs WebCodecs and an available H.264, VP9 or AV1 encoder. The PNG image sequence needs no video codecs and can preserve a transparent background. Video is flattened onto black or white. Set the resolution, duration and frame rate."
+          },
+          "run": {
+            "title": "Export",
+            "body": "The morph renders frame by frame with a progress bar, then the file downloads automatically. The same button cancels safely while an export is running."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Keyboard shortcuts",
+        "description": "Every shortcut, straight from the app's shortcut tables.",
+        "keywords": "keyboard shortcuts keys hotkeys cheatsheet",
+        "steps": {
+          "list": {
+            "title": "Keyboard shortcuts"
+          }
+        }
+      }
+    }
+  },
+  "language": {
+    "title": "Language",
+    "description": "Choose the interface language.",
+    "loading": "Loading {{language}}…",
+    "loadError": "This language could not be loaded. Check your connection and try again.",
+    "retry": "Try again",
+    "names": {
+      "en": "English",
+      "fr": "French",
+      "de": "German",
+      "es": "Spanish",
+      "pt-BR": "Portuguese (Brazil)",
+      "it": "Italian",
+      "tr": "Turkish",
+      "id": "Indonesian",
+      "ru": "Russian",
+      "ja": "Japanese",
+      "ko": "Korean",
+      "zh-Hans": "Chinese (Simplified)",
+      "th": "Thai",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "ar": "Arabic"
+    },
+    "restoreError": "Could not restore {{language}}. The interface is in English. Connect your device to the internet to load this language, then try again."
+  },
+  "algorithmNames": {
+    "crossfade": "Crossfade",
+    "mesh": "Mesh",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Crossfade",
+    "mesh": "Mesh",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  }
+}

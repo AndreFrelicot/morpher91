@@ -1,0 +1,1193 @@
+{
+  "topbar": {
+    "new": "새로 만들기",
+    "newConfirmTitle": "새 프로젝트",
+    "newConfirm": "현재 프로젝트를 버리고 새 프로젝트를 만들까요?",
+    "newConfirmAction": "버리기",
+    "load": "열기",
+    "save": "저장",
+    "export": "내보내기",
+    "help": "도움말",
+    "language": "언어",
+    "loadErrorTitle": "불러오기 오류",
+    "loadError": "프로젝트를 불러올 수 없습니다.",
+    "videoSaveTitle": "프로젝트 저장",
+    "videoSaveNote": "동영상 파일은 프로젝트에 포함되지 않습니다. 다시 열 때 동영상 파일을 다시 연결해야 합니다. 저장을 계속할까요?",
+    "videoSaveAction": "계속 저장",
+    "loadErrors": {
+      "invalidJson": "올바른 프로젝트 파일이 아닙니다.",
+      "unsupportedVersion": "지원하지 않는 프로젝트 버전입니다.",
+      "invalidStructure": "프로젝트에 잘못되었거나 불완전한 데이터가 있습니다.",
+      "limitExceeded": "프로젝트가 앱의 안전 한도를 초과합니다.",
+      "invalidReference": "프로젝트의 레이어 또는 제어 요소 참조가 끊어졌습니다.",
+      "invalidMask": "프로젝트의 페인트 마스크가 손상되었습니다."
+    },
+    "tabs": {
+      "studio": "스튜디오",
+      "compare": "비교"
+    },
+    "about": "앱 정보"
+  },
+  "sidebar": {
+    "tools": "도구",
+    "assets": "미디어",
+    "features": "제어 요소",
+    "layers": "레이어"
+  },
+  "tools": {
+    "select": "선택",
+    "point": "점",
+    "line": "선",
+    "polyline": "폴리라인",
+    "region": "영역 마스크",
+    "brush": "마스크 브러시",
+    "push": "점 밀기",
+    "pan": "화면 이동"
+  },
+  "assets": {
+    "sourceA": "원본 A",
+    "targetB": "대상 B",
+    "replace": "이미지/동영상 바꾸기",
+    "choose": "이미지/동영상 선택…",
+    "loading": "불러오는 중…",
+    "video": "동영상",
+    "videoMissing": "동영상 파일을 다시 연결해야 합니다",
+    "relink": "다시 연결",
+    "replaceInstead": "다른 이미지나 동영상으로 바꾸기",
+    "relinkVideoOnly": "이 자리에 다시 연결할 원래 동영상 파일을 선택하세요.",
+    "relinkMismatch": "저장된 동영상과 일치하지 않습니다. 해상도와 길이를 확인하거나 미디어를 다른 파일로 바꾸세요.",
+    "relinkNoSavedVideo": "이 자리에는 다시 연결할 동영상이 없습니다.",
+    "relinkAlreadyLinked": "이 동영상은 이미 연결되어 있습니다.",
+    "loadError": "선택한 미디어를 불러올 수 없습니다."
+  },
+  "brush": {
+    "selectLayerHint": "마스크를 칠할 레이어를 선택하세요. 기본 레이어인 Global에는 마스크가 없습니다.",
+    "diameter": "지름",
+    "hardness": "경도",
+    "strength": "강도",
+    "eraser": "지우개",
+    "eraserHold": "(⌥ 키를 누르는 동안)"
+  },
+  "features": {
+    "empty": "이 레이어에는 제어 요소가 없습니다.",
+    "hide": "숨기기",
+    "show": "표시",
+    "hideFeature": "제어 요소 숨기기",
+    "showFeature": "제어 요소 표시",
+    "lock": "잠금",
+    "unlock": "잠금 해제",
+    "lockFeature": "제어 요소 잠금",
+    "unlockFeature": "제어 요소 잠금 해제",
+    "kinds": {
+      "point": "점",
+      "segment": "선",
+      "polyline": "폴리라인",
+      "region": "영역"
+    },
+    "visible": "표시",
+    "locked": "잠금",
+    "weight": "가중치",
+    "layer": "레이어",
+    "landmark": "대응 부위",
+    "role": "역할",
+    "feather": "가장자리 페더",
+    "none": "없음",
+    "semantics": {
+      "left-eye": "왼쪽 눈",
+      "right-eye": "오른쪽 눈",
+      "nose": "코",
+      "mouth": "입",
+      "chin": "턱끝",
+      "jaw": "턱선",
+      "hairline": "머리카락 경계",
+      "custom": "사용자 지정"
+    },
+    "roles": {
+      "face": "얼굴",
+      "hair": "머리카락",
+      "neck": "목",
+      "body": "몸",
+      "background": "배경",
+      "custom": "사용자 지정"
+    },
+    "keyframes": "키프레임",
+    "noKeyframes": "없음",
+    "prevKeyframe": "{{side}} 이전 키프레임",
+    "nextKeyframe": "{{side}} 다음 키프레임",
+    "toggleKeyframe": "현재 시간에 {{side}} 키프레임 추가/삭제",
+    "keyframeCount_other": "키프레임 {{count, number}}개",
+    "keyframeHintStill": "정지 이미지의 제어 요소는 키프레임을 설정하기 전까지 시간에 따라 위치가 바뀌지 않습니다. ◆로 첫 키프레임을 추가하면 다른 시간에 요소를 옮길 때마다 키프레임이 생겨 모핑의 이동 경로를 비선형으로 조절할 수 있습니다.",
+    "selectedCount_other": "제어 요소 {{count, number}}개 선택됨",
+    "deleteSelected": "선택 항목 삭제",
+    "coordinates": "좌표",
+    "pts": "점 {{count, number}}개"
+  },
+  "layers": {
+    "importFirst": "먼저 이미지를 불러오세요.",
+    "add": "레이어 추가",
+    "defaultName": "레이어 {{index}}",
+    "hideLayer": "레이어 숨기기",
+    "showLayer": "레이어 표시",
+    "lockLayer": "레이어 잠금",
+    "unlockLayer": "레이어 잠금 해제",
+    "moveUp": "레이어 위로",
+    "moveDown": "레이어 아래로",
+    "featureCount_other": "제어 요소 {{count, number}}개",
+    "globalHint": "기본 레이어인 Global은 프로젝트 설정을 사용합니다. 추가한 레이어를 선택하면 해당 속성을 편집할 수 있습니다.",
+    "status": {
+      "base": "기본",
+      "disabled": "사용 안 함",
+      "hidden": "숨김",
+      "outside-clip": "클립 밖",
+      "no-contribution": "효과 없음",
+      "masked": "마스크 적용",
+      "full-frame": "프레임 전체"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "알고리즘",
+    "selection": "선택 항목",
+    "selectionHint": "편집할 제어 요소를 선택하세요.",
+    "overrideBadge": "레이어 설정: {{name}}",
+    "soon": "준비 중",
+    "panel": "속성"
+  },
+  "algorithms": {
+    "crossfade": "변형 없이 이미지를 선형으로 혼합",
+    "mesh": "Delaunay 삼각형으로 변형",
+    "thin-plate-spline": "RBF로 이미지 전체를 부드럽게 변형",
+    "beier-neely": "방향이 있는 선의 영향장으로 모핑"
+  },
+  "tps": {
+    "smoothing": "평활화 (λ)",
+    "borderAnchors": "테두리 앵커",
+    "anchorsPerSide": "변당 앵커 수",
+    "samplePolylines": "폴리라인 샘플링",
+    "sampleSpacing": "샘플 간격"
+  },
+  "beier": {
+    "distanceSoftness": "근거리 영향 완화 (a)",
+    "falloffExponent": "감쇠 지수 (b)",
+    "lineLengthInfluence": "선 길이의 영향 (p)",
+    "maxLines": "최대 선 수",
+    "samplePolylines": "폴리라인 샘플링"
+  },
+  "layerInspector": {
+    "title": "레이어",
+    "enabled": "사용",
+    "visible": "표시",
+    "locked": "잠금",
+    "scope": {
+      "base": "기본 레이어: 추가한 레이어 아래에 프로젝트의 기본 모핑을 표시합니다.",
+      "disabled": "사용하지 않는 레이어: 미리 보기와 내보내기에 반영되지 않습니다.",
+      "hidden": "숨겨진 레이어: 미리 보기와 내보내기에서 제외됩니다.",
+      "outside-clip": "클립 밖: 재생 헤드가 이 레이어의 클립 안에 있지 않습니다.",
+      "no-contribution": "효과 없음: 제어 요소를 추가하거나 마스크를 지정하면 렌더링에 반영됩니다.",
+      "masked": "마스크가 있는 레이어: 지정된 영역을 아래 레이어 위에 합성합니다.",
+      "full-frame": "프레임 전체에 적용되는 레이어: 마스크가 없어 아래 레이어의 이미지 전체를 덮습니다."
+    },
+    "algorithm": "알고리즘",
+    "projectDefault": "프로젝트 기본값",
+    "opacity": "불투명도",
+    "blend": "혼합 모드",
+    "blendModes": {
+      "normal": "표준",
+      "source-over": "표준 (source-over)",
+      "multiply": "곱하기",
+      "screen": "스크린",
+      "lighter": "더하기"
+    },
+    "mask": "마스크",
+    "none": "없음",
+    "paintedMask": "페인트 마스크",
+    "clear": "지우기",
+    "maskMode": "마스크 가장자리",
+    "maskModes": {
+      "hard": "선명하게",
+      "feathered": "부드럽게"
+    },
+    "maskFeather": "가장자리 페더",
+    "invertMask": "마스크 반전",
+    "timelineClip": "타임라인 클립",
+    "start": "시작",
+    "duration": "길이",
+    "easing": "이징",
+    "easings": {
+      "linear": "선형",
+      "ease-in": "가속",
+      "ease-out": "감속",
+      "ease-in-out": "가속 후 감속",
+      "smoothstep": "smoothstep",
+      "bezier": "사용자 지정 (베지어)"
+    },
+    "transition": "전환",
+    "warpWindow": "변형 (%)",
+    "warpStart": "변형 시작 (%)",
+    "warpEnd": "변형 끝 (%)",
+    "dissolveWindow": "디졸브 (%)",
+    "dissolveStart": "디졸브 시작 (%)",
+    "dissolveEnd": "디졸브 끝 (%)",
+    "presets": {
+      "label": "프리셋",
+      "standard": "기본",
+      "classicMorph": "클래식 모핑",
+      "lateDissolve": "늦은 디졸브",
+      "custom": "사용자 지정"
+    },
+    "distinctDissolveEasing": "디졸브에 별도 곡선 사용",
+    "dissolveEasing": "디졸브 이징",
+    "bezierCurve": "{{name}} 곡선",
+    "bezierHandle1": "곡선의 첫 번째 핸들",
+    "bezierHandle2": "곡선의 두 번째 핸들",
+    "bezier": {
+      "x1": "핸들 1 x",
+      "y1": "핸들 1 y",
+      "x2": "핸들 2 x",
+      "y2": "핸들 2 y"
+    },
+    "stackPosition": "쌓인 순서: {{position}}",
+    "delete": "레이어 삭제",
+    "confirmTitle": "레이어를 삭제할까요?",
+    "confirmBody": "레이어 이름: {{name}}. 이 레이어를 삭제할까요? 제어 요소는 Global에 속하게 되며 삭제되지 않습니다.",
+    "cancel": "취소",
+    "closeConfirm": "삭제 확인 닫기"
+  },
+  "timeline": {
+    "videoMissing": "재생하기 전에 누락된 동영상 파일을 다시 연결하세요.",
+    "time": "시간",
+    "layers": "레이어",
+    "outsideA": "A 범위 밖",
+    "outsideB": "B 범위 밖",
+    "position": "타임라인 위치",
+    "prevFrame": "이전 프레임",
+    "prevFrameTitle": "이전 프레임, Alt+클릭하면 처음으로 이동",
+    "nextFrame": "다음 프레임",
+    "nextFrameTitle": "다음 프레임, Alt+클릭하면 끝으로 이동",
+    "play": "재생",
+    "pause": "일시 정지",
+    "start": "시작",
+    "in": "소스 시작점",
+    "dur": "길이",
+    "timecodeAria": "{{label}} 타임코드",
+    "timecodeTitle": "{{label}} 타임코드 (초:프레임)",
+    "tauTitle": "타임라인 위치 (초:프레임)",
+    "syncWaiting": "렌더링 중… {{elapsed}}",
+    "syncWaitingTitle": "미리 보기 엔진 대기 중: {{phase}}. 화면에는 아직 이전 프레임이 표시됩니다.",
+    "syncPhaseEngine": "동영상 엔진 시작 (파일 읽기, 디코더 초기화)",
+    "syncPhaseFrame": "프레임 탐색/디코딩 및 GPU 전송",
+    "syncLast": "최근 렌더링 {{elapsed}}",
+    "syncLastTitle": "타임라인 이동 후 최근 렌더링에 걸린 시간 (0.5초를 초과하면 표시)",
+    "keyframeTitle": "키프레임 {{time}}초 — {{names}} · 클릭: 해당 시간으로 이동, 드래그: 시간 변경, ⌥+클릭: 삭제",
+    "keyframeTitleShared": "키프레임 {{time}}초 — {{names}} · 클릭: 해당 시간으로 이동, ⌥+클릭: 삭제",
+    "keyframeGroupTitle": "{{from}}~{{to}}초 사이의 키프레임 {{count, number}}개 — 간격이 좁아 여기서 편집할 수 없습니다 · 클릭: 첫 키프레임으로 이동",
+    "transitionWindows": "{{name}} — 디졸브 {{dissolveStart}}~{{dissolveEnd}}%, 변형 {{warpStart}}~{{warpEnd}}%",
+    "imageClipName": "정지 이미지 · {{name}}",
+    "mediaClip": "{{slot}} 클립 — {{name}}",
+    "imageClipHelp": "정지 이미지: 드래그하여 옮기거나 가장자리를 드래그하여 길이를 조절하세요. 클립을 선택하면 시작과 길이를 입력할 수도 있습니다. 클립을 늘리면 타임라인이 연장될 수 있습니다.",
+    "altClick": "Alt+클릭"
+  },
+  "hud": {
+    "releaseToClose": "놓으면 닫힘",
+    "eraser": "지우개",
+    "maskBrushSelectLayer": "마스크 브러시 · 레이어를 선택하세요",
+    "points_other": "점 {{count, number}}개",
+    "finishHint": "⏎ 완료 · Esc 취소",
+    "cancelHint": "Esc 취소"
+  },
+  "notices": {
+    "noWebgpu": "이 데모는 렌더링에 WebGPU를 사용합니다.\n현재 브라우저나 기기에서는 지원되지 않는 것 같습니다.\n\n다음 브라우저를 사용해 보세요.\n- 최신 Chrome 또는 Edge\n- 최신 Safari\n- WebGPU를 지원하는 Firefox",
+    "tooManyFeatures": "이 프로젝트에는 제어 요소가 많습니다.\n미리 보기 해상도를 절반으로 낮춥니다.\n최종 결과는 계속 내보낼 수 있습니다.",
+    "deviceLost": "GPU 컨텍스트가 손실되었습니다. 메모리 부족이나 드라이버 초기화가 원인일 수 있습니다.",
+    "reload": "새로고침",
+    "noWebcodecs": "미리 보기는 작동하지만 이 브라우저에서는 MP4 동영상을 내보낼 수 없습니다.",
+    "codecUnsupported": "요청한 코덱을 이 해상도에서 사용할 수 없습니다. 해상도를 낮추거나 다른 형식 또는 브라우저를 사용해 보세요."
+  },
+  "studio": {
+    "edit": "편집",
+    "preview": "미리 보기",
+    "triple": "3분할",
+    "morphPreview": "모핑 미리 보기",
+    "viewportsLinked": "화면 간 확대/이동 연동 중 — 클릭하여 연동 해제",
+    "viewportsUnlinked": "화면별 확대/이동 — 클릭하여 연동",
+    "importPrompt": "<a>원본</a>과 <b>대상</b> 이미지 또는 동영상을 불러오면 모핑을 미리 볼 수 있습니다.",
+    "importPromptEdit": "<a>원본</a>과 <b>대상</b> 이미지 또는 동영상을 불러와 제어 요소를 배치하세요.",
+    "preparingGpu": "GPU 준비 중…",
+    "finishShape": "도형 완성",
+    "cancelShape": "도형 그리기 취소",
+    "zoomIn": "확대",
+    "zoomOut": "축소",
+    "zoomReset": "확대/축소 초기화 (100%)"
+  },
+  "compare": {
+    "importPrompt": "스튜디오에서 <a>원본</a> 이미지와 <b>대상</b> 이미지를 불러오면 알고리즘을 비교할 수 있습니다."
+  },
+  "overlays": {
+    "features": "점과 경로",
+    "mesh": "중간 형태의 메시",
+    "tpsGrid": "변형 격자",
+    "beierField": "영향 격자",
+    "slots": {
+      "source": "원본",
+      "preview": "미리 보기",
+      "target": "대상"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "메시 ({{slot}})",
+    "overlayAria": "보조 표시: {{label}}"
+  },
+  "layerDebug": {
+    "final": "합성 결과",
+    "finalTitle": "합성된 렌더링 결과",
+    "layer": "레이어",
+    "layerTitle": "선택한 레이어의 결과",
+    "mask": "마스크",
+    "maskTitle": "선택한 영역의 마스크 또는 레이어 마스크",
+    "contrib": "적용 영역",
+    "contribTitle": "선택한 레이어의 적용 영역을 색으로 표시",
+    "selected": "선택 레이어",
+    "selectedTitle": "선택한 레이어의 보조 표시",
+    "all": "전체",
+    "allTitle": "표시 중인 모든 레이어의 보조 표시",
+    "layerStack": "레이어 순서",
+    "closeStack": "레이어 순서 닫기",
+    "opacity": "불투명도",
+    "controls": "미리 보기 설정"
+  },
+  "preview": {
+    "outsideVideoBoth": "동영상 A/B 범위 밖",
+    "outsideVideoA": "동영상 A 범위 밖",
+    "outsideVideoB": "동영상 B 범위 밖",
+    "beforeClip": "동영상 클립 전",
+    "afterClip": "동영상 클립 후",
+    "emptyClip": "빈 동영상 클립"
+  },
+  "export": {
+    "videoMissing": "내보내기 전에 누락된 동영상 파일을 모두 다시 연결하세요.",
+    "cancel": "내보내기 취소",
+    "limits": "한도: 16~3840 × 16~2160 px, 12~60 fps, 1~15초, 최대 900프레임.",
+    "errors": {
+      "unsupportedWebgpu": "이 프로젝트를 내보내려면 WebGPU가 필요합니다.",
+      "unsupportedWebcodecs": "이 브라우저에서는 동영상 내보내기에 WebCodecs를 사용할 수 없습니다.",
+      "unsupportedCodec": "선택한 해상도에서 이 코덱을 사용할 수 없습니다. 다른 형식을 선택하거나 해상도를 낮추세요.",
+      "invalidDimensions": "너비는 16~3840 px, 높이는 16~2160 px로 설정하세요.",
+      "deviceDimensionLimit": "선택한 해상도가 이 GPU의 텍스처 크기 한도를 초과합니다.",
+      "invalidFps": "프레임 속도는 12~60 fps로 설정하세요.",
+      "invalidDuration": "선택한 타임라인 구간의 길이는 1~15초여야 합니다.",
+      "tooManyFrames": "한 번에 최대 900프레임까지 내보낼 수 있습니다.",
+      "invalidBitrate": "동영상 비트 전송률은 1~20 Mbit/s로 설정하세요.",
+      "sequenceTooLarge": "이 PNG 시퀀스는 브라우저 메모리에서 내보내기에 너무 큽니다. 해상도, 길이 또는 프레임 속도를 낮추세요.",
+      "mediaMissing": "내보내기 전에 누락된 동영상 파일을 모두 다시 연결하세요.",
+      "cancelled": "내보내기를 취소했습니다.",
+      "gpuFailure": "렌더링 또는 인코딩 중에 내보내기가 실패했습니다. 설정값을 낮춰 다시 시도하세요."
+    },
+    "title": "내보내기",
+    "subtitle": "모핑을 프레임별로 렌더링하여 파일로 다운로드합니다.",
+    "output": "출력",
+    "video": "동영상",
+    "imageSequence": "이미지 시퀀스",
+    "resolution": "해상도",
+    "presets": {
+      "project": "프로젝트",
+      "source": "원본",
+      "target": "대상",
+      "custom": "사용자 지정"
+    },
+    "effective": "출력 해상도",
+    "timing": "시간 설정",
+    "duration": "길이",
+    "videoDurationNote": "동영상 내보내기는 메인 타임라인의 길이를 사용합니다.",
+    "frameRate": "프레임 속도",
+    "pingPong": "왕복 (A→B→A)",
+    "encoding": "인코딩",
+    "format": "형식",
+    "bitrate": "비트 전송률",
+    "background": "배경",
+    "backgrounds": {
+      "black": "검정",
+      "white": "흰색",
+      "transparent": "투명"
+    },
+    "importPrompt": "스튜디오에서 원본과 대상 이미지 또는 동영상을 불러오면 내보내기가 활성화됩니다.",
+    "exporting": "내보내는 중…",
+    "exportButton": "{{format}} 내보내기",
+    "frameProgress": "프레임 {{index}} / {{count, number}}",
+    "done": "내보내기가 완료되어 파일이 다운로드되었습니다.",
+    "share": "공유…",
+    "phases": {
+      "rendering": "렌더링",
+      "encoding": "인코딩",
+      "muxing": "동영상 파일 조립",
+      "zipping": "압축 파일 생성"
+    },
+    "width": "너비",
+    "height": "높이",
+    "secondsValue": "{{value}}초",
+    "frameRateValue": "{{value}} fps",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "확인",
+    "cancel": "취소"
+  },
+  "mobile": {
+    "inspector": "속성",
+    "close": "닫기",
+    "closeInspector": "속성 닫기",
+    "more": "더 보기",
+    "views": "보기"
+  },
+  "shell": {
+    "loading": "작업 공간 불러오는 중…",
+    "surfaceLoadError": "작업 공간의 이 부분을 불러올 수 없습니다.",
+    "retry": "다시 시도",
+    "panelAria": "{{tab}} 패널",
+    "collapse": "접기",
+    "panels": {
+      "left": "미디어 및 제어 요소 패널",
+      "right": "속성 패널",
+      "timeline": "타임라인 패널"
+    },
+    "zen": "집중 모드",
+    "hideChrome": "이미지 위의 조작 UI 숨기기",
+    "showChrome": "이미지 위의 조작 UI 표시"
+  },
+  "desktopGate": {
+    "title": "Morpher91은 컴퓨터용 앱입니다",
+    "body": "이 모핑 스튜디오는 WebGPU, 마우스, 넓은 화면을 기준으로 설계되었습니다. 모든 기능을 편리하게 사용하려면 Mac이나 PC에서 최신 Chrome, Edge 또는 Safari로 여세요. iPad도 지원합니다.",
+    "unsupported": "스마트폰은 지원하지 않습니다. 화면 사용성과 성능을 보장할 수 없습니다.",
+    "copyLink": "링크 복사",
+    "copied": "링크를 복사했습니다",
+    "continueAnyway": "계속하기 (지원하지 않음)"
+  },
+  "assist": {
+    "stepSatisfied": "이 단계는 완료되었습니다. 준비되면 다음으로 진행하세요.",
+    "back": "이전",
+    "next": "다음",
+    "done": "완료",
+    "quit": "가이드 종료",
+    "showMe": "보여 주기",
+    "step": "{{current}}/{{total}}단계",
+    "anchorMissing": "현재 화면에서는 이 조작 항목이 보이지 않습니다.",
+    "launcherTitle": "무엇을 하시겠어요?",
+    "launcherDescription": "원하는 작업 가이드를 선택하거나 검색하세요.",
+    "searchPlaceholder": "가이드 검색…",
+    "noResults": "일치하는 가이드가 없습니다.",
+    "suggestions": "추천",
+    "categories": {
+      "start": "시작하기",
+      "features": "제어 요소",
+      "layers-masks": "레이어와 마스크",
+      "timeline-video": "타임라인과 동영상",
+      "output": "출력"
+    },
+    "shortcuts": {
+      "undo": "실행 취소",
+      "redo": "다시 실행",
+      "delete": "선택 항목 삭제",
+      "stepFrame": "한 프레임 앞으로/뒤로",
+      "jumpEnds": "처음/끝으로 이동",
+      "zen": "집중 모드 (패널 숨기기)",
+      "hideChrome": "이미지 위의 조작 UI 숨기기/표시"
+    }
+  },
+  "about": {
+    "credits": "크레딧",
+    "version": "v{{version}}",
+    "description": "WebGPU 및 WebCodecs 기반 이미지·동영상 2D 모핑 스튜디오.",
+    "author": "제작: André Frélicot",
+    "privacyTitle": "개인정보 보호",
+    "privacy": "이미지, 동영상, 프로젝트는 사용자의 기기에서 처리됩니다. 렌더링과 내보내기는 브라우저 안에서 이루어지며, 미디어를 서버로 보내지 않습니다.",
+    "close": "닫기",
+    "date": "2026년 9월"
+  },
+  "language": {
+    "title": "언어",
+    "description": "인터페이스 언어를 선택하세요.",
+    "loading": "언어 불러오는 중: {{language}}…",
+    "loadError": "이 언어를 불러올 수 없습니다. 인터넷 연결을 확인하고 다시 시도하세요.",
+    "retry": "다시 시도",
+    "names": {
+      "en": "영어",
+      "fr": "프랑스어",
+      "de": "독일어",
+      "es": "스페인어",
+      "pt-BR": "포르투갈어 (브라질)",
+      "it": "이탈리아어",
+      "tr": "튀르키예어",
+      "id": "인도네시아어",
+      "ru": "러시아어",
+      "ja": "일본어",
+      "ko": "한국어",
+      "zh-Hans": "중국어 간체",
+      "th": "태국어",
+      "hi": "힌디어",
+      "bn": "벵골어",
+      "ar": "아랍어"
+    },
+    "restoreError": "저장된 언어({{language}})를 복원하지 못해 영어로 표시합니다. 인터넷에 연결하여 해당 언어를 불러온 후 다시 시도하세요."
+  },
+  "algorithmNames": {
+    "crossfade": "크로스페이드",
+    "mesh": "메시",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "크로스페이드",
+    "mesh": "메시",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  },
+  "demo": {
+    "button": "데모",
+    "title": "데모 미디어",
+    "subtitle": "원본 A와 대상 B에 사용할 이미지나 동영상 두 개를 선택하세요.",
+    "slotEmpty": "비어 있음 — 아래에서 선택",
+    "swap": "A ↔ B 바꾸기",
+    "filterAll": "전체",
+    "filterImages": "이미지",
+    "filterVideos": "동영상",
+    "tabAssets": "미디어",
+    "tabPresets": "프리셋",
+    "presetsEmpty": "아직 예제 프로젝트가 없습니다.",
+    "load": "프로젝트에 불러오기",
+    "loadError": "데모 미디어를 불러올 수 없습니다.",
+    "manifestError": "데모 목록을 불러올 수 없습니다.",
+    "cta": "…또는 데모 미디어 불러오기",
+    "kindImage": "정지 이미지",
+    "kindVideo": "동영상",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "같은 얼굴 쌍에 점과 선을 배치한 예제입니다. 전환 중간 지점에서 눈과 입을 비교하세요.",
+        "name": "비교 — 네 가지 알고리즘"
+      },
+      "crossfade-reference": {
+        "description": "제어 요소가 없는 예제입니다. 겹쳐 보이는 윤곽을 살펴본 뒤 비교 화면을 열어 보세요.",
+        "name": "크로스페이드 — 겹쳐 보이는 윤곽"
+      },
+      "faces-points-tps": {
+        "description": "점을 옮기고 TPS 격자를 표시하세요. 테두리 앵커를 끈 결과와도 비교해 보세요.",
+        "name": "Claire → Bunny — TPS 제어점"
+      },
+      "faces-lines-beier": {
+        "description": "눈, 코, 입에 방향이 있는 선을 배치했습니다. a, b, p로 각 선의 영향을 조절하세요.",
+        "name": "얼굴 — Beier–Neely 제어선"
+      },
+      "cars-mesh": {
+        "description": "바퀴와 실루엣이 삼각형의 위치를 결정합니다. 메시를 표시하여 변형을 확인하세요.",
+        "name": "자동차 — 메시"
+      },
+      "layer-full-frame": {
+        "description": "위쪽 레이어를 숨겨 보세요. 마스크가 없으므로 표시 중에는 Global 레이어의 이미지 전체를 대체합니다.",
+        "labels": {
+          "face": "얼굴 · 프레임 전체"
+        },
+        "name": "레이어 — 프레임 전체"
+      },
+      "layer-region-mask": {
+        "description": "얼굴에는 TPS, 주변에는 크로스페이드를 적용했습니다. ‘마스크’와 ‘적용 영역’을 확인하고 윤곽과 가장자리 페더를 조절하세요.",
+        "labels": {
+          "face": "얼굴 TPS"
+        },
+        "name": "영역 — 부위별 알고리즘"
+      },
+      "mask-invert-blend": {
+        "description": "마스크가 얼굴을 보호합니다. 레이어를 표시하거나 숨기며 불투명도 40%의 ‘곱하기’ 효과를 확인하세요.",
+        "labels": {
+          "outside": "바깥 영역 곱하기"
+        },
+        "name": "반전 마스크 — 곱하기"
+      },
+      "blend-light": {
+        "description": "두 레이어가 이미지를 밝힙니다. 얼굴에는 ‘스크린’, 주변에는 ‘더하기’를 적용했습니다. 각 레이어를 따로 확인하고 불투명도를 조절하세요.",
+        "labels": {
+          "light": "얼굴 스크린",
+          "glow": "바깥 영역 더하기"
+        },
+        "name": "혼합 — 스크린과 더하기"
+      },
+      "painted-mask": {
+        "description": "A에 칠한 마스크가 TPS 변형을 따라갑니다. 25%, 50%, 75%에서 ‘마스크’를 확인하고 브러시와 지우개를 사용해 보세요.",
+        "labels": {
+          "paint": "얼굴 페인트 마스크 TPS"
+        },
+        "name": "페인트 마스크 — 모핑 따라가기"
+      },
+      "combined-masks": {
+        "description": "경계가 선명한 영역과 페인트 마스크를 합집합으로 결합했습니다. ‘마스크’를 확인한 뒤 영역 바깥에서 지우개를 사용해 보세요.",
+        "labels": {
+          "paint": "얼굴 페인트 마스크 TPS"
+        },
+        "name": "마스크 결합 — 영역과 브러시"
+      },
+      "contours-push": {
+        "description": "‘점 밀기’(K)로 볼을 다듬은 뒤 실행 취소해 보세요. 윤곽 복사본을 닫아 다각형도 살펴보세요.",
+        "name": "윤곽 — 점을 밀어 다듬기"
+      },
+      "transition-classic": {
+        "description": "‘기본’과 ‘클래식 모핑’을 비교하세요. 변형은 0~100%, 디졸브는 30~70%입니다. 특히 시작과 끝을 살펴보세요.",
+        "name": "전환 — 클래식 모핑"
+      },
+      "layers-timing": {
+        "description": "얼굴이 머리카락보다 먼저 전환됩니다. 두 구간과 베지어 곡선을 사용했습니다. 끝까지 레이어를 표시한 상태로 두세요.",
+        "labels": {
+          "face": "먼저 전환되는 얼굴"
+        },
+        "name": "타이밍 — 얼굴 다음 주변"
+      },
+      "fruits-banana-pineapple": {
+        "description": "정지 이미지 위의 닫힌 폴리라인을 애니메이션으로 만들었습니다. 마름모 키프레임을 옮기고 왕복 재생해 보세요.",
+        "labels": {
+          "fruit": "움직이는 TPS 윤곽"
+        },
+        "name": "과일 — 키프레임과 왕복 재생"
+      },
+      "fruit-to-fox": {
+        "description": "잎은 귀로, 열매는 얼굴로 바뀝니다. 사람 얼굴의 제어점을 사용하지 않고 실루엣을 대응시킨 예제입니다.",
+        "name": "파인애플 → Foxy — 변신"
+      },
+      "transparent-cutout": {
+        "description": "정사각형 캔버스에 4:3 이미지를 배치해 여백을 투명하게 만들었습니다. 배경을 ‘투명’으로 설정하고 PNG로 내보내세요. 동영상은 배경과 합쳐집니다.",
+        "name": "내보내기 — 투명한 여백"
+      },
+      "video-faces-keyframes": {
+        "description": "눈, 코, 입술, 턱의 제어점 44개를 매 프레임 추적했습니다. 표정을 맞추기 위해 B의 소스 시작점을 조정했습니다.",
+        "name": "동영상 — 제어 요소와 키프레임"
+      },
+      "video-region-keyframes": {
+        "description": "윤곽과 입의 선이 매 프레임을 따라갑니다. 마스크를 확인한 뒤 선과 키프레임을 선택하세요.",
+        "labels": {
+          "videoFace": "움직이는 얼굴 TPS"
+        },
+        "name": "동영상 — 움직이는 마스크와 선"
+      },
+      "video-photo-alive": {
+        "description": "사진이 1초 동안 같은 얼굴의 동영상으로 바뀝니다. B에만 키프레임이 있고 A의 제어 요소는 고정되어 있습니다.",
+        "name": "사진 → 동영상 — 살아나는 얼굴"
+      },
+      "video-clips-timing": {
+        "description": "A는 0~3초, B는 1.5~4.5초입니다. 트리밍 후에도 제어 요소는 원본 미디어의 시간을 따릅니다. 두 클립이 겹치는 구간에서 모핑합니다.",
+        "name": "클립 — 트리밍과 겹침"
+      },
+      "video-body-walk": {
+        "description": "프레임마다 제어점 16개를 배치했습니다. 경찰관은 자세 감지, 로봇은 수동 배치와 광학 추적을 사용했습니다. 레이어는 클립이 겹치는 구간에 적용됩니다.",
+        "labels": {
+          "body": "겹치는 구간의 모핑"
+        },
+        "name": "걷기 — 전신 모핑"
+      }
+    },
+    "assets": {
+      "red-sport-car": "빨간 스포츠카",
+      "red-city-car": "빨간 소형차",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "노래하는 Foxy",
+      "bunny-singing": "노래하는 Bunny",
+      "claire-singing": "노래하는 Claire",
+      "anna-singing": "노래하는 Anna",
+      "cop-body-walk": "걷는 경찰관",
+      "karl2000-body-walk": "걷는 Karl2000",
+      "banana": "바나나",
+      "pineapple": "파인애플"
+    },
+    "presetsNote": "이 프리셋은 스튜디오의 기능을 보여 주기 위해 자동으로 생성됩니다. 예술적 완성도를 보장하지는 않습니다."
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "이미지 두 개 불러오기",
+        "description": "데모 미디어나 자신의 파일로 원본 A와 대상 B를 채웁니다.",
+        "keywords": "불러오기 가져오기 이미지 데모 미디어 프리셋 예제 원본 대상 열기 파일",
+        "steps": {
+          "demo": {
+            "title": "데모 미디어로 시작하기",
+            "body": "‘데모’ → ‘프리셋’에서 기능을 익힐 수 있는 예제를 엽니다. 각 카드에는 원본/대상 쌍과 연습 과제가 있습니다. ‘비교 — 네 가지 알고리즘’부터 시작해 마스크, 전환, 키프레임, 동영상을 살펴보세요. 예제는 살펴보기 좋은 시간으로 열리며, 알맞은 화면과 레이어가 선택됩니다. 제어 요소의 이름은 인터페이스 언어와 관계없이 영어로 유지됩니다.\n\n이 프리셋은 스튜디오의 기능을 보여 주기 위해 자동으로 생성됩니다. 예술적 완성도를 보장하지는 않습니다.",
+            "missingHint": "‘데모’를 여세요."
+          },
+          "source": {
+            "title": "자신의 파일 사용하기 — 원본 A",
+            "body": "이미지나 동영상을 불러올 수 있습니다. 모핑이 시작되는 쪽입니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "target": {
+            "title": "대상 B",
+            "body": "두 번째 자리에도 미디어를 불러오세요. 두 미디어가 모두 준비되면 프로젝트가 생성되고 미리 보기가 표시됩니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "모핑 알고리즘 선택하기",
+        "description": "프로젝트의 알고리즘을 선택하고 네 가지 방식의 차이를 알아봅니다.",
+        "keywords": "알고리즘 크로스페이드 메시 tps thin-plate spline beier neely 변형",
+        "preconditionHint": "먼저 이미지 두 개를 불러오세요. 상단의 ‘데모’에서 간편하게 시작할 수 있습니다.",
+        "steps": {
+          "algorithm-list": {
+            "title": "네 가지 알고리즘",
+            "body": "크로스페이드는 변형 없이 이미지를 혼합합니다. 메시는 Delaunay 삼각형을 변형합니다. Thin-Plate Spline은 이미지 전체를 부드럽게 휘게 합니다. Beier–Neely는 방향이 있는 선을 따라 변형합니다.",
+            "missingHint": "‘스튜디오’ 탭에서 ‘알고리즘’ 섹션을 여세요."
+          },
+          "pick-tps": {
+            "title": "Thin-Plate Spline 사용해 보기",
+            "body": "Thin-Plate Spline을 클릭하세요. 새로운 변형으로 미리 보기가 갱신됩니다.",
+            "missingHint": "‘스튜디오’ 탭에서 ‘알고리즘’ 섹션을 여세요."
+          },
+          "settings": {
+            "title": "알고리즘 설정",
+            "body": "선택한 알고리즘의 설정이 카드 아래에 나타납니다. TPS의 λ 슬라이더는 대응의 정확도와 변형의 부드러움 사이의 균형을 조절합니다.",
+            "missingHint": "TPS 또는 Beier–Neely를 선택하면 설정이 나타납니다."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "스튜디오 화면 조작하기",
+        "description": "편집, 미리 보기, 3분할 전환과 화면 확대, 이동, 초기화를 알아봅니다.",
+        "keywords": "화면 보기 편집 미리 보기 3분할 확대 축소 이동 초기화 뷰포트",
+        "preconditionHint": "먼저 이미지 두 개를 불러오세요. 상단의 ‘데모’에서 간편하게 시작할 수 있습니다.",
+        "steps": {
+          "toggle": {
+            "title": "세 가지 보기 모드",
+            "body": "‘편집’은 제어 요소를 배치할 A | B, ‘미리 보기’는 크게 확대한 모핑 결과, ‘3분할’은 A | 모핑 | B를 표시합니다. 작업 영역이 좁으면 메뉴에서 보기 모드를 선택하세요.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "triple": {
+            "title": "3분할로 전환하기",
+            "body": "‘3분할’을 클릭하세요. 양쪽에서 편집하면서 가운데에서 모핑을 실시간으로 확인할 수 있습니다. 미리 보기 영역이 좁으면 ‘미리 보기 설정’을 열어 ‘합성 결과’, ‘레이어’, ‘마스크’, ‘적용 영역’을 선택하거나 보조 표시와 레이어가 쌓인 순서를 확인하세요.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "zoom-pan": {
+            "title": "확대, 이동, 초기화",
+            "body": "휠이나 핀치로 확대/축소하세요. 스페이스 키를 누른 채 드래그하거나 ‘화면 이동’ 도구(H)를 사용해 화면을 옮기세요. 더블 클릭/두 번 탭하면 화면이 초기화됩니다. 터치 기기에서는 작업 영역이 고정되고 패널과 시트만 스크롤됩니다.",
+            "missingHint": "‘스튜디오’ 탭에서 ‘편집’ 또는 ‘3분할’을 여세요."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "프로젝트 저장하고 다시 열기",
+        "description": "프로젝트 구조와 포함된 이미지를 저장합니다. 다시 열 때 로컬 동영상을 연결합니다.",
+        "keywords": "저장 열기 불러오기 프로젝트 파일 morph json 다시 연결",
+        "preconditionHint": "먼저 이미지 두 개를 불러오세요. 상단의 ‘데모’에서 간편하게 시작할 수 있습니다.",
+        "steps": {
+          "save": {
+            "title": "저장",
+            "body": "‘저장’을 클릭하면 이미지, 제어 요소, 레이어, 타임라인이 포함된 .morph.json 파일이 다운로드됩니다. 동영상 파일 자체는 기기에 남고 메타데이터만 기록됩니다. 서버로 전송되는 것은 없습니다."
+          },
+          "load": {
+            "title": "다시 열기",
+            "body": "‘열기’는 프로젝트 구조와 포함된 이미지를 복원합니다. 로컬 동영상은 각 A/B 자리에서 ‘다시 연결’을 사용하세요. 모든 파일이 연결되면 재생과 내보내기를 사용할 수 있습니다."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "크레딧",
+        "description": "제작자, 앱 버전, 기기 내 미디어 처리 안내.",
+        "keywords": "앱 정보 크레딧 개인정보 보호",
+        "steps": {
+          "about": {
+            "title": "앱 정보 열기",
+            "body": "상단의 ‘앱 정보’에서 제작자, 빌드 버전, 기기 내 미디어 처리 방식을 확인할 수 있습니다. 작은 화면에서는 ‘더 보기’ 메뉴를 여세요.",
+            "missingHint": "집중 모드를 종료하거나 ‘더 보기’ 메뉴를 열어 ‘앱 정보’를 찾으세요."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "인터페이스 언어 바꾸기",
+        "description": "스튜디오, 예제, 가이드의 언어를 선택합니다.",
+        "keywords": "언어 번역 설정 인터페이스 한국어",
+        "stepTitle": "언어 선택",
+        "body": "상단의 언어 선택 버튼을 여세요. 각 카드에는 국기와 해당 언어로 쓴 이름이 표시됩니다. 선택은 이 기기에 저장되며, 불러오기가 끝나면 인터페이스가 바뀝니다. 글꼴을 다운로드하려면 인터넷 연결이 필요할 수 있습니다. 프로젝트와 제어 요소의 이름은 바뀌지 않습니다. 저장된 언어를 복원할 수 없으면 영어로 열리고 안내문과 다시 시도 버튼이 나타납니다. 좁은 화면에서는 모든 명령을 표시하기 위해 상단 바가 여러 줄이 될 수 있습니다."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "먼저 이미지 두 개를 불러오세요. 상단의 ‘데모’에서 간편하게 시작할 수 있습니다."
+      },
+      "studioHint": "‘스튜디오’ 탭에서 ‘편집’을 여세요.",
+      "placePointsGuide": {
+        "title": "대응점 배치하기",
+        "description": "메시와 TPS에 A의 어느 위치가 B의 어느 위치와 대응하는지 알려 줍니다.",
+        "keywords": "점 제어점 제어 요소 대응점 대응 메시 tps 배치 조절",
+        "steps": {
+          "pick-tool": {
+            "title": "점 도구",
+            "body": "‘점’ 도구를 선택하세요(단축키 P)."
+          },
+          "place-a": {
+            "title": "A에서 특징적인 위치 클릭하기",
+            "body": "‘원본 A’에서 눈이나 모서리 같은 특징적인 위치를 클릭하세요. 짝이 되는 핸들이 B에 나타납니다."
+          },
+          "adjust-b": {
+            "title": "B 쪽 조절하기",
+            "body": "‘대상 B’의 핸들을 다른 이미지의 대응하는 위치로 드래그하세요. 이 대응 관계가 변형을 제어합니다."
+          },
+          "preview": {
+            "title": "변형 확인하기",
+            "body": "‘미리 보기’나 ‘3분할’로 전환하면 메시/TPS가 점을 따라 이미지를 변형하는 모습을 확인할 수 있습니다."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "방향이 있는 선 그리기 (Beier–Neely)",
+        "description": "선의 쌍으로 Beier–Neely의 변형장을 제어합니다.",
+        "keywords": "선 선분 방향 beier neely 윤곽 그리기",
+        "steps": {
+          "pick-tool": {
+            "title": "선 도구",
+            "body": "‘선’ 도구를 선택하세요(단축키 L)."
+          },
+          "drag-line": {
+            "title": "A의 윤곽을 따라 드래그하기",
+            "body": "턱선이나 지붕 같은 뚜렷한 윤곽을 따라 누른 채 드래그하여 선을 그리세요. 짝이 되는 선이 B에 나타납니다."
+          },
+          "orient-b": {
+            "title": "B에서도 방향 맞추기",
+            "body": "B 쪽 선의 두 끝점을 대응하는 윤곽으로 옮기되, A와 같은 방향을 유지하세요. Beier–Neely는 각 선을 따르는 방향과 수직 방향으로 투영합니다."
+          },
+          "use-beier": {
+            "title": "Beier–Neely로 전환하기",
+            "body": "선으로 변형하는 알고리즘은 Beier–Neely뿐입니다. 해당 알고리즘 카드를 선택하세요.",
+            "missingHint": "‘스튜디오’ 탭에서 ‘알고리즘’ 섹션을 여세요."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "폴리라인 그리기",
+        "description": "점을 하나씩 놓거나 자유롭게 그립니다. 끝점에서 이어 그릴 수도 있습니다.",
+        "keywords": "폴리라인 꺾은선 곡선 경로 자유형 그리기 이어 그리기 끝점",
+        "steps": {
+          "pick-tool": {
+            "title": "폴리라인 도구",
+            "body": "‘폴리라인’ 도구를 선택하세요(단축키 Y)."
+          },
+          "tap-by-tap": {
+            "title": "점 하나씩 놓기",
+            "body": "윤곽을 따라 차례로 클릭하세요. ⏎로 완성하고 Esc로 취소합니다."
+          },
+          "freehand": {
+            "title": "자유롭게 그리기",
+            "body": "누른 채 한 번에 드래그하세요. 놓으면 경로가 자동으로 단순화됩니다."
+          },
+          "resume": {
+            "title": "끝점에서 이어 그리기",
+            "body": "‘폴리라인’ 도구가 선택된 상태에서 열린 폴리라인의 끝점을 클릭하면 이어 그릴 수 있습니다."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "열린 폴리라인 닫기",
+        "description": "열린 폴리라인을 닫힌 다각형으로 바꾸는 두 가지 방법을 알아봅니다.",
+        "keywords": "닫기 다각형 폴리곤 폴리라인 고리 끝점 첫 점",
+        "steps": {
+          "intro": {
+            "title": "닫는 방법 두 가지",
+            "body": "폴리라인을 그리는 중에 닫거나, 나중에 ‘선택’ 도구로 닫을 수 있습니다."
+          },
+          "close-first": {
+            "title": "그리는 중: 첫 점 클릭하기",
+            "body": "그리는 중에 첫 번째 점을 다시 클릭하세요. 윤곽이 닫히고 그리기가 끝납니다."
+          },
+          "drop-endpoint": {
+            "title": "그린 후: 두 끝점 겹치기",
+            "body": "‘선택’ 도구로 열린 폴리라인의 한쪽 끝점을 다른 끝점 위로 드래그한 뒤 놓으세요. 같은 방식으로 닫힙니다."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "영역 그리기",
+        "description": "닫힌 영역을 레이어 마스크로 사용하고 가장자리 페더를 조절합니다.",
+        "keywords": "영역 마스크 올가미 윤곽 가장자리 페더 부드럽게 그리기",
+        "steps": {
+          "pick-tool": {
+            "title": "영역 마스크 도구",
+            "body": "‘영역 마스크’ 도구를 선택하세요. 윤곽이 항상 닫힌 형태로 만들어집니다."
+          },
+          "outline": {
+            "title": "A에서 영역 둘러싸기",
+            "body": "얼굴이나 물체 주위에 점을 놓거나 자유롭게 그리세요. ⏎를 누르거나 윤곽을 닫아 완성하세요."
+          },
+          "feather": {
+            "title": "가장자리 부드럽게 하기",
+            "body": "영역을 선택하고 ‘가장자리 페더’를 조절하여 경계를 부드럽게 만드세요. 이 영역을 마스크로 사용하는 레이어에도 별도의 가장자리 방식과 페더 설정이 있습니다.",
+            "missingHint": "오른쪽 속성 패널에서 ‘선택 항목’을 여세요."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "선택, 이름 변경, 잠금, 숨기기",
+        "description": "제어 요소를 관리하고 마우스를 올렸을 때 A↔B 대응 표시를 확인합니다.",
+        "keywords": "선택 다중 선택 shift 이름 변경 잠금 숨기기 마우스 호버 대응 제어 요소",
+        "steps": {
+          "pick-tool": {
+            "title": "선택 도구",
+            "body": "‘선택’ 도구를 선택하세요(단축키 V)."
+          },
+          "select": {
+            "title": "핸들 클릭하기",
+            "body": "제어 요소의 핸들을 클릭하여 선택하세요. Shift를 누르면 여러 항목을 선택할 수 있습니다. 마우스를 올리면 다른 패널의 대응 핸들이 강조됩니다."
+          },
+          "inspector": {
+            "title": "이름, 잠금, 표시 상태 바꾸기",
+            "body": "‘선택 항목’에서 제어 요소의 이름을 바꾸고 ‘표시’와 ‘잠금’을 켜거나 끌 수 있습니다.",
+            "missingHint": "오른쪽 속성 패널에서 ‘선택 항목’을 여세요."
+          },
+          "list": {
+            "title": "제어 요소 목록",
+            "body": "왼쪽 목록에 모든 상태가 반영됩니다. 눈 아이콘은 숨기기, 자물쇠는 잠금이며, 항목을 클릭하면 선택됩니다."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "점 밀기와 실행 취소",
+        "description": "점 밀기 도구로 주변 핸들을 함께 옮기고 각 편집을 취소하거나 다시 실행합니다.",
+        "keywords": "밀기 점 다듬기 변형 국소 반경 실행 취소 다시 실행 되돌리기",
+        "steps": {
+          "pick-tool": {
+            "title": "점 밀기 도구",
+            "body": "‘점 밀기’ 도구를 선택하세요(단축키 K)."
+          },
+          "sculpt": {
+            "title": "드래그하여 다듬기",
+            "body": "이미지 위에서 드래그하세요. 원 안의 핸들이 밀리며, 중심에 가까울수록 더 크게 움직입니다."
+          },
+          "undo": {
+            "title": "실행 취소 / 다시 실행",
+            "body": "Cmd/Ctrl+Z로 제어 요소 편집을 취소하고 Cmd/Ctrl+Shift+Z로 다시 실행하세요."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "오른쪽 속성 패널에서 ‘레이어’를 여세요.",
+      "needsProject": {
+        "preconditionHint": "먼저 이미지 두 개를 불러오세요. 상단의 ‘데모’에서 간편하게 시작할 수 있습니다."
+      },
+      "activateLayerStep": {
+        "title": "추가한 레이어 선택하기",
+        "body": "‘레이어’에서 Global 이외의 레이어를 클릭하세요. 목록 아래에 속성이 나타납니다."
+      },
+      "createLayerGuide": {
+        "title": "레이어 만들기",
+        "description": "기본 레이어인 Global 위에 레이어를 쌓고 각 레이어의 상태를 확인합니다.",
+        "keywords": "레이어 만들기 추가 쌓기 global 순서 배지 상태 적용 영역",
+        "steps": {
+          "add": {
+            "title": "레이어 추가하기",
+            "body": "‘레이어 추가’를 클릭하세요. 새 레이어가 바로 선택됩니다."
+          },
+          "global-vs-layers": {
+            "title": "Global과 추가 레이어",
+            "body": "Global은 맨 아래에서 기본 모핑을 렌더링합니다. 추가한 레이어는 목록 순서대로 그 위에 합성됩니다. 화살표로 쌓인 순서를 바꾸세요."
+          },
+          "badges": {
+            "title": "레이어 상태 배지",
+            "body": "각 행에는 현재 레이어의 상태가 표시됩니다. ‘프레임 전체’는 아래 이미지 전체를 덮는 상태입니다. 그 밖에 ‘마스크 적용’, ‘효과 없음’, ‘클립 밖’ 등이 있습니다."
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "레이어의 알고리즘 바꾸기",
+        "description": "프로젝트 기본값을 바꾸지 않고 레이어에 별도 알고리즘을 지정합니다.",
+        "keywords": "레이어 알고리즘 재정의 개별 메시 tps beier 레이어별",
+        "steps": {
+          "override": {
+            "title": "레이어별 설정 선택하기",
+            "body": "레이어 속성의 ‘알고리즘’ 메뉴에서 선택한 값은 이 레이어에만 프로젝트 기본값 대신 적용됩니다."
+          },
+          "badge": {
+            "title": "레이어 설정 배지",
+            "body": "‘알고리즘’ 섹션의 제목에 레이어별 설정 배지가 나타납니다. 제어 요소를 선택한 상태에서도 모든 설정에 접근할 수 있습니다.",
+            "missingHint": "오른쪽 속성 패널에서 ‘알고리즘’을 여세요."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "영역으로 레이어 마스킹하기",
+        "description": "레이어를 지정한 영역에만 표시하고, 경계를 부드럽게 하거나 마스크를 반전합니다.",
+        "keywords": "마스크 영역 지정 레이어 선명 부드럽게 페더 가장자리 반전",
+        "preconditionHint": "먼저 ‘영역 마스크’ 도구로 영역을 그리세요. ‘마스크’ 메뉴에 영역 목록이 나타납니다.",
+        "steps": {
+          "assign": {
+            "title": "영역 지정하기",
+            "body": "‘마스크’ 메뉴에서 영역을 선택하세요. 레이어가 그 안쪽에만 합성됩니다."
+          },
+          "modes": {
+            "title": "경계와 반전 설정하기",
+            "body": "‘마스크 가장자리’에서 ‘선명하게’와 ‘부드럽게’를 전환하고 페더 값을 조절하세요. ‘마스크 반전’은 안쪽과 바깥쪽을 바꿉니다."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "마스크 칠하기",
+        "description": "이미지 위에 직접 마스크를 칠하고 미리 보기에서 실시간으로 확인합니다.",
+        "keywords": "칠하기 브러시 마스크 지름 경도 강도 지우개 지우기 실시간",
+        "steps": {
+          "pick-brush": {
+            "title": "마스크 브러시",
+            "body": "‘마스크 브러시’를 선택하세요(단축키 B). 현재 선택한 레이어의 마스크에 칠합니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "settings": {
+            "title": "브러시 설정",
+            "body": "지름, 경도, 강도로 획의 굵기, 경계의 부드러움, 농도를 조절합니다. 지우개는 칠한 마스크를 지웁니다. 체크 상자를 켜거나 ⌥를 누른 채 드래그하세요.",
+            "missingHint": "브러시를 선택하면 도구 모음 아래에 설정이 나타납니다."
+          },
+          "paint": {
+            "title": "이미지 위에 칠하기",
+            "body": "이미지 위에서 브러시를 드래그하면 가운데 미리 보기에 즉시 반영됩니다. ‘합성 결과’와 ‘마스크’ 보기로 확인하세요. 페인트 마스크는 레이어의 변형을 따라가므로 모핑 중에도 이미지 내용과 함께 움직입니다.",
+            "missingHint": "‘스튜디오’ 탭에서 ‘편집’을 여세요."
+          },
+          "clear": {
+            "title": "마스크 전체 지우기",
+            "body": "‘페인트 마스크’ → ‘지우기’를 선택하면 이 레이어의 페인트 마스크 전체가 초기화됩니다."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "불투명도, 혼합, 클립, 전환 설정하기",
+        "description": "레이어의 영향을 조절하고 타임라인에서 표시 구간과 디졸브 시점을 정합니다.",
+        "keywords": "불투명도 혼합 모드 합성 클립 타임라인 시작 길이 이징 전환 변형 디졸브 구간 프리셋 클래식 모핑 베지어 곡선 겹침",
+        "steps": {
+          "opacity": {
+            "title": "불투명도",
+            "body": "불투명도를 1보다 낮추면 레이어가 아래 레이어와 혼합됩니다."
+          },
+          "blend": {
+            "title": "혼합 모드",
+            "body": "‘혼합 모드’에서 아래 레이어와 합성하는 방식을 선택합니다. ‘표준’, ‘곱하기’, ‘스크린’, ‘더하기’가 있습니다. ‘곱하기’는 색상 값을 곱하고, ‘스크린’은 밝게 만듭니다. ‘더하기’는 색상과 불투명도를 더한 뒤 각각의 최댓값을 넘지 않도록 제한합니다."
+          },
+          "clip": {
+            "title": "표시 시간 제한하기",
+            "body": "타임라인에서 레이어 블록을 드래그하면 이동하고 가장자리를 드래그하면 트리밍됩니다. 레이어 속성의 ‘시작’과 ‘길이’로 정확한 값을 입력할 수도 있습니다."
+          },
+          "windows": {
+            "title": "변형은 길게, 디졸브는 짧게",
+            "body": "‘전환’ 섹션에서는 클립 길이에 대한 백분율로 두 구간을 정합니다. ‘변형’은 형태의 변화, ‘디졸브’는 A와 B 이미지의 혼합을 제어합니다. ‘클래식 모핑’ 프리셋은 변형을 0~100%, 디졸브를 30~70%로 설정합니다. 시작과 끝에서 위치가 맞지 않는 부분이 겹쳐 보이는 현상을 줄일 수 있습니다."
+          },
+          "windows-timeline": {
+            "title": "타임라인에서 구간 확인하기",
+            "body": "레이어 블록의 아래쪽 가장자리에 두 구간이 표시됩니다. 밝은 띠는 디졸브, 가는 선은 변형입니다. 이를 통해 클립 안에서 디졸브가 일어나는 위치를 알 수 있습니다."
+          },
+          "easing": {
+            "title": "곡선 조절하기",
+            "body": "이징은 두 구간 안에서 변화가 진행되는 방식을 정합니다. 기본 곡선 다섯 개 또는 핸들 두 개로 조절하는 ‘사용자 지정 (베지어)’를 선택할 수 있습니다. ‘디졸브에 별도 곡선 사용’을 켜면 디졸브의 진행을 변형과 독립적으로 설정할 수 있습니다."
+          },
+          "global-too": {
+            "title": "Global에도 적용하기",
+            "body": "Global을 선택하세요. 이 기본 레이어에도 ‘전환’ 섹션이 있습니다. 기본 구간은 0~100%입니다. 크로스페이드는 이미지를 변형하지 않으므로 디졸브만 작용합니다."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "먼저 이미지 두 개를 불러오세요. 상단의 ‘데모’에서 간편하게 시작할 수 있습니다."
+      },
+      "timelineGuide": {
+        "title": "타임라인 조작하기",
+        "description": "애니메이션 탐색, 재생, 프레임 단위 이동과 클립 이동을 알아봅니다.",
+        "keywords": "타임라인 스크럽 스크러빙 재생 일시 정지 프레임 타임코드 클립 이동 트리밍 집중 모드 tab 패널 접기 눈금자 재생 헤드",
+        "steps": {
+          "scrub": {
+            "title": "재생 헤드 옮기기",
+            "body": "눈금자를 클릭하거나 드래그하세요. 재생 헤드가 이동하고 해당 시간의 프레임이 미리 보기에 표시됩니다. 스타일러스로 원하는 위치를 터치한 뒤, 펜촉을 화면에 댄 채로 드래그하세요.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "transport": {
+            "title": "재생, 일시 정지, 프레임 이동",
+            "body": "‘재생’은 애니메이션을 실시간으로 재생합니다. 화살표 버튼이나 ←/→ 키로 한 프레임씩 이동하세요. 화살표 버튼을 Alt+클릭하면 처음이나 끝으로 이동합니다. 타임코드는 초:프레임 형식입니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "clips": {
+            "title": "클립 이동과 트리밍",
+            "body": "이미지와 동영상 클립은 레이어 위의 A/B 트랙에 있습니다. 블록이나 가장자리를 드래그하세요. 클립을 선택하면 ‘시작’과 ‘길이’가 나타납니다. 정지 이미지에는 원래 길이가 없으므로 클립을 늘리면 프로젝트 재생 시간도 늘어날 수 있습니다. 한쪽 클립이 없는 구간에서는 다른 미디어만 표시되고, 양쪽 모두 없으면 배경이 표시됩니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "still-image-timing": {
+            "title": "정지 이미지의 표시 시간 정하기",
+            "body": "A나 B의 이미지 클립을 선택하고 길이를 초 또는 초:프레임으로 입력하세요. 클립을 줄여도 프로젝트 재생 시간은 유지됩니다. 늘리면 필요한 만큼 타임라인이 연장됩니다. 제어 요소의 키프레임은 메인 타임라인의 시간에 고정됩니다. 클립을 옮기거나 늘려도 키프레임 애니메이션의 시점과 길이는 바뀌지 않습니다. 클립은 프로젝트에 저장됩니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "zen": {
+            "title": "집중 모드에서도 눈금자 사용하기",
+            "body": "{{shortcut}} 키를 누르면 패널 세 개를 숨겨 모핑을 크게 볼 수 있습니다. 타임라인은 높이 40 px의 막대로 줄어들지만 눈금, 타임코드, 재생 헤드는 남습니다. 클릭하거나 재생 헤드를 드래그하여 계속 애니메이션을 탐색할 수 있습니다. {{shortcut}} 키를 다시 누르면 패널이 돌아옵니다."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "동영상 사이 모핑하기",
+        "description": "동영상을 불러오고 A/B 클립을 배치한 뒤 제어 요소에 키프레임을 설정합니다.",
+        "keywords": "동영상 비디오 클립 가져오기 불러오기 키프레임 배치 트랙 노래 마름모 드래그 시간 변경",
+        "steps": {
+          "get-videos": {
+            "title": "동영상 두 개 준비하기",
+            "body": "‘데모’의 ‘동영상’ 필터에는 노래하는 영상 네 개와 걷는 영상 두 개가 있습니다. 자신의 동영상을 A/B 자리에 끌어다 놓아도 됩니다. 정지 이미지와 동영상을 함께 사용할 수도 있습니다. 저장된 프로젝트에는 동영상 메타데이터가 들어가며, 다시 열 때 로컬 파일을 다시 연결해야 합니다.",
+            "missingHint": "‘데모’를 여세요."
+          },
+          "place-clips": {
+            "title": "A/B 클립 배치하기",
+            "body": "각 동영상에는 자체 트랙이 있습니다. 드래그하여 옮기고 가장자리로 트리밍하세요. ‘시작’, ‘소스 시작점’, ‘길이’로 정확한 값을 입력할 수 있습니다. 클립을 옮기거나 트리밍하는 동안 재생 헤드를 움직이지 않아도 그 위치의 미리 보기가 갱신됩니다. 프로젝트 재생 시간은 유지됩니다. 제어 요소의 키프레임은 트리밍 후에도 원본 미디어의 시간에 연결되며 저장하고 다시 열어도 유지됩니다. 클립 밖에서는 해당 쪽이 미리 보기와 내보내기에서 제외되고 다른 쪽 이미지가 화면을 채웁니다.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          },
+          "keyframes": {
+            "title": "키프레임 설정하기",
+            "body": "제어 요소를 선택하세요. ‘키프레임’에는 A/B 각각의 이전 키프레임 ◀, 현재 시간에 키프레임을 추가하거나 삭제하는 ◆, 다음 키프레임 ▶와 개수가 표시됩니다. 제어 요소는 키프레임 사이에서 이동합니다. 정지 이미지에서는 ◆로 첫 키프레임을 추가하기 전까지 시간에 따라 제어 요소의 위치가 바뀌지 않습니다. 추가한 뒤에는 다른 시간에 요소를 옮길 때마다 키프레임이 생겨 모핑의 이동 경로를 비선형으로 조절할 수 있습니다.",
+            "missingHint": "오른쪽 속성 패널에서 ‘선택 항목’을 여세요."
+          },
+          "timeline-keyframes": {
+            "title": "타임라인에서 키프레임 편집하기",
+            "body": "선택한 제어 요소의 키프레임은 재생되는 시간에 A/B 트랙 위의 마름모로 표시됩니다. 클릭하여 해당 시간으로 이동하고, 드래그하여 프레임 단위로 시간을 바꾸세요. 드래그 한 번은 실행 취소 한 번으로 되돌릴 수 있습니다. Alt+클릭하면 삭제됩니다. 너무 가까운 마름모는 개수가 표시된 막대로 합쳐집니다. 각각의 키프레임으로 이동하려면 속성 패널의 화살표를 사용하세요.",
+            "missingHint": "‘스튜디오’ 탭을 여세요."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "알고리즘 비교하기",
+        "description": "같은 프로젝트를 네 가지 알고리즘으로 나란히 확인합니다.",
+        "keywords": "비교 격자 나란히 크로스페이드 메시 tps beier",
+        "steps": {
+          "open": {
+            "title": "비교 열기",
+            "body": "‘비교’ 탭은 같은 이미지, 제어 요소, τ를 사용하는 결과를 2×2 격자로 표시합니다."
+          },
+          "read": {
+            "title": "격자 살펴보기",
+            "body": "이미지의 특징이 어긋나 있으면 크로스페이드에서는 윤곽이 겹쳐 보입니다. 메시, TPS, Beier–Neely는 두 이미지를 공통의 중간 형태로 변형하여 대응하는 특징을 맞춥니다."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "동영상이나 이미지로 내보내기",
+        "description": "모핑을 동영상 또는 PNG 이미지를 담은 ZIP 파일로 내보냅니다.",
+        "keywords": "내보내기 export mp4 webm av1 zip png 이미지 동영상 렌더링 다운로드",
+        "steps": {
+          "open": {
+            "title": "내보내기 열기",
+            "body": "모든 렌더링은 기기에서 처리되며 서버로 전송되지 않습니다."
+          },
+          "settings": {
+            "title": "출력 선택하기",
+            "body": "동영상에는 WebCodecs와 사용 가능한 H.264, VP9 또는 AV1 인코더 중 하나가 필요합니다. PNG 이미지 시퀀스에는 동영상 코덱이 필요 없으며 배경의 투명도를 유지할 수 있습니다. 동영상은 검정 또는 흰색 배경과 합쳐집니다. 해상도, 길이, 프레임 속도를 설정하세요."
+          },
+          "run": {
+            "title": "내보내기",
+            "body": "스튜디오가 각 프레임을 계산하며 진행 상황을 표시하고, 완료되면 파일을 다운로드합니다. 내보내는 중에는 같은 버튼으로 작업을 취소할 수 있습니다."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "키보드 단축키 확인하기",
+        "description": "앱의 명령 목록에 정의된 모든 단축키를 확인합니다.",
+        "keywords": "키보드 단축키 키 도움말 목록",
+        "steps": {
+          "list": {
+            "title": "키보드 단축키"
+          }
+        }
+      }
+    }
+  }
+}

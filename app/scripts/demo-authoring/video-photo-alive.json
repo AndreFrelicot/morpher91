@@ -1,0 +1,418 @@
+{
+  "version": 1,
+  "id": "afa8a6d7-e226-4aa3-9086-ee155f28936c",
+  "name": "La photo prend vie",
+  "createdAt": "2026-08-27T14:21:07.717Z",
+  "updatedAt": "2026-08-27T14:21:07.718Z",
+  "canvas": {
+    "aspectRatio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "background": "black"
+  },
+  "images": {
+    "source": {
+      "id": "5cb55df5-b84f-4679-8c63-902054d412f2",
+      "name": "claire.webp",
+      "width": 1448,
+      "height": 1086,
+      "source": {
+        "kind": "external-file-placeholder",
+        "value": "claire.webp"
+      },
+      "placement": {
+        "mode": "contain",
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "scale": 1,
+        "rotationRad": 0,
+        "translate": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    "target": {
+      "id": "ca48ca92-9808-4ab4-a9ee-b0a17986e9ef",
+      "name": "claire_singing.mp4",
+      "width": 1112,
+      "height": 834,
+      "source": {
+        "kind": "external-file-placeholder",
+        "value": "claire_singing.mp4"
+      },
+      "placement": {
+        "mode": "contain",
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "scale": 1,
+        "rotationRad": 0,
+        "translate": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  },
+  "features": [
+    {
+      "id": "cc44a4c7-8a3b-4a63-9997-563c5603dc5b",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.717Z",
+      "updatedAt": "2026-08-27T14:21:07.717Z",
+      "kind": "point",
+      "a": {
+        "x": 0.44,
+        "y": 0.4475
+      },
+      "b": {
+        "x": 0.45,
+        "y": 0.4325
+      },
+      "label": "Left eye",
+      "tracks": {
+        "b": [
+          {
+            "timeSec": 0.1,
+            "pos": {
+              "x": 0.45,
+              "y": 0.4325
+            }
+          },
+          {
+            "timeSec": 2.3,
+            "pos": {
+              "x": 0.43,
+              "y": 0.39875
+            }
+          },
+          {
+            "timeSec": 4.6,
+            "pos": {
+              "x": 0.44,
+              "y": 0.39125
+            }
+          },
+          {
+            "timeSec": 6.8,
+            "pos": {
+              "x": 0.455,
+              "y": 0.39125
+            }
+          }
+        ]
+      },
+      "semantic": "left-eye"
+    },
+    {
+      "id": "7d28f540-216c-4390-afe5-d45e7835aae3",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.717Z",
+      "updatedAt": "2026-08-27T14:21:07.717Z",
+      "kind": "point",
+      "a": {
+        "x": 0.573,
+        "y": 0.4475
+      },
+      "b": {
+        "x": 0.585,
+        "y": 0.425
+      },
+      "label": "Right eye",
+      "tracks": {
+        "b": [
+          {
+            "timeSec": 0.1,
+            "pos": {
+              "x": 0.585,
+              "y": 0.425
+            }
+          },
+          {
+            "timeSec": 2.3,
+            "pos": {
+              "x": 0.575,
+              "y": 0.39125
+            }
+          },
+          {
+            "timeSec": 4.6,
+            "pos": {
+              "x": 0.575,
+              "y": 0.38749999999999996
+            }
+          },
+          {
+            "timeSec": 6.8,
+            "pos": {
+              "x": 0.595,
+              "y": 0.39125
+            }
+          }
+        ]
+      },
+      "semantic": "right-eye"
+    },
+    {
+      "id": "5bd0d495-586e-4898-85f9-89b542a40bdc",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.717Z",
+      "updatedAt": "2026-08-27T14:21:07.717Z",
+      "kind": "point",
+      "a": {
+        "x": 0.5,
+        "y": 0.5337500000000001
+      },
+      "b": {
+        "x": 0.515,
+        "y": 0.515
+      },
+      "label": "Nose",
+      "tracks": {
+        "b": [
+          {
+            "timeSec": 0.1,
+            "pos": {
+              "x": 0.515,
+              "y": 0.515
+            }
+          },
+          {
+            "timeSec": 2.3,
+            "pos": {
+              "x": 0.51,
+              "y": 0.4775
+            }
+          },
+          {
+            "timeSec": 4.6,
+            "pos": {
+              "x": 0.505,
+              "y": 0.47000000000000003
+            }
+          },
+          {
+            "timeSec": 6.8,
+            "pos": {
+              "x": 0.525,
+              "y": 0.47000000000000003
+            }
+          }
+        ]
+      },
+      "semantic": "nose"
+    },
+    {
+      "id": "b5806e13-1d1a-4c80-843e-4be591c2698c",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.717Z",
+      "updatedAt": "2026-08-27T14:21:07.717Z",
+      "kind": "point",
+      "a": {
+        "x": 0.505,
+        "y": 0.575
+      },
+      "b": {
+        "x": 0.51,
+        "y": 0.59
+      },
+      "label": "Mouth",
+      "tracks": {
+        "b": [
+          {
+            "timeSec": 0.1,
+            "pos": {
+              "x": 0.51,
+              "y": 0.59
+            }
+          },
+          {
+            "timeSec": 2.3,
+            "pos": {
+              "x": 0.5,
+              "y": 0.5375000000000001
+            }
+          },
+          {
+            "timeSec": 4.6,
+            "pos": {
+              "x": 0.49,
+              "y": 0.5375000000000001
+            }
+          },
+          {
+            "timeSec": 6.8,
+            "pos": {
+              "x": 0.52,
+              "y": 0.5225000000000001
+            }
+          }
+        ]
+      },
+      "semantic": "mouth"
+    },
+    {
+      "id": "ea10ffd9-b780-4c68-9a04-ccba59636c58",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.717Z",
+      "updatedAt": "2026-08-27T14:21:07.717Z",
+      "kind": "point",
+      "a": {
+        "x": 0.5,
+        "y": 0.66125
+      },
+      "b": {
+        "x": 0.51,
+        "y": 0.665
+      },
+      "label": "Chin",
+      "tracks": {
+        "b": [
+          {
+            "timeSec": 0.1,
+            "pos": {
+              "x": 0.51,
+              "y": 0.665
+            }
+          },
+          {
+            "timeSec": 2.3,
+            "pos": {
+              "x": 0.5,
+              "y": 0.6125
+            }
+          },
+          {
+            "timeSec": 4.6,
+            "pos": {
+              "x": 0.5,
+              "y": 0.62
+            }
+          },
+          {
+            "timeSec": 6.8,
+            "pos": {
+              "x": 0.525,
+              "y": 0.605
+            }
+          }
+        ]
+      },
+      "semantic": "chin"
+    },
+    {
+      "id": "afe9d277-4bee-4636-bf4a-348cbec59d2f",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.717Z",
+      "updatedAt": "2026-08-27T14:21:07.717Z",
+      "kind": "point",
+      "a": {
+        "x": 0.23,
+        "y": 0.7775
+      },
+      "b": {
+        "x": 0.17,
+        "y": 0.7925
+      },
+      "label": "Left shoulder"
+    },
+    {
+      "id": "72475ebe-0f2f-48d4-81ca-8b9fda55c914",
+      "enabled": true,
+      "createdAt": "2026-08-27T14:21:07.718Z",
+      "updatedAt": "2026-08-27T14:21:07.718Z",
+      "kind": "point",
+      "a": {
+        "x": 0.77,
+        "y": 0.7775
+      },
+      "b": {
+        "x": 0.84,
+        "y": 0.7925
+      },
+      "label": "Right shoulder"
+    }
+  ],
+  "layers": [
+    {
+      "id": "global",
+      "name": "Global",
+      "enabled": true,
+      "visible": true,
+      "locked": false,
+      "zIndex": 0,
+      "featureIds": "all",
+      "opacity": 1,
+      "compositeMode": "normal",
+      "timing": {
+        "warpStart": 0,
+        "warpEnd": 1,
+        "dissolveStart": 0,
+        "dissolveEnd": 1,
+        "easing": "smoothstep"
+      },
+      "clip": {
+        "startSec": 0,
+        "durationSec": 6.916667
+      }
+    }
+  ],
+  "timeline": {
+    "durationSec": 6.916667,
+    "fps": 30,
+    "loop": true,
+    "pingPong": false
+  },
+  "activeAlgorithm": "thin-plate-spline",
+  "algorithmSettings": {
+    "crossfade": {
+      "gammaCorrectBlend": false
+    },
+    "mesh": {
+      "borderAnchors": true,
+      "borderAnchorCount": 8,
+      "showWireframe": false
+    },
+    "thinPlateSpline": {
+      "lambda": 0.001,
+      "borderAnchors": true,
+      "borderAnchorCount": 8,
+      "samplePolylines": true,
+      "polylineSampleSpacing": 0.03,
+      "showGrid": false
+    },
+    "beierNeely": {
+      "a": 0.001,
+      "b": 2,
+      "p": 0,
+      "maxLines": 256,
+      "samplePolylines": true
+    }
+  },
+  "videos": {
+    "target": {
+      "id": "1d7e885a-6b58-43d4-9b24-22050c396e33",
+      "name": "claire_singing.mp4",
+      "width": 1112,
+      "height": 834,
+      "durationSec": 6.916667,
+      "source": {
+        "kind": "external-video-placeholder",
+        "value": "claire_singing.mp4"
+      },
+      "timeline": {
+        "startSec": 0,
+        "inSec": 0,
+        "durationSec": 6.916667
+      }
+    }
+  }
+}

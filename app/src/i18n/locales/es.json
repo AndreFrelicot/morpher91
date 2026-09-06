@@ -1,0 +1,1201 @@
+{
+  "topbar": {
+    "new": "Nuevo",
+    "newConfirmTitle": "Nuevo proyecto",
+    "newConfirm": "¿Descartar el proyecto actual y crear uno nuevo?",
+    "newConfirmAction": "Descartar",
+    "load": "Abrir",
+    "save": "Guardar",
+    "export": "Exportar",
+    "help": "Ayuda",
+    "language": "Idioma",
+    "loadErrorTitle": "Error al abrir",
+    "loadError": "No se ha podido abrir el proyecto.",
+    "videoSaveTitle": "Guardar el proyecto",
+    "videoSaveNote": "Los archivos de vídeo no se incluyen en el proyecto. Tendrás que volver a vincularlos al abrirlo de nuevo. ¿Guardar el proyecto?",
+    "videoSaveAction": "Guardar de todos modos",
+    "loadErrors": {
+      "invalidJson": "Este archivo de proyecto no es válido.",
+      "unsupportedVersion": "Esta versión del proyecto no es compatible.",
+      "invalidStructure": "El proyecto contiene datos no válidos o incompletos.",
+      "limitExceeded": "El proyecto supera los límites de seguridad de la aplicación.",
+      "invalidReference": "El proyecto contiene vínculos rotos a capas o referencias geométricas.",
+      "invalidMask": "El proyecto contiene una máscara pintada dañada."
+    },
+    "tabs": {
+      "studio": "Estudio",
+      "compare": "Comparar"
+    },
+    "about": "Acerca de"
+  },
+  "sidebar": {
+    "tools": "Herramientas",
+    "assets": "Medios",
+    "features": "Referencias",
+    "layers": "Capas"
+  },
+  "tools": {
+    "select": "Selección",
+    "point": "Punto",
+    "line": "Línea",
+    "polyline": "Polilínea",
+    "region": "Máscara de región",
+    "brush": "Pincel de máscara",
+    "push": "Empujar puntos",
+    "pan": "Desplazar la vista"
+  },
+  "assets": {
+    "sourceA": "Origen A",
+    "targetB": "Destino B",
+    "replace": "Reemplazar imagen/vídeo",
+    "choose": "Elegir imagen/vídeo…",
+    "loading": "Cargando…",
+    "video": "vídeo",
+    "videoMissing": "Es necesario volver a vincular el archivo de vídeo",
+    "relink": "Volver a vincular",
+    "replaceInstead": "Reemplazar por otra imagen o vídeo",
+    "relinkVideoOnly": "Elige el archivo de vídeo esperado para volver a vincularlo a esta posición.",
+    "relinkMismatch": "Este vídeo no coincide con el archivo guardado. Comprueba sus dimensiones y duración, o reemplaza el medio.",
+    "relinkNoSavedVideo": "El proyecto ya no espera un vídeo en esta posición.",
+    "relinkAlreadyLinked": "Este vídeo ya está vinculado.",
+    "loadError": "No se ha podido cargar el medio seleccionado."
+  },
+  "brush": {
+    "selectLayerHint": "Selecciona una capa para pintar su máscara. La capa base Global no tiene máscara.",
+    "diameter": "Diámetro",
+    "hardness": "Dureza",
+    "strength": "Intensidad",
+    "eraser": "Borrador",
+    "eraserHold": "(mantener ⌥)"
+  },
+  "features": {
+    "empty": "No hay referencias en esta capa.",
+    "hide": "Ocultar",
+    "show": "Mostrar",
+    "hideFeature": "Ocultar referencia",
+    "showFeature": "Mostrar referencia",
+    "lock": "Bloquear",
+    "unlock": "Desbloquear",
+    "lockFeature": "Bloquear referencia",
+    "unlockFeature": "Desbloquear referencia",
+    "kinds": {
+      "point": "Punto",
+      "segment": "Línea",
+      "polyline": "Polilínea",
+      "region": "Región"
+    },
+    "visible": "Visible",
+    "locked": "Bloqueada",
+    "weight": "Peso",
+    "layer": "Capa",
+    "landmark": "Significado",
+    "role": "Función",
+    "feather": "Calado",
+    "none": "ninguno",
+    "semantics": {
+      "left-eye": "ojo izquierdo",
+      "right-eye": "ojo derecho",
+      "nose": "nariz",
+      "mouth": "boca",
+      "chin": "mentón",
+      "jaw": "mandíbula",
+      "hairline": "línea del cabello",
+      "custom": "personalizado"
+    },
+    "roles": {
+      "face": "rostro",
+      "hair": "cabello",
+      "neck": "cuello",
+      "body": "cuerpo",
+      "background": "fondo",
+      "custom": "personalizado"
+    },
+    "keyframes": "Fotogramas clave",
+    "noKeyframes": "ninguno",
+    "prevKeyframe": "Fotograma clave anterior de {{side}}",
+    "nextKeyframe": "Fotograma clave siguiente de {{side}}",
+    "toggleKeyframe": "Añadir / quitar fotograma clave de {{side}} en el instante actual",
+    "keyframeCount_one": "{{count, number}} fotograma clave",
+    "keyframeCount_other": "{{count, number}} fotogramas clave",
+    "keyframeCount_many": "{{count, number}} fotogramas clave",
+    "keyframeHintStill": "Sin vídeo, esta referencia permanece fija. Añade el primer fotograma clave con ◆ para animarla: después, cada desplazamiento en otro instante añade uno nuevo (trayectoria de morphing no lineal).",
+    "selectedCount_one": "{{count, number}} referencia seleccionada",
+    "selectedCount_other": "{{count, number}} referencias seleccionadas",
+    "selectedCount_many": "{{count, number}} referencias seleccionadas",
+    "deleteSelected": "Eliminar selección",
+    "coordinates": "Coordenadas",
+    "pts": "{{count, number}} ptos."
+  },
+  "layers": {
+    "importFirst": "Importa primero las imágenes.",
+    "add": "Añadir capa",
+    "defaultName": "Capa {{index}}",
+    "hideLayer": "Ocultar capa",
+    "showLayer": "Mostrar capa",
+    "lockLayer": "Bloquear capa",
+    "unlockLayer": "Desbloquear capa",
+    "moveUp": "Subir capa",
+    "moveDown": "Bajar capa",
+    "featureCount_one": "{{count, number}} referencia",
+    "featureCount_other": "{{count, number}} referencias",
+    "featureCount_many": "{{count, number}} referencias",
+    "globalHint": "La capa base Global conserva los ajustes del proyecto. Selecciona una capa de usuario para editar sus propiedades.",
+    "status": {
+      "base": "base",
+      "disabled": "desactivada",
+      "hidden": "oculta",
+      "outside-clip": "fuera del clip",
+      "no-contribution": "sin efecto",
+      "masked": "con máscara",
+      "full-frame": "imagen completa"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "Algoritmo",
+    "selection": "Selección",
+    "selectionHint": "Selecciona una referencia para editarla.",
+    "overrideBadge": "algoritmo propio: {{name}}",
+    "soon": "próximamente",
+    "panel": "Propiedades"
+  },
+  "algorithms": {
+    "crossfade": "Fundido lineal, sin deformación",
+    "mesh": "Deformación mediante triángulos de Delaunay",
+    "thin-plate-spline": "Deformación RBF global y suave",
+    "beier-neely": "Morphing mediante un campo de líneas"
+  },
+  "tps": {
+    "smoothing": "Suavizado (λ)",
+    "borderAnchors": "Anclajes del borde",
+    "anchorsPerSide": "Anclajes por lado",
+    "samplePolylines": "Muestrear polilíneas",
+    "sampleSpacing": "Separación de muestras"
+  },
+  "beier": {
+    "distanceSoftness": "Suavizado de distancia (a)",
+    "falloffExponent": "Exponente de atenuación (b)",
+    "lineLengthInfluence": "Influencia de la longitud (p)",
+    "maxLines": "Máximo de líneas",
+    "samplePolylines": "Muestrear polilíneas"
+  },
+  "layerInspector": {
+    "title": "Capa",
+    "enabled": "Activada",
+    "visible": "Visible",
+    "locked": "Bloqueada",
+    "scope": {
+      "base": "Capa base: muestra el morphing predeterminado bajo las capas de usuario.",
+      "disabled": "Capa desactivada: no interviene en la vista previa ni en la exportación.",
+      "hidden": "Capa oculta: se omite en la vista previa y en la exportación.",
+      "outside-clip": "Fuera del clip: el cabezal de reproducción está fuera del bloque de esta capa.",
+      "no-contribution": "Sin efecto: añade referencias o asigna una máscara para que esta capa afecte al resultado.",
+      "masked": "Capa con máscara: la máscara define la zona que se compone sobre las capas inferiores.",
+      "full-frame": "Capa de imagen completa: sin máscara, esta capa cubre las capas inferiores."
+    },
+    "algorithm": "Algoritmo",
+    "projectDefault": "Predeterminado del proyecto",
+    "opacity": "Opacidad",
+    "blend": "Fusión",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Multiplicar",
+      "screen": "Trama",
+      "lighter": "Sumar"
+    },
+    "mask": "Máscara",
+    "none": "ninguna",
+    "paintedMask": "Máscara pintada",
+    "clear": "Borrar",
+    "maskMode": "Modo de máscara",
+    "maskModes": {
+      "hard": "borde definido",
+      "feathered": "borde calado"
+    },
+    "maskFeather": "Calado",
+    "invertMask": "Invertir máscara",
+    "timelineClip": "Clip en la línea de tiempo",
+    "start": "Inicio",
+    "duration": "Duración",
+    "easing": "Interpolación",
+    "easings": {
+      "linear": "lineal",
+      "ease-in": "aceleración",
+      "ease-out": "desaceleración",
+      "ease-in-out": "aceleración/desaceleración",
+      "smoothstep": "smoothstep",
+      "bezier": "personalizada (Bézier)"
+    },
+    "transition": "Transición",
+    "warpWindow": "Deformación (%)",
+    "warpStart": "Inicio de la deformación (%)",
+    "warpEnd": "Fin de la deformación (%)",
+    "dissolveWindow": "Fundido (%)",
+    "dissolveStart": "Inicio del fundido (%)",
+    "dissolveEnd": "Fin del fundido (%)",
+    "presets": {
+      "label": "Ajuste preestablecido",
+      "standard": "Estándar",
+      "classicMorph": "Morphing clásico",
+      "lateDissolve": "Fundido tardío",
+      "custom": "Personalizado"
+    },
+    "distinctDissolveEasing": "Curva independiente para el fundido",
+    "dissolveEasing": "Interpolación del fundido",
+    "bezierCurve": "Curva {{name}}",
+    "bezierHandle1": "Primer tirador de la curva",
+    "bezierHandle2": "Segundo tirador de la curva",
+    "bezier": {
+      "x1": "Tirador 1 x",
+      "y1": "Tirador 1 y",
+      "x2": "Tirador 2 x",
+      "y2": "Tirador 2 y"
+    },
+    "stackPosition": "Posición en la pila: {{position}}",
+    "delete": "Eliminar capa",
+    "confirmTitle": "¿Eliminar la capa?",
+    "confirmBody": "¿Eliminar «{{name}}»? Sus referencias pasarán a ser globales y no se eliminarán.",
+    "cancel": "Cancelar",
+    "closeConfirm": "Cerrar confirmación de eliminación"
+  },
+  "timeline": {
+    "videoMissing": "Vuelve a vincular los archivos de vídeo que faltan antes de reproducir.",
+    "time": "Tiempo",
+    "layers": "Capas",
+    "outsideA": "fuera de A",
+    "outsideB": "fuera de B",
+    "position": "Posición en la línea de tiempo",
+    "prevFrame": "Fotograma anterior",
+    "prevFrameTitle": "Fotograma anterior; Alt-clic para ir al inicio",
+    "nextFrame": "Fotograma siguiente",
+    "nextFrameTitle": "Fotograma siguiente; Alt-clic para ir al final",
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "start": "inicio",
+    "in": "entrada",
+    "dur": "duración",
+    "timecodeAria": "Código de tiempo: {{label}}",
+    "timecodeTitle": "Código de tiempo: {{label}} (segundos:fotogramas)",
+    "tauTitle": "Posición en la línea de tiempo (segundos:fotogramas)",
+    "syncWaiting": "procesando… {{elapsed}}",
+    "syncWaitingTitle": "El motor de vista previa está esperando: {{phase}}. Las vistas aún muestran el fotograma anterior.",
+    "syncPhaseEngine": "apertura del motor de vídeo (lectura del archivo, inicio del decodificador)",
+    "syncPhaseFrame": "búsqueda y decodificación del fotograma y envío a la GPU",
+    "syncLast": "último renderizado: {{elapsed}}",
+    "syncLastTitle": "Duración del último renderizado al recorrer la línea de tiempo (se muestra si supera 0,5 s)",
+    "keyframeTitle": "Fotograma clave {{time}} s — {{names}} · clic: ir, arrastrar: mover, ⌥-clic: eliminar",
+    "keyframeTitleShared": "Fotograma clave {{time}} s — {{names}} · clic: ir, ⌥-clic: eliminar",
+    "keyframeGroupTitle": "{{count, number}} fotogramas clave entre {{from}} y {{to}} s — demasiado próximos para editarlos aquí · clic: ir al primero",
+    "transitionWindows": "{{name}} — fundido {{dissolveStart}}–{{dissolveEnd}} %, deformación {{warpStart}}–{{warpEnd}} %",
+    "imageClipName": "Imagen · {{name}}",
+    "mediaClip": "Clip {{slot}} — {{name}}",
+    "imageClipHelp": "Imagen fija: arrastra para mover, estira los bordes o selecciona el clip para ajustar Inicio y Duración. Al alargar el clip, la línea de tiempo puede ampliarse.",
+    "altClick": "Alt-clic"
+  },
+  "hud": {
+    "releaseToClose": "soltar para cerrar",
+    "eraser": "borrador",
+    "maskBrushSelectLayer": "pincel de máscara · selecciona una capa",
+    "points_one": "{{count, number}} pto.",
+    "points_other": "{{count, number}} ptos.",
+    "points_many": "{{count, number}} ptos.",
+    "finishHint": "⏎ terminar · Esc cancelar",
+    "cancelHint": "Esc cancelar"
+  },
+  "notices": {
+    "noWebgpu": "Esta demo utiliza WebGPU para renderizar.\nParece que tu navegador o dispositivo no lo admite.\n\nPrueba con:\n- Chrome o Edge reciente\n- Safari reciente\n- Firefox compatible con WebGPU",
+    "tooManyFeatures": "Este proyecto contiene muchas referencias.\nLa vista previa pasa a la mitad de resolución.\nLa exportación final sigue disponible.",
+    "deviceLost": "Se ha perdido el contexto de la GPU (memoria insuficiente o reinicio del controlador).",
+    "reload": "Recargar",
+    "noWebcodecs": "La vista previa funciona, pero este navegador no permite exportar vídeo MP4.",
+    "codecUnsupported": "El códec solicitado no está disponible con esta resolución. Prueba una resolución inferior, otro formato u otro navegador."
+  },
+  "studio": {
+    "edit": "Edición",
+    "preview": "Vista previa",
+    "triple": "Triple",
+    "morphPreview": "Vista previa del morphing",
+    "viewportsLinked": "Zoom y desplazamiento vinculados entre vistas; haz clic para desvincular",
+    "viewportsUnlinked": "Zoom y desplazamiento independientes por vista; haz clic para vincular",
+    "importPrompt": "Importa una imagen o vídeo de <a>origen</a> y otro de <b>destino</b> para previsualizar el morphing.",
+    "importPromptEdit": "Importa una imagen o vídeo de <a>origen</a> y otro de <b>destino</b> para empezar a colocar referencias.",
+    "preparingGpu": "Preparando la GPU…",
+    "finishShape": "Terminar forma",
+    "cancelShape": "Cancelar forma",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "zoomReset": "Restablecer zoom (100 %)"
+  },
+  "compare": {
+    "importPrompt": "Importa una imagen de <a>origen</a> y una de <b>destino</b> en el Estudio para comparar los algoritmos."
+  },
+  "overlays": {
+    "features": "Puntos y trazados",
+    "mesh": "Malla interpolada",
+    "tpsGrid": "Cuadrícula de deformación",
+    "beierField": "Cuadrícula de influencia",
+    "slots": {
+      "source": "Origen",
+      "preview": "Vista previa",
+      "target": "Destino"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Malla ({{slot}})",
+    "overlayAria": "Superposición: {{label}}"
+  },
+  "layerDebug": {
+    "final": "Final",
+    "finalTitle": "Resultado compuesto",
+    "layer": "Capa",
+    "layerTitle": "Resultado de la capa seleccionada",
+    "mask": "Máscara",
+    "maskTitle": "Máscara de la región seleccionada o de la capa",
+    "contrib": "Contrib.",
+    "contribTitle": "Superposición de contribución",
+    "selected": "Selección",
+    "selectedTitle": "Superposiciones de la capa seleccionada",
+    "all": "Todas",
+    "allTitle": "Superposiciones de todas las capas visibles",
+    "layerStack": "Pila de capas",
+    "closeStack": "Cerrar pila de capas",
+    "opacity": "opacidad",
+    "controls": "Controles de vista previa"
+  },
+  "preview": {
+    "outsideVideoBoth": "fuera de los vídeos A/B",
+    "outsideVideoA": "fuera del vídeo A",
+    "outsideVideoB": "fuera del vídeo B",
+    "beforeClip": "antes del clip de vídeo",
+    "afterClip": "después del clip de vídeo",
+    "emptyClip": "clip de vídeo vacío"
+  },
+  "export": {
+    "videoMissing": "Vuelve a vincular todos los archivos de vídeo que faltan antes de exportar.",
+    "cancel": "Cancelar exportación",
+    "limits": "Límites: 16–3840 × 16–2160 px, 12–60 fps, 1–15 s, 900 fotogramas como máximo.",
+    "errors": {
+      "unsupportedWebgpu": "Se necesita WebGPU para exportar este proyecto.",
+      "unsupportedWebcodecs": "WebCodecs no está disponible para exportar vídeo en este navegador.",
+      "unsupportedCodec": "Este códec no está disponible con la resolución elegida. Prueba otro formato o una resolución inferior.",
+      "invalidDimensions": "La anchura debe estar entre 16 y 3840 px, y la altura entre 16 y 2160 px.",
+      "deviceDimensionLimit": "La resolución elegida supera el límite de tamaño de textura de esta GPU.",
+      "invalidFps": "La velocidad de fotogramas debe estar entre 12 y 60 fps.",
+      "invalidDuration": "El intervalo elegido de la línea de tiempo debe durar entre 1 y 15 segundos.",
+      "tooManyFrames": "Una exportación puede contener como máximo 900 fotogramas.",
+      "invalidBitrate": "La tasa de bits del vídeo debe estar entre 1 y 20 Mbit/s.",
+      "sequenceTooLarge": "Esta secuencia PNG es demasiado grande para exportarla en la memoria del navegador. Reduce la resolución, duración o velocidad de fotogramas.",
+      "mediaMissing": "Vuelve a vincular todos los archivos de vídeo que faltan antes de exportar.",
+      "cancelled": "Exportación cancelada.",
+      "gpuFailure": "La exportación ha fallado durante el renderizado o la codificación. Prueba con ajustes inferiores."
+    },
+    "title": "Exportar",
+    "subtitle": "Renderiza el morphing fotograma a fotograma en un archivo descargable.",
+    "output": "Salida",
+    "video": "Vídeo",
+    "imageSequence": "Secuencia de imágenes",
+    "resolution": "Resolución",
+    "presets": {
+      "project": "Proyecto",
+      "source": "Origen",
+      "target": "Destino",
+      "custom": "Personalizada"
+    },
+    "effective": "Resolución efectiva",
+    "timing": "Tiempos",
+    "duration": "Duración",
+    "videoDurationNote": "Las exportaciones de vídeo utilizan la duración de la línea de tiempo principal.",
+    "frameRate": "Velocidad de fotogramas",
+    "pingPong": "Ida y vuelta (A→B→A)",
+    "encoding": "Codificación",
+    "format": "Formato",
+    "bitrate": "Tasa de bits",
+    "background": "Fondo",
+    "backgrounds": {
+      "black": "Negro",
+      "white": "Blanco",
+      "transparent": "Transparente"
+    },
+    "importPrompt": "Importa una imagen o vídeo de origen y otro de destino en el Estudio para activar la exportación.",
+    "exporting": "Exportando…",
+    "exportButton": "Exportar {{format}}",
+    "frameProgress": "fotograma {{index}} / {{count, number}}",
+    "done": "Exportación terminada. Se ha descargado el archivo.",
+    "share": "Compartir…",
+    "phases": {
+      "rendering": "Renderizado",
+      "encoding": "Codificación",
+      "muxing": "Ensamblado del vídeo",
+      "zipping": "Creación del archivo ZIP"
+    },
+    "width": "Anchura",
+    "height": "Altura",
+    "secondsValue": "{{value}} s",
+    "frameRateValue": "{{value}} fps",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "Aceptar",
+    "cancel": "Cancelar"
+  },
+  "mobile": {
+    "inspector": "Propiedades",
+    "close": "Cerrar",
+    "closeInspector": "Cerrar propiedades",
+    "more": "Más",
+    "views": "Vistas"
+  },
+  "shell": {
+    "loading": "Cargando el espacio de trabajo…",
+    "surfaceLoadError": "No se ha podido cargar esta parte del espacio de trabajo.",
+    "retry": "Reintentar",
+    "panelAria": "Panel {{tab}}",
+    "collapse": "Contraer",
+    "panels": {
+      "left": "Panel de medios y referencias",
+      "right": "Panel de propiedades",
+      "timeline": "Panel de línea de tiempo"
+    },
+    "zen": "Modo zen",
+    "hideChrome": "Ocultar controles superpuestos a las imágenes",
+    "showChrome": "Mostrar controles superpuestos a las imágenes"
+  },
+  "desktopGate": {
+    "title": "Morpher91 está diseñado para ordenadores",
+    "body": "El estudio de morphing utiliza WebGPU, un ratón y una pantalla grande. Abre esta página en un Mac o PC con Chrome, Edge o Safari recientes para disfrutar de todas sus funciones. También es compatible con iPad.",
+    "unsupported": "El uso en teléfonos no está admitido: no se garantizan la interfaz ni el rendimiento.",
+    "copyLink": "Copiar enlace",
+    "copied": "Enlace copiado",
+    "continueAnyway": "Continuar de todos modos (no admitido)"
+  },
+  "assist": {
+    "stepSatisfied": "Paso completado. Continúa cuando quieras.",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "done": "Terminar",
+    "quit": "Salir de la guía",
+    "showMe": "Mostrar",
+    "step": "Paso {{current}}/{{total}}",
+    "anchorMissing": "Este elemento no está visible en la vista actual.",
+    "launcherTitle": "¿Qué quieres hacer?",
+    "launcherDescription": "Explora las guías contextuales o busca una.",
+    "searchPlaceholder": "Buscar una guía…",
+    "noResults": "No se ha encontrado ninguna guía.",
+    "suggestions": "Sugerencias",
+    "categories": {
+      "start": "Primeros pasos",
+      "features": "Referencias",
+      "layers-masks": "Capas y máscaras",
+      "timeline-video": "Línea de tiempo y vídeo",
+      "output": "Salida"
+    },
+    "shortcuts": {
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "delete": "Eliminar selección",
+      "stepFrame": "Avanzar/retroceder un fotograma",
+      "jumpEnds": "Ir al inicio / al final",
+      "zen": "Modo zen (ocultar paneles)",
+      "hideChrome": "Ocultar / mostrar controles superpuestos a las imágenes"
+    }
+  },
+  "about": {
+    "credits": "Créditos",
+    "version": "v{{version}}",
+    "description": "Un estudio WebGPU y WebCodecs de morphing 2D para imágenes y vídeos.",
+    "author": "Creado por André Frélicot.",
+    "privacyTitle": "Privacidad",
+    "privacy": "Tus imágenes, vídeos y proyectos se procesan en tu dispositivo. El renderizado y la exportación se realizan en el navegador, sin enviar tus medios a un servidor.",
+    "close": "Cerrar",
+    "date": "Septiembre de 2026"
+  },
+  "language": {
+    "title": "Idioma",
+    "description": "Elige el idioma de la interfaz.",
+    "loading": "Cargando {{language}}…",
+    "loadError": "No se ha podido cargar este idioma. Comprueba tu conexión e inténtalo de nuevo.",
+    "retry": "Reintentar",
+    "names": {
+      "en": "Inglés",
+      "fr": "Francés",
+      "de": "Alemán",
+      "es": "Español",
+      "pt-BR": "Portugués (Brasil)",
+      "it": "Italiano",
+      "tr": "Turco",
+      "id": "Indonesio",
+      "ru": "Ruso",
+      "ja": "Japonés",
+      "ko": "Coreano",
+      "zh-Hans": "Chino simplificado",
+      "th": "Tailandés",
+      "hi": "Hindi",
+      "bn": "Bengalí",
+      "ar": "Árabe"
+    },
+    "restoreError": "No se ha podido restaurar el idioma {{language}}. La interfaz está en inglés. Conéctate para cargar este idioma e inténtalo de nuevo."
+  },
+  "algorithmNames": {
+    "crossfade": "Fundido",
+    "mesh": "Malla",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Fundido",
+    "mesh": "Malla",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Medios de demostración",
+    "subtitle": "Elige dos imágenes o vídeos para Origen A y Destino B.",
+    "slotEmpty": "vacío — elige abajo",
+    "swap": "Intercambiar A ↔ B",
+    "filterAll": "Todos",
+    "filterImages": "Imágenes",
+    "filterVideos": "Vídeos",
+    "tabAssets": "Medios",
+    "tabPresets": "Ejemplos",
+    "presetsEmpty": "Todavía no hay proyectos de ejemplo.",
+    "load": "Cargar en el proyecto",
+    "loadError": "No se han podido cargar los medios de demostración.",
+    "manifestError": "No se ha podido cargar el catálogo de demostración.",
+    "cta": "…o carga medios de demostración",
+    "kindImage": "Imagen",
+    "kindVideo": "Vídeo",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "La misma pareja de rostros, con puntos y líneas. Compara los ojos y la boca a mitad de la transición.",
+        "name": "Comparar — cuatro algoritmos"
+      },
+      "crossfade-reference": {
+        "description": "Sin referencias: observa los contornos dobles y prueba la vista Comparar.",
+        "name": "Fundido — observar las imágenes dobles"
+      },
+      "faces-points-tps": {
+        "description": "Mueve un punto, muestra la cuadrícula TPS y compara el resultado con los anclajes del borde desactivados.",
+        "name": "Claire → Bunny — puntos TPS"
+      },
+      "faces-lines-beier": {
+        "description": "Líneas orientadas en los ojos, la nariz y la boca. Ajusta su influencia con a, b y p.",
+        "name": "Rostros — líneas Beier–Neely"
+      },
+      "cars-mesh": {
+        "description": "Las ruedas y la silueta guían los triángulos. Activa la malla para examinar la deformación.",
+        "name": "Coches — malla"
+      },
+      "layer-full-frame": {
+        "description": "Oculta la capa superior: sin máscara, reemplaza toda la imagen de la capa Global.",
+        "labels": {
+          "face": "Rostro a imagen completa"
+        },
+        "name": "Capa — imagen completa"
+      },
+      "layer-region-mask": {
+        "description": "TPS en el rostro, Fundido alrededor. Examina las vistas Máscara y Contrib.; ajusta el contorno y su calado.",
+        "labels": {
+          "face": "Rostro con TPS"
+        },
+        "name": "Región — un algoritmo por zona"
+      },
+      "mask-invert-blend": {
+        "description": "La máscara protege el rostro. Muestra y oculta la capa para observar el modo Multiplicar al 40 % de opacidad.",
+        "labels": {
+          "outside": "Exterior con Multiplicar"
+        },
+        "name": "Máscara invertida — Multiplicar"
+      },
+      "blend-light": {
+        "description": "Dos capas aclaran la imagen: Trama en el rostro, Sumar alrededor. Aísla cada capa y ajusta su opacidad.",
+        "labels": {
+          "light": "Rostro con Trama",
+          "glow": "Exterior con Sumar"
+        },
+        "name": "Fusión — Trama y Sumar"
+      },
+      "painted-mask": {
+        "description": "La máscara pintada en A sigue la deformación TPS. Examina Máscara al 25, 50 y 75 %, y prueba el pincel y el borrador.",
+        "labels": {
+          "paint": "Rostro pintado con TPS"
+        },
+        "name": "Máscara pintada — seguir el morphing"
+      },
+      "combined-masks": {
+        "description": "La región de borde definido se une a la máscara pintada. Examina Máscara y prueba el borrador fuera de la región.",
+        "labels": {
+          "paint": "Rostro pintado con TPS"
+        },
+        "name": "Máscaras combinadas — región y pincel"
+      },
+      "contours-push": {
+        "description": "Selecciona Empujar puntos (K), retoca la mejilla y deshaz el cambio. Cierra una copia del contorno para explorar los polígonos.",
+        "name": "Contornos — esculpir empujando puntos"
+      },
+      "transition-classic": {
+        "description": "Compara Estándar y Morphing clásico: deformación de 0 a 100 %, fundido de 30 a 70 %. Observa sobre todo el principio y el final.",
+        "name": "Transición — morphing clásico"
+      },
+      "layers-timing": {
+        "description": "El rostro cambia antes que el cabello. Dos intervalos y una curva Bézier; mantén las capas visibles hasta el final.",
+        "labels": {
+          "face": "Rostro adelantado"
+        },
+        "name": "Tiempos — rostro y después exterior"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Una polilínea cerrada animada sobre imágenes fijas. Mueve los rombos y activa la reproducción de ida y vuelta.",
+        "labels": {
+          "fruit": "Contorno TPS animado"
+        },
+        "name": "Frutas — fotogramas clave e ida y vuelta"
+      },
+      "fruit-to-fox": {
+        "description": "La corona se convierte en orejas y la fruta en un rostro. Una correspondencia entre siluetas, sin referencias de rostro humano.",
+        "name": "Piña → Foxy — metamorfosis"
+      },
+      "transparent-cutout": {
+        "description": "Imágenes 4:3 en un marco cuadrado: los márgenes son transparentes. Exporta a PNG con fondo Transparente; el vídeo rellena el fondo.",
+        "name": "Exportar — marco transparente"
+      },
+      "video-faces-keyframes": {
+        "description": "44 referencias seguidas en cada fotograma: ojos, nariz, labios y mandíbula. El punto de entrada de B se desplaza en su vídeo de origen para aproximar las expresiones.",
+        "name": "Vídeo — referencias y fotogramas clave"
+      },
+      "video-region-keyframes": {
+        "description": "El contorno y la línea de la boca siguen cada fotograma. Examina la máscara y selecciona la línea y sus fotogramas clave.",
+        "labels": {
+          "videoFace": "Rostro animado con TPS"
+        },
+        "name": "Vídeo — máscara y línea animadas"
+      },
+      "video-photo-alive": {
+        "description": "La foto se convierte en el vídeo del mismo rostro en un segundo. Solo B tiene fotogramas clave; las referencias de A permanecen fijas.",
+        "name": "Foto → vídeo — cobrar vida"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 s, B: 1,5–4,5 s. Las referencias siguen el tiempo de los medios pese a los recortes; el morphing ocupa el intervalo en que coinciden.",
+        "name": "Clips — recorte y solapamiento"
+      },
+      "video-body-walk": {
+        "description": "16 referencias por fotograma. Pose detectada en el policía; referencias manuales y seguimiento óptico en el robot. La capa actúa durante el solapamiento.",
+        "labels": {
+          "body": "Morphing durante el solapamiento"
+        },
+        "name": "Caminar — morphing de cuerpo entero"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Coche deportivo rojo",
+      "red-city-car": "Coche urbano rojo",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy cantando",
+      "bunny-singing": "Bunny cantando",
+      "claire-singing": "Claire cantando",
+      "anna-singing": "Anna cantando",
+      "cop-body-walk": "Policía caminando",
+      "karl2000-body-walk": "Karl2000 caminando",
+      "banana": "Banana",
+      "pineapple": "Piña"
+    },
+    "presetsNote": "Estos ejemplos se generan automáticamente para mostrar las funciones del estudio. El resultado artístico no está garantizado."
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Cargar dos imágenes",
+        "description": "Rellena Origen A y Destino B con medios de demostración o con tus archivos.",
+        "keywords": "cargar importar imágenes demo medios ejemplos origen destino abrir archivo",
+        "steps": {
+          "demo": {
+            "title": "Para empezar: medios de demostración",
+            "body": "Demo → Ejemplos ofrece un recorrido práctico. Cada tarjeta muestra la pareja origen/destino y un ejercicio. Empieza por Comparar — cuatro algoritmos, y explora máscaras, transiciones, fotogramas clave y vídeo. Los ejemplos se abren en un instante elegido, con la vista y la capa adecuadas seleccionadas. Los nombres de las referencias permanecen en inglés en todos los idiomas de la interfaz.\n\nEstos ejemplos se generan automáticamente para mostrar las funciones del estudio. El resultado artístico no está garantizado.",
+            "missingHint": "Abre el selector Demo."
+          },
+          "source": {
+            "title": "O importa tus archivos: Origen A",
+            "body": "Esta posición admite una imagen o un vídeo: es el punto de partida del morphing.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "target": {
+            "title": "Destino B",
+            "body": "Rellena la segunda posición. Cuando se hayan cargado ambos medios, se creará el proyecto y aparecerá la vista previa.",
+            "missingHint": "Abre la pestaña Estudio."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Elegir el algoritmo de morphing",
+        "description": "Elige el algoritmo del proyecto y conoce las cuatro familias.",
+        "keywords": "algoritmo fundido malla crossfade mesh tps thin-plate spline beier neely deformación",
+        "preconditionHint": "Carga primero dos imágenes. El botón Demo de la barra superior es la forma más rápida.",
+        "steps": {
+          "algorithm-list": {
+            "title": "Los cuatro algoritmos",
+            "body": "Fundido mezcla sin deformar. Malla deforma triángulos de Delaunay. Thin-Plate Spline curva toda la imagen suavemente. Beier–Neely deforma a lo largo de líneas orientadas.",
+            "missingHint": "Abre la pestaña Estudio y la sección Algoritmo."
+          },
+          "pick-tps": {
+            "title": "Prueba Thin-Plate Spline",
+            "body": "Haz clic en Thin-Plate Spline: la vista previa se actualiza con la nueva deformación.",
+            "missingHint": "Abre la pestaña Estudio y la sección Algoritmo."
+          },
+          "settings": {
+            "title": "Ajustes del algoritmo",
+            "body": "Los ajustes del algoritmo activo aparecen bajo las tarjetas. En TPS, el control λ permite equilibrar precisión y suavidad.",
+            "missingHint": "Elige TPS o Beier–Neely para mostrar sus ajustes."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Navegar por las vistas del estudio",
+        "description": "Edición, Vista previa y Triple; acercar, desplazar y restablecer la vista.",
+        "keywords": "vista edición previa triple zoom desplazar restablecer navegar",
+        "preconditionHint": "Carga primero dos imágenes. El botón Demo de la barra superior es la forma más rápida.",
+        "steps": {
+          "toggle": {
+            "title": "Tres vistas",
+            "body": "Edición muestra A | B para colocar referencias; Vista previa muestra el morphing a gran tamaño; Triple muestra A | morphing | B. Si hay poco espacio, elige la vista en el menú.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "triple": {
+            "title": "Abre la vista Triple",
+            "body": "Haz clic en Triple: puedes editar en los lados mientras el centro muestra el morphing en tiempo real. Si el panel de vista previa es estrecho, abre Controles de vista previa para elegir Final, Capa, Máscara o Contrib., mostrar superposiciones o examinar la pila de capas.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "zoom-pan": {
+            "title": "Acercar, desplazar, restablecer",
+            "body": "Usa la rueda o el gesto de pellizcar para cambiar el zoom. Mantén Espacio (o usa Desplazar la vista, H) y arrastra para desplazar. Un doble clic o doble toque restablece la vista. En dispositivos táctiles, el espacio de trabajo permanece fijo; solo se puede recorrer el contenido de los paneles y las ventanas.",
+            "missingHint": "Abre la pestaña Estudio en Edición o Triple."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Guardar y volver a abrir un proyecto",
+        "description": "Guarda la estructura y las imágenes incluidas; vuelve a vincular los vídeos locales al abrir el proyecto.",
+        "keywords": "guardar abrir cargar proyecto archivo morph json volver vincular",
+        "preconditionHint": "Carga primero dos imágenes. El botón Demo de la barra superior es la forma más rápida.",
+        "steps": {
+          "save": {
+            "title": "Guardar",
+            "body": "Guardar descarga un archivo .morph.json con las imágenes incluidas, las referencias, las capas y la línea de tiempo. Los archivos de vídeo permanecen en tu dispositivo y se referencian mediante sus metadatos. No se envía nada a un servidor."
+          },
+          "load": {
+            "title": "Ábrelo de nuevo",
+            "body": "Abrir restaura la estructura del proyecto y las imágenes incluidas. Para cada vídeo local, usa Volver a vincular en su posición A/B. La reproducción y la exportación vuelven a estar disponibles cuando todos los archivos estén vinculados."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Créditos",
+        "description": "Créditos, versión de la aplicación y procesamiento local de medios.",
+        "keywords": "Acerca de Créditos Privacidad",
+        "steps": {
+          "about": {
+            "title": "Abrir Acerca de",
+            "body": "Acerca de, en la barra superior, muestra el autor, la versión de la compilación y cómo se procesan tus medios localmente. En la vista compacta, abre el menú Más.",
+            "missingHint": "Sal del modo zen o abre el menú Más para encontrar Acerca de."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Cambiar el idioma de la interfaz",
+        "description": "Elige un idioma para el estudio, los ejemplos y las guías.",
+        "keywords": "idioma lengua traducción preferencias internacional",
+        "stepTitle": "Elige tu idioma",
+        "body": "Abre el selector de idioma en la barra superior. Cada tarjeta muestra una bandera y el nombre del idioma en su propia escritura. Tu elección se guarda en este dispositivo. La interfaz cambia cuando termina la carga. Puede ser necesaria una conexión para descargar las fuentes del idioma. Tu proyecto y los nombres de las referencias no cambian. Si no se puede restaurar el idioma guardado, la aplicación se abre en inglés con una explicación y un botón para reintentar. En pantallas estrechas, la barra superior puede ocupar varias filas para mantener visibles todos los comandos."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Carga primero dos imágenes. El botón Demo de la barra superior es la forma más rápida."
+      },
+      "studioHint": "Abre la pestaña Estudio en la vista Edición.",
+      "placePointsGuide": {
+        "title": "Colocar puntos de correspondencia",
+        "description": "Los puntos indican a Malla y TPS qué lugar de A corresponde a cada lugar de B.",
+        "keywords": "punto referencia correspondencia malla mesh tps colocar ajustar",
+        "steps": {
+          "pick-tool": {
+            "title": "La herramienta Punto",
+            "body": "Selecciona la herramienta Punto (atajo P)."
+          },
+          "place-a": {
+            "title": "Marca una referencia en A",
+            "body": "Haz clic en un detalle reconocible (un ojo, una esquina…) del panel Origen A. Aparecerá un tirador correspondiente en B."
+          },
+          "adjust-b": {
+            "title": "Ajusta el lado B",
+            "body": "Arrastra el tirador correspondiente en Destino B hasta el mismo detalle de la otra imagen. Esta correspondencia dirige la deformación."
+          },
+          "preview": {
+            "title": "Observa la deformación",
+            "body": "Cambia a Vista previa o Triple para ver cómo Malla y TPS deforman las imágenes a partir de tus puntos."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Trazar líneas orientadas (Beier–Neely)",
+        "description": "Las parejas de líneas dirigen el morphing por campo de Beier–Neely.",
+        "keywords": "línea segmento orientación beier neely contorno trazar",
+        "steps": {
+          "pick-tool": {
+            "title": "La herramienta Línea",
+            "body": "Selecciona la herramienta Línea (atajo L)."
+          },
+          "drag-line": {
+            "title": "Arrastra a lo largo de un contorno en A",
+            "body": "Pulsa y arrastra para colocar una línea sobre un contorno bien definido (mandíbula, techo…). Su pareja aparecerá en B."
+          },
+          "orient-b": {
+            "title": "Mantén la dirección en B",
+            "body": "Mueve los dos extremos en B al contorno correspondiente, manteniendo la misma dirección. Beier–Neely proyecta a lo largo de cada línea y perpendicularmente a ella."
+          },
+          "use-beier": {
+            "title": "Cambia a Beier–Neely",
+            "body": "Las líneas solo deforman con Beier–Neely. Selecciona la tarjeta de este algoritmo.",
+            "missingHint": "Abre la pestaña Estudio y la sección Algoritmo."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Dibujar una polilínea",
+        "description": "Curvas punto a punto o a mano alzada que puedes continuar desde un extremo.",
+        "keywords": "polilínea curva trazado mano alzada dibujar continuar extremo",
+        "steps": {
+          "pick-tool": {
+            "title": "La herramienta Polilínea",
+            "body": "Selecciona la herramienta Polilínea (atajo Y)."
+          },
+          "tap-by-tap": {
+            "title": "Punto a punto",
+            "body": "Haz clic en puntos sucesivos a lo largo de un contorno. ⏎ termina el trazado y Esc lo cancela."
+          },
+          "freehand": {
+            "title": "O a mano alzada",
+            "body": "Pulsa y arrastra en un trazo continuo. El trazado se simplifica automáticamente al soltar."
+          },
+          "resume": {
+            "title": "Continuar desde un extremo",
+            "body": "Con Polilínea activa, haz clic en un extremo de una polilínea abierta para continuar el trazado."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Cerrar una polilínea abierta",
+        "description": "Dos formas de convertir una polilínea abierta en un polígono cerrado.",
+        "keywords": "cerrar polígono polilínea bucle extremo primer punto",
+        "steps": {
+          "intro": {
+            "title": "Dos métodos de cierre",
+            "body": "Puedes cerrar una polilínea mientras la dibujas o más tarde con Selección."
+          },
+          "close-first": {
+            "title": "Mientras dibujas: pulsa el primer punto",
+            "body": "Durante el trazado, vuelve a hacer clic en el primer punto. El contorno se cierra y el trazado termina."
+          },
+          "drop-endpoint": {
+            "title": "Después: une los extremos",
+            "body": "Con Selección, arrastra un extremo de una polilínea abierta y suéltalo sobre el otro. Obtendrás el mismo resultado."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Dibujar una región",
+        "description": "Una región cerrada puede servir de máscara para una capa; ajusta el calado de su borde.",
+        "keywords": "región máscara lazo contorno calado suavizar dibujar",
+        "steps": {
+          "pick-tool": {
+            "title": "La herramienta Máscara de región",
+            "body": "Selecciona Máscara de región. Su contorno siempre queda cerrado."
+          },
+          "outline": {
+            "title": "Rodea la zona en A",
+            "body": "Coloca puntos o dibuja a mano alzada alrededor de la zona (un rostro, un objeto). Termina con ⏎ o cerrando el contorno."
+          },
+          "feather": {
+            "title": "Suavizar el borde",
+            "body": "Selecciona la región y ajusta Calado para suavizar su borde. Una capa que utilice esta región como máscara también tiene su propio modo de máscara y ajuste de calado.",
+            "missingHint": "Abre la sección Selección del panel de propiedades derecho."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Seleccionar, renombrar, bloquear y ocultar",
+        "description": "Gestiona las referencias y observa el indicador de correspondencia A↔B al pasar el puntero.",
+        "keywords": "selección múltiple shift renombrar bloquear ocultar indicador puntero referencia",
+        "steps": {
+          "pick-tool": {
+            "title": "La herramienta Selección",
+            "body": "Selecciona la herramienta Selección (atajo V)."
+          },
+          "select": {
+            "title": "Haz clic en un tirador",
+            "body": "Haz clic en el tirador de una referencia para seleccionarla; usa Shift para una selección múltiple. Al pasar el puntero aparece un indicador en el tirador correspondiente del otro panel."
+          },
+          "inspector": {
+            "title": "Renombrar, bloquear y ocultar",
+            "body": "La sección Selección permite renombrar la referencia y cambiar sus estados Visible y Bloqueada.",
+            "missingHint": "Abre la sección Selección del panel de propiedades derecho."
+          },
+          "list": {
+            "title": "La lista Referencias",
+            "body": "La lista de la izquierda refleja todos los cambios: el ojo oculta, el candado bloquea y un clic selecciona."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Empujar puntos y deshacer",
+        "description": "Esculpe los tiradores localmente con Empujar puntos; deshaz o rehaz cada cambio.",
+        "keywords": "empujar esculpir deformar local radio deshacer rehacer",
+        "steps": {
+          "pick-tool": {
+            "title": "La herramienta Empujar puntos",
+            "body": "Selecciona Empujar puntos (atajo K)."
+          },
+          "sculpt": {
+            "title": "Arrastra para esculpir",
+            "body": "Arrastra sobre la imagen: se empujan todos los tiradores dentro del círculo, con más fuerza cerca del centro."
+          },
+          "undo": {
+            "title": "Deshacer y rehacer",
+            "body": "Cmd/Ctrl+Z deshace cualquier edición de referencias; Cmd/Ctrl+Shift+Z la rehace."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Abre la sección Capas del panel de propiedades derecho.",
+      "needsProject": {
+        "preconditionHint": "Carga primero dos imágenes. El botón Demo de la barra superior es la forma más rápida."
+      },
+      "activateLayerStep": {
+        "title": "Activa una capa de usuario",
+        "body": "Haz clic en una capa distinta de Global en la sección Capas. Sus propiedades aparecen justo debajo de la lista."
+      },
+      "createLayerGuide": {
+        "title": "Crear una capa",
+        "description": "Apila capas sobre la base Global e interpreta sus indicadores de contribución.",
+        "keywords": "capa crear añadir pila global orden indicador contribución",
+        "steps": {
+          "add": {
+            "title": "Añade una capa",
+            "body": "Haz clic en Añadir capa. La nueva capa se activa inmediatamente."
+          },
+          "global-vs-layers": {
+            "title": "Global y las capas de usuario",
+            "body": "Global renderiza el morphing predeterminado debajo. Las capas de usuario se componen encima según el orden de la lista. Las flechas cambian el orden de la pila."
+          },
+          "badges": {
+            "title": "Indicadores de contribución",
+            "body": "Cada fila muestra qué hace la capa en ese instante: imagen completa (lo cubre todo), con máscara, sin efecto, fuera del clip…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Cambiar el algoritmo de una capa",
+        "description": "Asigna un algoritmo propio a una capa sin cambiar el predeterminado del proyecto.",
+        "keywords": "capa algoritmo propio sustituir malla mesh tps beier por capa",
+        "steps": {
+          "override": {
+            "title": "Elige un algoritmo propio",
+            "body": "El menú Algoritmo de las propiedades de la capa sustituye el predeterminado del proyecto solo para esta capa."
+          },
+          "badge": {
+            "title": "El indicador de algoritmo propio",
+            "body": "El encabezado de Algoritmo muestra ahora un indicador del algoritmo propio de la capa. Todos los controles siguen accesibles aunque haya una referencia seleccionada.",
+            "missingHint": "Abre la sección Algoritmo del panel de propiedades derecho."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Usar una región como máscara de capa",
+        "description": "Limita una capa a una región asignada, con borde definido o calado y opción de invertirla.",
+        "keywords": "máscara región asignar capa borde definido calado suavizar invertir",
+        "preconditionHint": "Dibuja primero una región con Máscara de región. Las regiones aparecen en el menú Máscara.",
+        "steps": {
+          "assign": {
+            "title": "Asigna una región",
+            "body": "Elige una región en el menú Máscara: la capa solo se compone dentro de ella."
+          },
+          "modes": {
+            "title": "Borde definido, calado e inversión",
+            "body": "El modo de máscara alterna entre un borde definido y uno calado (con su valor de calado). Invertir máscara intercambia el interior y el exterior."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Pintar una máscara",
+        "description": "Pinta una máscara directamente sobre la imagen y observa el resultado en tiempo real.",
+        "keywords": "pintar pincel máscara diámetro dureza intensidad borrador borrar tiempo real",
+        "steps": {
+          "pick-brush": {
+            "title": "El Pincel de máscara",
+            "body": "Selecciona Pincel de máscara (atajo B). Pinta la máscara de la capa activa.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "settings": {
+            "title": "Ajustes del pincel",
+            "body": "Diámetro, Dureza e Intensidad definen el trazo. Borrador quita la pintura: marca la casilla o mantén ⌥ mientras arrastras.",
+            "missingHint": "Los ajustes aparecen bajo las herramientas cuando el pincel está activo."
+          },
+          "paint": {
+            "title": "Pinta sobre la imagen",
+            "body": "Arrastra el pincel sobre una imagen: la vista previa central muestra el resultado en tiempo real. Las vistas Final y Máscara permiten examinar el efecto. La máscara pintada sigue la deformación de la capa y acompaña al contenido durante el morphing.",
+            "missingHint": "Abre la pestaña Estudio en la vista Edición."
+          },
+          "clear": {
+            "title": "Bórrala cuando quieras",
+            "body": "Máscara pintada → Borrar restablece por completo la máscara pintada de la capa."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opacidad, fusión, clip y transición",
+        "description": "Ajusta el resultado de una capa, limítala a un intervalo de la línea de tiempo y decide cuándo se produce el fundido.",
+        "keywords": "opacidad fusión modo composición clip línea tiempo inicio duración interpolación transición deformación fundido intervalo ajuste preestablecido morphing clásico bézier curva doble imagen",
+        "steps": {
+          "opacity": {
+            "title": "Opacidad",
+            "body": "Reduce la opacidad por debajo de 1 para mezclar la capa con las inferiores."
+          },
+          "blend": {
+            "title": "Modo de fusión",
+            "body": "El menú Fusión controla la mezcla con las capas inferiores: Normal, Multiplicar, Trama o Sumar. Multiplicar multiplica los colores; Trama los aclara; Sumar suma los colores premultiplicados y la opacidad, limitando cada componente al valor máximo permitido."
+          },
+          "clip": {
+            "title": "Ajusta el intervalo de la capa",
+            "body": "Arrastra el bloque de la capa en la línea de tiempo para moverlo, o sus bordes para recortarlo. También puedes ajustar Inicio y Duración en sus propiedades."
+          },
+          "windows": {
+            "title": "Deformar gradualmente y acortar el fundido",
+            "body": "Transición define dos intervalos como porcentajes del clip. Deformación controla el paso de una forma a otra; Fundido controla la mezcla de las imágenes A y B. Morphing clásico mantiene la deformación en 0–100 % y limita el fundido a 30–70 %. Así se reduce la superposición de detalles mal alineados al principio y al final."
+          },
+          "windows-timeline": {
+            "title": "Lee los intervalos en la línea de tiempo",
+            "body": "El bloque de la capa muestra los dos intervalos en su borde inferior: una banda clara para el fundido y una línea fina para la deformación. Así puedes situar el fundido dentro del clip."
+          },
+          "easing": {
+            "title": "Ajusta la curva",
+            "body": "Interpolación controla la progresión dentro de los dos intervalos: cinco curvas predefinidas o «personalizada (Bézier)», con dos tiradores que puedes mover. Marca «Curva independiente para el fundido» para ajustar su progresión por separado de la deformación."
+          },
+          "global-too": {
+            "title": "También en la capa Global",
+            "body": "Selecciona Global: esta capa también tiene una sección Transición. Sus intervalos abarcan 0–100 % de forma predeterminada. Con Fundido solo actúa el fundido, ya que este algoritmo no deforma las imágenes."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Carga primero dos imágenes. El botón Demo de la barra superior es la forma más rápida."
+      },
+      "timelineGuide": {
+        "title": "Controlar la línea de tiempo",
+        "description": "Recorre la animación, reprodúcela, avanza fotograma a fotograma y mueve los clips.",
+        "keywords": "línea tiempo recorrer reproducir pausar fotograma código tiempo clip mover recortar zen tab contraer paneles regla cabezal reproducción",
+        "steps": {
+          "scrub": {
+            "title": "Mueve el cabezal de reproducción",
+            "body": "Haz clic o arrastra sobre la regla. El cabezal se mueve y la vista previa muestra el fotograma de ese instante. Con un lápiz, toca la posición deseada y mantén la punta sobre la pantalla mientras arrastras.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "transport": {
+            "title": "Reproducción, pausa y avance por fotogramas",
+            "body": "Reproducir inicia la animación en tiempo real. Los botones de flecha o las teclas ←/→ avanzan o retroceden un fotograma. Alt-clic en una flecha va al extremo correspondiente. El código de tiempo se lee en segundos:fotogramas.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "clips": {
+            "title": "Mueve y recorta los clips",
+            "body": "Las imágenes y los vídeos tienen clips en A/B, sobre las capas. Arrastra un bloque o sus bordes; al seleccionarlo aparecen Inicio y Duración. Una imagen fija no tiene duración de origen: alargarla puede ampliar el montaje. Fuera de un clip solo interviene el otro medio; si no hay ninguno, se muestra el fondo.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "still-image-timing": {
+            "title": "Ajustar cuánto tiempo aparece una imagen",
+            "body": "Selecciona un clip de imagen en A o B e introduce su duración en segundos (o segundos:fotogramas). Acortar un clip conserva la duración del montaje; alargarlo amplía la línea de tiempo si es necesario. Los fotogramas clave de las referencias permanecen en el tiempo principal: mover o estirar el clip no desplaza ni estira su animación. Los clips se guardan en el proyecto.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "zen": {
+            "title": "El modo zen conserva la regla",
+            "body": "{{shortcut}} oculta los tres paneles para que el morphing ocupe la pantalla. La línea de tiempo se reduce a una barra de 40 px con una regla compacta: marcas, códigos de tiempo y cabezal de reproducción. Puedes seguir haciendo clic o arrastrando el cabezal para recorrer la animación. Pulsa {{shortcut}} de nuevo para restaurar los paneles."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Crear morphing entre vídeos",
+        "description": "Importa vídeos, coloca los clips A/B y añade fotogramas clave a las referencias.",
+        "keywords": "vídeo clip importar fotograma clave añadir pista cantar rombo arrastrar cambiar tiempo",
+        "steps": {
+          "get-videos": {
+            "title": "Consigue dos vídeos",
+            "body": "El cuadro Demo ofrece cuatro clips de personajes cantando y dos caminando (filtro: Vídeos). También puedes soltar tus vídeos en las posiciones A/B. Es posible combinar una imagen y un vídeo. Los proyectos guardados conservan los metadatos de vídeo y solicitan volver a vincular los archivos locales al abrirlos de nuevo.",
+            "missingHint": "Abre el selector Demo."
+          },
+          "place-clips": {
+            "title": "Coloca los clips A/B",
+            "body": "Cada vídeo ocupa su pista: arrastra para moverlo, usa los bordes para recortarlo y los campos inicio/entrada/duración para introducir valores exactos. Mover o recortar un clip actualiza la vista previa en la posición del cabezal sin tener que mover este; la duración del montaje no cambia. Los fotogramas clave de las referencias siguen ligados al tiempo del medio de origen, incluso después de recortarlo, y se conservan al guardar y volver a abrir el proyecto. Fuera de su clip, ese lado se excluye de la vista previa y de la exportación; el otro lado llena la imagen.",
+            "missingHint": "Abre la pestaña Estudio."
+          },
+          "keyframes": {
+            "title": "Añade fotogramas clave",
+            "body": "Selecciona una referencia: la fila Fotogramas clave ofrece, para cada lado, anterior ◀, un rombo ◆ para añadir o quitar un fotograma clave en el instante actual, siguiente ▶ y un contador. Después, las referencias siguen el movimiento entre los fotogramas clave. En imágenes fijas, una referencia permanece inmóvil hasta que añades el primer fotograma clave con ◆. A partir de ahí, los desplazamientos en otros instantes añaden fotogramas clave y curvan la trayectoria del morphing.",
+            "missingHint": "Abre la sección Selección del panel de propiedades derecho."
+          },
+          "timeline-keyframes": {
+            "title": "Edita los fotogramas clave en la línea de tiempo",
+            "body": "Los fotogramas clave de las referencias seleccionadas aparecen como rombos en las pistas A y B, en el instante en que se reproducen. Haz clic para ir a uno, arrastra para cambiar su tiempo (ajustado al fotograma y con una sola operación de deshacer) o usa Alt-clic para eliminarlo. Los rombos demasiado próximos se agrupan en una barra con un contador; usa las flechas del panel de propiedades para llegar a ellos.",
+            "missingHint": "Abre la pestaña Estudio."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Comparar los algoritmos",
+        "description": "Examina los cuatro algoritmos uno junto a otro en el mismo proyecto.",
+        "keywords": "comparar cuadrícula paralelo fundido malla crossfade mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "Abre Comparar",
+            "body": "La pestaña Comparar muestra una cuadrícula 2×2 que comparte tus imágenes, referencias y τ."
+          },
+          "read": {
+            "title": "Examina la cuadrícula",
+            "body": "Fundido produce contornos dobles cuando los detalles de las imágenes no están alineados. Malla, TPS y Beier–Neely deforman ambas imágenes hacia una forma intermedia común para alinear los detalles correspondientes."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "Exportar a MP4 o a imágenes",
+        "description": "Exporta el morphing como vídeo o como un archivo ZIP de imágenes PNG.",
+        "keywords": "exportar mp4 webm av1 zip imágenes vídeo renderizar descargar",
+        "steps": {
+          "open": {
+            "title": "Abre Exportar",
+            "body": "Todo se renderiza localmente. No se envía nada a un servidor."
+          },
+          "settings": {
+            "title": "Elige la salida",
+            "body": "El vídeo requiere WebCodecs y un codificador H.264, VP9 o AV1 disponible. La secuencia de imágenes PNG no necesita códecs de vídeo y puede conservar un fondo transparente. El vídeo se compone sobre negro o blanco. Ajusta la resolución, la duración y la velocidad de fotogramas."
+          },
+          "run": {
+            "title": "Exporta",
+            "body": "El estudio calcula cada fotograma y muestra el progreso; después descarga el archivo. Durante la exportación, el mismo botón permite cancelar la operación."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Atajos de teclado",
+        "description": "Todos los atajos, obtenidos directamente de las tablas de la aplicación.",
+        "keywords": "teclado atajos teclas referencia rápida",
+        "steps": {
+          "list": {
+            "title": "Atajos de teclado"
+          }
+        }
+      }
+    }
+  }
+}

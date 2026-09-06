@@ -1,0 +1,1201 @@
+{
+  "topbar": {
+    "new": "Nouveau",
+    "newConfirmTitle": "Nouveau projet",
+    "newConfirm": "Abandonner le projet actuel et en créer un nouveau ?",
+    "newConfirmAction": "Abandonner",
+    "load": "Charger",
+    "save": "Enregistrer",
+    "export": "Exporter",
+    "help": "Aide",
+    "language": "Langue",
+    "loadErrorTitle": "Erreur de chargement",
+    "loadError": "Impossible de charger le projet.",
+    "videoSaveTitle": "Enregistrer le projet",
+    "videoSaveNote": "Les fichiers vidéo ne sont pas incorporés au projet. Vous devrez les reconnecter à sa réouverture. Continuer l'enregistrement ?",
+    "videoSaveAction": "Enregistrer quand même",
+    "loadErrors": {
+      "invalidJson": "Ce fichier projet n'est pas valide.",
+      "unsupportedVersion": "Cette version de projet n'est pas prise en charge.",
+      "invalidStructure": "Le projet contient des données invalides ou incomplètes.",
+      "limitExceeded": "Le projet dépasse les limites de sécurité de l'application.",
+      "invalidReference": "Le projet contient des références de calques ou de repères rompues.",
+      "invalidMask": "Le projet contient un masque peint endommagé."
+    },
+    "tabs": {
+      "studio": "Studio",
+      "compare": "Comparer"
+    },
+    "about": "À propos"
+  },
+  "sidebar": {
+    "tools": "Outils",
+    "assets": "Médias",
+    "features": "Repères",
+    "layers": "Calques"
+  },
+  "tools": {
+    "select": "Sélection",
+    "point": "Point",
+    "line": "Ligne",
+    "polyline": "Polyligne",
+    "region": "Masque région",
+    "brush": "Pinceau de masque",
+    "push": "Pousser les points",
+    "pan": "Déplacer la vue"
+  },
+  "assets": {
+    "sourceA": "Source A",
+    "targetB": "Cible B",
+    "replace": "Remplacer l'image/vidéo",
+    "choose": "Choisir une image/vidéo…",
+    "loading": "Chargement…",
+    "video": "vidéo",
+    "videoMissing": "Le fichier vidéo doit être reconnecté",
+    "relink": "Reconnecter",
+    "replaceInstead": "Remplacer par une autre image ou vidéo",
+    "relinkVideoOnly": "Choisissez le fichier vidéo attendu pour reconnecter cet emplacement.",
+    "relinkMismatch": "Cette vidéo ne correspond pas au fichier sauvegardé. Vérifiez ses dimensions et sa durée, ou remplacez plutôt le média.",
+    "relinkNoSavedVideo": "Ce projet n'attend plus de vidéo à cet emplacement.",
+    "relinkAlreadyLinked": "Cette vidéo est déjà reconnectée.",
+    "loadError": "Le média sélectionné n'a pas pu être chargé."
+  },
+  "brush": {
+    "selectLayerHint": "Sélectionnez un calque pour peindre son masque — le calque de base Global n'en a pas.",
+    "diameter": "Diamètre",
+    "hardness": "Dureté",
+    "strength": "Force",
+    "eraser": "Gomme",
+    "eraserHold": "(maintenir ⌥)"
+  },
+  "features": {
+    "empty": "Aucun repère dans ce calque.",
+    "hide": "Masquer",
+    "show": "Afficher",
+    "hideFeature": "Masquer le repère",
+    "showFeature": "Afficher le repère",
+    "lock": "Verrouiller",
+    "unlock": "Déverrouiller",
+    "lockFeature": "Verrouiller le repère",
+    "unlockFeature": "Déverrouiller le repère",
+    "kinds": {
+      "point": "Point",
+      "segment": "Ligne",
+      "polyline": "Polyligne",
+      "region": "Région"
+    },
+    "visible": "Visible",
+    "locked": "Verrouillé",
+    "weight": "Poids",
+    "layer": "Calque",
+    "landmark": "Sémantique",
+    "role": "Rôle",
+    "feather": "Adoucissement",
+    "none": "aucun",
+    "semantics": {
+      "left-eye": "œil gauche",
+      "right-eye": "œil droit",
+      "nose": "nez",
+      "mouth": "bouche",
+      "chin": "menton",
+      "jaw": "mâchoire",
+      "hairline": "racine des cheveux",
+      "custom": "personnalisé"
+    },
+    "roles": {
+      "face": "visage",
+      "hair": "cheveux",
+      "neck": "cou",
+      "body": "corps",
+      "background": "arrière-plan",
+      "custom": "personnalisé"
+    },
+    "keyframes": "Images clés",
+    "noKeyframes": "aucune",
+    "prevKeyframe": "Image clé {{side}} précédente",
+    "nextKeyframe": "Image clé {{side}} suivante",
+    "toggleKeyframe": "Poser / retirer l'image clé {{side}} au temps courant",
+    "keyframeCount_one": "{{count, number}} image clé",
+    "keyframeCount_other": "{{count, number}} images clés",
+    "keyframeHintStill": "Sans vidéo, ce repère est fixe. Posez une première image clé avec ◆ pour l'animer : ensuite, chaque déplacement à un autre temps en ajoute une (trajectoire de morphing non linéaire).",
+    "selectedCount_one": "{{count, number}} repère sélectionné",
+    "selectedCount_other": "{{count, number}} repères sélectionnés",
+    "deleteSelected": "Supprimer la sélection",
+    "coordinates": "Coordonnées",
+    "pts": "{{count, number}} pts",
+    "keyframeCount_many": "{{count, number}} images clés",
+    "selectedCount_many": "{{count, number}} repères sélectionnés"
+  },
+  "layers": {
+    "importFirst": "Importez d'abord des images.",
+    "add": "Ajouter un calque",
+    "defaultName": "Calque {{index}}",
+    "hideLayer": "Masquer le calque",
+    "showLayer": "Afficher le calque",
+    "lockLayer": "Verrouiller le calque",
+    "unlockLayer": "Déverrouiller le calque",
+    "moveUp": "Monter le calque",
+    "moveDown": "Descendre le calque",
+    "featureCount_one": "{{count, number}} repère",
+    "featureCount_other": "{{count, number}} repères",
+    "globalHint": "Le calque de base Global garde les réglages du projet — sélectionnez un calque utilisateur pour éditer ses propriétés.",
+    "status": {
+      "base": "base",
+      "disabled": "désactivé",
+      "hidden": "invisible",
+      "outside-clip": "hors clip",
+      "no-contribution": "sans effet",
+      "masked": "avec masque",
+      "full-frame": "plein cadre"
+    },
+    "featureCount_many": "{{count, number}} repères",
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "Algorithme",
+    "selection": "Sélection",
+    "selectionHint": "Sélectionnez un repère pour l'éditer.",
+    "overrideBadge": "Algorithme du calque : {{name}}",
+    "soon": "bientôt",
+    "panel": "Propriétés"
+  },
+  "algorithms": {
+    "crossfade": "Fondu linéaire, sans déformation",
+    "mesh": "Déformation par triangles de Delaunay",
+    "thin-plate-spline": "Déformation RBF globale et lisse",
+    "beier-neely": "Morphing par champ de lignes"
+  },
+  "tps": {
+    "smoothing": "Lissage (λ)",
+    "borderAnchors": "Ancres de bord",
+    "anchorsPerSide": "Ancres / côté",
+    "samplePolylines": "Échantillonner les polylignes",
+    "sampleSpacing": "Espacement d'échantillonnage"
+  },
+  "beier": {
+    "distanceSoftness": "Douceur de distance (a)",
+    "falloffExponent": "Exposant d'atténuation (b)",
+    "lineLengthInfluence": "Influence de la longueur (p)",
+    "maxLines": "Lignes max",
+    "samplePolylines": "Échantillonner les polylignes"
+  },
+  "layerInspector": {
+    "title": "Calque",
+    "enabled": "Activé",
+    "visible": "Visible",
+    "locked": "Verrouillé",
+    "scope": {
+      "base": "Calque de base : affiche le morphing par défaut sous les calques utilisateur.",
+      "disabled": "Calque désactivé : il ne contribue ni à l’aperçu ni à l’export.",
+      "hidden": "Calque invisible : il est ignoré dans l’aperçu et l’export.",
+      "outside-clip": "Hors clip : la tête de lecture n'est pas dans le bloc de ce calque.",
+      "no-contribution": "Sans effet : ajoutez des repères ou assignez un masque pour que ce calque affecte le rendu.",
+      "masked": "Calque avec masque : le masque définit la zone composée au-dessus des calques inférieurs.",
+      "full-frame": "Calque plein cadre : sans masque, ce calque recouvre les calques en dessous."
+    },
+    "algorithm": "Algorithme",
+    "projectDefault": "Réglage du projet",
+    "opacity": "Opacité",
+    "blend": "Fusion",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Produit",
+      "screen": "Superposition",
+      "lighter": "Addition"
+    },
+    "mask": "Masque",
+    "none": "aucun",
+    "paintedMask": "Masque peint",
+    "clear": "Effacer",
+    "maskMode": "Mode du masque",
+    "maskModes": {
+      "hard": "net",
+      "feathered": "adouci"
+    },
+    "maskFeather": "Adoucissement",
+    "invertMask": "Inverser le masque",
+    "timelineClip": "Clip de la timeline",
+    "start": "Début",
+    "duration": "Durée",
+    "easing": "Interpolation",
+    "easings": {
+      "linear": "linéaire",
+      "ease-in": "accélération",
+      "ease-out": "décélération",
+      "ease-in-out": "accél./décél.",
+      "smoothstep": "smoothstep",
+      "bezier": "personnalisée (Bézier)"
+    },
+    "transition": "Transition",
+    "warpWindow": "Déformation (%)",
+    "warpStart": "Début de la déformation (%)",
+    "warpEnd": "Fin de la déformation (%)",
+    "dissolveWindow": "Fondu (%)",
+    "dissolveStart": "Début du fondu (%)",
+    "dissolveEnd": "Fin du fondu (%)",
+    "presets": {
+      "label": "Préréglage",
+      "standard": "Standard",
+      "classicMorph": "Morphing classique",
+      "lateDissolve": "Fondu tardif",
+      "custom": "Personnalisé"
+    },
+    "distinctDissolveEasing": "Courbe distincte pour le fondu",
+    "dissolveEasing": "Interpolation du fondu",
+    "bezierCurve": "Courbe {{name}}",
+    "bezierHandle1": "Première poignée de la courbe",
+    "bezierHandle2": "Seconde poignée de la courbe",
+    "bezier": {
+      "x1": "Poignée 1 x",
+      "y1": "Poignée 1 y",
+      "x2": "Poignée 2 x",
+      "y2": "Poignée 2 y"
+    },
+    "stackPosition": "Position dans la pile : {{position}}",
+    "delete": "Supprimer le calque",
+    "confirmTitle": "Supprimer le calque ?",
+    "confirmBody": "Supprimer « {{name}} » ? Ses repères deviendront globaux et ne seront pas supprimés.",
+    "cancel": "Annuler",
+    "closeConfirm": "Fermer la confirmation de suppression"
+  },
+  "timeline": {
+    "videoMissing": "Reconnectez les fichiers vidéo manquants avant la lecture.",
+    "time": "Temps",
+    "layers": "Calques",
+    "outsideA": "hors A",
+    "outsideB": "hors B",
+    "position": "Position de la timeline",
+    "prevFrame": "Image précédente",
+    "prevFrameTitle": "Image précédente, Alt-clic va au début",
+    "nextFrame": "Image suivante",
+    "nextFrameTitle": "Image suivante, Alt-clic va à la fin",
+    "play": "Lecture",
+    "pause": "Pause",
+    "start": "début",
+    "in": "in",
+    "dur": "durée",
+    "timecodeAria": "Timecode {{label}}",
+    "timecodeTitle": "Timecode {{label}} (secondes:images)",
+    "tauTitle": "Position de la timeline (secondes:images)",
+    "syncWaiting": "rendu… {{elapsed}}",
+    "syncWaitingTitle": "Le moteur d'aperçu attend : {{phase}}. Les vues affichent encore l'image précédente.",
+    "syncPhaseEngine": "ouverture du moteur vidéo (lecture du fichier, initialisation du décodeur)",
+    "syncPhaseFrame": "recherche et décodage de l’image, puis envoi au GPU",
+    "syncLast": "dernier rendu {{elapsed}}",
+    "syncLastTitle": "Durée du dernier rendu après déplacement dans la timeline (affichée au-delà de 0,5 s)",
+    "keyframeTitle": "Image clé {{time}} s — {{names}} · clic : aller, glisser : déplacer, ⌥-clic : supprimer",
+    "keyframeTitleShared": "Image clé {{time}} s — {{names}} · clic : aller, ⌥-clic : supprimer",
+    "keyframeGroupTitle": "{{count, number}} images clés entre {{from}} et {{to}} s — trop proches pour être éditées ici · clic : aller à la première",
+    "transitionWindows": "{{name}} — fondu {{dissolveStart}}–{{dissolveEnd}} %, déformation {{warpStart}}–{{warpEnd}} %",
+    "imageClipName": "Image · {{name}}",
+    "mediaClip": "Clip {{slot}} — {{name}}",
+    "imageClipHelp": "Image fixe : glissez pour déplacer, étirez les bords ou sélectionnez le clip pour régler Début et Durée. Allonger le clip peut prolonger la timeline.",
+    "altClick": "Alt-clic"
+  },
+  "hud": {
+    "releaseToClose": "relâcher pour fermer",
+    "eraser": "gomme",
+    "maskBrushSelectLayer": "pinceau de masque · sélectionnez un calque",
+    "points_one": "{{count, number}} pt",
+    "points_other": "{{count, number}} pts",
+    "finishHint": "⏎ terminer · échap annuler",
+    "cancelHint": "échap annuler",
+    "points_many": "{{count, number}} pts"
+  },
+  "notices": {
+    "noWebgpu": "Cette démo utilise WebGPU pour le rendu.\nVotre navigateur ou votre machine ne semble pas le supporter.\n\nEssayez :\n- Chrome ou Edge récent\n- Safari récent\n- Firefox compatible WebGPU",
+    "tooManyFeatures": "Ce projet contient beaucoup de repères.\nL’aperçu passe en demi-résolution.\nL’export final reste possible.",
+    "deviceLost": "Le contexte GPU a été perdu (mémoire insuffisante ou réinitialisation du pilote).",
+    "reload": "Recharger",
+    "noWebcodecs": "L’aperçu fonctionne, mais l’export vidéo MP4 n’est pas disponible dans ce navigateur.",
+    "codecUnsupported": "Le codec demandé n'est pas disponible à cette résolution. Essayez une résolution inférieure, un autre format ou un autre navigateur."
+  },
+  "studio": {
+    "edit": "Édition",
+    "preview": "Aperçu",
+    "triple": "Triple",
+    "morphPreview": "Aperçu du morphing",
+    "viewportsLinked": "Zoom/pan liés entre les vues — cliquer pour délier",
+    "viewportsUnlinked": "Zoom/pan indépendants par vue — cliquer pour lier",
+    "importPrompt": "Importez une image/vidéo <a>source</a> et une <b>cible</b> pour prévisualiser le morphing.",
+    "importPromptEdit": "Importez une image/vidéo <a>source</a> et une <b>cible</b> pour commencer à placer des repères.",
+    "preparingGpu": "Préparation du GPU…",
+    "finishShape": "Terminer la forme",
+    "cancelShape": "Annuler la forme",
+    "zoomIn": "Zoomer",
+    "zoomOut": "Dézoomer",
+    "zoomReset": "Réinitialiser le zoom (100 %)"
+  },
+  "compare": {
+    "importPrompt": "Importez une image <a>source</a> et une image <b>cible</b> (dans le Studio) pour comparer les algorithmes."
+  },
+  "overlays": {
+    "features": "Points et tracés",
+    "mesh": "Maillage interpolé",
+    "tpsGrid": "Grille de déformation",
+    "beierField": "Grille d'influence",
+    "slots": {
+      "source": "Source",
+      "preview": "Aperçu",
+      "target": "Cible"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Maillage ({{slot}})",
+    "overlayAria": "Surcouche {{label}}"
+  },
+  "layerDebug": {
+    "final": "Final",
+    "finalTitle": "Rendu composite",
+    "layer": "Calque",
+    "layerTitle": "Résultat du calque sélectionné",
+    "mask": "Masque",
+    "maskTitle": "Masque de la région sélectionnée ou du calque",
+    "contrib": "Contrib",
+    "contribTitle": "Surcouche de contribution",
+    "selected": "Sélection",
+    "selectedTitle": "Surcouches du calque sélectionné",
+    "all": "Tous",
+    "allTitle": "Surcouches de tous les calques visibles",
+    "layerStack": "Pile de calques",
+    "closeStack": "Fermer la pile",
+    "opacity": "opacité",
+    "controls": "Contrôles de l’aperçu"
+  },
+  "preview": {
+    "outsideVideoBoth": "hors vidéo A/B",
+    "outsideVideoA": "hors vidéo A",
+    "outsideVideoB": "hors vidéo B",
+    "beforeClip": "avant le clip vidéo",
+    "afterClip": "après le clip vidéo",
+    "emptyClip": "clip vidéo vide"
+  },
+  "export": {
+    "videoMissing": "Reconnectez tous les fichiers vidéo manquants avant l'export.",
+    "cancel": "Annuler l'export",
+    "limits": "Limites : 16–3840 × 16–2160 px, 12–60 i/s, 1–15 s, 900 images maximum.",
+    "errors": {
+      "unsupportedWebgpu": "WebGPU est nécessaire pour exporter ce projet.",
+      "unsupportedWebcodecs": "WebCodecs n'est pas disponible pour l'export vidéo dans ce navigateur.",
+      "unsupportedCodec": "Ce codec n'est pas disponible à la résolution choisie. Essayez un autre format ou une résolution inférieure.",
+      "invalidDimensions": "La largeur doit être comprise entre 16 et 3840 px, et la hauteur entre 16 et 2160 px.",
+      "deviceDimensionLimit": "La résolution choisie dépasse la limite de texture de ce GPU.",
+      "invalidFps": "La cadence doit être comprise entre 12 et 60 i/s.",
+      "invalidDuration": "La plage choisie dans la timeline doit durer entre 1 et 15 secondes.",
+      "tooManyFrames": "Un export peut contenir au maximum 900 images.",
+      "invalidBitrate": "Le débit vidéo doit être compris entre 1 et 20 Mbit/s.",
+      "sequenceTooLarge": "Cette séquence PNG est trop volumineuse pour un export en mémoire dans le navigateur. Réduisez la résolution, la durée ou la cadence.",
+      "mediaMissing": "Reconnectez tous les fichiers vidéo manquants avant l'export.",
+      "cancelled": "Export annulé.",
+      "gpuFailure": "L'export a échoué pendant le rendu ou l'encodage. Réessayez avec des réglages inférieurs."
+    },
+    "title": "Export",
+    "subtitle": "Calcule le morphing image par image pour créer un fichier téléchargeable.",
+    "output": "Sortie",
+    "video": "Vidéo",
+    "imageSequence": "Séquence d'images",
+    "resolution": "Résolution",
+    "presets": {
+      "project": "Projet",
+      "source": "Source",
+      "target": "Cible",
+      "custom": "Personnalisé"
+    },
+    "effective": "Résolution effective",
+    "timing": "Durées",
+    "duration": "Durée",
+    "videoDurationNote": "Les exports vidéo utilisent la durée de la timeline principale.",
+    "frameRate": "Cadence",
+    "pingPong": "Aller-retour (A→B→A)",
+    "encoding": "Encodage",
+    "format": "Format",
+    "bitrate": "Débit",
+    "background": "Arrière-plan",
+    "backgrounds": {
+      "black": "Noir",
+      "white": "Blanc",
+      "transparent": "Transparent"
+    },
+    "importPrompt": "Importez une image/vidéo source et cible dans le Studio pour activer l'export.",
+    "exporting": "Export en cours…",
+    "exportButton": "Exporter {{format}}",
+    "frameProgress": "image {{index}} / {{count, number}}",
+    "done": "Export terminé — le fichier a été téléchargé.",
+    "share": "Partager…",
+    "phases": {
+      "rendering": "Rendu",
+      "encoding": "Encodage",
+      "muxing": "Assemblage vidéo",
+      "zipping": "Création de l’archive"
+    },
+    "width": "Largeur",
+    "height": "Hauteur",
+    "secondsValue": "{{value}} s",
+    "frameRateValue": "{{value}} i/s",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Annuler"
+  },
+  "mobile": {
+    "inspector": "Inspecteur",
+    "close": "Fermer",
+    "closeInspector": "Fermer l'inspecteur",
+    "more": "Plus",
+    "views": "Vues"
+  },
+  "demo": {
+    "button": "Démo",
+    "title": "Médias de démonstration",
+    "subtitle": "Choisissez deux images ou vidéos pour remplir Source A et Cible B.",
+    "slotEmpty": "vide — choisir ci-dessous",
+    "swap": "Échanger A ↔ B",
+    "filterAll": "Tous",
+    "filterImages": "Images",
+    "filterVideos": "Vidéos",
+    "tabAssets": "Médias",
+    "tabPresets": "Presets",
+    "presetsEmpty": "Aucun projet d'exemple pour l'instant.",
+    "load": "Charger dans le projet",
+    "loadError": "Impossible de charger les médias de démo.",
+    "manifestError": "Impossible de charger le catalogue de démo.",
+    "cta": "…ou chargez des médias de démonstration",
+    "kindImage": "Image",
+    "kindVideo": "Vidéo",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "La même paire de visages, avec points et lignes. Comparez les yeux et la bouche à mi-parcours.",
+        "name": "Comparer — quatre algorithmes"
+      },
+      "crossfade-reference": {
+        "description": "Sans repères : observez les doubles contours, puis essayez le comparatif.",
+        "name": "Fondu — observer les images dédoublées"
+      },
+      "faces-points-tps": {
+        "description": "Déplacez un point, affichez la grille TPS et comparez avec les ancres de bord désactivées.",
+        "name": "Claire → Bunny — points TPS"
+      },
+      "faces-lines-beier": {
+        "description": "Des lignes orientées sur les yeux, le nez et la bouche. Réglez leur influence a, b, p.",
+        "name": "Visages — lignes Beier–Neely"
+      },
+      "cars-mesh": {
+        "description": "Les roues et la silhouette guident les triangles. Activez le maillage pour lire la déformation.",
+        "name": "Voitures — maillage"
+      },
+      "layer-full-frame": {
+        "description": "Masquez le calque supérieur : sans masque, il remplace toute l’image du calque Global.",
+        "labels": {
+          "face": "Visage plein cadre"
+        },
+        "name": "Calque — plein cadre"
+      },
+      "layer-region-mask": {
+        "description": "TPS sur le visage, Fondu autour. Inspectez les vues Masque et Contribution ; ajustez le contour et son adoucissement.",
+        "labels": {
+          "face": "Visage en TPS"
+        },
+        "name": "Région — un algorithme par zone"
+      },
+      "mask-invert-blend": {
+        "description": "Le masque protège le visage. Affichez et masquez le calque pour observer le mode Produit à 40 % d’opacité.",
+        "labels": {
+          "outside": "Extérieur en Produit"
+        },
+        "name": "Masque inversé — Produit"
+      },
+      "blend-light": {
+        "description": "Deux calques éclaircissent l’image : Superposition sur le visage, Addition autour. Isolez chaque calque et réglez son opacité.",
+        "labels": {
+          "light": "Visage en Superposition",
+          "glow": "Extérieur en Addition"
+        },
+        "name": "Fusion — Superposition et Addition"
+      },
+      "painted-mask": {
+        "description": "Le masque peint sur A suit la TPS. Inspectez Masque à 25, 50 et 75 %, puis essayez le pinceau et la gomme.",
+        "labels": {
+          "paint": "Visage peint en TPS"
+        },
+        "name": "Masque peint — suivre le morphing"
+      },
+      "combined-masks": {
+        "description": "La région à bord dur s’ajoute au masque peint (union). Inspectez Masque, puis essayez la gomme hors de la région.",
+        "labels": {
+          "paint": "Visage peint en TPS"
+        },
+        "name": "Masques combinés — région et pinceau"
+      },
+      "contours-push": {
+        "description": "Sélectionnez Pousser (K), retouchez la joue, puis annulez. Fermez une copie du contour pour explorer les polygones.",
+        "name": "Contours — sculpter avec Pousser"
+      },
+      "transition-classic": {
+        "description": "Comparez Standard et Morphing classique : déformation de 0 à 100 %, fondu de 30 à 70 %. Observez surtout le début et la fin.",
+        "name": "Transition — morphing classique"
+      },
+      "layers-timing": {
+        "description": "Le visage fond avant les cheveux. Deux fenêtres et une Bézier ; gardez les calques visibles jusqu’à la fin.",
+        "labels": {
+          "face": "Visage en avance"
+        },
+        "name": "Timing — visage puis extérieur"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Une polyligne fermée, animée sur images fixes. Déplacez les losanges puis lancez l’aller-retour.",
+        "labels": {
+          "fruit": "Contour TPS animé"
+        },
+        "name": "Fruits — images clés et aller-retour"
+      },
+      "fruit-to-fox": {
+        "description": "La couronne devient les oreilles, le fruit devient le visage. Une correspondance de silhouettes, sans repères de visage humain.",
+        "name": "Ananas → Foxy — métamorphose"
+      },
+      "transparent-cutout": {
+        "description": "Images 4:3 dans un cadre carré : les marges sont transparentes. Exportez en PNG avec le fond Transparent ; la vidéo aplatit le fond.",
+        "name": "Export — cadre transparent"
+      },
+      "video-faces-keyframes": {
+        "description": "44 repères suivis à chaque image : yeux, nez, lèvres et mâchoire. Le clip B est décalé dans sa source pour rapprocher les expressions.",
+        "name": "Vidéo — repères et images clés"
+      },
+      "video-region-keyframes": {
+        "description": "Le contour et la ligne de bouche suivent chaque image. Inspectez le masque puis sélectionnez la ligne et ses images clés.",
+        "labels": {
+          "videoFace": "Visage animé en TPS"
+        },
+        "name": "Vidéo — masque et ligne animés"
+      },
+      "video-photo-alive": {
+        "description": "La photo devient la vidéo du même visage en une seconde. Seul le côté B porte des images clés ; les repères A restent fixes.",
+        "name": "Photo → vidéo — prendre vie"
+      },
+      "video-clips-timing": {
+        "description": "A : 0–3 s, B : 1,5–4,5 s. Les repères suivent le temps des médias malgré les coupes ; le morphing occupe leur chevauchement.",
+        "name": "Clips — trim et chevauchement"
+      },
+      "video-body-walk": {
+        "description": "16 repères par image. Pose détectée sur le policier ; repères manuels et suivi optique sur le robot. Le calque agit pendant le chevauchement.",
+        "labels": {
+          "body": "Morphing pendant le chevauchement"
+        },
+        "name": "Marche — morphing de corps entier"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Voiture de sport rouge",
+      "red-city-car": "Citadine rouge",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy qui chante",
+      "bunny-singing": "Bunny qui chante",
+      "claire-singing": "Claire qui chante",
+      "anna-singing": "Anna qui chante",
+      "cop-body-walk": "Policier qui marche",
+      "karl2000-body-walk": "Karl2000 qui marche",
+      "banana": "Banane",
+      "pineapple": "Ananas"
+    },
+    "presetsNote": "Ces presets sont générés automatiquement pour illustrer les fonctionnalités du studio. Le résultat artistique n’est pas garanti."
+  },
+  "shell": {
+    "loading": "Chargement de l’espace de travail…",
+    "surfaceLoadError": "Cette partie de l’espace de travail n’a pas pu être chargée.",
+    "retry": "Réessayer",
+    "panelAria": "Panneau {{tab}}",
+    "collapse": "Replier",
+    "panels": {
+      "left": "Panneau médias et repères",
+      "right": "Panneau propriétés",
+      "timeline": "Panneau timeline"
+    },
+    "zen": "Mode zen",
+    "hideChrome": "Masquer l'interface superposée aux images",
+    "showChrome": "Afficher l'interface superposée aux images"
+  },
+  "desktopGate": {
+    "title": "Morpher91 est conçu pour un ordinateur",
+    "body": "Le studio de morphing s'appuie sur WebGPU, une souris et un grand écran. Ouvrez cette page sur un Mac ou un PC, avec Chrome, Edge ou Safari récents, pour l'expérience complète. L'iPad est également pris en charge.",
+    "unsupported": "L'usage sur smartphone n'est pas pris en charge : l'interface et les performances n'y sont pas garanties.",
+    "copyLink": "Copier le lien",
+    "copied": "Lien copié",
+    "continueAnyway": "Continuer quand même (non pris en charge)"
+  },
+  "assist": {
+    "stepSatisfied": "Étape validée. Continuez quand vous êtes prêt.",
+    "back": "Retour",
+    "next": "Suivant",
+    "done": "Terminé",
+    "quit": "Quitter le guide",
+    "showMe": "Montrer",
+    "step": "Étape {{current}}/{{total}}",
+    "anchorMissing": "Cet élément n'est pas visible dans la vue actuelle.",
+    "launcherTitle": "Que voulez-vous faire ?",
+    "launcherDescription": "Parcourez ou recherchez les guides contextuels.",
+    "searchPlaceholder": "Rechercher un guide…",
+    "noResults": "Aucun guide ne correspond.",
+    "suggestions": "Suggestions",
+    "categories": {
+      "start": "Démarrer",
+      "features": "Repères",
+      "layers-masks": "Calques et masques",
+      "timeline-video": "Timeline et vidéo",
+      "output": "Sortie"
+    },
+    "shortcuts": {
+      "undo": "Annuler",
+      "redo": "Rétablir",
+      "delete": "Supprimer la sélection",
+      "stepFrame": "Avancer/reculer d'une image",
+      "jumpEnds": "Aller au début / à la fin",
+      "zen": "Mode zen (masquer les panneaux)",
+      "hideChrome": "Masquer / afficher l'interface superposée aux images"
+    }
+  },
+  "about": {
+    "credits": "Crédits",
+    "version": "v{{version}}",
+    "description": "Un studio WebGPU & WebCodecs de morphing 2D pour les images et les vidéos.",
+    "author": "Créé par André Frélicot.",
+    "privacyTitle": "Confidentialité",
+    "privacy": "Vos images, vidéos et projets sont traités sur votre appareil. Le rendu et l’export s’effectuent dans le navigateur, sans envoyer vos médias à un serveur.",
+    "close": "Fermer",
+    "date": "Septembre 2026"
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Charger deux images",
+        "description": "Remplissez Source A et Cible B — médias de démo ou vos propres fichiers.",
+        "keywords": "charger importer images démo assets presets exemple source cible ouvrir fichier",
+        "steps": {
+          "demo": {
+            "title": "Pour commencer : les médias de démonstration",
+            "body": "Démo → Presets ouvre un parcours pédagogique. Chaque carte montre la paire source/cible et un exercice. Commencez par Comparer — quatre algorithmes, puis explorez masques, transitions, images clés et vidéo. Les exemples s’ouvrent à un instant choisi, avec la vue et le calque utiles sélectionnés. Les noms des repères restent en anglais quelle que soit la langue de l’interface.\n\nCes presets sont générés automatiquement pour illustrer les fonctionnalités du studio. Le résultat artistique n’est pas garanti.",
+            "missingHint": "Ouvrez le sélecteur Démo."
+          },
+          "source": {
+            "title": "Ou importez les vôtres — Source A",
+            "body": "Cet emplacement accepte une image ou une vidéo : c'est le côté de départ du morphing.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "target": {
+            "title": "Cible B",
+            "body": "Remplissez le second emplacement. Dès que les deux médias sont chargés, le projet est créé et l’aperçu s’affiche.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Choisir l'algorithme de morphing",
+        "description": "Choisissez l'algorithme du projet et comprenez les quatre familles.",
+        "keywords": "algorithme crossfade mesh tps thin-plate spline beier neely déformation",
+        "preconditionHint": "Chargez d'abord deux images — le bouton Démo de la barre du haut est le plus rapide.",
+        "steps": {
+          "algorithm-list": {
+            "title": "Les quatre algorithmes",
+            "body": "Fondu mélange les images sans les déformer. Maillage déforme des triangles de Delaunay. Thin-Plate Spline courbe toute l’image en douceur. Beier–Neely déforme les images à partir de lignes orientées.",
+            "missingHint": "Ouvrez l'onglet Studio et la section Algorithme."
+          },
+          "pick-tps": {
+            "title": "Essayez Thin-Plate Spline",
+            "body": "Cliquez sur Thin-Plate Spline : l’aperçu se met à jour avec la nouvelle déformation.",
+            "missingHint": "Ouvrez l'onglet Studio et la section Algorithme."
+          },
+          "settings": {
+            "title": "Réglages de l'algorithme",
+            "body": "Les réglages de l'algorithme actif apparaissent sous les tuiles — pour TPS, le curseur λ échange l'exactitude contre la douceur.",
+            "missingHint": "Choisissez TPS ou Beier–Neely pour révéler leurs réglages."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Naviguer dans les vues du studio",
+        "description": "Édition, Aperçu et Triple ; zoomer, déplacer et réinitialiser la vue.",
+        "keywords": "vue édition aperçu triple zoom déplacer réinitialiser naviguer viewport",
+        "preconditionHint": "Chargez d'abord deux images — le bouton Démo de la barre du haut est le plus rapide.",
+        "steps": {
+          "toggle": {
+            "title": "Trois vues",
+            "body": "Édition montre A | B pour placer les repères, Aperçu montre le morphing en grand, Triple montre A | morphing | B. Dans une vue étroite, choisissez la vue dans le menu.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "triple": {
+            "title": "Ouvrez la vue Triple",
+            "body": "Cliquez Triple — vous éditez sur les côtés pendant que le centre morphe en direct. Quand le panneau d’aperçu est étroit, ouvrez Contrôles de l’aperçu pour choisir Final, Calque, Masque ou Contribution, afficher les surcouches ou examiner la pile de calques.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "zoom-pan": {
+            "title": "Zoomer, déplacer, réinitialiser",
+            "body": "Utilisez la molette ou pincez pour zoomer. Maintenez Espace ou sélectionnez l’outil Déplacer la vue (H), puis faites glisser pour déplacer la vue. Un double-clic ou un double appui réinitialise la vue. Sur les appareils tactiles, l’espace de travail reste fixe ; seuls les panneaux défilent.",
+            "missingHint": "Ouvrez l'onglet Studio en vue Édition ou Triple."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Enregistrer et recharger un projet",
+        "description": "Sauvegardez la structure et les images embarquées ; reconnectez les vidéos locales à la réouverture.",
+        "keywords": "sauver enregistrer charger projet fichier morph json rouvrir",
+        "preconditionHint": "Chargez d'abord deux images — le bouton Démo de la barre du haut est le plus rapide.",
+        "steps": {
+          "save": {
+            "title": "Enregistrer",
+            "body": "Enregistrer télécharge un .morph.json avec les images embarquées, les repères, les calques et la timeline. Les octets vidéo restent locaux et sont référencés par leurs métadonnées — rien ne quitte votre machine."
+          },
+          "load": {
+            "title": "Rechargez-le",
+            "body": "Charger restaure la structure du projet et les images embarquées. Pour chaque vidéo locale, utilisez Reconnecter sur son emplacement A/B ; la lecture et l'export reprennent une fois tous les fichiers reliés."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Crédits",
+        "description": "Crédits, version de l’application et traitement local des médias.",
+        "keywords": "À propos Crédits Confidentialité",
+        "steps": {
+          "about": {
+            "title": "Ouvrir À propos",
+            "body": "À propos dans la barre du haut affiche l’auteur, la version du build et le traitement local de vos médias. En affichage compact, ouvrez le menu Plus.",
+            "missingHint": "Quittez le mode zen ou ouvrez le menu Plus pour trouver À propos."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Changer la langue de l’interface",
+        "description": "Choisissez une langue pour le studio, les exemples et les guides.",
+        "keywords": "langue traduction préférences international",
+        "stepTitle": "Choisissez votre langue",
+        "body": "Ouvrez le sélecteur de langue dans la barre supérieure. Chaque carte présente un drapeau et le nom de la langue dans son écriture. Votre choix est mémorisé sur cet appareil. L’interface change une fois le chargement terminé. Une connexion peut être nécessaire pour télécharger les polices de la langue. Votre projet et les noms des repères restent inchangés. Si la langue mémorisée ne peut pas être rétablie, l’app s’ouvre en anglais avec une explication et un bouton pour réessayer. Sur un écran étroit, la barre supérieure peut occuper plusieurs lignes pour garder toutes les commandes visibles."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Chargez d'abord deux images — le bouton Démo de la barre du haut est le plus rapide."
+      },
+      "studioHint": "Ouvrez l'onglet Studio en vue Édition.",
+      "placePointsGuide": {
+        "title": "Placer des points de correspondance",
+        "description": "Les points disent à Maillage et TPS quel endroit de A correspond à quel endroit de B.",
+        "keywords": "point repère correspondance mesh tps placer ajuster",
+        "steps": {
+          "pick-tool": {
+            "title": "L'outil Point",
+            "body": "Sélectionnez l'outil Point (raccourci P)."
+          },
+          "place-a": {
+            "title": "Cliquez un repère sur A",
+            "body": "Cliquez un endroit distinctif (un œil, un coin…) dans le panneau Source A. Une poignée jumelle apparaît sur B."
+          },
+          "adjust-b": {
+            "title": "Ajustez le côté B",
+            "body": "Glissez la poignée jumelle dans Cible B sur le même repère de l'autre image — cet appariement pilote la déformation."
+          },
+          "preview": {
+            "title": "Regardez la déformation",
+            "body": "Passez en Aperçu ou Triple pour voir Maillage/TPS courber les images à travers vos points."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Tracer des lignes orientées (Beier–Neely)",
+        "description": "Les paires de lignes pilotent le morphing par champ de Beier–Neely.",
+        "keywords": "ligne segment orientée beier neely contour tracer",
+        "steps": {
+          "pick-tool": {
+            "title": "L'outil Ligne",
+            "body": "Sélectionnez l'outil Ligne (raccourci L)."
+          },
+          "drag-line": {
+            "title": "Glissez le long d'un contour sur A",
+            "body": "Appuyez et glissez pour poser une ligne le long d'un contour fort (mâchoire, toit…). Sa jumelle apparaît sur B."
+          },
+          "orient-b": {
+            "title": "Respectez la direction sur B",
+            "body": "Déplacez les deux extrémités sur B sur le même contour, en gardant la MÊME direction — Beier–Neely projette le long et en travers de chaque ligne."
+          },
+          "use-beier": {
+            "title": "Passez sur Beier–Neely",
+            "body": "Les lignes ne déforment qu'avec l'algorithme Beier–Neely — choisissez sa tuile.",
+            "missingHint": "Ouvrez l'onglet Studio et la section Algorithme."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Dessiner une polyligne",
+        "description": "Courbes point par point ou à main levée, reprenables par une extrémité.",
+        "keywords": "polyligne courbe tracé main levée dessiner reprendre extrémité",
+        "steps": {
+          "pick-tool": {
+            "title": "L'outil Polyligne",
+            "body": "Sélectionnez l'outil Polyligne (raccourci Y)."
+          },
+          "tap-by-tap": {
+            "title": "Point par point",
+            "body": "Cliquez des points successifs le long d'un contour. ⏎ termine, Échap annule."
+          },
+          "freehand": {
+            "title": "Ou à main levée",
+            "body": "Appuyez et glissez d'un trait continu — le tracé est simplifié automatiquement au relâchement."
+          },
+          "resume": {
+            "title": "Reprendre par une extrémité",
+            "body": "Avec l'outil Polyligne actif, cliquez une extrémité d'une polyligne ouverte pour continuer le tracé."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Fermer une polyligne ouverte",
+        "description": "Deux façons de transformer une polyligne ouverte en polygone fermé.",
+        "keywords": "fermer polygone polyligne boucle extrémité premier point",
+        "steps": {
+          "intro": {
+            "title": "Deux méthodes de fermeture",
+            "body": "Une polyligne peut être fermée pendant le tracé, ou plus tard avec l'outil Sélection."
+          },
+          "close-first": {
+            "title": "Pendant le tracé : cliquez le point 1",
+            "body": "Pendant le tracé, re-cliquez le PREMIER point — la boucle se ferme et le tracé se termine."
+          },
+          "drop-endpoint": {
+            "title": "Après : extrémité sur extrémité",
+            "body": "Avec l'outil Sélection, glissez une extrémité d'une polyligne ouverte et déposez-la sur l'autre extrémité — même résultat."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Dessiner une région",
+        "description": "Une région fermée peut masquer un calque ; réglez l’adoucissement de son bord.",
+        "keywords": "région masque lasso contour adoucir dessiner",
+        "steps": {
+          "pick-tool": {
+            "title": "L'outil Masque région",
+            "body": "Sélectionnez l'outil Masque région — son contour est toujours fermé."
+          },
+          "outline": {
+            "title": "Entourez la zone sur A",
+            "body": "Cliquez des points ou tracez à main levée autour de la zone (un visage, un objet). Terminez avec ⏎ ou en fermant la boucle."
+          },
+          "feather": {
+            "title": "Adoucir le bord",
+            "body": "Sélectionnez la région et réglez Adoucissement pour assouplir son bord. Un calque qui utilise cette région comme masque possède aussi son propre mode de masque et son réglage d’adoucissement.",
+            "missingHint": "Ouvrez la section Sélection de l'inspecteur droit."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Sélectionner, renommer, verrouiller, masquer",
+        "description": "Gérez les repères et identifiez leur correspondance entre A et B au survol.",
+        "keywords": "sélection multi-sélection shift renommer verrouiller masquer beacon survol repère",
+        "steps": {
+          "pick-tool": {
+            "title": "L'outil Sélection",
+            "body": "Sélectionnez l'outil Sélection (raccourci V)."
+          },
+          "select": {
+            "title": "Cliquez une poignée",
+            "body": "Cliquez sur une poignée de repère pour la sélectionner ; maintenez Maj pour en sélectionner plusieurs. Le survol met en évidence la poignée correspondante dans l’autre panneau."
+          },
+          "inspector": {
+            "title": "Renommer, verrouiller, masquer",
+            "body": "La section Sélection renomme le repère et bascule Visible / Verrouillé.",
+            "missingHint": "Ouvrez la section Sélection de l'inspecteur droit."
+          },
+          "list": {
+            "title": "La liste des Repères",
+            "body": "La liste de gauche reflète tout : l'œil masque, le cadenas verrouille, et cliquer sélectionne."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Pousser les points et annuler",
+        "description": "Sculptez les poignées localement avec l'outil Pousser ; annulez/rétablissez chaque étape.",
+        "keywords": "pousser sculpter déformer local rayon annuler rétablir",
+        "steps": {
+          "pick-tool": {
+            "title": "L'outil Pousser",
+            "body": "Sélectionnez l'outil Pousser (raccourci K)."
+          },
+          "sculpt": {
+            "title": "Glissez pour sculpter",
+            "body": "Glissez sur l'image : chaque poignée dans l'anneau est poussée, plus fort au centre."
+          },
+          "undo": {
+            "title": "Annuler / rétablir",
+            "body": "Cmd/Ctrl+Z annule toute édition de repère ; Cmd/Ctrl+Shift+Z la rétablit."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Ouvrez la section Calques de l'inspecteur droit.",
+      "needsProject": {
+        "preconditionHint": "Chargez d'abord deux images — le bouton Démo de la barre du haut est le plus rapide."
+      },
+      "activateLayerStep": {
+        "title": "Activez un calque utilisateur",
+        "body": "Cliquez un calque autre que Global dans la section Calques — ses propriétés apparaissent juste sous la liste."
+      },
+      "createLayerGuide": {
+        "title": "Créer un calque",
+        "description": "Empilez des calques au-dessus de la base Global et lisez leurs badges de contribution.",
+        "keywords": "calque créer ajouter pile global ordre badge contribution",
+        "steps": {
+          "add": {
+            "title": "Ajoutez un calque",
+            "body": "Cliquez Ajouter un calque — le nouveau calque devient actif immédiatement."
+          },
+          "global-vs-layers": {
+            "title": "Global vs calques utilisateur",
+            "body": "Global rend le morphing par défaut en dessous. Les calques utilisateur se composent au-dessus, dans l'ordre de la liste — les flèches réordonnent la pile."
+          },
+          "badges": {
+            "title": "Badges de contribution",
+            "body": "Chaque ligne indique l’état actuel du calque : plein cadre (recouvre tout), avec masque, sans effet, hors clip…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Changer l'algorithme d'un calque",
+        "description": "Donnez à un calque son propre algorithme sans modifier celui du projet.",
+        "keywords": "calque algorithme override mesh tps beier par calque",
+        "steps": {
+          "override": {
+            "title": "Choisissez un algorithme pour ce calque",
+            "body": "Le menu Algorithme des propriétés du calque remplace le réglage du projet pour ce calque uniquement."
+          },
+          "badge": {
+            "title": "L’indication de l’algorithme du calque",
+            "body": "L’en-tête de la section Algorithme indique maintenant l’algorithme du calque. Ces réglages restent accessibles lorsqu’un repère est sélectionné.",
+            "missingHint": "Ouvrez la section Algorithme de l'inspecteur droit."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Masquer un calque avec une région",
+        "description": "Restreignez un calque à une région assignée, nette ou adoucie, inversible.",
+        "keywords": "masque région assigner calque net adouci inverser",
+        "preconditionHint": "Dessinez d'abord une région (outil Masque région) — le menu Masque liste les régions.",
+        "steps": {
+          "assign": {
+            "title": "Assignez une région",
+            "body": "Choisissez une région dans le menu Masque : le calque ne se compose plus qu'à l'intérieur."
+          },
+          "modes": {
+            "title": "Net, adouci, inversé",
+            "body": "Le mode du masque bascule entre coupe nette et bord adouci (avec sa valeur d'adoucissement) ; Inverser échange intérieur/extérieur."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Peindre un masque",
+        "description": "Peignez un masque directement sur l'image, suivez-le en direct dans l’aperçu.",
+        "keywords": "peindre pinceau masque diamètre dureté force gomme effacer direct",
+        "steps": {
+          "pick-brush": {
+            "title": "Le Pinceau de masque",
+            "body": "Sélectionnez le Pinceau de masque (raccourci B) — il peint le masque du calque ACTIF.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "settings": {
+            "title": "Réglages du pinceau",
+            "body": "Diamètre, dureté et force façonnent le trait. La gomme retire la peinture — cochez la case ou maintenez ⌥ en glissant.",
+            "missingHint": "Les réglages apparaissent sous la grille d'outils quand le pinceau est actif."
+          },
+          "paint": {
+            "title": "Peignez sur l'image",
+            "body": "Faites glisser le pinceau sur une image : l’aperçu central affiche le résultat en direct. Les vues Final et Masque permettent de contrôler l’effet. Le masque peint suit la déformation du calque et accompagne ainsi le contenu pendant le morphing.",
+            "missingHint": "Ouvrez l'onglet Studio en vue Édition."
+          },
+          "clear": {
+            "title": "Effacez-le à tout moment",
+            "body": "Masque peint → Effacer réinitialise entièrement le masque peint du calque."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opacité, fusion, clip et transition",
+        "description": "Dosez le rendu d'un calque, confinez-le à une tranche de la timeline, et choisissez quand le fondu s'y produit.",
+        "keywords": "opacité fusion mode composition clip timeline début durée interpolation transition warp dissolve fenêtre préréglage morph classique bezier courbe fantôme",
+        "steps": {
+          "opacity": {
+            "title": "Opacité",
+            "body": "Glissez l'opacité sous 1 pour fondre le calque avec ce qui est en dessous."
+          },
+          "blend": {
+            "title": "Mode de fusion",
+            "body": "Le menu Fusion règle le mélange du calque avec ceux du dessous : Normal, Produit, Superposition ou Addition. Produit multiplie les couleurs ; Superposition les éclaircit ; Addition additionne les couleurs et leur opacité, en limitant le résultat à leur valeur maximale."
+          },
+          "clip": {
+            "title": "Limiter la présence du calque dans le temps",
+            "body": "Glissez le bloc du calque dans la timeline pour le déplacer, ses bords pour le rogner — ou réglez Début et Durée dans les propriétés du calque."
+          },
+          "windows": {
+            "title": "Déformer progressivement, raccourcir le fondu",
+            "body": "La section Transition définit deux intervalles en pourcentage du clip. Déformation règle le passage d’une forme à l’autre ; Fondu règle le mélange des images A et B. Le préréglage Morphing classique conserve la déformation sur 0–100 % et limite le fondu à 30–70 %. Cela réduit la superposition des détails mal alignés au début et à la fin."
+          },
+          "windows-timeline": {
+            "title": "Lisez les fenêtres dans la timeline",
+            "body": "Le bloc du calque affiche les deux intervalles sur son bord inférieur : une bande claire pour le fondu et un trait fin pour la déformation. Vous pouvez ainsi situer le fondu dans le clip."
+          },
+          "easing": {
+            "title": "Façonnez la courbe",
+            "body": "L’interpolation règle la progression à l’intérieur des deux intervalles : cinq courbes prédéfinies, ou « personnalisée (Bézier) » avec deux poignées à déplacer. Cochez « Courbe distincte pour le fondu » pour régler sa progression indépendamment de celle de la déformation."
+          },
+          "global-too": {
+            "title": "Le calque Global aussi",
+            "body": "Sélectionnez Global : ce calque possède aussi une section Transition. Ses intervalles couvrent 0–100 % par défaut. Avec Fondu, seul le fondu agit, car cet algorithme ne déforme pas les images."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Chargez d'abord deux images — le bouton Démo de la barre du haut est le plus rapide."
+      },
+      "timelineGuide": {
+        "title": "Piloter la timeline",
+        "description": "Parcourez l’animation, lancez la lecture, avancez image par image et déplacez les clips.",
+        "keywords": "timeline scrub lecture pause image timecode clip déplacer rogner zen tab replier panneaux règle playhead",
+        "steps": {
+          "scrub": {
+            "title": "Déplacez la tête de lecture",
+            "body": "Cliquez ou faites glisser la souris sur la règle. La tête de lecture se déplace et l’aperçu affiche l’image à cet instant. Au stylet, touchez la position souhaitée et gardez la pointe sur l’écran pendant le glissement.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "transport": {
+            "title": "Lecture, pause, pas à pas",
+            "body": "Lecture lance l’animation en temps réel. Les boutons fléchés ou les touches ←/→ reculent ou avancent d’une image ; Alt-clic sur un bouton fléché rejoint une extrémité. Le code temporel se lit en secondes:images.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "clips": {
+            "title": "Déplacez et rognez les clips",
+            "body": "Les images et vidéos ont des clips sur A/B, au-dessus des calques. Glissez un bloc ou ses bords ; sa sélection expose Début et Durée. Une image fixe n'a pas de durée source : l'allonger peut prolonger le montage. Hors d'un clip, seul l'autre média contribue ; si aucun n'est présent, le fond apparaît.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "still-image-timing": {
+            "title": "Régler la présence d’une image",
+            "body": "Sélectionnez un clip image sur A ou B et saisissez sa durée en secondes (ou secondes:images). Raccourcir un clip conserve la durée du montage ; l’allonger prolonge la timeline si nécessaire. Les images clés des repères restent au temps maître : déplacer ou étirer le clip ne déplace ni n’étire leur animation. Les clips sont enregistrés dans le projet.",
+            "missingHint": "Ouvrez l’onglet Studio."
+          },
+          "zen": {
+            "title": "Le mode zen garde la règle",
+            "body": "{{shortcut}} masque les trois panneaux pour que le morphing remplisse l’écran. La timeline se réduit à une barre de 40 px qui conserve une règle compacte : graduations, codes temporels et tête de lecture. Vous pouvez toujours cliquer ou faire glisser la tête de lecture pour parcourir l’animation. Appuyez à nouveau sur {{shortcut}} pour rétablir les panneaux."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Morpher entre vidéos",
+        "description": "Importez des vidéos, placez les clips A/B et posez des images clés de repères.",
+        "keywords": "vidéo clip importer image clé poser piste chanter losange glisser retimer",
+        "steps": {
+          "get-videos": {
+            "title": "Obtenez deux vidéos",
+            "body": "La fenêtre Démo propose quatre clips chantés et deux clips de marche (filtre : Vidéos) — ou déposez vos propres vidéos sur les emplacements A/B. Vous pouvez aussi associer une image et une vidéo. Les projets sauvegardés conservent les métadonnées vidéo et demandent de reconnecter les fichiers locaux à la réouverture.",
+            "missingHint": "Ouvrez le sélecteur Démo."
+          },
+          "place-clips": {
+            "title": "Placez les clips A/B",
+            "body": "Chaque vidéo vit sur sa piste : glissez pour déplacer, les bords pour rogner, et les champs début/in/durée pour des valeurs exactes. Déplacer ou rogner un clip actualise l’aperçu sous la tête de lecture, sans devoir déplacer celle-ci ; la durée du montage reste inchangée. Les images clés des repères restent liées au temps du média source, y compris après un rognage, et sont conservées à la sauvegarde et à la réouverture. Hors de son clip, ce côté est exclu de l’aperçu comme de l'export ; l'autre côté remplit l'image.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          },
+          "keyframes": {
+            "title": "Posez des images clés",
+            "body": "Sélectionnez un repère : la ligne Images clés offre, par côté, précédente ◀, un losange ◆ qui pose ou retire une image clé au temps courant, suivante ▶, et le compteur. Les repères suivent ensuite le mouvement entre les images clés. Sur des images fixes, un repère reste immobile tant que vous n'avez pas posé une première image clé avec ◆ — ensuite, les déplacements à d'autres temps ajoutent des images clés et courbent la trajectoire du morphing.",
+            "missingHint": "Ouvrez la section Sélection de l'inspecteur droit."
+          },
+          "timeline-keyframes": {
+            "title": "Éditez les images clés sur la timeline",
+            "body": "Les images clés des repères sélectionnés apparaissent en losanges sur les pistes A et B, au temps où elles sont jouées. Cliquez pour rejoindre une image clé, faites-la glisser pour changer son instant (alignement sur l’image, une seule étape d’annulation), ou cliquez avec Alt pour la supprimer. Les losanges trop proches sont regroupés en une barre avec un compteur ; utilisez les flèches de l’inspecteur pour les atteindre individuellement.",
+            "missingHint": "Ouvrez l'onglet Studio."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Comparer les algorithmes",
+        "description": "Voyez les quatre algorithmes côte à côte sur le même projet.",
+        "keywords": "comparer grille côte à côte crossfade mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "Ouvrez Comparer",
+            "body": "L'onglet Comparer rend une grille 2×2 partageant vos images, repères et τ."
+          },
+          "read": {
+            "title": "Lisez la grille",
+            "body": "Fondu produit des contours dédoublés lorsque les détails des images sont désalignés. Maillage, TPS et Beier–Neely déforment les deux images vers une forme intermédiaire commune pour aligner les détails correspondants."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "Exporter en MP4 ou en images",
+        "description": "Exportez le morphing en vidéo ou en archive ZIP d’images PNG.",
+        "keywords": "export mp4 webm av1 zip images vidéo rendre télécharger",
+        "steps": {
+          "open": {
+            "title": "Ouvrez Exporter",
+            "body": "Tout se rend localement — rien n'est envoyé sur un serveur."
+          },
+          "settings": {
+            "title": "Choisissez la sortie",
+            "body": "La vidéo requiert WebCodecs et un encodeur H.264, VP9 ou AV1 disponible. La séquence d’images PNG ne nécessite pas de codecs vidéo et peut conserver un arrière-plan transparent. La vidéo est aplatie sur du noir ou du blanc. Réglez la résolution, la durée et la cadence."
+          },
+          "run": {
+            "title": "Exportez",
+            "body": "Le studio calcule chaque image et affiche la progression, puis télécharge le fichier. Pendant l’export, le même bouton permet d’annuler l’opération."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Raccourcis clavier",
+        "description": "Tous les raccourcis, directement depuis les tables de l'app.",
+        "keywords": "clavier raccourcis touches aide-mémoire",
+        "steps": {
+          "list": {
+            "title": "Raccourcis clavier"
+          }
+        }
+      }
+    }
+  },
+  "language": {
+    "title": "Langue",
+    "description": "Choisissez la langue de l’interface.",
+    "loading": "Chargement de {{language}}…",
+    "loadError": "Impossible de charger cette langue. Vérifiez votre connexion et réessayez.",
+    "retry": "Réessayer",
+    "names": {
+      "en": "Anglais",
+      "fr": "Français",
+      "de": "Allemand",
+      "es": "Espagnol",
+      "pt-BR": "Portugais (Brésil)",
+      "it": "Italien",
+      "tr": "Turc",
+      "id": "Indonésien",
+      "ru": "Russe",
+      "ja": "Japonais",
+      "ko": "Coréen",
+      "zh-Hans": "Chinois simplifié",
+      "th": "Thaï",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "ar": "Arabe"
+    },
+    "restoreError": "Impossible de rétablir la langue {{language}}. L’interface est en anglais. Connectez votre appareil à Internet pour charger cette langue, puis réessayez."
+  },
+  "algorithmNames": {
+    "crossfade": "Fondu",
+    "mesh": "Maillage",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Fondu",
+    "mesh": "Maillage",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  }
+}

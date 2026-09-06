@@ -1,0 +1,1193 @@
+{
+  "topbar": {
+    "new": "新建",
+    "newConfirmTitle": "新建项目",
+    "newConfirm": "放弃当前项目并新建项目？",
+    "newConfirmAction": "放弃",
+    "load": "打开",
+    "save": "保存",
+    "export": "导出",
+    "help": "帮助",
+    "language": "语言",
+    "loadErrorTitle": "加载失败",
+    "loadError": "无法加载项目。",
+    "videoSaveTitle": "保存项目",
+    "videoSaveNote": "视频文件不会嵌入项目。再次打开项目时，需要重新链接视频文件。继续保存？",
+    "videoSaveAction": "继续保存",
+    "loadErrors": {
+      "invalidJson": "项目文件无效。",
+      "unsupportedVersion": "不支持此项目版本。",
+      "invalidStructure": "项目包含无效或不完整的数据。",
+      "limitExceeded": "项目超出应用的安全限制。",
+      "invalidReference": "项目中的图层或控制要素引用已失效。",
+      "invalidMask": "项目中的手绘蒙版已损坏。"
+    },
+    "tabs": {
+      "studio": "工作室",
+      "compare": "对比"
+    },
+    "about": "关于"
+  },
+  "sidebar": {
+    "tools": "工具",
+    "assets": "媒体",
+    "features": "控制要素",
+    "layers": "图层"
+  },
+  "tools": {
+    "select": "选择",
+    "point": "点",
+    "line": "线段",
+    "polyline": "折线",
+    "region": "区域蒙版",
+    "brush": "蒙版画笔",
+    "push": "推移控制点",
+    "pan": "平移视图"
+  },
+  "assets": {
+    "sourceA": "源 A",
+    "targetB": "目标 B",
+    "replace": "替换图片/视频",
+    "choose": "选择图片/视频…",
+    "loading": "加载中…",
+    "video": "视频",
+    "videoMissing": "需要重新链接视频文件",
+    "relink": "重新链接",
+    "replaceInstead": "替换为其他图片或视频",
+    "relinkVideoOnly": "请选择原视频文件，重新链接到此位置。",
+    "relinkMismatch": "此视频与保存的文件不匹配。请检查分辨率和时长，或将媒体替换为其他文件。",
+    "relinkNoSavedVideo": "此位置已没有待链接的视频。",
+    "relinkAlreadyLinked": "此视频已链接。",
+    "loadError": "无法加载所选媒体。"
+  },
+  "brush": {
+    "selectLayerHint": "请选择一个图层来绘制其蒙版。Global 基础图层没有蒙版。",
+    "diameter": "直径",
+    "hardness": "硬度",
+    "strength": "强度",
+    "eraser": "橡皮擦",
+    "eraserHold": "（按住 ⌥）"
+  },
+  "features": {
+    "empty": "此图层中没有控制要素。",
+    "hide": "隐藏",
+    "show": "显示",
+    "hideFeature": "隐藏控制要素",
+    "showFeature": "显示控制要素",
+    "lock": "锁定",
+    "unlock": "解锁",
+    "lockFeature": "锁定控制要素",
+    "unlockFeature": "解锁控制要素",
+    "kinds": {
+      "point": "点",
+      "segment": "线段",
+      "polyline": "折线",
+      "region": "区域"
+    },
+    "visible": "可见",
+    "locked": "锁定",
+    "weight": "权重",
+    "layer": "图层",
+    "landmark": "对应部位",
+    "role": "用途",
+    "feather": "羽化",
+    "none": "无",
+    "semantics": {
+      "left-eye": "左眼",
+      "right-eye": "右眼",
+      "nose": "鼻子",
+      "mouth": "嘴巴",
+      "chin": "下巴",
+      "jaw": "下颌",
+      "hairline": "发际线",
+      "custom": "自定义"
+    },
+    "roles": {
+      "face": "面部",
+      "hair": "头发",
+      "neck": "颈部",
+      "body": "身体",
+      "background": "背景",
+      "custom": "自定义"
+    },
+    "keyframes": "关键帧",
+    "noKeyframes": "无",
+    "prevKeyframe": "{{side}} 的上一个关键帧",
+    "nextKeyframe": "{{side}} 的下一个关键帧",
+    "toggleKeyframe": "在当前时间添加/移除 {{side}} 的关键帧",
+    "keyframeCount_other": "{{count, number}} 个关键帧",
+    "keyframeHintStill": "静态图片上的控制要素在设置关键帧前，位置不随时间变化。点击 ◆ 添加第一个关键帧；之后在其他时间移动控制要素，会自动添加关键帧，从而调整形态过渡的非线性路径。",
+    "selectedCount_other": "已选中 {{count, number}} 个控制要素",
+    "deleteSelected": "删除所选项",
+    "coordinates": "坐标",
+    "pts": "{{count, number}} 个点"
+  },
+  "layers": {
+    "importFirst": "请先导入图片。",
+    "add": "添加图层",
+    "defaultName": "图层 {{index}}",
+    "hideLayer": "隐藏图层",
+    "showLayer": "显示图层",
+    "lockLayer": "锁定图层",
+    "unlockLayer": "解锁图层",
+    "moveUp": "上移图层",
+    "moveDown": "下移图层",
+    "featureCount_other": "{{count, number}} 个控制要素",
+    "globalHint": "Global 基础图层使用项目设置。选择自行添加的图层，可编辑其属性。",
+    "status": {
+      "base": "基础",
+      "disabled": "已停用",
+      "hidden": "已隐藏",
+      "outside-clip": "片段之外",
+      "no-contribution": "无作用",
+      "masked": "有蒙版",
+      "full-frame": "整个画面"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "算法",
+    "selection": "所选项",
+    "selectionHint": "选择一个控制要素进行编辑。",
+    "overrideBadge": "图层设置：{{name}}",
+    "soon": "即将推出",
+    "panel": "属性"
+  },
+  "algorithms": {
+    "crossfade": "线性混合，不改变形状",
+    "mesh": "通过 Delaunay 三角形进行形变",
+    "thin-plate-spline": "基于 RBF 的全局平滑形变",
+    "beier-neely": "通过有向线段的影响场进行形态过渡"
+  },
+  "tps": {
+    "smoothing": "平滑度 (λ)",
+    "borderAnchors": "边界锚点",
+    "anchorsPerSide": "每边锚点数",
+    "samplePolylines": "对折线采样",
+    "sampleSpacing": "采样间距"
+  },
+  "beier": {
+    "distanceSoftness": "近距离影响平滑度 (a)",
+    "falloffExponent": "衰减指数 (b)",
+    "lineLengthInfluence": "线段长度的影响 (p)",
+    "maxLines": "最大线段数",
+    "samplePolylines": "对折线采样"
+  },
+  "layerInspector": {
+    "title": "图层",
+    "enabled": "启用",
+    "visible": "可见",
+    "locked": "锁定",
+    "scope": {
+      "base": "基础图层：在其他图层下方显示项目的默认形态过渡。",
+      "disabled": "图层已停用：不参与预览或导出。",
+      "hidden": "图层已隐藏：预览和导出均会忽略此图层。",
+      "outside-clip": "片段之外：播放头不在此图层的时间片段内。",
+      "no-contribution": "无作用：添加控制要素或指定蒙版后，此图层才会影响渲染。",
+      "masked": "有蒙版：蒙版定义了此图层合成到下方图层之上的区域。",
+      "full-frame": "整个画面：此图层没有蒙版，会覆盖下方图层的整个画面。"
+    },
+    "algorithm": "算法",
+    "projectDefault": "项目默认",
+    "opacity": "不透明度",
+    "blend": "混合模式",
+    "blendModes": {
+      "normal": "正常",
+      "source-over": "正常 (source-over)",
+      "multiply": "正片叠底",
+      "screen": "滤色",
+      "lighter": "相加"
+    },
+    "mask": "蒙版",
+    "none": "无",
+    "paintedMask": "手绘蒙版",
+    "clear": "清除",
+    "maskMode": "蒙版边缘",
+    "maskModes": {
+      "hard": "硬边",
+      "feathered": "羽化"
+    },
+    "maskFeather": "羽化",
+    "invertMask": "反转蒙版",
+    "timelineClip": "时间轴片段",
+    "start": "起点",
+    "duration": "时长",
+    "easing": "缓动",
+    "easings": {
+      "linear": "线性",
+      "ease-in": "加速",
+      "ease-out": "减速",
+      "ease-in-out": "先加速后减速",
+      "smoothstep": "smoothstep",
+      "bezier": "自定义（贝塞尔）"
+    },
+    "transition": "过渡",
+    "warpWindow": "形变 (%)",
+    "warpStart": "形变起点 (%)",
+    "warpEnd": "形变终点 (%)",
+    "dissolveWindow": "溶解 (%)",
+    "dissolveStart": "溶解起点 (%)",
+    "dissolveEnd": "溶解终点 (%)",
+    "presets": {
+      "label": "预设",
+      "standard": "标准",
+      "classicMorph": "经典形态过渡",
+      "lateDissolve": "延后溶解",
+      "custom": "自定义"
+    },
+    "distinctDissolveEasing": "单独设置溶解曲线",
+    "dissolveEasing": "溶解缓动",
+    "bezierCurve": "{{name}}曲线",
+    "bezierHandle1": "曲线的第一个控制柄",
+    "bezierHandle2": "曲线的第二个控制柄",
+    "bezier": {
+      "x1": "控制柄 1 x",
+      "y1": "控制柄 1 y",
+      "x2": "控制柄 2 x",
+      "y2": "控制柄 2 y"
+    },
+    "stackPosition": "堆叠位置：{{position}}",
+    "delete": "删除图层",
+    "confirmTitle": "删除图层？",
+    "confirmBody": "删除“{{name}}”？其中的控制要素会归入 Global，不会被删除。",
+    "cancel": "取消",
+    "closeConfirm": "关闭删除确认"
+  },
+  "timeline": {
+    "videoMissing": "播放前请重新链接缺失的视频文件。",
+    "time": "时间",
+    "layers": "图层",
+    "outsideA": "A 之外",
+    "outsideB": "B 之外",
+    "position": "时间轴位置",
+    "prevFrame": "上一帧",
+    "prevFrameTitle": "上一帧；按住 Alt 点击可跳到起点",
+    "nextFrame": "下一帧",
+    "nextFrameTitle": "下一帧；按住 Alt 点击可跳到终点",
+    "play": "播放",
+    "pause": "暂停",
+    "start": "起点",
+    "in": "源入点",
+    "dur": "时长",
+    "timecodeAria": "{{label}}时间码",
+    "timecodeTitle": "{{label}}时间码（秒:帧）",
+    "tauTitle": "时间轴位置（秒:帧）",
+    "syncWaiting": "渲染中… {{elapsed}}",
+    "syncWaitingTitle": "预览引擎正在等待：{{phase}}。视图仍显示上一帧。",
+    "syncPhaseEngine": "启动视频引擎（读取文件、初始化解码器）",
+    "syncPhaseFrame": "定位并解码帧，然后传送到 GPU",
+    "syncLast": "上次渲染 {{elapsed}}",
+    "syncLastTitle": "移动时间轴后，最近一次渲染耗时（超过 0.5 秒时显示）",
+    "keyframeTitle": "关键帧 {{time}} 秒 — {{names}} · 点击跳转，拖动调整时间，按住 ⌥ 点击删除",
+    "keyframeTitleShared": "关键帧 {{time}} 秒 — {{names}} · 点击跳转，按住 ⌥ 点击删除",
+    "keyframeGroupTitle": "{{from}}–{{to}} 秒内有 {{count, number}} 个关键帧 — 间距过小，无法在此编辑 · 点击跳到第一个",
+    "transitionWindows": "{{name}} — 溶解 {{dissolveStart}}–{{dissolveEnd}}%，形变 {{warpStart}}–{{warpEnd}}%",
+    "imageClipName": "图片 · {{name}}",
+    "mediaClip": "片段 {{slot}} — {{name}}",
+    "imageClipHelp": "静态图片：拖动以移动，拖动边缘以调整长度，或选择片段后设置起点和时长。延长片段可能会延长时间轴。",
+    "altClick": "按住 Alt 点击"
+  },
+  "hud": {
+    "releaseToClose": "松开以关闭",
+    "eraser": "橡皮擦",
+    "maskBrushSelectLayer": "蒙版画笔 · 请选择图层",
+    "points_other": "{{count, number}} 个点",
+    "finishHint": "⏎ 完成 · Esc 取消",
+    "cancelHint": "Esc 取消"
+  },
+  "notices": {
+    "noWebgpu": "此演示使用 WebGPU 渲染。\n您的浏览器或设备似乎不支持 WebGPU。\n\n请尝试：\n- 新版 Chrome 或 Edge\n- 新版 Safari\n- 支持 WebGPU 的 Firefox",
+    "tooManyFeatures": "此项目包含大量控制要素。\n预览将使用一半分辨率。\n仍可导出最终结果。",
+    "deviceLost": "GPU 上下文已丢失，可能是内存不足或驱动程序重置所致。",
+    "reload": "重新加载",
+    "noWebcodecs": "预览可用，但此浏览器无法导出 MP4 视频。",
+    "codecUnsupported": "所选编解码器不支持此分辨率。请降低分辨率，或尝试其他格式或浏览器。"
+  },
+  "studio": {
+    "edit": "编辑",
+    "preview": "预览",
+    "triple": "三视图",
+    "morphPreview": "形态过渡预览",
+    "viewportsLinked": "各视图缩放/平移已联动，点击解除",
+    "viewportsUnlinked": "各视图独立缩放/平移，点击联动",
+    "importPrompt": "导入<a>源</a>与<b>目标</b>图片或视频，预览形态过渡。",
+    "importPromptEdit": "导入<a>源</a>与<b>目标</b>图片或视频，开始放置控制要素。",
+    "preparingGpu": "正在准备 GPU…",
+    "finishShape": "完成形状",
+    "cancelShape": "取消绘制形状",
+    "zoomIn": "放大",
+    "zoomOut": "缩小",
+    "zoomReset": "重置缩放 (100%)"
+  },
+  "compare": {
+    "importPrompt": "在工作室中导入<a>源</a>图片和<b>目标</b>图片，即可对比算法。"
+  },
+  "overlays": {
+    "features": "点与路径",
+    "mesh": "插值网格",
+    "tpsGrid": "形变网格",
+    "beierField": "影响网格",
+    "slots": {
+      "source": "源",
+      "preview": "预览",
+      "target": "目标"
+    },
+    "slotLabel": "{{label}}（{{slot}}）",
+    "slotMesh": "网格（{{slot}}）",
+    "overlayAria": "辅助显示：{{label}}"
+  },
+  "layerDebug": {
+    "final": "最终结果",
+    "finalTitle": "合成结果",
+    "layer": "图层",
+    "layerTitle": "所选图层的结果",
+    "mask": "蒙版",
+    "maskTitle": "所选区域的蒙版或图层蒙版",
+    "contrib": "作用区域",
+    "contribTitle": "以颜色显示所选图层的作用区域",
+    "selected": "所选图层",
+    "selectedTitle": "所选图层的辅助显示",
+    "all": "全部",
+    "allTitle": "所有可见图层的辅助显示",
+    "layerStack": "图层堆叠",
+    "closeStack": "关闭图层堆叠",
+    "opacity": "不透明度",
+    "controls": "预览控制"
+  },
+  "preview": {
+    "outsideVideoBoth": "视频 A/B 之外",
+    "outsideVideoA": "视频 A 之外",
+    "outsideVideoB": "视频 B 之外",
+    "beforeClip": "视频片段之前",
+    "afterClip": "视频片段之后",
+    "emptyClip": "空视频片段"
+  },
+  "export": {
+    "videoMissing": "导出前请重新链接所有缺失的视频文件。",
+    "cancel": "取消导出",
+    "limits": "限制：16–3840 × 16–2160 px，12–60 帧/秒，1–15 秒，最多 900 帧。",
+    "errors": {
+      "unsupportedWebgpu": "导出此项目需要 WebGPU。",
+      "unsupportedWebcodecs": "此浏览器无法使用 WebCodecs 导出视频。",
+      "unsupportedCodec": "所选编解码器不支持此分辨率。请尝试其他格式或较低分辨率。",
+      "invalidDimensions": "宽度应为 16–3840 px，高度应为 16–2160 px。",
+      "deviceDimensionLimit": "所选分辨率超出此 GPU 的纹理尺寸限制。",
+      "invalidFps": "帧率应为 12–60 帧/秒。",
+      "invalidDuration": "所选时间轴区间的时长应为 1–15 秒。",
+      "tooManyFrames": "一次最多可导出 900 帧。",
+      "invalidBitrate": "视频码率应为 1–20 Mbit/s。",
+      "sequenceTooLarge": "此 PNG 序列过大，无法在浏览器内存中导出。请降低分辨率、时长或帧率。",
+      "mediaMissing": "导出前请重新链接所有缺失的视频文件。",
+      "cancelled": "已取消导出。",
+      "gpuFailure": "渲染或编码期间导出失败。请降低设置后重试。"
+    },
+    "title": "导出",
+    "subtitle": "逐帧渲染形态过渡，生成可下载的文件。",
+    "output": "输出",
+    "video": "视频",
+    "imageSequence": "图片序列",
+    "resolution": "分辨率",
+    "presets": {
+      "project": "项目",
+      "source": "源",
+      "target": "目标",
+      "custom": "自定义"
+    },
+    "effective": "实际分辨率",
+    "timing": "时间设置",
+    "duration": "时长",
+    "videoDurationNote": "视频导出使用主时间轴的时长。",
+    "frameRate": "帧率",
+    "pingPong": "往返 (A→B→A)",
+    "encoding": "编码",
+    "format": "格式",
+    "bitrate": "码率",
+    "background": "背景",
+    "backgrounds": {
+      "black": "黑色",
+      "white": "白色",
+      "transparent": "透明"
+    },
+    "importPrompt": "在工作室中导入源与目标图片或视频，即可导出。",
+    "exporting": "正在导出…",
+    "exportButton": "导出 {{format}}",
+    "frameProgress": "第 {{index}} / {{count, number}} 帧",
+    "done": "导出完成，文件已下载。",
+    "share": "分享…",
+    "phases": {
+      "rendering": "渲染",
+      "encoding": "编码",
+      "muxing": "封装视频",
+      "zipping": "生成压缩包"
+    },
+    "width": "宽度",
+    "height": "高度",
+    "secondsValue": "{{value}} 秒",
+    "frameRateValue": "{{value}} 帧/秒",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "确定",
+    "cancel": "取消"
+  },
+  "mobile": {
+    "inspector": "属性",
+    "close": "关闭",
+    "closeInspector": "关闭属性面板",
+    "more": "更多",
+    "views": "视图"
+  },
+  "shell": {
+    "loading": "正在加载工作区…",
+    "surfaceLoadError": "无法加载工作区的此部分。",
+    "retry": "重试",
+    "panelAria": "{{tab}}面板",
+    "collapse": "收起",
+    "panels": {
+      "left": "媒体与控制要素面板",
+      "right": "属性面板",
+      "timeline": "时间轴面板"
+    },
+    "zen": "专注模式",
+    "hideChrome": "隐藏图片上的界面控件",
+    "showChrome": "显示图片上的界面控件"
+  },
+  "desktopGate": {
+    "title": "Morpher91 为电脑设计",
+    "body": "形态过渡工作室依赖 WebGPU、鼠标和大屏幕。在 Mac 或 PC 上使用新版 Chrome、Edge 或 Safari 打开此页面，可获得完整体验。也支持 iPad。",
+    "unsupported": "不支持智能手机：无法保证界面体验和性能。",
+    "copyLink": "复制链接",
+    "copied": "已复制链接",
+    "continueAnyway": "仍然继续（不受支持）"
+  },
+  "assist": {
+    "stepSatisfied": "此步骤已完成。准备好后再继续。",
+    "back": "上一步",
+    "next": "下一步",
+    "done": "完成",
+    "quit": "退出指南",
+    "showMe": "显示位置",
+    "step": "第 {{current}}/{{total}} 步",
+    "anchorMissing": "当前视图中未显示此控件。",
+    "launcherTitle": "您想做什么？",
+    "launcherDescription": "浏览或搜索操作指南。",
+    "searchPlaceholder": "搜索指南…",
+    "noResults": "没有匹配的指南。",
+    "suggestions": "推荐",
+    "categories": {
+      "start": "入门",
+      "features": "控制要素",
+      "layers-masks": "图层与蒙版",
+      "timeline-video": "时间轴与视频",
+      "output": "输出"
+    },
+    "shortcuts": {
+      "undo": "撤销",
+      "redo": "重做",
+      "delete": "删除所选项",
+      "stepFrame": "前进/后退一帧",
+      "jumpEnds": "跳到起点/终点",
+      "zen": "专注模式（隐藏面板）",
+      "hideChrome": "隐藏/显示图片上的界面控件"
+    }
+  },
+  "about": {
+    "credits": "制作信息",
+    "version": "v{{version}}",
+    "description": "基于 WebGPU 和 WebCodecs 的图片与视频二维形态过渡工作室。",
+    "author": "作者：André Frélicot。",
+    "privacyTitle": "隐私",
+    "privacy": "图片、视频和项目均在您的设备上处理。渲染与导出在浏览器内完成，不会将媒体发送到服务器。",
+    "close": "关闭",
+    "date": "2026年9月"
+  },
+  "language": {
+    "title": "语言",
+    "description": "选择界面语言。",
+    "loading": "正在加载{{language}}…",
+    "loadError": "无法加载此语言。请检查网络连接后重试。",
+    "retry": "重试",
+    "names": {
+      "en": "英语",
+      "fr": "法语",
+      "de": "德语",
+      "es": "西班牙语",
+      "pt-BR": "葡萄牙语（巴西）",
+      "it": "意大利语",
+      "tr": "土耳其语",
+      "id": "印度尼西亚语",
+      "ru": "俄语",
+      "ja": "日语",
+      "ko": "韩语",
+      "zh-Hans": "简体中文",
+      "th": "泰语",
+      "hi": "印地语",
+      "bn": "孟加拉语",
+      "ar": "阿拉伯语"
+    },
+    "restoreError": "无法恢复{{language}}，界面已使用英语显示。请联网加载此语言后重试。"
+  },
+  "algorithmNames": {
+    "crossfade": "交叉淡化",
+    "mesh": "网格",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "交叉淡化",
+    "mesh": "网格",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  },
+  "demo": {
+    "button": "演示",
+    "title": "演示媒体",
+    "subtitle": "为源 A 和目标 B 各选择一项媒体，可使用图片、视频或两者混搭。",
+    "slotEmpty": "空 — 请在下方选择",
+    "swap": "交换 A ↔ B",
+    "filterAll": "全部",
+    "filterImages": "图片",
+    "filterVideos": "视频",
+    "tabAssets": "媒体",
+    "tabPresets": "预设",
+    "presetsEmpty": "暂无示例项目。",
+    "load": "加载到项目",
+    "loadError": "无法加载演示媒体。",
+    "manifestError": "无法加载演示目录。",
+    "cta": "…或加载演示媒体",
+    "kindImage": "图片",
+    "kindVideo": "视频",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "同一对面部图片，配有点和线段。在过渡中点对比眼睛和嘴巴。",
+        "name": "对比 — 四种算法"
+      },
+      "crossfade-reference": {
+        "description": "不使用控制要素。观察重影，再打开对比视图。",
+        "name": "交叉淡化 — 观察重影"
+      },
+      "faces-points-tps": {
+        "description": "移动一个点，显示 TPS 网格，再对比关闭边界锚点后的效果。",
+        "name": "Claire → Bunny — TPS 控制点"
+      },
+      "faces-lines-beier": {
+        "description": "在眼睛、鼻子和嘴巴处设置有向线段。通过 a、b、p 调整线段的影响。",
+        "name": "面部 — Beier–Neely 线段"
+      },
+      "cars-mesh": {
+        "description": "车轮和轮廓引导三角形的位置。开启网格显示，查看形变。",
+        "name": "汽车 — 网格"
+      },
+      "layer-full-frame": {
+        "description": "隐藏上方图层，观察变化。由于没有蒙版，该图层显示时会替换 Global 图层的整个画面。",
+        "labels": {
+          "face": "面部 · 整个画面"
+        },
+        "name": "图层 — 整个画面"
+      },
+      "layer-region-mask": {
+        "description": "面部使用 TPS，周围使用交叉淡化。查看“蒙版”和“作用区域”，调整轮廓及羽化。",
+        "labels": {
+          "face": "面部 TPS"
+        },
+        "name": "区域 — 分区使用算法"
+      },
+      "mask-invert-blend": {
+        "description": "蒙版保护面部。切换图层的显示与隐藏，观察不透明度为 40% 的正片叠底效果。",
+        "labels": {
+          "outside": "外围正片叠底"
+        },
+        "name": "反转蒙版 — 正片叠底"
+      },
+      "blend-light": {
+        "description": "两个图层让图片变亮：面部使用滤色，周围使用相加。分别查看各图层，并调整不透明度。",
+        "labels": {
+          "light": "面部滤色",
+          "glow": "外围相加"
+        },
+        "name": "混合 — 滤色与相加"
+      },
+      "painted-mask": {
+        "description": "在 A 上绘制的蒙版跟随 TPS 形变。在 25%、50%、75% 处查看“蒙版”，再试用画笔和橡皮擦。",
+        "labels": {
+          "paint": "面部手绘蒙版 TPS"
+        },
+        "name": "手绘蒙版 — 跟随形态过渡"
+      },
+      "combined-masks": {
+        "description": "硬边区域与手绘蒙版取并集。查看“蒙版”，再试着用橡皮擦擦除区域外的部分。",
+        "labels": {
+          "paint": "面部手绘蒙版 TPS"
+        },
+        "name": "组合蒙版 — 区域与画笔"
+      },
+      "contours-push": {
+        "description": "选择“推移控制点”(K)，微调脸颊，然后撤销。将轮廓副本闭合，探索多边形。",
+        "name": "轮廓 — 推移控制点塑形"
+      },
+      "transition-classic": {
+        "description": "对比“标准”和“经典形态过渡”：形变区间为 0–100%，溶解区间为 30–70%。重点观察起点和终点。",
+        "name": "过渡 — 经典形态过渡"
+      },
+      "layers-timing": {
+        "description": "面部先于头发溶解。使用两个区间和一条贝塞尔曲线，并让图层保持可见直至结束。",
+        "labels": {
+          "face": "面部先行"
+        },
+        "name": "时序 — 先面部后外围"
+      },
+      "fruits-banana-pineapple": {
+        "description": "在静态图片上为闭合折线设置动画。移动菱形关键帧，再开启往返播放。",
+        "labels": {
+          "fruit": "TPS 轮廓动画"
+        },
+        "name": "水果 — 关键帧与往返"
+      },
+      "fruit-to-fox": {
+        "description": "叶冠变成耳朵，果实变成面部。通过轮廓建立对应关系，不使用人脸部位的控制点。",
+        "name": "菠萝 → Foxy — 变身"
+      },
+      "transparent-cutout": {
+        "description": "将 4:3 图片放入正方形画布，留白处透明。选择“透明”背景导出 PNG；视频会与背景合成。",
+        "name": "导出 — 透明留白"
+      },
+      "video-faces-keyframes": {
+        "description": "逐帧跟踪 44 个控制点：眼睛、鼻子、嘴唇和下颌。调整了 B 的源入点，使两侧表情更接近。",
+        "name": "视频 — 控制要素与关键帧"
+      },
+      "video-region-keyframes": {
+        "description": "轮廓和嘴部线段逐帧跟随动作。查看蒙版，再选择线段及其关键帧。",
+        "labels": {
+          "videoFace": "面部 TPS 动画"
+        },
+        "name": "视频 — 蒙版与线段动画"
+      },
+      "video-photo-alive": {
+        "description": "照片在一秒内过渡到同一张脸的视频。只有 B 侧设置关键帧，A 侧控制要素保持固定。",
+        "name": "照片 → 视频 — 动起来"
+      },
+      "video-clips-timing": {
+        "description": "A：0–3 秒，B：1.5–4.5 秒。修剪后，控制要素仍跟随源媒体时间。两个片段重叠时进行形态过渡。",
+        "name": "片段 — 修剪与重叠"
+      },
+      "video-body-walk": {
+        "description": "每帧 16 个控制点。警察使用姿态检测；机器人使用手动标记与光流跟踪。图层在片段重叠时起作用。",
+        "labels": {
+          "body": "重叠区间的形态过渡"
+        },
+        "name": "行走 — 全身形态过渡"
+      }
+    },
+    "assets": {
+      "red-sport-car": "红色跑车",
+      "red-city-car": "红色小型汽车",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "唱歌的 Foxy",
+      "bunny-singing": "唱歌的 Bunny",
+      "claire-singing": "唱歌的 Claire",
+      "anna-singing": "唱歌的 Anna",
+      "cop-body-walk": "行走的警察",
+      "karl2000-body-walk": "行走的 Karl2000",
+      "banana": "香蕉",
+      "pineapple": "菠萝"
+    },
+    "presetsNote": "这些预设由系统自动生成，用于展示工作室的功能，不保证艺术效果。"
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "加载两张图片",
+        "description": "使用演示媒体或自己的文件，填入源 A 与目标 B。",
+        "keywords": "加载 导入 图片 演示 媒体 预设 示例 源 目标 打开 文件",
+        "steps": {
+          "demo": {
+            "title": "从演示媒体开始",
+            "body": "打开“演示”→“预设”，按示例学习功能。每张卡片都展示源与目标媒体，并附有练习。先从“对比 — 四种算法”开始，再探索蒙版、过渡、关键帧和视频。示例会定位到适合观察的时间，并选好相应视图和图层。无论界面使用哪种语言，控制要素的名称都保持为英语。\n\n这些预设由系统自动生成，用于展示工作室的功能，不保证艺术效果。",
+            "missingHint": "打开“演示”选择器。"
+          },
+          "source": {
+            "title": "或导入自己的文件 — 源 A",
+            "body": "此位置可加载图片或视频，是形态过渡的起始一侧。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "target": {
+            "title": "目标 B",
+            "body": "填入第二个媒体。两侧媒体加载完成后，项目就会创建并显示预览。",
+            "missingHint": "打开“工作室”选项卡。"
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "选择形态过渡算法",
+        "description": "选择项目算法，了解四种算法的区别。",
+        "keywords": "算法 交叉淡化 网格 tps thin-plate spline beier neely 形变 变形",
+        "preconditionHint": "请先加载两张图片。使用顶部的“演示”按钮最快。",
+        "steps": {
+          "algorithm-list": {
+            "title": "四种算法",
+            "body": "交叉淡化只混合图片，不改变形状。网格算法通过 Delaunay 三角形进行形变。Thin-Plate Spline 使整张图片平滑形变。Beier–Neely 沿有向线段进行形变。",
+            "missingHint": "打开“工作室”选项卡和“算法”区域。"
+          },
+          "pick-tps": {
+            "title": "试用 Thin-Plate Spline",
+            "body": "点击 Thin-Plate Spline，预览会显示新的形变结果。",
+            "missingHint": "打开“工作室”选项卡和“算法”区域。"
+          },
+          "settings": {
+            "title": "算法设置",
+            "body": "当前算法的设置显示在卡片下方。TPS 的 λ 滑块用于权衡对应位置的精确度与形变的平滑度。",
+            "missingHint": "选择 TPS 或 Beier–Neely，即可显示其设置。"
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "操作工作室视图",
+        "description": "切换编辑、预览和三视图，缩放、平移及重置视图。",
+        "keywords": "视图 编辑 预览 三视图 缩放 放大 平移 重置 导航 视口",
+        "preconditionHint": "请先加载两张图片。使用顶部的“演示”按钮最快。",
+        "steps": {
+          "toggle": {
+            "title": "三种视图",
+            "body": "“编辑”显示 A | B，用于放置控制要素；“预览”放大显示形态过渡；“三视图”显示 A | 形态过渡 | B。工作区较窄时，可从菜单选择视图。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "triple": {
+            "title": "打开三视图",
+            "body": "点击“三视图”，即可在两侧编辑，同时在中间实时查看形态过渡。预览区较窄时，打开“预览控制”，选择“最终结果”“图层”“蒙版”或“作用区域”，也可切换辅助显示或查看图层堆叠。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "zoom-pan": {
+            "title": "缩放、平移、重置",
+            "body": "滚动滚轮或双指捏合可缩放。按住空格键拖动，或使用“平移视图”工具 (H) 来平移。双击或轻点两次可重置视图。在触控设备上，工作区固定不动，只有面板和浮层可以滚动。",
+            "missingHint": "在“工作室”中打开“编辑”或“三视图”。"
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "保存并重新打开项目",
+        "description": "保存项目结构和嵌入的图片，重新打开后链接本地视频。",
+        "keywords": "保存 打开 加载 项目 文件 morph json 重新打开 链接",
+        "preconditionHint": "请先加载两张图片。使用顶部的“演示”按钮最快。",
+        "steps": {
+          "save": {
+            "title": "保存",
+            "body": "“保存”会下载 .morph.json 文件，其中包含嵌入的图片、控制要素、图层和时间轴。视频文件保留在本地，项目仅记录其元数据，不会向服务器发送文件。"
+          },
+          "load": {
+            "title": "重新打开",
+            "body": "“打开”会恢复项目结构和嵌入的图片。在各个 A/B 位置使用“重新链接”，选择对应的本地视频文件。所有文件链接完成后，即可继续播放和导出。"
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "制作信息",
+        "description": "制作信息、应用版本与媒体本地处理说明。",
+        "keywords": "关于 制作信息 隐私",
+        "steps": {
+          "about": {
+            "title": "打开关于",
+            "body": "顶部的“关于”显示作者、构建版本和媒体本地处理说明。在紧凑布局中，请打开“更多”菜单。",
+            "missingHint": "退出专注模式，或打开“更多”菜单以找到“关于”。"
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "更改界面语言",
+        "description": "为工作室、示例和指南选择语言。",
+        "keywords": "语言 翻译 偏好 国际 中文 简体",
+        "stepTitle": "选择语言",
+        "body": "打开顶部的语言选择器。每张卡片都显示国旗，并使用该语言自身的文字显示名称。您的选择会保存在此设备上，加载完成后界面才会切换。下载语言字体可能需要网络连接。项目和控制要素的名称不会改变。如果无法恢复已保存的语言，应用会以英语打开，并显示说明和重试按钮。屏幕较窄时，顶部栏可能分为多行，以便显示所有命令。"
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "请先加载两张图片。使用顶部的“演示”按钮最快。"
+      },
+      "studioHint": "在“工作室”中打开“编辑”视图。",
+      "placePointsGuide": {
+        "title": "放置对应点",
+        "description": "用控制点告诉网格与 TPS，A 的哪个位置对应 B 的哪个位置。",
+        "keywords": "点 控制点 控制要素 对应 标记 网格 mesh tps 放置 调整",
+        "steps": {
+          "pick-tool": {
+            "title": "点工具",
+            "body": "选择“点”工具（快捷键 P）。"
+          },
+          "place-a": {
+            "title": "在 A 上选择特征位置",
+            "body": "在“源 A”中点击眼睛、角点等容易辨认的位置。B 侧会出现对应的控制柄。"
+          },
+          "adjust-b": {
+            "title": "调整 B 侧",
+            "body": "将“目标 B”中的控制柄拖到另一张图片的对应位置。这组对应关系用于控制形变。"
+          },
+          "preview": {
+            "title": "查看形变",
+            "body": "切换到“预览”或“三视图”，观察网格/TPS 如何根据控制点改变图片形状。"
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "绘制有向线段（Beier–Neely）",
+        "description": "成对的线段控制 Beier–Neely 的形变场。",
+        "keywords": "线 线段 有向 beier neely 轮廓 绘制",
+        "steps": {
+          "pick-tool": {
+            "title": "线段工具",
+            "body": "选择“线段”工具（快捷键 L）。"
+          },
+          "drag-line": {
+            "title": "沿 A 的轮廓拖动",
+            "body": "沿下颌、车顶等明显轮廓按住并拖动，绘制一条线段。B 侧会出现对应线段。"
+          },
+          "orient-b": {
+            "title": "保持 B 侧方向一致",
+            "body": "将 B 侧线段的两个端点移到对应轮廓上，并保持与 A 相同的方向。Beier–Neely 会沿线段及其垂直方向进行投影。"
+          },
+          "use-beier": {
+            "title": "切换到 Beier–Neely",
+            "body": "只有 Beier–Neely 使用线段进行形变。请选择它的算法卡片。",
+            "missingHint": "打开“工作室”选项卡和“算法”区域。"
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "绘制折线",
+        "description": "逐点或徒手绘制路径，也可以从端点继续绘制。",
+        "keywords": "折线 曲线 路径 徒手 绘制 续画 端点",
+        "steps": {
+          "pick-tool": {
+            "title": "折线工具",
+            "body": "选择“折线”工具（快捷键 Y）。"
+          },
+          "tap-by-tap": {
+            "title": "逐点绘制",
+            "body": "沿轮廓依次点击。按 ⏎ 完成，按 Esc 取消。"
+          },
+          "freehand": {
+            "title": "或徒手绘制",
+            "body": "按住并连续拖动。松开后，路径会自动简化。"
+          },
+          "resume": {
+            "title": "从端点继续",
+            "body": "启用“折线”工具后，点击未闭合折线的一个端点，即可继续绘制。"
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "闭合折线",
+        "description": "用两种方法将未闭合折线变为闭合多边形。",
+        "keywords": "闭合 多边形 折线 环 端点 第一个点",
+        "steps": {
+          "intro": {
+            "title": "两种闭合方式",
+            "body": "可以在绘制过程中闭合折线，也可以稍后使用“选择”工具闭合。"
+          },
+          "close-first": {
+            "title": "绘制时：点击第一个点",
+            "body": "绘制过程中，再次点击第一个点，路径就会闭合并结束绘制。"
+          },
+          "drop-endpoint": {
+            "title": "绘制后：合并两端点",
+            "body": "使用“选择”工具，将未闭合折线的一个端点拖到另一个端点上，松开即可闭合。"
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "绘制区域",
+        "description": "将闭合区域用作图层蒙版，并调整边缘羽化。",
+        "keywords": "区域 蒙版 套索 轮廓 羽化 柔化 绘制",
+        "steps": {
+          "pick-tool": {
+            "title": "区域蒙版工具",
+            "body": "选择“区域蒙版”工具。它的轮廓始终闭合。"
+          },
+          "outline": {
+            "title": "在 A 上圈出区域",
+            "body": "围绕面部或物体逐点点击，或徒手绘制。按 ⏎ 或闭合轮廓以完成。"
+          },
+          "feather": {
+            "title": "柔化边缘",
+            "body": "选中区域，调整“羽化”来柔化边缘。使用此区域作为蒙版的图层，也有自己的蒙版边缘模式和羽化设置。",
+            "missingHint": "展开右侧属性面板中的“所选项”区域。"
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "选择、重命名、锁定和隐藏",
+        "description": "管理控制要素，并查看悬停时的 A↔B 对应提示。",
+        "keywords": "选择 多选 shift 重命名 锁定 隐藏 对应 提示 悬停 控制要素",
+        "steps": {
+          "pick-tool": {
+            "title": "选择工具",
+            "body": "选择“选择”工具（快捷键 V）。"
+          },
+          "select": {
+            "title": "点击控制柄",
+            "body": "点击控制要素的控制柄进行选择，按住 Shift 可多选。鼠标悬停时，另一侧面板中的对应控制柄会高亮显示。"
+          },
+          "inspector": {
+            "title": "重命名、锁定和隐藏",
+            "body": "在“所选项”中修改控制要素的名称，或切换“可见”和“锁定”。",
+            "missingHint": "展开右侧属性面板中的“所选项”区域。"
+          },
+          "list": {
+            "title": "控制要素列表",
+            "body": "左侧列表反映所有状态。眼睛图标控制隐藏，锁形图标控制锁定，点击条目即可选中。"
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "推移控制点与撤销",
+        "description": "用推移工具调整局部控制柄，撤销或重做每次编辑。",
+        "keywords": "推移 推动 塑形 形变 局部 半径 撤销 重做",
+        "steps": {
+          "pick-tool": {
+            "title": "推移控制点工具",
+            "body": "选择“推移控制点”工具（快捷键 K）。"
+          },
+          "sculpt": {
+            "title": "拖动塑形",
+            "body": "在图片上拖动，圆圈内的控制柄会随之移动，越靠近中心移动越明显。"
+          },
+          "undo": {
+            "title": "撤销与重做",
+            "body": "Cmd/Ctrl+Z 撤销控制要素的编辑，Cmd/Ctrl+Shift+Z 重做。"
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "展开右侧属性面板中的“图层”区域。",
+      "needsProject": {
+        "preconditionHint": "请先加载两张图片。使用顶部的“演示”按钮最快。"
+      },
+      "activateLayerStep": {
+        "title": "选择自行添加的图层",
+        "body": "在“图层”区域中点击 Global 以外的图层，其属性会显示在列表下方。"
+      },
+      "createLayerGuide": {
+        "title": "创建图层",
+        "description": "在 Global 基础图层上方叠加图层，查看各图层的状态标记。",
+        "keywords": "图层 创建 添加 堆叠 global 顺序 标记 状态 作用区域",
+        "steps": {
+          "add": {
+            "title": "添加图层",
+            "body": "点击“添加图层”，新图层会立即被选中。"
+          },
+          "global-vs-layers": {
+            "title": "Global 与自行添加的图层",
+            "body": "Global 在底部渲染默认形态过渡。其他图层按列表顺序合成到上方。点击箭头可调整堆叠顺序。"
+          },
+          "badges": {
+            "title": "图层状态标记",
+            "body": "每一行都显示图层当前的作用：“整个画面”会覆盖下方整个画面，其他状态包括“有蒙版”“无作用”“片段之外”等。"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "更改图层算法",
+        "description": "为一个图层单独设置算法，不改变项目的默认算法。",
+        "keywords": "图层 算法 单独 覆盖 网格 mesh tps beier 每个图层",
+        "steps": {
+          "override": {
+            "title": "选择图层算法",
+            "body": "图层属性中的“算法”菜单仅覆盖此图层使用的项目默认算法。"
+          },
+          "badge": {
+            "title": "图层设置标记",
+            "body": "“算法”区域的标题旁会显示图层设置标记。即使选中了控制要素，仍然可以访问所有算法设置。",
+            "missingHint": "展开右侧属性面板中的“算法”区域。"
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "用区域为图层设置蒙版",
+        "description": "将图层限制在指定区域内，设置硬边或羽化，也可反转蒙版。",
+        "keywords": "蒙版 区域 指定 图层 硬边 羽化 反转",
+        "preconditionHint": "先用“区域蒙版”工具绘制一个区域。“蒙版”菜单会列出可用区域。",
+        "steps": {
+          "assign": {
+            "title": "指定区域",
+            "body": "在“蒙版”菜单中选择区域，图层就只会合成在该区域内部。"
+          },
+          "modes": {
+            "title": "硬边、羽化与反转",
+            "body": "在“蒙版边缘”中选择“硬边”或“羽化”，并调整羽化值。“反转蒙版”会交换内部与外部。"
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "绘制蒙版",
+        "description": "直接在图片上绘制蒙版，并在预览中实时查看效果。",
+        "keywords": "绘制 画笔 蒙版 直径 硬度 强度 橡皮擦 清除 实时",
+        "steps": {
+          "pick-brush": {
+            "title": "蒙版画笔",
+            "body": "选择“蒙版画笔”（快捷键 B）。画笔绘制的是当前所选图层的蒙版。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "settings": {
+            "title": "画笔设置",
+            "body": "直径、硬度和强度分别调整笔触宽度、边缘软硬与浓度。橡皮擦会擦除已绘制的蒙版，勾选它或按住 ⌥ 拖动即可使用。",
+            "missingHint": "选中画笔后，设置会显示在工具栏下方。"
+          },
+          "paint": {
+            "title": "在图片上绘制",
+            "body": "在图片上拖动画笔，中间的预览会实时更新。通过“最终结果”和“蒙版”视图检查效果。手绘蒙版会跟随图层的形变，因此在形态过渡中会随图片内容一起移动。",
+            "missingHint": "在“工作室”中打开“编辑”视图。"
+          },
+          "clear": {
+            "title": "清除整个手绘蒙版",
+            "body": "点击“手绘蒙版”下的“清除”，会完整重置此图层的手绘蒙版。"
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "不透明度、混合、片段与过渡",
+        "description": "调整图层效果，限定显示时间，并设置溶解发生的区间。",
+        "keywords": "不透明度 混合 模式 合成 片段 时间轴 起点 时长 缓动 过渡 形变 溶解 区间 预设 经典 贝塞尔 曲线 重影",
+        "steps": {
+          "opacity": {
+            "title": "不透明度",
+            "body": "将不透明度调到 1 以下，让图层与下方内容混合。"
+          },
+          "blend": {
+            "title": "混合模式",
+            "body": "“混合模式”决定图层如何与下方图层合成：正常、正片叠底、滤色或相加。正片叠底将颜色相乘，滤色使颜色变亮。相加分别累加上下图层的颜色分量和不透明度，并将各分量限制在允许的最大值以内。"
+          },
+          "clip": {
+            "title": "限定显示时间",
+            "body": "拖动时间轴中的图层块来移动它，拖动边缘来修剪。也可在图层属性中设置“起点”和“时长”。"
+          },
+          "windows": {
+            "title": "形变持续，溶解集中",
+            "body": "“过渡”区域按片段时长的百分比定义两个区间。“形变”控制形状变化，“溶解”控制 A/B 图片混合。“经典形态过渡”预设让形变覆盖 0–100%，将溶解限制在 30–70%，以减少起点和终点处未对齐细节产生的重影。"
+          },
+          "windows-timeline": {
+            "title": "在时间轴上查看区间",
+            "body": "图层块底部显示两个区间：亮色带表示溶解，细线表示形变。因此可以直接看出溶解在片段中的位置。"
+          },
+          "easing": {
+            "title": "调整曲线",
+            "body": "缓动决定两个区间内变化的进度。可选择五种预定义曲线，或选择“自定义（贝塞尔）”并拖动两个控制柄。启用“单独设置溶解曲线”后，即可独立于形变调整溶解进度。"
+          },
+          "global-too": {
+            "title": "Global 也可设置",
+            "body": "选择 Global，基础图层同样有“过渡”区域。默认区间为 0–100%。交叉淡化不会改变图片形状，因此只有溶解起作用。"
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "请先加载两张图片。使用顶部的“演示”按钮最快。"
+      },
+      "timelineGuide": {
+        "title": "操作时间轴",
+        "description": "浏览动画、播放、逐帧移动以及移动片段。",
+        "keywords": "时间轴 拖动预览 浏览 播放 暂停 帧 时间码 片段 移动 修剪 专注 tab 收起 面板 标尺 播放头",
+        "steps": {
+          "scrub": {
+            "title": "移动播放头",
+            "body": "在标尺上点击或拖动，播放头会随之移动，预览显示该时间的画面。 使用触控笔时，触碰所需位置，然后保持笔尖接触屏幕进行拖动。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "transport": {
+            "title": "播放、暂停和逐帧浏览",
+            "body": "点击“播放”可实时播放动画。箭头按钮或 ←/→ 键可逐帧移动；按住 Alt 点击箭头按钮可跳到起点或终点。时间码格式为秒:帧。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "clips": {
+            "title": "移动与修剪片段",
+            "body": "图片和视频都在 A/B 轨道上拥有片段，位于图层上方。拖动片段块或其边缘；选中片段后可设置“起点”和“时长”。静态图片没有固有时长，延长片段可能会延长项目。某一侧片段不存在时，仅显示另一侧媒体；两侧都不存在时显示背景。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "still-image-timing": {
+            "title": "设置图片的显示时间",
+            "body": "选择 A 或 B 的图片片段，以秒或秒:帧输入时长。缩短片段不会缩短项目时长；延长片段会在需要时延长时间轴。控制要素的关键帧仍使用主时间轴的时间：移动或拉伸片段不会移动或拉伸其关键帧动画。片段设置会随项目保存。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "zen": {
+            "title": "专注模式仍保留标尺",
+            "body": "按 {{shortcut}} 隐藏三个面板，让形态过渡占据更多空间。时间轴缩成 40 px 高的条形区域，仍保留刻度、时间码和播放头。您仍可点击或拖动播放头浏览动画。再次按 {{shortcut}} 恢复面板。"
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "在视频之间进行形态过渡",
+        "description": "导入视频、安排 A/B 片段，并为控制要素设置关键帧。",
+        "keywords": "视频 片段 导入 关键帧 设置 轨道 唱歌 菱形 拖动 调整时间",
+        "steps": {
+          "get-videos": {
+            "title": "准备两个视频",
+            "body": "“演示”的“视频”筛选中提供四段唱歌视频和两段行走视频，也可以将自己的视频拖到 A/B 位置。图片与视频也可混合使用。项目会保存视频元数据，再次打开时需要重新链接本地视频文件。",
+            "missingHint": "打开“演示”选择器。"
+          },
+          "place-clips": {
+            "title": "安排 A/B 片段",
+            "body": "每个视频都有自己的轨道。拖动片段来移动，拖动边缘来修剪，或使用“起点”“源入点”“时长”精确设置。移动或修剪片段时，播放头处的预览会实时更新，无需移动播放头，项目时长保持不变。修剪后，控制要素的关键帧仍绑定源媒体时间，保存并重新打开后也会保留。片段之外，该侧不参与预览或导出，另一侧会填满画面。",
+            "missingHint": "打开“工作室”选项卡。"
+          },
+          "keyframes": {
+            "title": "设置关键帧",
+            "body": "选择一个控制要素。“关键帧”行分别为 A/B 提供上一关键帧 ◀、在当前时间添加或移除关键帧的 ◆、下一关键帧 ▶ 和数量。控制要素会在关键帧之间移动。对于静态图片，在点击 ◆ 添加第一个关键帧前，控制要素的位置不随时间变化。添加后，在其他时间移动控制要素就会生成关键帧，用于调整形态过渡的非线性路径。",
+            "missingHint": "展开右侧属性面板中的“所选项”区域。"
+          },
+          "timeline-keyframes": {
+            "title": "在时间轴上编辑关键帧",
+            "body": "所选控制要素的关键帧会按播放时间，以菱形显示在 A/B 轨道上。点击可跳转，拖动可调整时间并吸附到帧，一次拖动可用一次撤销恢复。按住 Alt 点击可删除。过于接近的菱形会合并为带数量的条形标记，此时可通过属性面板的箭头分别跳转到各关键帧。",
+            "missingHint": "打开“工作室”选项卡。"
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "对比算法",
+        "description": "在同一项目上并排查看四种算法的结果。",
+        "keywords": "对比 网格 并排 交叉淡化 mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "打开对比",
+            "body": "“对比”选项卡显示一个 2×2 网格，共用项目中的图片、控制要素和 τ。"
+          },
+          "read": {
+            "title": "查看结果",
+            "body": "图片细节未对齐时，交叉淡化会产生重影。网格、TPS 和 Beier–Neely 会将两张图片变形成共同的中间形状，使对应细节对齐。"
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "导出视频或图片",
+        "description": "将形态过渡导出为视频或包含 PNG 图片的 ZIP 压缩包。",
+        "keywords": "导出 mp4 webm av1 zip png 图片 视频 渲染 下载",
+        "steps": {
+          "open": {
+            "title": "打开导出",
+            "body": "所有渲染都在本地完成，不会向服务器发送内容。"
+          },
+          "settings": {
+            "title": "选择输出",
+            "body": "视频导出需要 WebCodecs，以及可用的 H.264、VP9 或 AV1 编码器之一。PNG 图片序列不需要视频编解码器，并可保留透明背景。视频则会与黑色或白色背景合成。请设置分辨率、时长和帧率。"
+          },
+          "run": {
+            "title": "导出",
+            "body": "工作室逐帧计算并显示进度，完成后下载文件。导出期间，同一个按钮可用于取消操作。"
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "键盘快捷键",
+        "description": "查看直接来自应用命令表的全部快捷键。",
+        "keywords": "键盘 快捷键 按键 速查",
+        "steps": {
+          "list": {
+            "title": "键盘快捷键"
+          }
+        }
+      }
+    }
+  }
+}

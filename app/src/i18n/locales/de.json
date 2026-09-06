@@ -1,0 +1,1197 @@
+{
+  "topbar": {
+    "new": "Neu",
+    "newConfirmTitle": "Neues Projekt",
+    "newConfirm": "Das aktuelle Projekt verwerfen und ein neues erstellen?",
+    "newConfirmAction": "Verwerfen",
+    "load": "Öffnen",
+    "save": "Speichern",
+    "export": "Exportieren",
+    "help": "Hilfe",
+    "language": "Sprache",
+    "loadErrorTitle": "Fehler beim Öffnen",
+    "loadError": "Das Projekt konnte nicht geöffnet werden.",
+    "videoSaveTitle": "Projekt speichern",
+    "videoSaveNote": "Videodateien werden nicht in das Projekt eingebettet. Beim erneuten Öffnen müssen Sie sie wieder verknüpfen. Trotzdem speichern?",
+    "videoSaveAction": "Trotzdem speichern",
+    "loadErrors": {
+      "invalidJson": "Diese Projektdatei ist ungültig.",
+      "unsupportedVersion": "Diese Projektversion wird nicht unterstützt.",
+      "invalidStructure": "Das Projekt enthält ungültige oder unvollständige Daten.",
+      "limitExceeded": "Das Projekt überschreitet die Sicherheitsgrenzen der Anwendung.",
+      "invalidReference": "Das Projekt enthält ungültige Verweise auf Ebenen oder Referenzen.",
+      "invalidMask": "Das Projekt enthält eine beschädigte gemalte Maske."
+    },
+    "tabs": {
+      "studio": "Studio",
+      "compare": "Vergleichen"
+    },
+    "about": "Über"
+  },
+  "sidebar": {
+    "tools": "Werkzeuge",
+    "assets": "Medien",
+    "features": "Referenzen",
+    "layers": "Ebenen"
+  },
+  "tools": {
+    "select": "Auswahl",
+    "point": "Punkt",
+    "line": "Linie",
+    "polyline": "Polylinie",
+    "region": "Bereichsmaske",
+    "brush": "Maskenpinsel",
+    "push": "Punkte verschieben",
+    "pan": "Ansicht verschieben"
+  },
+  "assets": {
+    "sourceA": "Quelle A",
+    "targetB": "Ziel B",
+    "replace": "Bild/Video ersetzen",
+    "choose": "Bild/Video auswählen…",
+    "loading": "Wird geladen…",
+    "video": "Video",
+    "videoMissing": "Die Videodatei muss neu verknüpft werden",
+    "relink": "Neu verknüpfen",
+    "replaceInstead": "Durch ein anderes Bild oder Video ersetzen",
+    "relinkVideoOnly": "Wählen Sie die erwartete Videodatei, um diesen Medienplatz neu zu verknüpfen.",
+    "relinkMismatch": "Dieses Video entspricht nicht der gespeicherten Datei. Prüfen Sie die Abmessungen und die Dauer oder ersetzen Sie stattdessen das Medium.",
+    "relinkNoSavedVideo": "Für diesen Medienplatz wird keine Videodatei mehr erwartet.",
+    "relinkAlreadyLinked": "Dieses Video ist bereits verknüpft.",
+    "loadError": "Das ausgewählte Medium konnte nicht geladen werden."
+  },
+  "brush": {
+    "selectLayerHint": "Wählen Sie eine Ebene, um ihre Maske zu malen. Die Basisebene Global hat keine gemalte Maske.",
+    "diameter": "Durchmesser",
+    "hardness": "Härte",
+    "strength": "Stärke",
+    "eraser": "Radierer",
+    "eraserHold": "(⌥ gedrückt halten)"
+  },
+  "features": {
+    "empty": "Keine Referenzen in dieser Ebene.",
+    "hide": "Ausblenden",
+    "show": "Einblenden",
+    "hideFeature": "Referenz ausblenden",
+    "showFeature": "Referenz einblenden",
+    "lock": "Sperren",
+    "unlock": "Entsperren",
+    "lockFeature": "Referenz sperren",
+    "unlockFeature": "Referenz entsperren",
+    "kinds": {
+      "point": "Punkt",
+      "segment": "Linie",
+      "polyline": "Polylinie",
+      "region": "Bereich"
+    },
+    "visible": "Sichtbar",
+    "locked": "Gesperrt",
+    "weight": "Gewichtung",
+    "layer": "Ebene",
+    "landmark": "Zuordnung",
+    "role": "Rolle",
+    "feather": "Weiche Kante",
+    "none": "keine",
+    "semantics": {
+      "left-eye": "linkes Auge",
+      "right-eye": "rechtes Auge",
+      "nose": "Nase",
+      "mouth": "Mund",
+      "chin": "Kinn",
+      "jaw": "Kiefer",
+      "hairline": "Haaransatz",
+      "custom": "benutzerdefiniert"
+    },
+    "roles": {
+      "face": "Gesicht",
+      "hair": "Haare",
+      "neck": "Hals",
+      "body": "Körper",
+      "background": "Hintergrund",
+      "custom": "benutzerdefiniert"
+    },
+    "keyframes": "Keyframes",
+    "noKeyframes": "keine",
+    "prevKeyframe": "Vorheriger Keyframe für {{side}}",
+    "nextKeyframe": "Nächster Keyframe für {{side}}",
+    "toggleKeyframe": "Keyframe für {{side}} an der aktuellen Zeit setzen oder entfernen",
+    "keyframeCount_one": "{{count, number}} Keyframe",
+    "keyframeCount_other": "{{count, number}} Keyframes",
+    "keyframeHintStill": "Ohne Video bleibt diese Referenz zunächst unbewegt. Setzen Sie mit ◆ einen ersten Keyframe. Danach erzeugt jede Verschiebung zu einer anderen Zeit einen weiteren Keyframe und ermöglicht eine nichtlineare Bewegung.",
+    "selectedCount_one": "{{count, number}} Referenz ausgewählt",
+    "selectedCount_other": "{{count, number}} Referenzen ausgewählt",
+    "deleteSelected": "Auswahl löschen",
+    "coordinates": "Koordinaten",
+    "pts": "{{count, number}} Pkt."
+  },
+  "layers": {
+    "importFirst": "Importieren Sie zuerst Bilder.",
+    "add": "Ebene hinzufügen",
+    "defaultName": "Ebene {{index}}",
+    "hideLayer": "Ebene ausblenden",
+    "showLayer": "Ebene einblenden",
+    "lockLayer": "Ebene sperren",
+    "unlockLayer": "Ebene entsperren",
+    "moveUp": "Ebene nach oben",
+    "moveDown": "Ebene nach unten",
+    "featureCount_one": "{{count, number}} Referenz",
+    "featureCount_other": "{{count, number}} Referenzen",
+    "globalHint": "Die Basisebene Global verwendet die Projekteinstellungen. Wählen Sie eine eigene Ebene, um deren Eigenschaften zu bearbeiten.",
+    "status": {
+      "base": "Basis",
+      "disabled": "deaktiviert",
+      "hidden": "ausgeblendet",
+      "outside-clip": "außerhalb des Clips",
+      "no-contribution": "ohne Wirkung",
+      "masked": "mit Maske",
+      "full-frame": "bildfüllend"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "Algorithmus",
+    "selection": "Auswahl",
+    "selectionHint": "Wählen Sie eine Referenz zum Bearbeiten.",
+    "overrideBadge": "abweichend: {{name}}",
+    "soon": "demnächst",
+    "panel": "Eigenschaften"
+  },
+  "algorithms": {
+    "crossfade": "Lineare Überblendung ohne Verformung",
+    "mesh": "Verformung mit Delaunay-Dreiecken",
+    "thin-plate-spline": "Glatte globale RBF-Verformung",
+    "beier-neely": "Morphing durch ein Linienfeld"
+  },
+  "tps": {
+    "smoothing": "Glättung (λ)",
+    "borderAnchors": "Randanker",
+    "anchorsPerSide": "Anker je Seite",
+    "samplePolylines": "Polylinien abtasten",
+    "sampleSpacing": "Abtastabstand"
+  },
+  "beier": {
+    "distanceSoftness": "Distanzglättung (a)",
+    "falloffExponent": "Abfallexponent (b)",
+    "lineLengthInfluence": "Einfluss der Linienlänge (p)",
+    "maxLines": "Max. Linien",
+    "samplePolylines": "Polylinien abtasten"
+  },
+  "layerInspector": {
+    "title": "Ebene",
+    "enabled": "Aktiviert",
+    "visible": "Sichtbar",
+    "locked": "Gesperrt",
+    "scope": {
+      "base": "Basisebene: rendert das Standard-Morphing unter den eigenen Ebenen.",
+      "disabled": "Deaktivierte Ebene: trägt weder zur Vorschau noch zum Export bei.",
+      "hidden": "Ausgeblendete Ebene: wird in Vorschau und Export übersprungen.",
+      "outside-clip": "Außerhalb des Clips: die Abspielposition liegt nicht im Zeitbereich dieser Ebene.",
+      "no-contribution": "Ohne Wirkung: fügen Sie Referenzen hinzu oder weisen Sie eine Maske zu, damit diese Ebene das Ergebnis beeinflusst.",
+      "masked": "Ebene mit Maske: Die Maske bestimmt den Bereich, der über die darunterliegenden Ebenen gelegt wird.",
+      "full-frame": "Bildfüllende Ebene: ohne Maske bedeckt sie die darunterliegenden Ebenen."
+    },
+    "algorithm": "Algorithmus",
+    "projectDefault": "Projektstandard",
+    "opacity": "Deckkraft",
+    "blend": "Mischmodus",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Multiplizieren",
+      "screen": "Negativ multiplizieren",
+      "lighter": "Addieren"
+    },
+    "mask": "Maske",
+    "none": "keine",
+    "paintedMask": "Gemalte Maske",
+    "clear": "Leeren",
+    "maskMode": "Maskenmodus",
+    "maskModes": {
+      "hard": "harte Kante",
+      "feathered": "weiche Kante"
+    },
+    "maskFeather": "Weiche Kante",
+    "invertMask": "Maske umkehren",
+    "timelineClip": "Zeitleisten-Clip",
+    "start": "Start",
+    "duration": "Dauer",
+    "easing": "Verlauf",
+    "easings": {
+      "linear": "linear",
+      "ease-in": "beschleunigen",
+      "ease-out": "abbremsen",
+      "ease-in-out": "beschleunigen/abbremsen",
+      "smoothstep": "Smoothstep",
+      "bezier": "benutzerdefiniert (Bézier)"
+    },
+    "transition": "Übergang",
+    "warpWindow": "Verformung (%)",
+    "warpStart": "Beginn der Verformung (%)",
+    "warpEnd": "Ende der Verformung (%)",
+    "dissolveWindow": "Überblendung (%)",
+    "dissolveStart": "Beginn der Überblendung (%)",
+    "dissolveEnd": "Ende der Überblendung (%)",
+    "presets": {
+      "label": "Vorgabe",
+      "standard": "Standard",
+      "classicMorph": "Klassisches Morphing",
+      "lateDissolve": "Späte Überblendung",
+      "custom": "Benutzerdefiniert"
+    },
+    "distinctDissolveEasing": "Eigener Verlauf für die Überblendung",
+    "dissolveEasing": "Verlauf der Überblendung",
+    "bezierCurve": "Kurve {{name}}",
+    "bezierHandle1": "Erster Kurvengriff",
+    "bezierHandle2": "Zweiter Kurvengriff",
+    "bezier": {
+      "x1": "Griff 1 x",
+      "y1": "Griff 1 y",
+      "x2": "Griff 2 x",
+      "y2": "Griff 2 y"
+    },
+    "stackPosition": "Position im Ebenenstapel: {{position}}",
+    "delete": "Ebene löschen",
+    "confirmTitle": "Ebene löschen?",
+    "confirmBody": "„{{name}}“ löschen? Ihre Referenzen werden global zugeordnet und nicht gelöscht.",
+    "cancel": "Abbrechen",
+    "closeConfirm": "Löschbestätigung schließen"
+  },
+  "timeline": {
+    "videoMissing": "Verknüpfen Sie fehlende Videodateien vor der Wiedergabe neu.",
+    "time": "Zeit",
+    "layers": "Ebenen",
+    "outsideA": "außerhalb A",
+    "outsideB": "außerhalb B",
+    "position": "Abspielposition",
+    "prevFrame": "Vorheriges Bild",
+    "prevFrameTitle": "Vorheriges Bild; Alt-Klick springt zum Anfang",
+    "nextFrame": "Nächstes Bild",
+    "nextFrameTitle": "Nächstes Bild; Alt-Klick springt zum Ende",
+    "play": "Wiedergabe",
+    "pause": "Pause",
+    "start": "Start",
+    "in": "In",
+    "dur": "Dauer",
+    "timecodeAria": "Timecode {{label}}",
+    "timecodeTitle": "Timecode {{label}} (Sekunden:Bilder)",
+    "tauTitle": "Abspielposition (Sekunden:Bilder)",
+    "syncWaiting": "Rendern… {{elapsed}}",
+    "syncWaitingTitle": "Die Vorschau wartet auf: {{phase}}. Die Ansichten zeigen noch das vorherige Bild.",
+    "syncPhaseEngine": "Öffnen des Videos (Datei lesen, Decoder initialisieren)",
+    "syncPhaseFrame": "Ansteuern und Decodieren des Bildes sowie Übertragen zur GPU",
+    "syncLast": "Letztes Rendern: {{elapsed}}",
+    "syncLastTitle": "Dauer des letzten Renderns nach einem Zeitsprung (wird ab 0,5 s angezeigt)",
+    "keyframeTitle": "Keyframe bei {{time}} s — {{names}} · Klick: anspringen, Ziehen: verschieben, ⌥-Klick: löschen",
+    "keyframeTitleShared": "Keyframe bei {{time}} s — {{names}} · Klick: anspringen, ⌥-Klick: löschen",
+    "keyframeGroupTitle": "{{count, number}} Keyframes zwischen {{from}} und {{to}} s — für die Bearbeitung hier zu dicht beieinander · Klick: ersten anspringen",
+    "transitionWindows": "{{name}} — Überblendung {{dissolveStart}}–{{dissolveEnd}} %, Verformung {{warpStart}}–{{warpEnd}} %",
+    "imageClipName": "Bild · {{name}}",
+    "mediaClip": "Clip {{slot}} — {{name}}",
+    "imageClipHelp": "Standbild: zum Verschieben ziehen, die Kanten verlängern oder kürzen oder den Clip auswählen, um Start und Dauer einzustellen. Ein längerer Clip kann die Zeitleiste verlängern.",
+    "altClick": "Alt-Klick"
+  },
+  "hud": {
+    "releaseToClose": "zum Schließen loslassen",
+    "eraser": "Radierer",
+    "maskBrushSelectLayer": "Maskenpinsel · Ebene auswählen",
+    "points_one": "{{count, number}} Pkt.",
+    "points_other": "{{count, number}} Pkt.",
+    "finishHint": "⏎ abschließen · Esc abbrechen",
+    "cancelHint": "Esc abbrechen"
+  },
+  "notices": {
+    "noWebgpu": "Diese Anwendung verwendet WebGPU zum Rendern.\nIhr Browser oder Gerät scheint WebGPU nicht zu unterstützen.\n\nVersuchen Sie:\n- eine aktuelle Version von Chrome oder Edge\n- eine aktuelle Version von Safari\n- eine Firefox-Version mit WebGPU-Unterstützung",
+    "tooManyFeatures": "Dieses Projekt enthält viele Referenzen.\nDie Vorschau wird mit halber Auflösung gerendert.\nDer endgültige Export bleibt möglich.",
+    "deviceLost": "Der GPU-Kontext wurde verloren (zu wenig Speicher oder ein zurückgesetzter Treiber).",
+    "reload": "Neu laden",
+    "noWebcodecs": "Die Vorschau funktioniert, aber der MP4-Videoexport ist in diesem Browser nicht verfügbar.",
+    "codecUnsupported": "Der gewünschte Codec ist bei dieser Auflösung nicht verfügbar. Versuchen Sie eine niedrigere Auflösung, ein anderes Format oder einen anderen Browser."
+  },
+  "studio": {
+    "edit": "Bearbeiten",
+    "preview": "Vorschau",
+    "triple": "Dreifach",
+    "morphPreview": "Morphing-Vorschau",
+    "viewportsLinked": "Zoom und Verschieben sind zwischen den Ansichten gekoppelt — klicken zum Entkoppeln",
+    "viewportsUnlinked": "Zoom und Verschieben sind je Ansicht unabhängig — klicken zum Koppeln",
+    "importPrompt": "Importieren Sie ein <a>Quellbild/-video</a> und ein <b>Zielbild/-video</b>, um das Morphing anzusehen.",
+    "importPromptEdit": "Importieren Sie ein <a>Quellbild/-video</a> und ein <b>Zielbild/-video</b>, um Referenzen zu setzen.",
+    "preparingGpu": "GPU wird vorbereitet…",
+    "finishShape": "Form abschließen",
+    "cancelShape": "Form verwerfen",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "zoomReset": "Zoom zurücksetzen (100 %)"
+  },
+  "compare": {
+    "importPrompt": "Importieren Sie im Studio ein <a>Quellbild</a> und ein <b>Zielbild</b>, um die Algorithmen zu vergleichen."
+  },
+  "overlays": {
+    "features": "Punkte und Pfade",
+    "mesh": "Interpoliertes Dreiecksnetz",
+    "tpsGrid": "Verformungsgitter",
+    "beierField": "Einflussgitter",
+    "slots": {
+      "source": "Quelle",
+      "preview": "Vorschau",
+      "target": "Ziel"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Dreiecksnetz ({{slot}})",
+    "overlayAria": "Einblendung: {{label}}"
+  },
+  "layerDebug": {
+    "final": "Ergebnis",
+    "finalTitle": "Zusammengesetztes Ergebnis",
+    "layer": "Ebene",
+    "layerTitle": "Ergebnis der ausgewählten Ebene",
+    "mask": "Maske",
+    "maskTitle": "Maske des ausgewählten Bereichs oder Ebenenmaske",
+    "contrib": "Beitrag",
+    "contribTitle": "Ebenenbeitrag einblenden",
+    "selected": "Auswahl",
+    "selectedTitle": "Einblendungen der ausgewählten Ebene",
+    "all": "Alle",
+    "allTitle": "Einblendungen aller sichtbaren Ebenen",
+    "layerStack": "Ebenenstapel",
+    "closeStack": "Ebenenstapel schließen",
+    "opacity": "Deckkraft",
+    "controls": "Vorschausteuerung"
+  },
+  "preview": {
+    "outsideVideoBoth": "außerhalb Video A/B",
+    "outsideVideoA": "außerhalb Video A",
+    "outsideVideoB": "außerhalb Video B",
+    "beforeClip": "vor dem Videoclip",
+    "afterClip": "nach dem Videoclip",
+    "emptyClip": "leerer Videoclip"
+  },
+  "export": {
+    "videoMissing": "Verknüpfen Sie vor dem Export alle fehlenden Videodateien neu.",
+    "cancel": "Export abbrechen",
+    "limits": "Grenzen: 16–3840 × 16–2160 px, 12–60 Bilder/s, 1–15 s, höchstens 900 Bilder.",
+    "errors": {
+      "unsupportedWebgpu": "Zum Exportieren dieses Projekts ist WebGPU erforderlich.",
+      "unsupportedWebcodecs": "WebCodecs ist in diesem Browser nicht für den Videoexport verfügbar.",
+      "unsupportedCodec": "Dieser Codec ist bei der gewählten Auflösung nicht verfügbar. Versuchen Sie ein anderes Format oder eine niedrigere Auflösung.",
+      "invalidDimensions": "Die Breite muss zwischen 16 und 3840 px und die Höhe zwischen 16 und 2160 px liegen.",
+      "deviceDimensionLimit": "Die gewählte Auflösung überschreitet die maximale Texturgröße dieser GPU.",
+      "invalidFps": "Die Bildrate muss zwischen 12 und 60 Bildern/s liegen.",
+      "invalidDuration": "Der gewählte Zeitbereich muss zwischen 1 und 15 Sekunden lang sein.",
+      "tooManyFrames": "Ein Export darf höchstens 900 Bilder enthalten.",
+      "invalidBitrate": "Die Videobitrate muss zwischen 1 und 20 Mbit/s liegen.",
+      "sequenceTooLarge": "Diese PNG-Sequenz ist für einen Export im Arbeitsspeicher des Browsers zu groß. Verringern Sie Auflösung, Dauer oder Bildrate.",
+      "mediaMissing": "Verknüpfen Sie vor dem Export alle fehlenden Videodateien neu.",
+      "cancelled": "Export abgebrochen.",
+      "gpuFailure": "Der Export ist beim Rendern oder Codieren fehlgeschlagen. Versuchen Sie niedrigere Einstellungen."
+    },
+    "title": "Export",
+    "subtitle": "Das Morphing wird Bild für Bild in eine herunterladbare Datei gerendert.",
+    "output": "Ausgabe",
+    "video": "Video",
+    "imageSequence": "Bildsequenz",
+    "resolution": "Auflösung",
+    "presets": {
+      "project": "Projekt",
+      "source": "Quelle",
+      "target": "Ziel",
+      "custom": "Benutzerdefiniert"
+    },
+    "effective": "Tatsächliche Auflösung",
+    "timing": "Zeiteinstellungen",
+    "duration": "Dauer",
+    "videoDurationNote": "Videoexporte verwenden die Dauer der Hauptzeitleiste.",
+    "frameRate": "Bildrate",
+    "pingPong": "Hin und zurück (A→B→A)",
+    "encoding": "Codierung",
+    "format": "Format",
+    "bitrate": "Bitrate",
+    "background": "Hintergrund",
+    "backgrounds": {
+      "black": "Schwarz",
+      "white": "Weiß",
+      "transparent": "Transparent"
+    },
+    "importPrompt": "Importieren Sie im Studio ein Quell- und ein Zielbild/-video, um den Export zu aktivieren.",
+    "exporting": "Export läuft…",
+    "exportButton": "{{format}} exportieren",
+    "frameProgress": "Bild {{index}} / {{count, number}}",
+    "done": "Export abgeschlossen — die Datei wurde heruntergeladen.",
+    "share": "Teilen…",
+    "phases": {
+      "rendering": "Rendern",
+      "encoding": "Codieren",
+      "muxing": "Video zusammenstellen",
+      "zipping": "Archiv erstellen"
+    },
+    "width": "Breite",
+    "height": "Höhe",
+    "secondsValue": "{{value}} s",
+    "frameRateValue": "{{value}} Bilder/s",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Abbrechen"
+  },
+  "mobile": {
+    "inspector": "Eigenschaften",
+    "close": "Schließen",
+    "closeInspector": "Eigenschaften schließen",
+    "more": "Mehr",
+    "views": "Ansichten"
+  },
+  "shell": {
+    "loading": "Arbeitsbereich wird geladen…",
+    "surfaceLoadError": "Dieser Teil des Arbeitsbereichs konnte nicht geladen werden.",
+    "retry": "Erneut versuchen",
+    "panelAria": "Bereich {{tab}}",
+    "collapse": "Einklappen",
+    "panels": {
+      "left": "Bereich für Medien und Referenzen",
+      "right": "Eigenschaftenbereich",
+      "timeline": "Zeitleistenbereich"
+    },
+    "zen": "Zen-Modus",
+    "hideChrome": "Bedienelemente über den Bildern ausblenden",
+    "showChrome": "Bedienelemente über den Bildern einblenden"
+  },
+  "desktopGate": {
+    "title": "Morpher91 ist für Computer entwickelt",
+    "body": "Das Morphing-Studio benötigt WebGPU, eine Maus und einen großen Bildschirm. Öffnen Sie diese Seite auf einem Mac oder PC mit einer aktuellen Version von Chrome, Edge oder Safari, um alle Funktionen zu nutzen. Auch das iPad wird unterstützt.",
+    "unsupported": "Smartphones werden nicht unterstützt: weder die Bedienbarkeit noch die Leistung sind dort gewährleistet.",
+    "copyLink": "Link kopieren",
+    "copied": "Link kopiert",
+    "continueAnyway": "Trotzdem fortfahren (nicht unterstützt)"
+  },
+  "assist": {
+    "stepSatisfied": "Schritt erfüllt. Fahren Sie fort, wenn Sie bereit sind.",
+    "back": "Zurück",
+    "next": "Weiter",
+    "done": "Fertig",
+    "quit": "Anleitung beenden",
+    "showMe": "Zeigen",
+    "step": "Schritt {{current}}/{{total}}",
+    "anchorMissing": "Dieses Element ist in der aktuellen Ansicht nicht sichtbar.",
+    "launcherTitle": "Was möchten Sie tun?",
+    "launcherDescription": "Durchsuchen Sie die Anleitungen oder wählen Sie ein Thema.",
+    "searchPlaceholder": "Anleitungen suchen…",
+    "noResults": "Keine passende Anleitung gefunden.",
+    "suggestions": "Vorschläge",
+    "categories": {
+      "start": "Erste Schritte",
+      "features": "Referenzen",
+      "layers-masks": "Ebenen und Masken",
+      "timeline-video": "Zeitleiste und Video",
+      "output": "Ausgabe"
+    },
+    "shortcuts": {
+      "undo": "Rückgängig",
+      "redo": "Wiederholen",
+      "delete": "Auswahl löschen",
+      "stepFrame": "Ein Bild vor oder zurück",
+      "jumpEnds": "Zum Anfang oder Ende springen",
+      "zen": "Zen-Modus (Bereiche ausblenden)",
+      "hideChrome": "Bedienelemente über den Bildern aus- oder einblenden"
+    }
+  },
+  "about": {
+    "credits": "Mitwirkende",
+    "version": "v{{version}}",
+    "description": "Ein WebGPU- und WebCodecs-Studio für 2D-Morphing mit Bildern und Videos.",
+    "author": "Entwickelt von André Frélicot.",
+    "privacyTitle": "Datenschutz",
+    "privacy": "Ihre Bilder, Videos und Projekte werden auf Ihrem Gerät verarbeitet. Rendern und Export erfolgen im Browser, ohne Ihre Medien auf einen Server hochzuladen.",
+    "close": "Schließen",
+    "date": "September 2026"
+  },
+  "language": {
+    "title": "Sprache",
+    "description": "Wählen Sie die Sprache der Benutzeroberfläche.",
+    "loading": "{{language}} wird geladen…",
+    "loadError": "Diese Sprache konnte nicht geladen werden. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "retry": "Erneut versuchen",
+    "names": {
+      "en": "Englisch",
+      "fr": "Französisch",
+      "de": "Deutsch",
+      "es": "Spanisch",
+      "pt-BR": "Portugiesisch (Brasilien)",
+      "it": "Italienisch",
+      "tr": "Türkisch",
+      "id": "Indonesisch",
+      "ru": "Russisch",
+      "ja": "Japanisch",
+      "ko": "Koreanisch",
+      "zh-Hans": "Chinesisch (vereinfacht)",
+      "th": "Thailändisch",
+      "hi": "Hindi",
+      "bn": "Bengalisch",
+      "ar": "Arabisch"
+    },
+    "restoreError": "{{language}} konnte nicht wiederhergestellt werden. Die Oberfläche ist auf Englisch. Stellen Sie eine Verbindung her, um diese Sprache zu laden, und versuchen Sie es erneut."
+  },
+  "algorithmNames": {
+    "crossfade": "Überblendung",
+    "mesh": "Dreiecksnetz",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Überblendung",
+    "mesh": "Dreiecksnetz",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Demomedien",
+    "subtitle": "Wählen Sie zwei Bilder oder Videos für Quelle A und Ziel B.",
+    "slotEmpty": "leer — unten auswählen",
+    "swap": "A ↔ B tauschen",
+    "filterAll": "Alle",
+    "filterImages": "Bilder",
+    "filterVideos": "Videos",
+    "tabAssets": "Medien",
+    "tabPresets": "Beispiele",
+    "presetsEmpty": "Noch keine Beispielprojekte vorhanden.",
+    "load": "In das Projekt laden",
+    "loadError": "Die Demomedien konnten nicht geladen werden.",
+    "manifestError": "Der Demokatalog konnte nicht geladen werden.",
+    "cta": "…oder Demomedien laden",
+    "kindImage": "Bild",
+    "kindVideo": "Video",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "Dasselbe Gesichtspaar mit Punkten und Linien. Vergleichen Sie Augen und Mund in der Mitte des Übergangs.",
+        "name": "Vergleich — vier Algorithmen"
+      },
+      "crossfade-reference": {
+        "description": "Ohne Referenzen: beobachten Sie die doppelten Konturen und wechseln Sie anschließend zum Vergleich.",
+        "name": "Überblendung — doppelte Konturen"
+      },
+      "faces-points-tps": {
+        "description": "Verschieben Sie einen Punkt, blenden Sie das TPS-Gitter ein und vergleichen Sie das Ergebnis ohne Randanker.",
+        "name": "Claire → Bunny — TPS-Punkte"
+      },
+      "faces-lines-beier": {
+        "description": "Gerichtete Linien an Augen, Nase und Mund. Stellen Sie ihren Einfluss mit a, b und p ein.",
+        "name": "Gesichter — Beier–Neely-Linien"
+      },
+      "cars-mesh": {
+        "description": "Räder und Silhouette steuern die Dreiecke. Blenden Sie das Dreiecksnetz ein, um die Verformung zu untersuchen.",
+        "name": "Autos — Dreiecksnetz"
+      },
+      "layer-full-frame": {
+        "description": "Blenden Sie die obere Ebene aus: ohne Maske ersetzt sie das gesamte Bild der Ebene Global.",
+        "labels": {
+          "face": "Bildfüllendes Gesicht"
+        },
+        "name": "Ebene — bildfüllend"
+      },
+      "layer-region-mask": {
+        "description": "TPS im Gesicht, Überblendung ringsum. Prüfen Sie Maske und Beitrag und passen Sie die Kontur sowie die weiche Kante an.",
+        "labels": {
+          "face": "Gesicht mit TPS"
+        },
+        "name": "Bereich — eigener Algorithmus"
+      },
+      "mask-invert-blend": {
+        "description": "Die Maske schützt das Gesicht. Blenden Sie die Ebene ein und aus, um Multiplizieren bei 40 % Deckkraft zu beurteilen.",
+        "labels": {
+          "outside": "Außenbereich multiplizieren"
+        },
+        "name": "Umgekehrte Maske — Multiplizieren"
+      },
+      "blend-light": {
+        "description": "Zwei Ebenen hellen das Bild auf: Negativ multiplizieren im Gesicht, Addieren ringsum. Betrachten Sie jede Ebene einzeln und stellen Sie ihre Deckkraft ein.",
+        "labels": {
+          "light": "Gesicht negativ multiplizieren",
+          "glow": "Außenbereich addieren"
+        },
+        "name": "Mischen — negativ multiplizieren und addieren"
+      },
+      "painted-mask": {
+        "description": "Die auf A gemalte Maske folgt der TPS-Verformung. Prüfen Sie die Maske bei 25, 50 und 75 % und probieren Sie Pinsel und Radierer aus.",
+        "labels": {
+          "paint": "Gemalte Gesichtsmaske mit TPS"
+        },
+        "name": "Gemalte Maske — dem Morphing folgen"
+      },
+      "combined-masks": {
+        "description": "Der Bereich mit harter Kante wird mit der gemalten Maske vereinigt. Prüfen Sie die Maske und radieren Sie dann außerhalb des Bereichs.",
+        "labels": {
+          "paint": "Gemalte Gesichtsmaske mit TPS"
+        },
+        "name": "Kombinierte Masken — Bereich und Pinsel"
+      },
+      "contours-push": {
+        "description": "Wählen Sie Punkte verschieben (K), formen Sie die Wange um und machen Sie die Änderung rückgängig. Schließen Sie eine Kopie der Kontur zu einem Polygon.",
+        "name": "Konturen — Punkte gemeinsam verschieben"
+      },
+      "transition-classic": {
+        "description": "Vergleichen Sie Standard und Klassisches Morphing: Verformung von 0 bis 100 %, Überblendung von 30 bis 70 %. Achten Sie auf Anfang und Ende.",
+        "name": "Übergang — klassisches Morphing"
+      },
+      "layers-timing": {
+        "description": "Das Gesicht wird vor den Haaren überblendet. Zwei Zeitfenster und eine Bézierkurve steuern den Verlauf; lassen Sie die Ebenen bis zum Ende sichtbar.",
+        "labels": {
+          "face": "Gesicht zuerst"
+        },
+        "name": "Zeitverlauf — Gesicht vor Umgebung"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Eine geschlossene Kontur wird auf Standbildern animiert. Verschieben Sie die Rauten und starten Sie die Wiedergabe Hin und zurück.",
+        "labels": {
+          "fruit": "Animierte TPS-Kontur"
+        },
+        "name": "Obst — Keyframes und Rücklauf"
+      },
+      "fruit-to-fox": {
+        "description": "Die Blätter werden zu Ohren, die Frucht zum Gesicht. Zugeordnete Silhouetten statt menschlicher Gesichtsreferenzen.",
+        "name": "Ananas → Foxy — Verwandlung"
+      },
+      "transparent-cutout": {
+        "description": "4:3-Bilder auf einer quadratischen Fläche: die Ränder bleiben transparent. Exportieren Sie PNG mit transparentem Hintergrund; beim Videoexport wird der Hintergrund eingefügt.",
+        "name": "Export — transparente Bildränder"
+      },
+      "video-faces-keyframes": {
+        "description": "44 Referenzpunkte werden in jedem Bild verfolgt: Augen, Nase, Lippen und Kiefer. Der In-Punkt von Clip B ist versetzt, um die Gesichtsausdrücke anzugleichen.",
+        "name": "Video — Referenzpunkte und Keyframes"
+      },
+      "video-region-keyframes": {
+        "description": "Kontur und Mundlinie folgen jedem Bild. Prüfen Sie die Maske und wählen Sie dann die Linie mit ihren Keyframes.",
+        "labels": {
+          "videoFace": "Animiertes Gesicht mit TPS"
+        },
+        "name": "Video — animierte Maske und Linie"
+      },
+      "video-photo-alive": {
+        "description": "Das Foto geht in einer Sekunde in ein Video desselben Gesichts über. Nur Seite B hat Keyframes; die Referenzpunkte auf A bleiben unverändert.",
+        "name": "Foto → Video — zum Leben erwecken"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 s, B: 1,5–4,5 s. Die Referenzen folgen auch nach dem Trimmen der Medienzeit; das Morphing findet in der Überlappung statt.",
+        "name": "Clips — Trimmen und Überlappung"
+      },
+      "video-body-walk": {
+        "description": "16 Referenzpunkte pro Bild. Beim Polizisten wird die Pose erkannt; beim Roboter werden manuelle Punkte und optischer Fluss genutzt. Die Ebene wirkt während der Überlappung.",
+        "labels": {
+          "body": "Morphing während der Überlappung"
+        },
+        "name": "Gehen — Ganzkörper-Morphing"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Roter Sportwagen",
+      "red-city-car": "Roter Kleinwagen",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy singt",
+      "bunny-singing": "Bunny singt",
+      "claire-singing": "Claire singt",
+      "anna-singing": "Anna singt",
+      "cop-body-walk": "Gehender Polizist",
+      "karl2000-body-walk": "Karl2000 geht",
+      "banana": "Banane",
+      "pineapple": "Ananas"
+    },
+    "presetsNote": "Diese Beispiele werden automatisch erstellt, um die Funktionen des Studios zu demonstrieren. Ein künstlerisch überzeugendes Ergebnis ist nicht garantiert."
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Zwei Bilder laden",
+        "description": "Füllen Sie Quelle A und Ziel B mit Demomedien oder eigenen Dateien.",
+        "keywords": "laden importieren Bilder Demo Medien Beispiele Quelle Ziel öffnen Datei",
+        "steps": {
+          "demo": {
+            "title": "Mit Demomedien beginnen",
+            "body": "Demo → Beispiele öffnet den Lernkatalog. Jede Karte zeigt das Quell-/Zielpaar und eine Übung. Beginnen Sie mit Vergleich — vier Algorithmen und erkunden Sie danach Masken, Übergänge, Keyframes und Videos. Die Beispiele öffnen sich an einem vorbereiteten Zeitpunkt mit passender Ansicht und ausgewählter Ebene. Die Namen ihrer Referenzen bleiben in jeder Oberflächensprache englisch.\n\nDiese Beispiele werden automatisch erstellt, um die Funktionen des Studios zu demonstrieren. Ein künstlerisch überzeugendes Ergebnis ist nicht garantiert.",
+            "missingHint": "Öffnen Sie die Demo-Auswahl."
+          },
+          "source": {
+            "title": "Eigene Datei laden — Quelle A",
+            "body": "Dieser Medienplatz nimmt ein Bild oder Video auf. Es bildet die Ausgangsseite des Morphings.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "target": {
+            "title": "Ziel B",
+            "body": "Füllen Sie den zweiten Medienplatz. Sobald beide Medien geladen sind, wird das Projekt erstellt und die Vorschau angezeigt.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Morphing-Algorithmus auswählen",
+        "description": "Wählen Sie den Projektalgorithmus und lernen Sie die vier Verfahren kennen.",
+        "keywords": "Algorithmus Überblendung Crossfade Dreiecksnetz Mesh TPS Thin-Plate Spline Beier Neely Verformung",
+        "preconditionHint": "Laden Sie zuerst zwei Bilder. Über Demo in der oberen Leiste geht es am schnellsten.",
+        "steps": {
+          "algorithm-list": {
+            "title": "Die vier Algorithmen",
+            "body": "Überblendung mischt die Bilder ohne Verformung. Dreiecksnetz verformt Delaunay-Dreiecke. Thin-Plate Spline verformt das gesamte Bild mit einem glatten Verlauf. Beier–Neely verformt entlang gerichteter Linien.",
+            "missingHint": "Öffnen Sie Studio und den Abschnitt Algorithmus."
+          },
+          "pick-tps": {
+            "title": "Thin-Plate Spline ausprobieren",
+            "body": "Klicken Sie auf Thin-Plate Spline. Die Vorschau wird mit der neuen Verformung aktualisiert.",
+            "missingHint": "Öffnen Sie Studio und den Abschnitt Algorithmus."
+          },
+          "settings": {
+            "title": "Algorithmus einstellen",
+            "body": "Die Einstellungen des aktiven Algorithmus stehen unter den Auswahlfeldern. Bei TPS steuert λ den Kompromiss zwischen exakter Punktzuordnung und einem glatten Verlauf.",
+            "missingHint": "Wählen Sie TPS oder Beier–Neely, um die jeweiligen Einstellungen anzuzeigen."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Studioansichten bedienen",
+        "description": "Bearbeiten, Vorschau und Dreifach; zoomen, verschieben und die Ansicht zurücksetzen.",
+        "keywords": "Ansicht Bearbeiten Vorschau Dreifach Zoom verschieben zurücksetzen navigieren",
+        "preconditionHint": "Laden Sie zuerst zwei Bilder. Über Demo in der oberen Leiste geht es am schnellsten.",
+        "steps": {
+          "toggle": {
+            "title": "Drei Ansichten",
+            "body": "Bearbeiten zeigt A | B zum Setzen der Referenzen. Vorschau zeigt das Morphing groß. Dreifach zeigt A | Morphing | B. Bei wenig Platz wählen Sie die Ansicht im Menü.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "triple": {
+            "title": "Dreifachansicht öffnen",
+            "body": "Klicken Sie auf Dreifach. Sie bearbeiten die Bilder an den Seiten, während die Mitte das Morphing live zeigt. In einem schmalen Vorschaufenster öffnen Sie die Vorschausteuerung, um Ergebnis, Ebene, Maske oder Beitrag zu wählen, Einblendungen einzublenden oder den Ebenenstapel zu prüfen.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "zoom-pan": {
+            "title": "Zoomen, verschieben, zurücksetzen",
+            "body": "Zoomen Sie mit dem Mausrad oder einer Zweifingergeste. Halten Sie die Leertaste gedrückt und ziehen Sie, oder verwenden Sie Ansicht verschieben (H). Ein Doppelklick oder Doppeltippen setzt die Ansicht zurück. Auf Touchgeräten bleibt der Arbeitsbereich fest; nur Bedienfelder und eingeblendete Bereiche lassen sich scrollen.",
+            "missingHint": "Öffnen Sie Studio in der Ansicht Bearbeiten oder Dreifach."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Projekt speichern und erneut öffnen",
+        "description": "Speichern Sie die Projektstruktur mit eingebetteten Bildern und verknüpfen Sie lokale Videos nach dem Öffnen neu.",
+        "keywords": "speichern laden öffnen Projekt Datei morph json wiederherstellen",
+        "preconditionHint": "Laden Sie zuerst zwei Bilder. Über Demo in der oberen Leiste geht es am schnellsten.",
+        "steps": {
+          "save": {
+            "title": "Speichern",
+            "body": "Speichern lädt eine .morph.json-Datei mit eingebetteten Bildern, Referenzen, Ebenen und Zeitleiste herunter. Videos werden nur über ihre Metadaten verknüpft; die Videodateien bleiben lokal. Es wird nichts auf einen Server übertragen."
+          },
+          "load": {
+            "title": "Erneut öffnen",
+            "body": "Öffnen stellt die Projektstruktur und die eingebetteten Bilder wieder her. Verwenden Sie für jedes lokale Video Neu verknüpfen an seinem Medienplatz A/B. Wiedergabe und Export sind wieder verfügbar, sobald alle benötigten Dateien verbunden sind."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Mitwirkende",
+        "description": "Autor, App-Version und lokale Medienverarbeitung.",
+        "keywords": "Über Mitwirkende Datenschutz",
+        "steps": {
+          "about": {
+            "title": "Über öffnen",
+            "body": "Über in der oberen Leiste zeigt den Autor, die Build-Version und Hinweise zur lokalen Medienverarbeitung. In der kompakten Ansicht finden Sie den Eintrag unter Mehr.",
+            "missingHint": "Verlassen Sie den Zen-Modus oder öffnen Sie Mehr, um Über zu finden."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Sprache der Oberfläche ändern",
+        "description": "Wählen Sie die Sprache für Studio, Beispiele und Anleitungen.",
+        "keywords": "Sprache Übersetzung Einstellungen international Deutsch",
+        "stepTitle": "Sprache auswählen",
+        "body": "Öffnen Sie die Sprachauswahl in der oberen Leiste. Jede Karte zeigt eine Flagge und den Namen der Sprache in ihrer eigenen Schrift. Ihre Auswahl wird auf diesem Gerät gespeichert. Die Oberfläche wechselt erst, wenn alles geladen ist. Zum Laden der benötigten Schriftarten kann eine Internetverbindung erforderlich sein. Ihr Projekt und die Namen der Referenzen bleiben unverändert. Kann die gespeicherte Sprache nicht wiederhergestellt werden, öffnet sich die App auf Englisch mit einer Erklärung und einer Schaltfläche zum erneuten Laden. Auf schmalen Bildschirmen kann die obere Leiste mehrere Zeilen belegen, damit alle Befehle sichtbar bleiben."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Laden Sie zuerst zwei Bilder. Über Demo in der oberen Leiste geht es am schnellsten."
+      },
+      "studioHint": "Öffnen Sie Studio in der Ansicht Bearbeiten.",
+      "placePointsGuide": {
+        "title": "Korrespondenzpunkte setzen",
+        "description": "Punkte legen für Dreiecksnetz und TPS fest, welche Stelle in A welcher Stelle in B entspricht.",
+        "keywords": "Punkt Referenz Korrespondenz Dreiecksnetz Mesh TPS setzen anpassen",
+        "steps": {
+          "pick-tool": {
+            "title": "Werkzeug Punkt",
+            "body": "Wählen Sie das Werkzeug Punkt (Taste P)."
+          },
+          "place-a": {
+            "title": "Markante Stelle auf A anklicken",
+            "body": "Klicken Sie auf eine markante Stelle wie ein Auge oder eine Ecke in Quelle A. Ein zugehöriger Griff erscheint auf B."
+          },
+          "adjust-b": {
+            "title": "Seite B anpassen",
+            "body": "Ziehen Sie den zugehörigen Griff in Ziel B auf die entsprechende Stelle im anderen Bild. Diese Zuordnung steuert die Verformung."
+          },
+          "preview": {
+            "title": "Verformung ansehen",
+            "body": "Wechseln Sie zu Vorschau oder Dreifach, um zu sehen, wie Dreiecksnetz und TPS die Bilder anhand Ihrer Punkte verformen."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Gerichtete Linien zeichnen (Beier–Neely)",
+        "description": "Linienpaare steuern das Feld-Morphing nach Beier–Neely.",
+        "keywords": "Linie Segment Richtung Beier Neely Kontur zeichnen",
+        "steps": {
+          "pick-tool": {
+            "title": "Werkzeug Linie",
+            "body": "Wählen Sie das Werkzeug Linie (Taste L)."
+          },
+          "drag-line": {
+            "title": "Entlang einer Kante auf A ziehen",
+            "body": "Ziehen Sie bei gedrückter Maustaste eine Linie entlang einer deutlichen Kante, etwa des Kiefers oder eines Autodachs. Ihr Gegenstück erscheint auf B."
+          },
+          "orient-b": {
+            "title": "Richtung auf B beibehalten",
+            "body": "Verschieben Sie beide Endpunkte auf B an die entsprechende Kante und behalten Sie dieselbe Richtung bei. Beier–Neely ordnet Positionen längs und quer zu jeder Linie zu."
+          },
+          "use-beier": {
+            "title": "Zu Beier–Neely wechseln",
+            "body": "Linien steuern die Verformung nur beim Algorithmus Beier–Neely. Wählen Sie ihn aus.",
+            "missingHint": "Öffnen Sie Studio und den Abschnitt Algorithmus."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Polylinie zeichnen",
+        "description": "Zeichnen Sie Kurven Punkt für Punkt oder freihändig und setzen Sie sie an einem Endpunkt fort.",
+        "keywords": "Polylinie Kurve Pfad Freihand zeichnen fortsetzen Endpunkt",
+        "steps": {
+          "pick-tool": {
+            "title": "Werkzeug Polylinie",
+            "body": "Wählen Sie das Werkzeug Polylinie (Taste Y)."
+          },
+          "tap-by-tap": {
+            "title": "Punkt für Punkt",
+            "body": "Klicken Sie nacheinander entlang einer Kontur. ⏎ schließt den Vorgang ab, Esc bricht ihn ab."
+          },
+          "freehand": {
+            "title": "Oder freihändig",
+            "body": "Zeichnen Sie mit gedrückter Maustaste einen durchgehenden Strich. Beim Loslassen wird der Pfad automatisch vereinfacht."
+          },
+          "resume": {
+            "title": "An einem Endpunkt fortsetzen",
+            "body": "Klicken Sie mit dem aktiven Werkzeug Polylinie auf einen Endpunkt einer offenen Polylinie, um dort weiterzuzeichnen."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Offene Polylinie schließen",
+        "description": "Zwei Wege, eine offene Polylinie in ein geschlossenes Polygon umzuwandeln.",
+        "keywords": "schließen Polygon Polylinie Schleife Endpunkt erster Punkt",
+        "steps": {
+          "intro": {
+            "title": "Zwei Möglichkeiten zum Schließen",
+            "body": "Sie können eine Polylinie während des Zeichnens oder später mit dem Werkzeug Auswahl schließen."
+          },
+          "close-first": {
+            "title": "Beim Zeichnen: ersten Punkt anklicken",
+            "body": "Klicken Sie beim Zeichnen erneut auf den ersten Punkt. Die Kontur wird geschlossen und der Zeichenvorgang beendet."
+          },
+          "drop-endpoint": {
+            "title": "Danach: Endpunkte zusammenführen",
+            "body": "Ziehen Sie mit dem Werkzeug Auswahl einen Endpunkt einer offenen Polylinie auf den anderen. Dadurch wird die Kontur ebenfalls geschlossen."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Bereich zeichnen",
+        "description": "Ein geschlossener Bereich kann eine Ebene maskieren. Stellen Sie die Weichheit seiner Kante ein.",
+        "keywords": "Bereich Maske Lasso Kontur weiche Kante zeichnen",
+        "steps": {
+          "pick-tool": {
+            "title": "Werkzeug Bereichsmaske",
+            "body": "Wählen Sie Bereichsmaske. Die Kontur dieses Werkzeugs ist immer geschlossen."
+          },
+          "outline": {
+            "title": "Bereich auf A umzeichnen",
+            "body": "Setzen Sie Punkte oder zeichnen Sie freihändig um einen Bereich, etwa ein Gesicht oder einen Gegenstand. Beenden Sie den Vorgang mit ⏎ oder durch Schließen der Kontur."
+          },
+          "feather": {
+            "title": "Weiche Kante einstellen",
+            "body": "Wählen Sie den Bereich aus und stellen Sie mit Weiche Kante den Übergang am Rand ein. Eine Ebene, die diesen Bereich als Maske verwendet, hat zusätzlich einen eigenen Maskenmodus und einen Wert für die weiche Kante.",
+            "missingHint": "Öffnen Sie Auswahl im rechten Eigenschaftenbereich."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Auswählen, umbenennen, sperren und ausblenden",
+        "description": "Verwalten Sie Referenzen und erkennen Sie die Zuordnung zwischen A und B an der Hervorhebung.",
+        "keywords": "Auswahl Mehrfachauswahl Umschalt umbenennen sperren ausblenden Hervorhebung Maus Referenz",
+        "steps": {
+          "pick-tool": {
+            "title": "Werkzeug Auswahl",
+            "body": "Wählen Sie das Werkzeug Auswahl (Taste V)."
+          },
+          "select": {
+            "title": "Griff anklicken",
+            "body": "Klicken Sie auf den Griff einer Referenz, um sie auszuwählen. Halten Sie für eine Mehrfachauswahl die Umschalttaste gedrückt. Wenn Sie mit der Maus über einen Griff fahren, wird sein Gegenstück in der anderen Ansicht hervorgehoben."
+          },
+          "inspector": {
+            "title": "Umbenennen, sperren und ausblenden",
+            "body": "Im Abschnitt Auswahl können Sie die Referenz umbenennen und Sichtbar oder Gesperrt umschalten.",
+            "missingHint": "Öffnen Sie Auswahl im rechten Eigenschaftenbereich."
+          },
+          "list": {
+            "title": "Liste der Referenzen",
+            "body": "Die Liste links zeigt dieselben Referenzen. Das Auge schaltet ihre Sichtbarkeit um, das Schloss sperrt sie, und ein Klick wählt sie aus."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Punkte verschieben und rückgängig machen",
+        "description": "Verformen Sie Referenzen lokal mit dem Werkzeug Punkte verschieben. Machen Sie Änderungen rückgängig oder wiederholen Sie sie.",
+        "keywords": "Punkte verschieben formen verformen lokal Radius rückgängig wiederholen",
+        "steps": {
+          "pick-tool": {
+            "title": "Werkzeug Punkte verschieben",
+            "body": "Wählen Sie Punkte verschieben (Taste K)."
+          },
+          "sculpt": {
+            "title": "Zum Formen ziehen",
+            "body": "Ziehen Sie über das Bild. Alle Griffe innerhalb des Kreises werden mitverschoben, am stärksten in dessen Mitte."
+          },
+          "undo": {
+            "title": "Rückgängig und wiederholen",
+            "body": "Cmd/Ctrl+Z macht eine Bearbeitung der Referenzen rückgängig. Cmd/Ctrl+Shift+Z stellt sie wieder her."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Öffnen Sie Ebenen im rechten Eigenschaftenbereich.",
+      "needsProject": {
+        "preconditionHint": "Laden Sie zuerst zwei Bilder. Über Demo in der oberen Leiste geht es am schnellsten."
+      },
+      "activateLayerStep": {
+        "title": "Eigene Ebene aktivieren",
+        "body": "Klicken Sie im Abschnitt Ebenen auf eine andere Ebene als Global. Ihre Eigenschaften erscheinen direkt unter der Liste."
+      },
+      "createLayerGuide": {
+        "title": "Ebene erstellen",
+        "description": "Stapeln Sie eigene Ebenen über Global und prüfen Sie ihren jeweiligen Beitrag zum Ergebnis.",
+        "keywords": "Ebene erstellen hinzufügen Stapel Global Reihenfolge Beitrag Status",
+        "steps": {
+          "add": {
+            "title": "Ebene hinzufügen",
+            "body": "Klicken Sie auf Ebene hinzufügen. Die neue Ebene wird sofort aktiv."
+          },
+          "global-vs-layers": {
+            "title": "Global und eigene Ebenen",
+            "body": "Global rendert das Standard-Morphing als Basis. Die eigenen Ebenen werden darüber zusammengesetzt. Mit den Pfeilen ändern Sie die Reihenfolge im Ebenenstapel."
+          },
+          "badges": {
+            "title": "Status des Ebenenbeitrags",
+            "body": "Jede Zeile zeigt, wie die Ebene gerade wirkt: bildfüllend, mit Maske, ohne Wirkung oder außerhalb des Clips. Bildfüllende Ebenen bedecken die gesamte Bildfläche."
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Algorithmus einer Ebene ändern",
+        "description": "Geben Sie einer Ebene einen eigenen Algorithmus, ohne den Projektstandard zu ändern.",
+        "keywords": "Ebene Algorithmus abweichend überschreiben Dreiecksnetz TPS Beier",
+        "steps": {
+          "override": {
+            "title": "Abweichenden Algorithmus wählen",
+            "body": "Das Menü Algorithmus in den Ebeneneigenschaften ersetzt den Projektstandard nur für diese Ebene."
+          },
+          "badge": {
+            "title": "Abweichenden Algorithmus erkennen",
+            "body": "Die Überschrift des Abschnitts Algorithmus zeigt nun den abweichenden Algorithmus an. Auch mit einer ausgewählten Referenz bleiben die Einstellungen zugänglich.",
+            "missingHint": "Öffnen Sie Algorithmus im rechten Eigenschaftenbereich."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Ebene mit einem Bereich maskieren",
+        "description": "Begrenzen Sie eine Ebene auf einen Bereich mit harter oder weicher Kante und kehren Sie die Maske bei Bedarf um.",
+        "keywords": "Maske Bereich zuweisen Ebene harte weiche Kante umkehren",
+        "preconditionHint": "Zeichnen Sie zuerst mit Bereichsmaske einen Bereich. Das Menü Maske listet die vorhandenen Bereiche auf.",
+        "steps": {
+          "assign": {
+            "title": "Bereich zuweisen",
+            "body": "Wählen Sie im Menü Maske einen Bereich. Die Ebene wird anschließend nur innerhalb dieses Bereichs eingeblendet."
+          },
+          "modes": {
+            "title": "Harte, weiche oder umgekehrte Maske",
+            "body": "Maskenmodus wechselt zwischen harter und weicher Kante; für die weiche Kante gibt es einen eigenen Wert. Maske umkehren vertauscht Innen- und Außenbereich."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Maske malen",
+        "description": "Malen Sie eine Maske direkt auf das Bild und verfolgen Sie das Ergebnis live in der Vorschau.",
+        "keywords": "malen Pinsel Maske Durchmesser Härte Stärke Radierer leeren live",
+        "steps": {
+          "pick-brush": {
+            "title": "Maskenpinsel",
+            "body": "Wählen Sie Maskenpinsel (Taste B). Er malt die Maske der aktiven Ebene.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "settings": {
+            "title": "Pinsel einstellen",
+            "body": "Durchmesser, Härte und Stärke bestimmen den Pinselstrich. Der Radierer entfernt gemalte Bereiche. Aktivieren Sie ihn über das Kontrollkästchen oder halten Sie beim Ziehen ⌥ gedrückt.",
+            "missingHint": "Bei aktivem Pinsel erscheinen die Einstellungen unter den Werkzeugen."
+          },
+          "paint": {
+            "title": "Auf dem Bild malen",
+            "body": "Ziehen Sie den Pinsel über ein Bild. Die mittlere Vorschau zeigt das Ergebnis sofort; die Ansichten Ergebnis und Maske helfen bei der Kontrolle. Die gemalte Maske folgt der Verformung ihrer Ebene und bewegt sich so mit dem Bildinhalt.",
+            "missingHint": "Öffnen Sie Studio in der Ansicht Bearbeiten."
+          },
+          "clear": {
+            "title": "Gemalte Maske leeren",
+            "body": "Gemalte Maske → Leeren setzt die gesamte gemalte Maske dieser Ebene zurück."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Deckkraft, Mischmodus, Clip und Übergang",
+        "description": "Steuern Sie den Beitrag einer Ebene, begrenzen Sie ihren Zeitbereich und legen Sie den Verlauf der Überblendung fest.",
+        "keywords": "Deckkraft Mischmodus mischen Ebene Clip Zeitleiste Start Dauer Verlauf Übergang Verformung Überblendung Zeitfenster Vorgabe Morphing Bézier Kurve",
+        "steps": {
+          "opacity": {
+            "title": "Deckkraft",
+            "body": "Verringern Sie die Deckkraft unter 1, um die Ebene mit den darunterliegenden Ebenen zu mischen."
+          },
+          "blend": {
+            "title": "Mischmodus",
+            "body": "Mischmodus bestimmt, wie die Ebene mit den darunterliegenden Ebenen kombiniert wird: Normal, Multiplizieren, Negativ multiplizieren oder Addieren. Multiplizieren multipliziert die Farben, Negativ multiplizieren hellt sie auf. Addieren summiert die vormultiplizierten Farbwerte sowie die Alpha-Werte und begrenzt das Ergebnis auf den Höchstwert."
+          },
+          "clip": {
+            "title": "Zeitbereich begrenzen",
+            "body": "Ziehen Sie den Ebenenblock in der Zeitleiste, um ihn zu verschieben, oder seine Kanten, um ihn zu trimmen. Alternativ stellen Sie Start und Dauer in den Ebeneneigenschaften ein."
+          },
+          "windows": {
+            "title": "Länger verformen, kürzer überblenden",
+            "body": "Übergang definiert zwei Zeitfenster als Prozentwerte des Clips. Verformung steuert den Formwechsel, Überblendung das Mischen von A und B. Die Vorgabe Klassisches Morphing verformt über 0–100 % und überblendet nur über 30–70 %. Dadurch sind schlecht ausgerichtete Details am Anfang und Ende weniger stark doppelt zu sehen."
+          },
+          "windows-timeline": {
+            "title": "Zeitfenster in der Zeitleiste lesen",
+            "body": "Am unteren Rand des Ebenenblocks erscheinen beide Zeitfenster: ein helles Band für die Überblendung und eine dünne Linie für die Verformung. So erkennen Sie, wann innerhalb des Clips überblendet wird."
+          },
+          "easing": {
+            "title": "Verlaufskurve anpassen",
+            "body": "Verlauf bestimmt die zeitliche Entwicklung in beiden Fenstern. Wählen Sie eine von fünf Vorgaben oder benutzerdefiniert (Bézier) mit zwei verschiebbaren Griffen. Aktivieren Sie Eigener Verlauf für die Überblendung, um diese unabhängig von der Verformung einzustellen."
+          },
+          "global-too": {
+            "title": "Auch für Global",
+            "body": "Wählen Sie Global. Auch diese Ebene besitzt den Abschnitt Übergang; ihre Zeitfenster umfassen standardmäßig 0–100 %. Beim Algorithmus Überblendung wirkt nur das Überblendungsfenster, da er die Bilder nicht verformt."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Laden Sie zuerst zwei Bilder. Über Demo in der oberen Leiste geht es am schnellsten."
+      },
+      "timelineGuide": {
+        "title": "Zeitleiste bedienen",
+        "description": "Durchlaufen Sie die Animation, starten Sie die Wiedergabe, gehen Sie Bild für Bild vor und verschieben Sie Clips.",
+        "keywords": "Zeitleiste Timeline scrubben Wiedergabe Pause Bild Timecode Clip verschieben trimmen Zen Tab einklappen Bereiche Lineal Abspielposition",
+        "steps": {
+          "scrub": {
+            "title": "Abspielposition verschieben",
+            "body": "Klicken oder ziehen Sie auf dem Zeitlineal. Die Abspielposition folgt, und die Vorschau zeigt das Bild zu diesem Zeitpunkt. Mit einem Stift berühren Sie die gewünschte Position und lassen die Spitze beim Ziehen auf dem Bildschirm.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "transport": {
+            "title": "Wiedergabe, Pause und Einzelbilder",
+            "body": "Wiedergabe spielt die Animation in Echtzeit ab. Die Pfeilschaltflächen oder ←/→ gehen jeweils ein Bild weiter oder zurück. Alt-Klick auf eine Pfeilschaltfläche springt zum Anfang oder Ende. Der Timecode wird als Sekunden:Bilder angezeigt.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "clips": {
+            "title": "Clips verschieben und trimmen",
+            "body": "Bilder und Videos haben Clips auf A/B oberhalb der Ebenenspuren. Ziehen Sie einen Block oder dessen Kanten. Nach dem Auswählen stehen Start und Dauer zur Verfügung. Ein Standbild hat keine begrenzte Quelldauer; ein längerer Bildclip kann daher die Zeitleiste verlängern. Außerhalb eines Medienclips trägt nur die andere Seite bei. Ist keine Seite vorhanden, erscheint der Hintergrund.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "still-image-timing": {
+            "title": "Anzeigedauer eines Standbilds festlegen",
+            "body": "Wählen Sie einen Bildclip auf A oder B und geben Sie seine Dauer in Sekunden oder Sekunden:Bildern ein. Kürzen verändert die Gesamtdauer nicht; Verlängern erweitert die Zeitleiste bei Bedarf. Die Keyframes der Bildreferenzen bleiben an ihre Zeitpunkte in der Hauptzeitleiste gebunden. Verschieben oder Verlängern des Clips verschiebt oder streckt ihre Animation nicht. Die Clips werden mit dem Projekt gespeichert.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "zen": {
+            "title": "Zeitlineal im Zen-Modus",
+            "body": "{{shortcut}} blendet die drei Bedienbereiche aus, damit das Morphing den Bildschirm ausfüllt. Die Zeitleiste wird auf eine 40 px hohe Leiste reduziert. Ihr kompaktes Lineal zeigt weiterhin Teilstriche, Timecodes und die Abspielposition. Sie können zum Durchlaufen der Animation weiterhin darauf klicken oder ziehen. Drücken Sie erneut {{shortcut}}, um die Bereiche einzublenden."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Morphing zwischen Videos",
+        "description": "Importieren Sie Videos, platzieren Sie die Clips A/B und setzen Sie Keyframes für ihre Referenzen.",
+        "keywords": "Video Clip importieren Keyframe Pose Spur singen Raute ziehen Zeit ändern",
+        "steps": {
+          "get-videos": {
+            "title": "Zwei Videos laden",
+            "body": "Demo enthält vier Gesangsclips und zwei Gehclips unter dem Filter Videos. Sie können auch eigene Videodateien auf A/B ablegen. Ein Bild lässt sich ebenfalls mit einem Video kombinieren. Gespeicherte Projekte enthalten die Videometadaten; beim erneuten Öffnen müssen die lokalen Dateien wieder verknüpft werden.",
+            "missingHint": "Öffnen Sie die Demo-Auswahl."
+          },
+          "place-clips": {
+            "title": "Clips A/B platzieren",
+            "body": "Jedes Video liegt auf seiner Spur. Ziehen verschiebt den Clip, Ziehen an den Kanten trimmt ihn. Start, In und Dauer ermöglichen genaue Werte. Dabei wird die Vorschau an der aktuellen Abspielposition aktualisiert, ohne diese zu verschieben; die Gesamtdauer bleibt gleich. Referenz-Keyframes bleiben an die Zeit im Quellvideo gebunden, auch nach dem Trimmen, und werden beim Speichern und Öffnen erhalten. Außerhalb ihres Clips fehlt diese Seite in Vorschau und Export; die andere Seite füllt das Bild.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          },
+          "keyframes": {
+            "title": "Keyframes setzen",
+            "body": "Wählen Sie eine Referenz. Die Zeile Keyframes bietet für jede Seite einen Pfeil zum vorherigen Keyframe ◀, eine Raute ◆ zum Setzen oder Entfernen an der aktuellen Zeit, einen Pfeil zum nächsten ▶ und einen Zähler. Zwischen den Keyframes werden die Positionen interpoliert. Bei Standbildern bleibt eine Referenz unbewegt, bis Sie mit ◆ den ersten Keyframe setzen. Danach erzeugen Verschiebungen zu anderen Zeiten weitere Keyframes und verändern den Morphing-Verlauf.",
+            "missingHint": "Öffnen Sie Auswahl im rechten Eigenschaftenbereich."
+          },
+          "timeline-keyframes": {
+            "title": "Keyframes in der Zeitleiste bearbeiten",
+            "body": "Die Keyframes ausgewählter Referenzen erscheinen als Rauten auf A und B an ihrer Wiedergabezeit. Klicken springt dorthin, Ziehen verschiebt den Zeitpunkt bildgenau und erzeugt einen einzigen Rückgängig-Schritt. Alt-Klick löscht den Keyframe. Sehr dicht liegende Rauten werden zu einem Balken mit Zähler zusammengefasst. Über die Pfeile im Eigenschaftenbereich erreichen Sie sie einzeln.",
+            "missingHint": "Öffnen Sie den Tab Studio."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Algorithmen vergleichen",
+        "description": "Betrachten Sie die vier Algorithmen nebeneinander im selben Projekt.",
+        "keywords": "vergleichen Raster nebeneinander Überblendung Dreiecksnetz Mesh TPS Beier",
+        "steps": {
+          "open": {
+            "title": "Vergleichen öffnen",
+            "body": "Der Tab Vergleichen zeigt ein 2×2-Raster mit denselben Bildern, Referenzen und demselben Zeitpunkt τ."
+          },
+          "read": {
+            "title": "Ergebnisse vergleichen",
+            "body": "Überblendung erzeugt doppelte Konturen, wenn Bilddetails nicht übereinanderliegen. Dreiecksnetz, TPS und Beier–Neely verformen beide Bilder zu einer gemeinsamen Zwischenform, um die zugeordneten Details auszurichten."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "MP4 oder Einzelbilder exportieren",
+        "description": "Exportieren Sie das Morphing als Video oder ZIP-Archiv mit PNG-Bildern.",
+        "keywords": "exportieren MP4 WebM AV1 ZIP Einzelbilder Video rendern herunterladen",
+        "steps": {
+          "open": {
+            "title": "Exportieren öffnen",
+            "body": "Alles wird lokal gerendert. Es wird nichts auf einen Server hochgeladen."
+          },
+          "settings": {
+            "title": "Ausgabe wählen",
+            "body": "Video benötigt WebCodecs und einen verfügbaren H.264-, VP9- oder AV1-Encoder. Die PNG-Bildsequenz benötigt keine Videocodecs und kann einen transparenten Hintergrund erhalten. Videos werden auf Schwarz oder Weiß ausgegeben. Stellen Sie Auflösung, Dauer und Bildrate ein."
+          },
+          "run": {
+            "title": "Exportieren",
+            "body": "Das Studio berechnet jedes Bild und zeigt den Fortschritt an. Anschließend wird die Datei automatisch heruntergeladen. Während des Exports lässt sich der Vorgang mit derselben Schaltfläche abbrechen."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Tastenkürzel",
+        "description": "Alle Tastenkürzel direkt aus den Zuordnungen der Anwendung.",
+        "keywords": "Tastatur Tastenkürzel Tasten Shortcuts Übersicht",
+        "steps": {
+          "list": {
+            "title": "Tastenkürzel"
+          }
+        }
+      }
+    }
+  }
+}

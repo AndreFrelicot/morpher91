@@ -1,0 +1,1201 @@
+{
+  "topbar": {
+    "new": "Novo",
+    "newConfirmTitle": "Novo projeto",
+    "newConfirm": "Descartar o projeto atual e criar um novo?",
+    "newConfirmAction": "Descartar",
+    "load": "Abrir",
+    "save": "Salvar",
+    "export": "Exportar",
+    "help": "Ajuda",
+    "language": "Idioma",
+    "loadErrorTitle": "Erro ao abrir",
+    "loadError": "Não foi possível abrir o projeto.",
+    "videoSaveTitle": "Salvar o projeto",
+    "videoSaveNote": "Os arquivos de vídeo não são incorporados ao projeto. Você precisará vinculá-los novamente ao reabrir o projeto. Salvar mesmo assim?",
+    "videoSaveAction": "Salvar mesmo assim",
+    "loadErrors": {
+      "invalidJson": "Este arquivo de projeto não é válido.",
+      "unsupportedVersion": "Esta versão do projeto não é compatível.",
+      "invalidStructure": "O projeto contém dados inválidos ou incompletos.",
+      "limitExceeded": "O projeto excede os limites de segurança do aplicativo.",
+      "invalidReference": "O projeto contém vínculos inválidos com camadas ou referências geométricas.",
+      "invalidMask": "O projeto contém uma máscara pintada danificada."
+    },
+    "tabs": {
+      "studio": "Studio",
+      "compare": "Comparar"
+    },
+    "about": "Sobre"
+  },
+  "sidebar": {
+    "tools": "Ferramentas",
+    "assets": "Mídia",
+    "features": "Referências",
+    "layers": "Camadas"
+  },
+  "tools": {
+    "select": "Seleção",
+    "point": "Ponto",
+    "line": "Linha",
+    "polyline": "Polilinha",
+    "region": "Máscara de região",
+    "brush": "Pincel de máscara",
+    "push": "Empurrar pontos",
+    "pan": "Mover a vista"
+  },
+  "assets": {
+    "sourceA": "Origem A",
+    "targetB": "Destino B",
+    "replace": "Substituir imagem/vídeo",
+    "choose": "Escolher imagem/vídeo…",
+    "loading": "Carregando…",
+    "video": "vídeo",
+    "videoMissing": "É necessário vincular o arquivo de vídeo novamente",
+    "relink": "Vincular novamente",
+    "replaceInstead": "Substituir por outra imagem ou vídeo",
+    "relinkVideoOnly": "Escolha o arquivo de vídeo original para vinculá-lo novamente a este espaço.",
+    "relinkMismatch": "Este vídeo não corresponde ao arquivo salvo. Confira as dimensões e a duração, ou substitua o arquivo.",
+    "relinkNoSavedVideo": "Este projeto não precisa mais de um vídeo neste espaço.",
+    "relinkAlreadyLinked": "Este vídeo já está vinculado.",
+    "loadError": "Não foi possível carregar o arquivo selecionado."
+  },
+  "brush": {
+    "selectLayerHint": "Selecione uma camada para pintar sua máscara. A camada de base Global não tem máscara.",
+    "diameter": "Diâmetro",
+    "hardness": "Dureza",
+    "strength": "Intensidade",
+    "eraser": "Borracha",
+    "eraserHold": "(manter ⌥ pressionada)"
+  },
+  "features": {
+    "empty": "Nenhuma referência nesta camada.",
+    "hide": "Ocultar",
+    "show": "Mostrar",
+    "hideFeature": "Ocultar referência",
+    "showFeature": "Mostrar referência",
+    "lock": "Bloquear",
+    "unlock": "Desbloquear",
+    "lockFeature": "Bloquear referência",
+    "unlockFeature": "Desbloquear referência",
+    "kinds": {
+      "point": "Ponto",
+      "segment": "Linha",
+      "polyline": "Polilinha",
+      "region": "Região"
+    },
+    "visible": "Visível",
+    "locked": "Bloqueada",
+    "weight": "Peso",
+    "layer": "Camada",
+    "landmark": "Significado",
+    "role": "Função",
+    "feather": "Difusão",
+    "none": "nenhum",
+    "semantics": {
+      "left-eye": "olho esquerdo",
+      "right-eye": "olho direito",
+      "nose": "nariz",
+      "mouth": "boca",
+      "chin": "queixo",
+      "jaw": "mandíbula",
+      "hairline": "linha do cabelo",
+      "custom": "personalizado"
+    },
+    "roles": {
+      "face": "rosto",
+      "hair": "cabelo",
+      "neck": "pescoço",
+      "body": "corpo",
+      "background": "plano de fundo",
+      "custom": "personalizada"
+    },
+    "keyframes": "Quadros-chave",
+    "noKeyframes": "nenhum",
+    "prevKeyframe": "Quadro-chave anterior de {{side}}",
+    "nextKeyframe": "Próximo quadro-chave de {{side}}",
+    "toggleKeyframe": "Adicionar / remover quadro-chave de {{side}} no instante atual",
+    "keyframeCount_one": "{{count, number}} quadro-chave",
+    "keyframeCount_other": "{{count, number}} quadros-chave",
+    "keyframeCount_many": "{{count, number}} quadros-chave",
+    "keyframeHintStill": "Sem vídeo, esta referência é fixa. Adicione o primeiro quadro-chave com ◆ para animá-la: depois, cada movimento em outro instante adiciona um quadro-chave e permite uma trajetória de morphing não linear.",
+    "selectedCount_one": "{{count, number}} referência selecionada",
+    "selectedCount_other": "{{count, number}} referências selecionadas",
+    "selectedCount_many": "{{count, number}} referências selecionadas",
+    "deleteSelected": "Excluir seleção",
+    "coordinates": "Coordenadas",
+    "pts": "{{count, number}} pts"
+  },
+  "layers": {
+    "importFirst": "Importe as imagens primeiro.",
+    "add": "Adicionar camada",
+    "defaultName": "Camada {{index}}",
+    "hideLayer": "Ocultar camada",
+    "showLayer": "Mostrar camada",
+    "lockLayer": "Bloquear camada",
+    "unlockLayer": "Desbloquear camada",
+    "moveUp": "Subir camada",
+    "moveDown": "Descer camada",
+    "featureCount_one": "{{count, number}} referência",
+    "featureCount_other": "{{count, number}} referências",
+    "featureCount_many": "{{count, number}} referências",
+    "globalHint": "A camada de base Global usa as configurações do projeto. Selecione uma camada adicionada para editar suas propriedades.",
+    "status": {
+      "base": "base",
+      "disabled": "desativada",
+      "hidden": "oculta",
+      "outside-clip": "fora do clipe",
+      "no-contribution": "sem efeito",
+      "masked": "com máscara",
+      "full-frame": "imagem inteira"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "Algoritmo",
+    "selection": "Seleção",
+    "selectionHint": "Selecione uma referência para editá-la.",
+    "overrideBadge": "algoritmo próprio: {{name}}",
+    "soon": "em breve",
+    "panel": "Propriedades"
+  },
+  "algorithms": {
+    "crossfade": "Fusão linear, sem deformação",
+    "mesh": "Deformação por triângulos de Delaunay",
+    "thin-plate-spline": "Deformação RBF global e suave",
+    "beier-neely": "Morphing por campo de linhas"
+  },
+  "tps": {
+    "smoothing": "Suavização (λ)",
+    "borderAnchors": "Âncoras nas bordas",
+    "anchorsPerSide": "Âncoras / lado",
+    "samplePolylines": "Amostrar polilinhas",
+    "sampleSpacing": "Espaçamento entre amostras"
+  },
+  "beier": {
+    "distanceSoftness": "Suavização da distância (a)",
+    "falloffExponent": "Expoente de atenuação (b)",
+    "lineLengthInfluence": "Influência do comprimento (p)",
+    "maxLines": "Máximo de linhas",
+    "samplePolylines": "Amostrar polilinhas"
+  },
+  "layerInspector": {
+    "title": "Camada",
+    "enabled": "Ativada",
+    "visible": "Visível",
+    "locked": "Bloqueada",
+    "scope": {
+      "base": "Camada de base: exibe o morphing padrão abaixo das camadas adicionadas.",
+      "disabled": "Camada desativada: não contribui para a prévia nem para a exportação.",
+      "hidden": "Camada oculta: é ignorada na prévia e na exportação.",
+      "outside-clip": "Fora do clipe: o indicador de reprodução está fora do bloco desta camada.",
+      "no-contribution": "Sem efeito: adicione referências ou atribua uma máscara para esta camada afetar o resultado.",
+      "masked": "Camada com máscara: a máscara define a área composta sobre as camadas inferiores.",
+      "full-frame": "Camada na imagem inteira: sem máscara, cobre as camadas inferiores."
+    },
+    "algorithm": "Algoritmo",
+    "projectDefault": "Padrão do projeto",
+    "opacity": "Opacidade",
+    "blend": "Mesclagem",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Multiplicação",
+      "screen": "Divisão",
+      "lighter": "Adição"
+    },
+    "mask": "Máscara",
+    "none": "nenhuma",
+    "paintedMask": "Máscara pintada",
+    "clear": "Limpar",
+    "maskMode": "Modo da máscara",
+    "maskModes": {
+      "hard": "borda nítida",
+      "feathered": "borda difusa"
+    },
+    "maskFeather": "Difusão",
+    "invertMask": "Inverter máscara",
+    "timelineClip": "Clipe na linha do tempo",
+    "start": "Início",
+    "duration": "Duração",
+    "easing": "Interpolação",
+    "easings": {
+      "linear": "linear",
+      "ease-in": "aceleração",
+      "ease-out": "desaceleração",
+      "ease-in-out": "acel./desacel.",
+      "smoothstep": "smoothstep",
+      "bezier": "personalizada (Bézier)"
+    },
+    "transition": "Transição",
+    "warpWindow": "Deformação (%)",
+    "warpStart": "Início da deformação (%)",
+    "warpEnd": "Fim da deformação (%)",
+    "dissolveWindow": "Fusão (%)",
+    "dissolveStart": "Início da fusão (%)",
+    "dissolveEnd": "Fim da fusão (%)",
+    "presets": {
+      "label": "Predefinição",
+      "standard": "Padrão",
+      "classicMorph": "Morphing clássico",
+      "lateDissolve": "Fusão tardia",
+      "custom": "Personalizada"
+    },
+    "distinctDissolveEasing": "Curva separada para a fusão",
+    "dissolveEasing": "Interpolação da fusão",
+    "bezierCurve": "Curva {{name}}",
+    "bezierHandle1": "Primeira alça da curva",
+    "bezierHandle2": "Segunda alça da curva",
+    "bezier": {
+      "x1": "Alça 1 x",
+      "y1": "Alça 1 y",
+      "x2": "Alça 2 x",
+      "y2": "Alça 2 y"
+    },
+    "stackPosition": "Posição na pilha: {{position}}",
+    "delete": "Excluir camada",
+    "confirmTitle": "Excluir a camada?",
+    "confirmBody": "Excluir “{{name}}”? Suas referências passarão para a camada Global e não serão excluídas.",
+    "cancel": "Cancelar",
+    "closeConfirm": "Fechar confirmação de exclusão"
+  },
+  "timeline": {
+    "videoMissing": "Vincule novamente os arquivos de vídeo ausentes antes de reproduzir.",
+    "time": "Tempo",
+    "layers": "Camadas",
+    "outsideA": "fora de A",
+    "outsideB": "fora de B",
+    "position": "Posição na linha do tempo",
+    "prevFrame": "Quadro anterior",
+    "prevFrameTitle": "Quadro anterior; Alt+clique vai para o início",
+    "nextFrame": "Próximo quadro",
+    "nextFrameTitle": "Próximo quadro; Alt+clique vai para o fim",
+    "play": "Reproduzir",
+    "pause": "Pausar",
+    "start": "início",
+    "in": "entrada",
+    "dur": "duração",
+    "timecodeAria": "Código de tempo: {{label}}",
+    "timecodeTitle": "Código de tempo: {{label}} (segundos:quadros)",
+    "tauTitle": "Posição na linha do tempo (segundos:quadros)",
+    "syncWaiting": "renderizando… {{elapsed}}",
+    "syncWaitingTitle": "O mecanismo de prévia está aguardando: {{phase}}. As vistas ainda mostram o quadro anterior.",
+    "syncPhaseEngine": "abertura do mecanismo de vídeo (leitura do arquivo, inicialização do decodificador)",
+    "syncPhaseFrame": "busca e decodificação do quadro e envio à GPU",
+    "syncLast": "última renderização: {{elapsed}}",
+    "syncLastTitle": "Tempo da última renderização após mover a posição na linha do tempo (exibido acima de 0,5 s)",
+    "keyframeTitle": "Quadro-chave em {{time}} s — {{names}} · clique: ir até ele; arraste: mover; ⌥+clique: excluir",
+    "keyframeTitleShared": "Quadro-chave em {{time}} s — {{names}} · clique: ir até ele; ⌥+clique: excluir",
+    "keyframeGroupTitle": "{{count, number}} quadros-chave entre {{from}} e {{to}} s — próximos demais para editar aqui · clique: ir ao primeiro",
+    "transitionWindows": "{{name}} — fusão {{dissolveStart}}–{{dissolveEnd}} %, deformação {{warpStart}}–{{warpEnd}} %",
+    "imageClipName": "Imagem · {{name}}",
+    "mediaClip": "Clipe {{slot}} — {{name}}",
+    "imageClipHelp": "Imagem estática: arraste para mover, ajuste as bordas ou selecione o clipe para definir Início e Duração. Aumentar o clipe pode prolongar a linha do tempo.",
+    "altClick": "Alt+clique"
+  },
+  "hud": {
+    "releaseToClose": "solte para fechar",
+    "eraser": "borracha",
+    "maskBrushSelectLayer": "pincel de máscara · selecione uma camada",
+    "points_one": "{{count, number}} pt",
+    "points_other": "{{count, number}} pts",
+    "points_many": "{{count, number}} pts",
+    "finishHint": "⏎ concluir · Esc cancelar",
+    "cancelHint": "Esc cancelar"
+  },
+  "notices": {
+    "noWebgpu": "Esta demonstração usa WebGPU para renderizar.\nSeu navegador ou dispositivo parece não oferecer suporte.\n\nExperimente:\n- Chrome ou Edge recente\n- Safari recente\n- Firefox com suporte a WebGPU",
+    "tooManyFeatures": "Este projeto contém muitas referências.\nA prévia usará metade da resolução.\nA exportação final continua disponível.",
+    "deviceLost": "O contexto da GPU foi perdido (memória insuficiente ou reinicialização do driver).",
+    "reload": "Recarregar",
+    "noWebcodecs": "A prévia funciona, mas a exportação de vídeo MP4 não está disponível neste navegador.",
+    "codecUnsupported": "O codec solicitado não está disponível nesta resolução. Tente uma resolução menor, outro formato ou outro navegador."
+  },
+  "studio": {
+    "edit": "Edição",
+    "preview": "Prévia",
+    "triple": "Tripla",
+    "morphPreview": "Prévia do morphing",
+    "viewportsLinked": "Zoom e deslocamento sincronizados entre as vistas — clique para desvincular",
+    "viewportsUnlinked": "Zoom e deslocamento independentes em cada vista — clique para vincular",
+    "importPrompt": "Importe uma imagem/vídeo de <a>origem</a> e outra de <b>destino</b> para visualizar o morphing.",
+    "importPromptEdit": "Importe uma imagem/vídeo de <a>origem</a> e outra de <b>destino</b> para começar a posicionar referências.",
+    "preparingGpu": "Preparando a GPU…",
+    "finishShape": "Concluir forma",
+    "cancelShape": "Cancelar forma",
+    "zoomIn": "Ampliar",
+    "zoomOut": "Reduzir",
+    "zoomReset": "Redefinir zoom (100 %)"
+  },
+  "compare": {
+    "importPrompt": "Importe uma imagem de <a>origem</a> e uma de <b>destino</b> no Studio para comparar os algoritmos."
+  },
+  "overlays": {
+    "features": "Pontos e traçados",
+    "mesh": "Malha interpolada",
+    "tpsGrid": "Grade de deformação",
+    "beierField": "Grade de influência",
+    "slots": {
+      "source": "Origem",
+      "preview": "Prévia",
+      "target": "Destino"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Malha ({{slot}})",
+    "overlayAria": "Sobreposição: {{label}}"
+  },
+  "layerDebug": {
+    "final": "Final",
+    "finalTitle": "Resultado composto",
+    "layer": "Camada",
+    "layerTitle": "Resultado da camada selecionada",
+    "mask": "Máscara",
+    "maskTitle": "Máscara da região selecionada ou da camada",
+    "contrib": "Contrib.",
+    "contribTitle": "Sobreposição de contribuição",
+    "selected": "Seleção",
+    "selectedTitle": "Sobreposições da camada selecionada",
+    "all": "Todas",
+    "allTitle": "Sobreposições de todas as camadas visíveis",
+    "layerStack": "Pilha de camadas",
+    "closeStack": "Fechar pilha",
+    "opacity": "opacidade",
+    "controls": "Controles da prévia"
+  },
+  "preview": {
+    "outsideVideoBoth": "fora dos vídeos A/B",
+    "outsideVideoA": "fora do vídeo A",
+    "outsideVideoB": "fora do vídeo B",
+    "beforeClip": "antes do clipe de vídeo",
+    "afterClip": "depois do clipe de vídeo",
+    "emptyClip": "clipe de vídeo vazio"
+  },
+  "export": {
+    "videoMissing": "Vincule novamente todos os arquivos de vídeo ausentes antes de exportar.",
+    "cancel": "Cancelar exportação",
+    "limits": "Limites: 16–3840 × 16–2160 px, 12–60 qps, 1–15 s, no máximo 900 quadros.",
+    "errors": {
+      "unsupportedWebgpu": "É necessário WebGPU para exportar este projeto.",
+      "unsupportedWebcodecs": "WebCodecs não está disponível para exportar vídeo neste navegador.",
+      "unsupportedCodec": "Este codec não está disponível na resolução escolhida. Tente outro formato ou uma resolução menor.",
+      "invalidDimensions": "A largura deve estar entre 16 e 3840 px e a altura, entre 16 e 2160 px.",
+      "deviceDimensionLimit": "A resolução escolhida excede o limite de textura desta GPU.",
+      "invalidFps": "A taxa de quadros deve estar entre 12 e 60 qps.",
+      "invalidDuration": "O intervalo escolhido na linha do tempo deve durar entre 1 e 15 segundos.",
+      "tooManyFrames": "Uma exportação pode conter no máximo 900 quadros.",
+      "invalidBitrate": "A taxa de bits do vídeo deve estar entre 1 e 20 Mbit/s.",
+      "sequenceTooLarge": "Esta sequência PNG é grande demais para exportar na memória do navegador. Reduza a resolução, a duração ou a taxa de quadros.",
+      "mediaMissing": "Vincule novamente todos os arquivos de vídeo ausentes antes de exportar.",
+      "cancelled": "Exportação cancelada.",
+      "gpuFailure": "A exportação falhou durante a renderização ou a codificação. Tente novamente com uma resolução ou taxa de quadros menor."
+    },
+    "title": "Exportação",
+    "subtitle": "Renderiza o morphing quadro a quadro em um arquivo para download.",
+    "output": "Saída",
+    "video": "Vídeo",
+    "imageSequence": "Sequência de imagens",
+    "resolution": "Resolução",
+    "presets": {
+      "project": "Projeto",
+      "source": "Origem",
+      "target": "Destino",
+      "custom": "Personalizada"
+    },
+    "effective": "Resolução efetiva",
+    "timing": "Tempo",
+    "duration": "Duração",
+    "videoDurationNote": "As exportações de vídeo usam a duração da linha do tempo principal.",
+    "frameRate": "Taxa de quadros",
+    "pingPong": "Ida e volta (A→B→A)",
+    "encoding": "Codificação",
+    "format": "Formato",
+    "bitrate": "Taxa de bits",
+    "background": "Plano de fundo",
+    "backgrounds": {
+      "black": "Preto",
+      "white": "Branco",
+      "transparent": "Transparente"
+    },
+    "importPrompt": "Importe uma imagem/vídeo de origem e outra de destino no Studio para habilitar a exportação.",
+    "exporting": "Exportando…",
+    "exportButton": "Exportar {{format}}",
+    "frameProgress": "quadro {{index}} / {{count, number}}",
+    "done": "Exportação concluída — o arquivo foi baixado.",
+    "share": "Compartilhar…",
+    "phases": {
+      "rendering": "Renderização",
+      "encoding": "Codificação",
+      "muxing": "Montagem do arquivo de vídeo",
+      "zipping": "Criação do arquivo ZIP"
+    },
+    "width": "Largura",
+    "height": "Altura",
+    "secondsValue": "{{value}} s",
+    "frameRateValue": "{{value}} qps",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Cancelar"
+  },
+  "mobile": {
+    "inspector": "Propriedades",
+    "close": "Fechar",
+    "closeInspector": "Fechar propriedades",
+    "more": "Mais",
+    "views": "Vistas"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Mídia de demonstração",
+    "subtitle": "Escolha duas imagens ou vídeos para preencher Origem A e Destino B.",
+    "slotEmpty": "vazio — escolha abaixo",
+    "swap": "Trocar A ↔ B",
+    "filterAll": "Todos",
+    "filterImages": "Imagens",
+    "filterVideos": "Vídeos",
+    "tabAssets": "Mídia",
+    "tabPresets": "Exemplos",
+    "presetsEmpty": "Ainda não há projetos de exemplo.",
+    "load": "Carregar no projeto",
+    "loadError": "Não foi possível carregar os arquivos de demonstração.",
+    "manifestError": "Não foi possível carregar o catálogo de demonstração.",
+    "cta": "…ou carregue arquivos de demonstração",
+    "kindImage": "Imagem",
+    "kindVideo": "Vídeo",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "O mesmo par de rostos, com pontos e linhas. Compare os olhos e a boca no meio da transição.",
+        "name": "Comparar — quatro algoritmos"
+      },
+      "crossfade-reference": {
+        "description": "Sem referências: observe os contornos duplicados e depois experimente a comparação.",
+        "name": "Fusão — observar imagens duplicadas"
+      },
+      "faces-points-tps": {
+        "description": "Mova um ponto, mostre a grade TPS e compare com as âncoras nas bordas desativadas.",
+        "name": "Claire → Bunny — pontos TPS"
+      },
+      "faces-lines-beier": {
+        "description": "Linhas orientadas nos olhos, nariz e boca. Ajuste sua influência com a, b e p.",
+        "name": "Rostos — linhas Beier–Neely"
+      },
+      "cars-mesh": {
+        "description": "As rodas e a silhueta guiam os triângulos. Ative a malha para examinar a deformação.",
+        "name": "Carros — malha"
+      },
+      "layer-full-frame": {
+        "description": "Oculte a camada superior: sem máscara, ela substitui toda a imagem da camada Global.",
+        "labels": {
+          "face": "Rosto na imagem inteira"
+        },
+        "name": "Camada — imagem inteira"
+      },
+      "layer-region-mask": {
+        "description": "TPS no rosto, Fusão ao redor. Examine as vistas Máscara e Contribuição; ajuste o contorno e sua difusão.",
+        "labels": {
+          "face": "Rosto com TPS"
+        },
+        "name": "Região — um algoritmo por área"
+      },
+      "mask-invert-blend": {
+        "description": "A máscara protege o rosto. Mostre e oculte a camada para observar o modo Multiplicação com 40 % de opacidade.",
+        "labels": {
+          "outside": "Exterior com Multiplicação"
+        },
+        "name": "Máscara invertida — Multiplicação"
+      },
+      "blend-light": {
+        "description": "Duas camadas clareiam a imagem: Divisão no rosto, Adição ao redor. Isole cada camada e ajuste sua opacidade.",
+        "labels": {
+          "light": "Rosto com Divisão",
+          "glow": "Exterior com Adição"
+        },
+        "name": "Mesclagem — Divisão e Adição"
+      },
+      "painted-mask": {
+        "description": "A máscara pintada em A acompanha a TPS. Examine Máscara em 25, 50 e 75 %; depois, experimente o pincel e a borracha.",
+        "labels": {
+          "paint": "Rosto pintado com TPS"
+        },
+        "name": "Máscara pintada — acompanhar o morphing"
+      },
+      "combined-masks": {
+        "description": "A região de borda nítida se soma à máscara pintada (união). Examine Máscara e experimente a borracha fora da região.",
+        "labels": {
+          "paint": "Rosto pintado com TPS"
+        },
+        "name": "Máscaras combinadas — região e pincel"
+      },
+      "contours-push": {
+        "description": "Selecione Empurrar pontos (K), retoque a bochecha e desfaça. Feche uma cópia do contorno para explorar os polígonos.",
+        "name": "Contornos — esculpir com Empurrar pontos"
+      },
+      "transition-classic": {
+        "description": "Compare Padrão e Morphing clássico: deformação de 0 a 100 %, fusão de 30 a 70 %. Observe principalmente o início e o fim.",
+        "name": "Transição — morphing clássico"
+      },
+      "layers-timing": {
+        "description": "A fusão do rosto acontece antes da do cabelo. Dois intervalos e uma curva Bézier; mantenha as camadas visíveis até o fim.",
+        "labels": {
+          "face": "Rosto antecipado"
+        },
+        "name": "Sequência — rosto, depois a área externa"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Uma polilinha fechada, animada sobre imagens estáticas. Mova os losangos e reproduza em ida e volta.",
+        "labels": {
+          "fruit": "Contorno TPS animado"
+        },
+        "name": "Frutas — quadros-chave e ida e volta"
+      },
+      "fruit-to-fox": {
+        "description": "A coroa vira orelhas; a fruta vira rosto. Uma correspondência de silhuetas, sem referências de rosto humano.",
+        "name": "Abacaxi → Foxy — metamorfose"
+      },
+      "transparent-cutout": {
+        "description": "Imagens 4:3 em uma área quadrada: as margens são transparentes. Exporte em PNG com fundo Transparente; o vídeo incorpora o fundo à imagem.",
+        "name": "Exportação — margens transparentes"
+      },
+      "video-faces-keyframes": {
+        "description": "44 referências rastreadas em cada quadro: olhos, nariz, lábios e mandíbula. O clipe B tem sua entrada deslocada no vídeo original para aproximar as expressões.",
+        "name": "Vídeo — referências e quadros-chave"
+      },
+      "video-region-keyframes": {
+        "description": "O contorno e a linha da boca acompanham cada quadro. Examine a máscara e selecione a linha e seus quadros-chave.",
+        "labels": {
+          "videoFace": "Rosto animado com TPS"
+        },
+        "name": "Vídeo — máscara e linha animadas"
+      },
+      "video-photo-alive": {
+        "description": "A foto vira o vídeo do mesmo rosto em um segundo. Só o lado B tem quadros-chave; as referências de A ficam fixas.",
+        "name": "Foto → vídeo — ganhar vida"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 s, B: 1,5–4,5 s. As referências seguem o tempo dos arquivos mesmo após os cortes; o morphing ocorre durante a sobreposição.",
+        "name": "Clipes — corte e sobreposição"
+      },
+      "video-body-walk": {
+        "description": "16 referências por quadro. Pose detectada no policial; referências manuais e rastreamento óptico no robô. A camada atua durante a sobreposição.",
+        "labels": {
+          "body": "Morphing durante a sobreposição"
+        },
+        "name": "Caminhada — morphing de corpo inteiro"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Carro esportivo vermelho",
+      "red-city-car": "Carro compacto vermelho",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy cantando",
+      "bunny-singing": "Bunny cantando",
+      "claire-singing": "Claire cantando",
+      "anna-singing": "Anna cantando",
+      "cop-body-walk": "Policial caminhando",
+      "karl2000-body-walk": "Karl2000 caminhando",
+      "banana": "Banana",
+      "pineapple": "Abacaxi"
+    },
+    "presetsNote": "Estes exemplos são gerados automaticamente para demonstrar os recursos do estúdio. O resultado artístico não é garantido."
+  },
+  "shell": {
+    "loading": "Carregando a área de trabalho…",
+    "surfaceLoadError": "Não foi possível carregar esta parte da área de trabalho.",
+    "retry": "Tentar novamente",
+    "panelAria": "Painel {{tab}}",
+    "collapse": "Recolher",
+    "panels": {
+      "left": "Painel de mídia e referências",
+      "right": "Painel de propriedades",
+      "timeline": "Painel da linha do tempo"
+    },
+    "zen": "Modo zen",
+    "hideChrome": "Ocultar interface sobre as imagens",
+    "showChrome": "Mostrar interface sobre as imagens"
+  },
+  "desktopGate": {
+    "title": "O Morpher91 foi projetado para computadores",
+    "body": "O estúdio de morphing usa WebGPU, mouse e uma tela grande. Abra esta página em um Mac ou PC, com Chrome, Edge ou Safari recente, para usar todos os recursos. O iPad também é compatível.",
+    "unsupported": "O uso em smartphones não é compatível: a interface e o desempenho não são garantidos nesses dispositivos.",
+    "copyLink": "Copiar link",
+    "copied": "Link copiado",
+    "continueAnyway": "Continuar mesmo assim (sem suporte)"
+  },
+  "assist": {
+    "stepSatisfied": "Etapa concluída. Continue quando quiser.",
+    "back": "Voltar",
+    "next": "Avançar",
+    "done": "Concluir",
+    "quit": "Sair do guia",
+    "showMe": "Mostrar",
+    "step": "Etapa {{current}}/{{total}}",
+    "anchorMissing": "Este elemento não está visível na vista atual.",
+    "launcherTitle": "O que você quer fazer?",
+    "launcherDescription": "Explore ou pesquise os guias contextuais.",
+    "searchPlaceholder": "Pesquisar um guia…",
+    "noResults": "Nenhum guia encontrado.",
+    "suggestions": "Sugestões",
+    "categories": {
+      "start": "Primeiros passos",
+      "features": "Referências",
+      "layers-masks": "Camadas e máscaras",
+      "timeline-video": "Linha do tempo e vídeo",
+      "output": "Saída"
+    },
+    "shortcuts": {
+      "undo": "Desfazer",
+      "redo": "Refazer",
+      "delete": "Excluir seleção",
+      "stepFrame": "Avançar/recuar um quadro",
+      "jumpEnds": "Ir para o início / fim",
+      "zen": "Modo zen (ocultar painéis)",
+      "hideChrome": "Ocultar / mostrar interface sobre as imagens"
+    }
+  },
+  "about": {
+    "credits": "Créditos",
+    "version": "v{{version}}",
+    "description": "Um estúdio WebGPU e WebCodecs de morphing 2D para imagens e vídeos.",
+    "author": "Criado por André Frélicot.",
+    "privacyTitle": "Privacidade",
+    "privacy": "Suas imagens, vídeos e projetos são processados no seu dispositivo. A renderização e a exportação acontecem no navegador, sem enviar seus arquivos de mídia a um servidor.",
+    "close": "Fechar",
+    "date": "Setembro de 2026"
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Carregar duas imagens",
+        "description": "Preencha Origem A e Destino B com arquivos de demonstração ou seus próprios arquivos.",
+        "keywords": "carregar importar imagens demo mídia exemplos origem destino abrir arquivo",
+        "steps": {
+          "demo": {
+            "title": "Comece pelos arquivos de demonstração",
+            "body": "Em Demo → Exemplos, você encontra uma sequência de exercícios. Cada cartão mostra o par de origem/destino e uma atividade. Comece por Comparar — quatro algoritmos; depois, explore máscaras, transições, quadros-chave e vídeo. Os exemplos abrem em um instante escolhido, com a vista e a camada adequadas selecionadas. Os nomes das referências permanecem em inglês, independentemente do idioma da interface.\n\nEstes exemplos são gerados automaticamente para demonstrar os recursos do estúdio. O resultado artístico não é garantido.",
+            "missingHint": "Abra o seletor Demo."
+          },
+          "source": {
+            "title": "Ou importe seus arquivos — Origem A",
+            "body": "Este espaço aceita uma imagem ou um vídeo: é o lado inicial do morphing.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "target": {
+            "title": "Destino B",
+            "body": "Preencha o segundo espaço. Assim que os dois arquivos forem carregados, o projeto será criado e a prévia aparecerá.",
+            "missingHint": "Abra a aba Studio."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Escolher o algoritmo de morphing",
+        "description": "Escolha o algoritmo do projeto e conheça as quatro famílias.",
+        "keywords": "algoritmo fusão malha crossfade mesh tps thin-plate spline beier neely deformação",
+        "preconditionHint": "Carregue duas imagens primeiro. O botão Demo na barra superior é o caminho mais rápido.",
+        "steps": {
+          "algorithm-list": {
+            "title": "Os quatro algoritmos",
+            "body": "Fusão mistura as imagens sem deformá-las. Malha deforma triângulos de Delaunay. Thin-Plate Spline curva a imagem inteira suavemente. Beier–Neely deforma ao longo de linhas orientadas.",
+            "missingHint": "Abra a aba Studio e a seção Algoritmo."
+          },
+          "pick-tps": {
+            "title": "Experimente Thin-Plate Spline",
+            "body": "Clique em Thin-Plate Spline: a prévia será atualizada com a nova deformação.",
+            "missingHint": "Abra a aba Studio e a seção Algoritmo."
+          },
+          "settings": {
+            "title": "Configurações do algoritmo",
+            "body": "As configurações do algoritmo ativo aparecem abaixo dos cartões. Na TPS, o controle λ equilibra a precisão e a suavidade.",
+            "missingHint": "Escolha TPS ou Beier–Neely para exibir suas configurações."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Navegar pelas vistas do estúdio",
+        "description": "Edição, Prévia e Tripla; ampliar, mover e redefinir a vista.",
+        "keywords": "vista edição prévia tripla zoom mover redefinir navegar",
+        "preconditionHint": "Carregue duas imagens primeiro. O botão Demo na barra superior é o caminho mais rápido.",
+        "steps": {
+          "toggle": {
+            "title": "Três vistas",
+            "body": "Edição mostra A | B para posicionar referências; Prévia mostra o morphing ampliado; Tripla mostra A | morphing | B. Em espaços estreitos, escolha a vista no menu.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "triple": {
+            "title": "Abra a vista Tripla",
+            "body": "Clique em Tripla: você edita nas laterais enquanto o centro mostra o morphing em tempo real. Quando o painel de prévia estiver estreito, abra Controles da prévia para escolher Final, Camada, Máscara ou Contribuição, mostrar sobreposições ou examinar a pilha de camadas.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "zoom-pan": {
+            "title": "Ampliar, mover e redefinir",
+            "body": "Use a roda do mouse ou o gesto de pinça para ajustar o zoom. Mantenha a tecla Espaço pressionada (ou use Mover a vista, H) e arraste para deslocar a vista. Clique ou toque duas vezes para redefini-la. Em dispositivos de toque, a área de trabalho fica fixa; apenas os painéis rolam.",
+            "missingHint": "Abra a aba Studio na vista Edição ou Tripla."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Salvar e reabrir um projeto",
+        "description": "Salve a estrutura e as imagens incorporadas; vincule novamente os vídeos locais ao reabrir.",
+        "keywords": "salvar abrir carregar projeto arquivo morph json reabrir",
+        "preconditionHint": "Carregue duas imagens primeiro. O botão Demo na barra superior é o caminho mais rápido.",
+        "steps": {
+          "save": {
+            "title": "Salvar",
+            "body": "O botão Salvar baixa um arquivo .morph.json com as imagens incorporadas, referências, camadas e linha do tempo. Os arquivos de vídeo ficam no dispositivo e são identificados por seus metadados. Nada é enviado a um servidor."
+          },
+          "load": {
+            "title": "Reabrir",
+            "body": "O botão Abrir restaura a estrutura do projeto e as imagens incorporadas. Para cada vídeo local, use Vincular novamente no espaço A/B correspondente. A reprodução e a exportação ficam disponíveis quando todos os arquivos estiverem vinculados."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Créditos",
+        "description": "Créditos, versão do aplicativo e processamento local dos arquivos.",
+        "keywords": "Sobre Créditos Privacidade",
+        "steps": {
+          "about": {
+            "title": "Abra Sobre",
+            "body": "O botão Sobre na barra superior mostra o autor, a versão do aplicativo e como seus arquivos são processados localmente. Na interface compacta, abra o menu Mais.",
+            "missingHint": "Saia do modo zen ou abra o menu Mais para encontrar Sobre."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Mudar o idioma da interface",
+        "description": "Escolha um idioma para o estúdio, os exemplos e os guias.",
+        "keywords": "idioma língua tradução preferências internacional",
+        "stepTitle": "Escolha seu idioma",
+        "body": "Abra o seletor de idioma na barra superior. Cada cartão apresenta uma bandeira e o nome do idioma em sua escrita nativa. Sua escolha fica salva neste dispositivo. A interface muda quando o carregamento termina. Pode ser necessária uma conexão para baixar as fontes do idioma. Seu projeto e os nomes das referências permanecem intactos. Se não for possível restaurar o idioma salvo, o aplicativo abre em inglês, com uma explicação e um botão para tentar novamente. Em telas estreitas, a barra superior pode ocupar várias linhas para manter todos os comandos visíveis."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Carregue duas imagens primeiro. O botão Demo na barra superior é o caminho mais rápido."
+      },
+      "studioHint": "Abra a aba Studio na vista Edição.",
+      "placePointsGuide": {
+        "title": "Posicionar pontos de correspondência",
+        "description": "Os pontos indicam à Malha e à TPS qual local de A corresponde a qual local de B.",
+        "keywords": "ponto referência correspondência malha mesh tps posicionar ajustar",
+        "steps": {
+          "pick-tool": {
+            "title": "A ferramenta Ponto",
+            "body": "Selecione a ferramenta Ponto (atalho P)."
+          },
+          "place-a": {
+            "title": "Marque um detalhe em A",
+            "body": "Clique em um detalhe identificável (um olho, um canto…) no painel Origem A. Uma alça correspondente aparece em B."
+          },
+          "adjust-b": {
+            "title": "Ajuste o lado B",
+            "body": "Arraste a alça correspondente em Destino B até o mesmo detalhe na outra imagem. Esse par guia a deformação."
+          },
+          "preview": {
+            "title": "Observe a deformação",
+            "body": "Mude para Prévia ou Tripla para ver como Malha/TPS deformam as imagens a partir dos seus pontos."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Traçar linhas orientadas (Beier–Neely)",
+        "description": "Os pares de linhas guiam a deformação de Beier–Neely.",
+        "keywords": "linha segmento orientada beier neely contorno traçar",
+        "steps": {
+          "pick-tool": {
+            "title": "A ferramenta Linha",
+            "body": "Selecione a ferramenta Linha (atalho L)."
+          },
+          "drag-line": {
+            "title": "Arraste ao longo de um contorno em A",
+            "body": "Pressione e arraste para traçar uma linha ao longo de um contorno bem definido (mandíbula, teto…). A linha correspondente aparece em B."
+          },
+          "orient-b": {
+            "title": "Mantenha a direção em B",
+            "body": "Mova as duas extremidades em B até o mesmo contorno, mantendo a mesma direção. Beier–Neely faz projeções ao longo e perpendicularmente a cada linha."
+          },
+          "use-beier": {
+            "title": "Escolha Beier–Neely",
+            "body": "As linhas só produzem deformação com o algoritmo Beier–Neely. Selecione o cartão correspondente.",
+            "missingHint": "Abra a aba Studio e a seção Algoritmo."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Desenhar uma polilinha",
+        "description": "Curvas ponto a ponto ou à mão livre, que podem ser continuadas por uma extremidade.",
+        "keywords": "polilinha curva traçado mão livre desenhar continuar extremidade",
+        "steps": {
+          "pick-tool": {
+            "title": "A ferramenta Polilinha",
+            "body": "Selecione a ferramenta Polilinha (atalho Y)."
+          },
+          "tap-by-tap": {
+            "title": "Ponto a ponto",
+            "body": "Clique em pontos sucessivos ao longo de um contorno. ⏎ conclui; Esc cancela."
+          },
+          "freehand": {
+            "title": "Ou à mão livre",
+            "body": "Pressione e arraste em um movimento contínuo. O traçado é simplificado automaticamente quando você solta."
+          },
+          "resume": {
+            "title": "Continue por uma extremidade",
+            "body": "Com a ferramenta Polilinha ativa, clique em uma extremidade de uma polilinha aberta para continuar o traçado."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Fechar uma polilinha aberta",
+        "description": "Duas maneiras de transformar uma polilinha aberta em um polígono fechado.",
+        "keywords": "fechar polígono polilinha extremidade primeiro ponto",
+        "steps": {
+          "intro": {
+            "title": "Duas maneiras de fechar",
+            "body": "Você pode fechar uma polilinha enquanto desenha ou depois, com a ferramenta Seleção."
+          },
+          "close-first": {
+            "title": "Enquanto desenha: clique no ponto 1",
+            "body": "Durante o traçado, clique novamente no primeiro ponto. O contorno se fecha e o desenho é concluído."
+          },
+          "drop-endpoint": {
+            "title": "Depois: una as extremidades",
+            "body": "Com a ferramenta Seleção, arraste uma extremidade da polilinha aberta e solte-a sobre a outra. O resultado é o mesmo."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Desenhar uma região",
+        "description": "Use uma região fechada como máscara de camada e ajuste a difusão da borda.",
+        "keywords": "região máscara laço contorno difusão suavizar desenhar",
+        "steps": {
+          "pick-tool": {
+            "title": "A ferramenta Máscara de região",
+            "body": "Selecione a ferramenta Máscara de região. Seu contorno é sempre fechado."
+          },
+          "outline": {
+            "title": "Contorne a área em A",
+            "body": "Clique em pontos ou desenhe à mão livre ao redor da área (um rosto, um objeto). Conclua com ⏎ ou fechando o contorno."
+          },
+          "feather": {
+            "title": "Suavize a borda",
+            "body": "Selecione a região e ajuste Difusão para suavizar sua borda. Uma camada que usa essa região como máscara também tem seu próprio modo de máscara e controle de difusão.",
+            "missingHint": "Abra a seção Seleção no painel de propriedades à direita."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Selecionar, renomear, bloquear e ocultar",
+        "description": "Gerencie as referências e observe o indicador de correspondência A↔B ao passar o mouse.",
+        "keywords": "seleção múltipla shift renomear bloquear ocultar indicador mouse referência",
+        "steps": {
+          "pick-tool": {
+            "title": "A ferramenta Seleção",
+            "body": "Selecione a ferramenta Seleção (atalho V)."
+          },
+          "select": {
+            "title": "Clique em uma alça",
+            "body": "Clique na alça de uma referência para selecioná-la. Use Shift para selecionar várias. Ao passar o mouse, um indicador destaca a alça correspondente no outro painel."
+          },
+          "inspector": {
+            "title": "Renomear, bloquear e ocultar",
+            "body": "Na seção Seleção, você pode renomear a referência e alterar Visível / Bloqueada.",
+            "missingHint": "Abra a seção Seleção no painel de propriedades à direita."
+          },
+          "list": {
+            "title": "A lista de Referências",
+            "body": "A lista à esquerda reflete todas as referências: o olho oculta, o cadeado bloqueia e um clique seleciona."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Empurrar pontos e desfazer",
+        "description": "Ajuste as alças localmente com Empurrar pontos e desfaça ou refaça cada edição.",
+        "keywords": "empurrar esculpir deformar local raio desfazer refazer",
+        "steps": {
+          "pick-tool": {
+            "title": "A ferramenta Empurrar pontos",
+            "body": "Selecione Empurrar pontos (atalho K)."
+          },
+          "sculpt": {
+            "title": "Arraste para esculpir",
+            "body": "Arraste sobre a imagem: cada alça dentro do círculo é empurrada, com mais intensidade no centro."
+          },
+          "undo": {
+            "title": "Desfazer / refazer",
+            "body": "Cmd/Ctrl+Z desfaz uma edição de referência; Cmd/Ctrl+Shift+Z a refaz."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Abra a seção Camadas no painel de propriedades à direita.",
+      "needsProject": {
+        "preconditionHint": "Carregue duas imagens primeiro. O botão Demo na barra superior é o caminho mais rápido."
+      },
+      "activateLayerStep": {
+        "title": "Ative uma camada adicionada",
+        "body": "Clique em uma camada diferente de Global na seção Camadas. Suas propriedades aparecem logo abaixo da lista."
+      },
+      "createLayerGuide": {
+        "title": "Criar uma camada",
+        "description": "Empilhe camadas sobre a base Global e entenda seus indicadores de contribuição.",
+        "keywords": "camada criar adicionar pilha global ordem indicador contribuição",
+        "steps": {
+          "add": {
+            "title": "Adicione uma camada",
+            "body": "Clique em Adicionar camada. A nova camada fica ativa imediatamente."
+          },
+          "global-vs-layers": {
+            "title": "Global e camadas adicionadas",
+            "body": "Global renderiza o morphing padrão por baixo. As camadas adicionadas são compostas por cima, na ordem da lista. Use as setas para reorganizar a pilha."
+          },
+          "badges": {
+            "title": "Indicadores de contribuição",
+            "body": "Cada linha mostra o que a camada faz naquele instante: imagem inteira (cobre tudo), com máscara, sem efeito, fora do clipe…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Mudar o algoritmo de uma camada",
+        "description": "Escolha um algoritmo próprio para uma camada sem alterar o padrão do projeto.",
+        "keywords": "camada algoritmo próprio malha mesh tps beier por camada",
+        "steps": {
+          "override": {
+            "title": "Escolha um algoritmo próprio",
+            "body": "O menu Algoritmo nas propriedades da camada substitui o padrão do projeto apenas para essa camada."
+          },
+          "badge": {
+            "title": "O indicador de algoritmo próprio",
+            "body": "O cabeçalho da seção Algoritmo passa a mostrar o indicador de algoritmo próprio. Os controles continuam acessíveis mesmo com uma referência selecionada.",
+            "missingHint": "Abra a seção Algoritmo no painel de propriedades à direita."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Usar uma região como máscara de camada",
+        "description": "Restrinja uma camada à região atribuída, com borda nítida ou difusa e opção de inversão.",
+        "keywords": "máscara região atribuir camada nítida difusão suavizar inverter",
+        "preconditionHint": "Desenhe uma região primeiro, com Máscara de região. O menu Máscara lista as regiões disponíveis.",
+        "steps": {
+          "assign": {
+            "title": "Atribua uma região",
+            "body": "Escolha uma região no menu Máscara: a camada passa a ser composta apenas dentro dela."
+          },
+          "modes": {
+            "title": "Borda nítida, difusa ou máscara invertida",
+            "body": "O modo da máscara alterna entre borda nítida e borda difusa, com um valor de difusão ajustável. Inverter máscara troca o interior pelo exterior."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Pintar uma máscara",
+        "description": "Pinte uma máscara diretamente sobre a imagem e acompanhe o resultado na prévia.",
+        "keywords": "pintar pincel máscara diâmetro dureza intensidade borracha apagar tempo real",
+        "steps": {
+          "pick-brush": {
+            "title": "O Pincel de máscara",
+            "body": "Selecione Pincel de máscara (atalho B). Ele pinta a máscara da camada ativa.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "settings": {
+            "title": "Configurações do pincel",
+            "body": "Diâmetro, Dureza e Intensidade definem o traço. A Borracha remove a pintura: marque a opção ou mantenha ⌥ pressionada enquanto arrasta.",
+            "missingHint": "As configurações aparecem abaixo das ferramentas quando o pincel está ativo."
+          },
+          "paint": {
+            "title": "Pinte sobre a imagem",
+            "body": "Arraste o pincel sobre uma imagem: a prévia central mostra o resultado em tempo real. Use Final e Máscara para examinar o efeito. A máscara pintada acompanha a deformação da camada e, assim, segue o conteúdo durante o morphing.",
+            "missingHint": "Abra a aba Studio na vista Edição."
+          },
+          "clear": {
+            "title": "Limpe quando quiser",
+            "body": "Máscara pintada → Limpar remove toda a máscara pintada da camada."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opacidade, mesclagem, clipe e transição",
+        "description": "Ajuste a contribuição de uma camada, limite-a a um intervalo da linha do tempo e escolha quando a fusão acontece.",
+        "keywords": "opacidade mesclagem modo composição clipe linha do tempo início duração interpolação transição deformação fusão intervalo predefinição morphing clássico bézier curva duplicação",
+        "steps": {
+          "opacity": {
+            "title": "Opacidade",
+            "body": "Reduza a opacidade para menos de 1 para misturar a camada com as camadas inferiores."
+          },
+          "blend": {
+            "title": "Modo de mesclagem",
+            "body": "O menu Mesclagem define como a camada se combina com as inferiores: Normal, Multiplicação, Divisão ou Adição. Multiplicação multiplica as cores; Divisão clareia a imagem; Adição soma as cores e suas opacidades, limitando o resultado ao valor máximo."
+          },
+          "clip": {
+            "title": "Limite a camada no tempo",
+            "body": "Arraste o bloco da camada na linha do tempo para movê-lo ou ajuste suas bordas para cortar. Você também pode definir Início e Duração nas propriedades da camada."
+          },
+          "windows": {
+            "title": "Deformação gradual, fusão mais curta",
+            "body": "A seção Transição define dois intervalos em porcentagem do clipe. Deformação controla a passagem de uma forma para outra; Fusão controla a mistura das imagens A e B. A predefinição Morphing clássico mantém a deformação em 0–100 % e limita a fusão a 30–70 %. Isso reduz a sobreposição de detalhes desalinhados no início e no fim."
+          },
+          "windows-timeline": {
+            "title": "Leia os intervalos na linha do tempo",
+            "body": "O bloco da camada mostra os dois intervalos na borda inferior: uma faixa clara para a fusão e um traço fino para a deformação. Assim, você pode localizar a fusão dentro do clipe."
+          },
+          "easing": {
+            "title": "Ajuste a curva",
+            "body": "Interpolação controla a progressão dentro dos dois intervalos: cinco curvas predefinidas ou “personalizada (Bézier)”, com duas alças móveis. Marque “Curva separada para a fusão” para ajustar sua progressão independentemente da deformação."
+          },
+          "global-too": {
+            "title": "A camada Global também",
+            "body": "Selecione Global: essa camada também tem uma seção Transição. Por padrão, seus intervalos cobrem 0–100 %. Com o algoritmo Fusão, apenas a mistura das imagens tem efeito, pois ele não as deforma."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Carregue duas imagens primeiro. O botão Demo na barra superior é o caminho mais rápido."
+      },
+      "timelineGuide": {
+        "title": "Usar a linha do tempo",
+        "description": "Explore a animação, reproduza, avance quadro a quadro e mova os clipes.",
+        "keywords": "linha do tempo percorrer reprodução pausa quadro código tempo clipe mover cortar zen tab recolher painéis régua indicador",
+        "steps": {
+          "scrub": {
+            "title": "Mova o indicador de reprodução",
+            "body": "Clique ou arraste sobre a régua. O indicador de reprodução se move e a prévia mostra o quadro daquele instante. Com uma caneta, toque na posição desejada e mantenha a ponta na tela enquanto arrasta.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "transport": {
+            "title": "Reproduzir, pausar e avançar por quadro",
+            "body": "Clique em Reproduzir para iniciar a animação em tempo real. Os botões de seta ou as teclas ←/→ recuam ou avançam um quadro. Alt+clique em um botão de seta vai para uma extremidade. O código de tempo usa segundos:quadros.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "clips": {
+            "title": "Mova e corte os clipes",
+            "body": "Imagens e vídeos têm clipes em A/B, acima das camadas. Arraste um bloco ou suas bordas; selecionar o clipe revela Início e Duração. Uma imagem estática não tem duração de origem: aumentar seu clipe pode prolongar a montagem. Fora de um clipe, só a outra imagem ou vídeo contribui; se nenhum dos dois estiver presente, aparece o fundo.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "still-image-timing": {
+            "title": "Defina quanto tempo uma imagem aparece",
+            "body": "Selecione um clipe de imagem em A ou B e digite sua duração em segundos ou segundos:quadros. Encurtar o clipe mantém a duração da montagem; aumentá-lo prolonga a linha do tempo se necessário. Os quadros-chave das referências permanecem no tempo principal: mover ou estender o clipe não move nem estende sua animação. Os clipes são salvos no projeto.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "zen": {
+            "title": "O modo zen mantém a régua",
+            "body": "{{shortcut}} oculta os três painéis para o morphing preencher a tela. A linha do tempo se reduz a uma barra de 40 px, com régua compacta, marcações, códigos de tempo e indicador de reprodução. Você ainda pode clicar ou arrastar o indicador para percorrer a animação. Pressione {{shortcut}} novamente para restaurar os painéis."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Fazer morphing entre vídeos",
+        "description": "Importe vídeos, posicione os clipes A/B e adicione quadros-chave às referências.",
+        "keywords": "vídeo clipe importar quadros-chave adicionar faixa cantar losango arrastar ajustar tempo",
+        "steps": {
+          "get-videos": {
+            "title": "Carregue dois vídeos",
+            "body": "A janela Demo oferece quatro vídeos de canto e dois de caminhada (filtro Vídeos). Você também pode soltar seus próprios vídeos nos espaços A/B. Combinar uma imagem com um vídeo também funciona. Os projetos salvos mantêm os metadados dos vídeos e pedem que você vincule os arquivos locais novamente ao reabrir.",
+            "missingHint": "Abra o seletor Demo."
+          },
+          "place-clips": {
+            "title": "Posicione os clipes A/B",
+            "body": "Cada vídeo ocupa sua faixa: arraste para mover, ajuste as bordas para cortar ou use início/entrada/duração para valores exatos. Mover ou cortar um clipe atualiza a prévia na posição do indicador de reprodução, sem precisar movê-lo; a duração da montagem permanece igual. Os quadros-chave das referências continuam ligados ao tempo do arquivo original, mesmo após cortes, e são preservados ao salvar e reabrir. Fora de seu clipe, esse lado é excluído da prévia e da exportação; o outro lado preenche a imagem.",
+            "missingHint": "Abra a aba Studio."
+          },
+          "keyframes": {
+            "title": "Adicione quadros-chave",
+            "body": "Selecione uma referência. A linha Quadros-chave oferece, para cada lado: anterior ◀, um losango ◆ para adicionar ou remover um quadro-chave no instante atual, próximo ▶ e um contador. As referências seguem o movimento entre os quadros-chave. Em imagens estáticas, uma referência fica imóvel até você adicionar o primeiro quadro-chave com ◆. Depois, movê-la em outros instantes adiciona quadros-chave e permite curvar a trajetória do morphing.",
+            "missingHint": "Abra a seção Seleção no painel de propriedades à direita."
+          },
+          "timeline-keyframes": {
+            "title": "Edite quadros-chave na linha do tempo",
+            "body": "Os quadros-chave das referências selecionadas aparecem como losangos nas faixas A e B, no instante em que são reproduzidos. Clique para ir até eles, arraste para mudar o tempo (alinhado ao quadro, em uma única ação de desfazer) ou use Alt+clique para excluir. Losangos muito próximos se agrupam em uma barra com contador; use as setas nas propriedades para acessá-los.",
+            "missingHint": "Abra a aba Studio."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Comparar os algoritmos",
+        "description": "Veja os quatro algoritmos lado a lado no mesmo projeto.",
+        "keywords": "comparar grade lado a lado fusão malha crossfade mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "Abra Comparar",
+            "body": "A aba Comparar mostra uma grade 2×2 com as mesmas imagens, referências e valor de τ."
+          },
+          "read": {
+            "title": "Examine a grade",
+            "body": "Fusão produz contornos duplicados quando os detalhes das imagens estão desalinhados. Malha, TPS e Beier–Neely deformam as duas imagens em direção a uma forma intermediária comum para alinhar os detalhes correspondentes."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "Exportar em MP4 ou imagens",
+        "description": "Exporte o morphing em vídeo ou em um arquivo ZIP com imagens PNG.",
+        "keywords": "exportar mp4 webm av1 zip imagens vídeo renderizar baixar",
+        "steps": {
+          "open": {
+            "title": "Abra Exportar",
+            "body": "Tudo é renderizado localmente. Nada é enviado a um servidor."
+          },
+          "settings": {
+            "title": "Escolha a saída",
+            "body": "Vídeo exige WebCodecs e um codificador H.264, VP9 ou AV1 disponível. A sequência de imagens PNG dispensa codecs de vídeo e pode preservar um fundo transparente. No vídeo, o resultado é composto sobre fundo preto ou branco. Ajuste a resolução, a duração e a taxa de quadros."
+          },
+          "run": {
+            "title": "Exporte",
+            "body": "O estúdio calcula cada quadro, mostra o progresso e baixa o arquivo ao terminar. Durante a exportação, o mesmo botão permite cancelar a operação."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Atalhos de teclado",
+        "description": "Todos os atalhos, obtidos diretamente das tabelas do aplicativo.",
+        "keywords": "teclado atalhos teclas consulta",
+        "steps": {
+          "list": {
+            "title": "Atalhos de teclado"
+          }
+        }
+      }
+    }
+  },
+  "language": {
+    "title": "Idioma",
+    "description": "Escolha o idioma da interface.",
+    "loading": "Carregando {{language}}…",
+    "loadError": "Não foi possível carregar este idioma. Confira sua conexão e tente novamente.",
+    "retry": "Tentar novamente",
+    "names": {
+      "en": "Inglês",
+      "fr": "Francês",
+      "de": "Alemão",
+      "es": "Espanhol",
+      "pt-BR": "Português (Brasil)",
+      "it": "Italiano",
+      "tr": "Turco",
+      "id": "Indonésio",
+      "ru": "Russo",
+      "ja": "Japonês",
+      "ko": "Coreano",
+      "zh-Hans": "Chinês simplificado",
+      "th": "Tailandês",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "ar": "Árabe"
+    },
+    "restoreError": "Não foi possível restaurar o idioma {{language}}. A interface está em inglês. Conecte-se para carregar esse idioma e tente novamente."
+  },
+  "algorithmNames": {
+    "crossfade": "Fusão",
+    "mesh": "Malha",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Fusão",
+    "mesh": "Malha",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  }
+}

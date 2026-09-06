@@ -1,0 +1,375 @@
+@import "tailwindcss";
+@import "./native-fonts.css";
+@import "./shared-fonts.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Self-hosted variable fonts (OFL) — the app must stay fully static. */
+@font-face {
+  font-family: "Instrument Sans Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url("./fonts/instrument-sans-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url("./fonts/instrument-sans-latin-ext-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "JetBrains Mono Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url("./fonts/jetbrains-mono-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "JetBrains Mono Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url("./fonts/jetbrains-mono-latin-ext-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.5rem;
+
+  --font-sans:
+    var(--font-script, "Instrument Sans Variable"), "Instrument Sans Variable",
+    "Morpher Math", "Morpher Symbols", "Morpher Arrows", ui-sans-serif,
+    system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono:
+    "JetBrains Mono Variable", var(--font-script, "Instrument Sans Variable"),
+    "Morpher Math", "Morpher Symbols", "Morpher Arrows", ui-monospace,
+    "SF Mono", Menlo, monospace;
+
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --dialog-border: oklch(0.52 0.1 163 / 0.55);
+  --ring: oklch(0.708 0 0);
+
+  /* Domain accents (PRD §4.1): image A = cyan, image B = magenta/orange */
+  --image-a: oklch(0.78 0.13 210);
+  --image-b: oklch(0.74 0.16 25);
+  --selection: oklch(0.86 0.16 95);
+}
+
+.dark {
+  color-scheme: dark;
+  /* Studio darkroom look: near-black blue-grey ground, mint signature accent
+     (bg #0a0b0d, panels #0d0f12, accent #63e6b0). */
+  --background: oklch(0.149 0.005 264);
+  --foreground: oklch(0.933 0.007 261);
+  --card: oklch(0.168 0.007 258);
+  --card-foreground: oklch(0.933 0.007 261);
+  --popover: oklch(0.187 0.015 267);
+  --popover-foreground: oklch(0.933 0.007 261);
+  --primary: oklch(0.837 0.14 163);
+  --primary-foreground: oklch(0.24 0.045 163);
+  --secondary: oklch(0.225 0.017 260);
+  --secondary-foreground: oklch(0.933 0.007 261);
+  --muted: oklch(0.195 0.011 261);
+  --muted-foreground: oklch(0.657 0.017 257);
+  --accent: oklch(0.276 0.024 264);
+  --accent-foreground: oklch(0.985 0.002 260);
+  --destructive: oklch(0.735 0.114 20);
+  --border: oklch(0.238 0.015 262);
+  --input: oklch(0.283 0.019 258);
+  --dialog-border: color-mix(in oklab, var(--primary) 40%, transparent);
+  --ring: oklch(0.6 0.09 163);
+
+  --image-a: oklch(0.765 0.117 222);
+  --image-b: oklch(0.732 0.134 34);
+  --selection: oklch(0.839 0.119 92);
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-dialog-border: var(--dialog-border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-image-a: var(--image-a);
+  --color-image-b: var(--image-b);
+  --color-selection: var(--selection);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: var(--ring);
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+
+  body {
+    position: fixed;
+    inset: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* One safe content box for every layout, including tablets using AppShell.
+     Shells fill this box instead of recomputing a separate viewport height.
+     Physical insets must stay physical even when the interface is RTL. */
+  #root {
+    box-sizing: border-box;
+    height: 100dvh;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    background: var(--card);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Discreet thin scrollbars (panels overflow often in the studio layout). */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in oklab, var(--foreground) 22%, transparent)
+      transparent;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"],
+  progress {
+    accent-color: var(--primary);
+  }
+
+  /* Range inputs: thin rounded track + round thumb (native looks dated). */
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    background: transparent;
+    cursor: pointer;
+    touch-action: none;
+  }
+
+  input[type="range"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 9999px;
+    background: color-mix(in oklab, var(--foreground) 16%, transparent);
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -4px;
+    height: 12px;
+    width: 12px;
+    border-radius: 9999px;
+    background: var(--foreground);
+    box-shadow: 0 0 0 1px var(--background);
+    transition: transform 120ms ease;
+  }
+
+  input[type="range"]:not(:disabled):hover::-webkit-slider-thumb {
+    transform: scale(1.15);
+  }
+
+  input[type="range"]:focus-visible {
+    outline: none;
+  }
+
+  input[type="range"]:focus-visible::-webkit-slider-thumb {
+    box-shadow:
+      0 0 0 2px var(--background),
+      0 0 0 4px var(--ring);
+  }
+
+  input[type="range"]::-moz-range-track {
+    height: 4px;
+    border-radius: 9999px;
+    background: color-mix(in oklab, var(--foreground) 16%, transparent);
+  }
+
+  input[type="range"]::-moz-range-progress {
+    height: 4px;
+    border-radius: 9999px;
+    background: var(--foreground);
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    height: 12px;
+    width: 12px;
+    border: none;
+    border-radius: 9999px;
+    background: var(--foreground);
+  }
+
+  /*
+   * Double-handle window (RangeWindowInput): two range inputs stacked over a
+   * track drawn by the component. Only the thumbs stay clickable so the lower
+   * input remains reachable.
+   */
+  .range-window input[type="range"] {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  .range-window input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+  }
+
+  .range-window input[type="range"]::-webkit-slider-thumb {
+    pointer-events: auto;
+  }
+
+  .range-window input[type="range"]::-moz-range-track,
+  .range-window input[type="range"]::-moz-range-progress {
+    background: transparent;
+  }
+
+  .range-window input[type="range"]::-moz-range-thumb {
+    pointer-events: auto;
+  }
+}
+
+/* These writing systems have no Latin-style capitals or tracking. Keep marks
+   and joining glyphs clear in compact labels as well as in guide prose. */
+:lang(ko) {
+  /* Wrap Korean at spaces, with a fallback for words wider than the panel. */
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+:root:is(
+  [data-script="arabic"],
+  [data-script="japanese"],
+  [data-script="korean"],
+  [data-script="simplified-chinese"],
+  [data-script="thai"],
+  [data-script="devanagari"],
+  [data-script="bengali"]
+) {
+  --text-xs--line-height: 1.6;
+  --text-sm--line-height: 1.6;
+  --text-base--line-height: 1.65;
+}
+:is(
+  :lang(ar),
+  :lang(ja),
+  :lang(ko),
+  :lang(zh-Hans),
+  :lang(th),
+  :lang(hi),
+  :lang(bn)
+).uppercase {
+  text-transform: none;
+}
+:is(
+  :lang(ar),
+  :lang(ja),
+  :lang(ko),
+  :lang(zh-Hans),
+  :lang(th),
+  :lang(hi),
+  :lang(bn)
+)[class*="tracking-"] {
+  letter-spacing: normal;
+}
+:is(
+  :lang(ar),
+  :lang(ja),
+  :lang(ko),
+  :lang(zh-Hans),
+  :lang(th),
+  :lang(hi),
+  :lang(bn)
+).leading-none {
+  line-height: 1.4;
+}

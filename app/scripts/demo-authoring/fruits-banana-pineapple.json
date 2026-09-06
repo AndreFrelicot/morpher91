@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "id": "1258cb07-52ca-4669-9f95-8d44ec3d97bd",
+  "name": "Banane → ananas",
+  "createdAt": "2026-09-03T12:22:39.407Z",
+  "updatedAt": "2026-09-03T13:06:32.246Z",
+  "canvas": {
+    "aspectRatio": "1:1",
+    "width": 1024,
+    "height": 1024,
+    "background": "black"
+  },
+  "images": {
+    "source": {
+      "id": "8ecbf2a3-e0b4-46a2-9de5-c35e65069e7a",
+      "name": "banana.webp",
+      "width": 1254,
+      "height": 1254,
+      "source": {
+        "kind": "external-file-placeholder",
+        "value": "banana.webp"
+      },
+      "placement": {
+        "mode": "contain",
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "scale": 1,
+        "rotationRad": 0,
+        "translate": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    "target": {
+      "id": "b005b88f-e9fc-41ce-97dd-1654c448d899",
+      "name": "pineapple.webp",
+      "width": 1254,
+      "height": 1254,
+      "source": {
+        "kind": "external-file-placeholder",
+        "value": "pineapple.webp"
+      },
+      "placement": {
+        "mode": "contain",
+        "crop": {
+          "x": 0,
+          "y": 0,
+          "width": 1,
+          "height": 1
+        },
+        "scale": 1,
+        "rotationRad": 0,
+        "translate": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  },
+  "features": [
+    {
+      "id": "3701854c-9a8a-4221-9768-722865dc41df",
+      "enabled": true,
+      "createdAt": "2026-09-03T13:03:02.443Z",
+      "updatedAt": "2026-09-03T13:04:01.312Z",
+      "kind": "polyline",
+      "a": [
+        {
+          "x": 0.10053436336265634,
+          "y": 0.6732178254967023
+        },
+        {
+          "x": 0.2798830352439469,
+          "y": 0.6470546527017924
+        },
+        {
+          "x": 0.4514610734840926,
+          "y": 0.5970411413768173
+        },
+        {
+          "x": 0.6332265959860542,
+          "y": 0.48201740766037415
+        },
+        {
+          "x": 0.743722558919468,
+          "y": 0.24730756004280094
+        },
+        {
+          "x": 0.7461332909309728,
+          "y": 0.09124631464828001
+        },
+        {
+          "x": 0.8309678070211097,
+          "y": 0.04706995646791299
+        },
+        {
+          "x": 0.8660152003254231,
+          "y": 0.11947757734138435
+        },
+        {
+          "x": 0.9080316894701018,
+          "y": 0.265485947875747
+        },
+        {
+          "x": 0.9512596632296991,
+          "y": 0.39141916173562424
+        },
+        {
+          "x": 0.8491156018082245,
+          "y": 0.6367203218199863
+        },
+        {
+          "x": 0.6286315205021961,
+          "y": 0.8219122654550511
+        },
+        {
+          "x": 0.28297905148207236,
+          "y": 0.8756581283714423
+        },
+        {
+          "x": 0.08665735777358814,
+          "y": 0.7782192773988184
+        }
+      ],
+      "b": [
+        {
+          "x": 0.3131682691083786,
+          "y": 0.7689618217302733
+        },
+        {
+          "x": 0.3029991406740614,
+          "y": 0.6857793301150255
+        },
+        {
+          "x": 0.32134273095449634,
+          "y": 0.579407309759668
+        },
+        {
+          "x": 0.3339776588828146,
+          "y": 0.4969712884627034
+        },
+        {
+          "x": 0.35157477884496635,
+          "y": 0.434537000530229
+        },
+        {
+          "x": 0.2828322048620822,
+          "y": 0.08099152568563525
+        },
+        {
+          "x": 0.5049132431605035,
+          "y": 0.026872427610102532
+        },
+        {
+          "x": 0.7107371369041829,
+          "y": 0.09083636783414087
+        },
+        {
+          "x": 0.631427724891175,
+          "y": 0.43382112325777705
+        },
+        {
+          "x": 0.6842313219959627,
+          "y": 0.5733192936392435
+        },
+        {
+          "x": 0.688808041652322,
+          "y": 0.7374509845240558
+        },
+        {
+          "x": 0.6509338509131986,
+          "y": 0.884909465430821
+        },
+        {
+          "x": 0.4523482718131997,
+          "y": 0.926307975049708
+        },
+        {
+          "x": 0.34531544166788664,
+          "y": 0.8741651877348758
+        }
+      ],
+      "layerId": "0af5512c-a45c-473a-954a-f021a2798fdd",
+      "smooth": true,
+      "closed": true
+    }
+  ],
+  "layers": [
+    {
+      "id": "global",
+      "name": "Global",
+      "enabled": true,
+      "visible": true,
+      "locked": false,
+      "zIndex": 0,
+      "featureIds": "all",
+      "opacity": 1,
+      "compositeMode": "normal",
+      "timing": {
+        "warpStart": 0,
+        "warpEnd": 1,
+        "dissolveStart": 0,
+        "dissolveEnd": 1,
+        "easing": "smoothstep"
+      },
+      "clip": {
+        "startSec": 0,
+        "durationSec": 4
+      }
+    },
+    {
+      "id": "0af5512c-a45c-473a-954a-f021a2798fdd",
+      "name": "Layer 1",
+      "enabled": true,
+      "visible": true,
+      "locked": false,
+      "zIndex": 1,
+      "featureIds": [],
+      "opacity": 1,
+      "compositeMode": "normal",
+      "timing": {
+        "warpStart": 0,
+        "warpEnd": 1,
+        "dissolveStart": 0,
+        "dissolveEnd": 1,
+        "easing": "smoothstep"
+      },
+      "clip": {
+        "startSec": 0,
+        "durationSec": 4
+      }
+    }
+  ],
+  "timeline": {
+    "durationSec": 4,
+    "fps": 30,
+    "loop": true,
+    "pingPong": false
+  },
+  "activeAlgorithm": "thin-plate-spline",
+  "algorithmSettings": {
+    "crossfade": {
+      "gammaCorrectBlend": false
+    },
+    "mesh": {
+      "borderAnchors": true,
+      "borderAnchorCount": 8,
+      "showWireframe": false
+    },
+    "thinPlateSpline": {
+      "lambda": 0.001,
+      "borderAnchors": true,
+      "borderAnchorCount": 8,
+      "samplePolylines": true,
+      "polylineSampleSpacing": 0.03,
+      "showGrid": false
+    },
+    "beierNeely": {
+      "a": 0.001,
+      "b": 2,
+      "p": 0,
+      "maxLines": 256,
+      "samplePolylines": true
+    }
+  }
+}

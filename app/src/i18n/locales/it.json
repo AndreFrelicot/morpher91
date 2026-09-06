@@ -1,0 +1,1201 @@
+{
+  "topbar": {
+    "new": "Nuovo",
+    "newConfirmTitle": "Nuovo progetto",
+    "newConfirm": "Scartare il progetto attuale e crearne uno nuovo?",
+    "newConfirmAction": "Scarta",
+    "load": "Apri",
+    "save": "Salva",
+    "export": "Esporta",
+    "help": "Aiuto",
+    "language": "Lingua",
+    "loadErrorTitle": "Errore di caricamento",
+    "loadError": "Impossibile caricare il progetto.",
+    "videoSaveTitle": "Salva il progetto",
+    "videoSaveNote": "I file video non vengono incorporati nel progetto. Dovrai ricollegarli alla riapertura. Continuare con il salvataggio?",
+    "videoSaveAction": "Salva comunque",
+    "loadErrors": {
+      "invalidJson": "Questo file di progetto non è valido.",
+      "unsupportedVersion": "Questa versione del progetto non è supportata.",
+      "invalidStructure": "Il progetto contiene dati non validi o incompleti.",
+      "limitExceeded": "Il progetto supera i limiti di sicurezza dell’applicazione.",
+      "invalidReference": "Il progetto contiene collegamenti a livelli o riferimenti geometrici inesistenti.",
+      "invalidMask": "Il progetto contiene una maschera dipinta danneggiata."
+    },
+    "tabs": {
+      "studio": "Studio",
+      "compare": "Confronta"
+    },
+    "about": "Informazioni"
+  },
+  "sidebar": {
+    "tools": "Strumenti",
+    "assets": "Media",
+    "features": "Riferimenti",
+    "layers": "Livelli"
+  },
+  "tools": {
+    "select": "Selezione",
+    "point": "Punto",
+    "line": "Linea",
+    "polyline": "Polilinea",
+    "region": "Maschera di area",
+    "brush": "Pennello maschera",
+    "push": "Spingi i punti",
+    "pan": "Sposta la vista"
+  },
+  "assets": {
+    "sourceA": "Origine A",
+    "targetB": "Destinazione B",
+    "replace": "Sostituisci immagine/video",
+    "choose": "Scegli immagine/video…",
+    "loading": "Caricamento…",
+    "video": "video",
+    "videoMissing": "Il file video deve essere ricollegato",
+    "relink": "Ricollega",
+    "replaceInstead": "Sostituisci con un’altra immagine o un altro video",
+    "relinkVideoOnly": "Scegli il file video previsto per ricollegarlo a questa posizione.",
+    "relinkMismatch": "Questo video non corrisponde al file salvato. Verifica le dimensioni e la durata, oppure sostituisci il file.",
+    "relinkNoSavedVideo": "Il progetto non prevede più un video in questa posizione.",
+    "relinkAlreadyLinked": "Questo video è già ricollegato.",
+    "loadError": "Impossibile caricare il file selezionato."
+  },
+  "brush": {
+    "selectLayerHint": "Seleziona un livello per dipingerne la maschera. Il livello di base Globale non ne ha una.",
+    "diameter": "Diametro",
+    "hardness": "Durezza",
+    "strength": "Intensità",
+    "eraser": "Gomma",
+    "eraserHold": "(tieni premuto ⌥)"
+  },
+  "features": {
+    "empty": "Nessun riferimento in questo livello.",
+    "hide": "Nascondi",
+    "show": "Mostra",
+    "hideFeature": "Nascondi riferimento",
+    "showFeature": "Mostra riferimento",
+    "lock": "Blocca",
+    "unlock": "Sblocca",
+    "lockFeature": "Blocca riferimento",
+    "unlockFeature": "Sblocca riferimento",
+    "kinds": {
+      "point": "Punto",
+      "segment": "Linea",
+      "polyline": "Polilinea",
+      "region": "Area"
+    },
+    "visible": "Visibile",
+    "locked": "Bloccato",
+    "weight": "Peso",
+    "layer": "Livello",
+    "landmark": "Significato",
+    "role": "Ruolo",
+    "feather": "Sfumatura",
+    "none": "nessuno",
+    "semantics": {
+      "left-eye": "occhio sinistro",
+      "right-eye": "occhio destro",
+      "nose": "naso",
+      "mouth": "bocca",
+      "chin": "mento",
+      "jaw": "mandibola",
+      "hairline": "attaccatura dei capelli",
+      "custom": "personalizzato"
+    },
+    "roles": {
+      "face": "viso",
+      "hair": "capelli",
+      "neck": "collo",
+      "body": "corpo",
+      "background": "sfondo",
+      "custom": "personalizzato"
+    },
+    "keyframes": "Fotogrammi chiave",
+    "noKeyframes": "nessuno",
+    "prevKeyframe": "Fotogramma chiave precedente di {{side}}",
+    "nextKeyframe": "Fotogramma chiave successivo di {{side}}",
+    "toggleKeyframe": "Aggiungi / rimuovi il fotogramma chiave di {{side}} all’istante attuale",
+    "keyframeCount_one": "{{count, number}} fotogramma chiave",
+    "keyframeCount_other": "{{count, number}} fotogrammi chiave",
+    "keyframeCount_many": "{{count, number}} fotogrammi chiave",
+    "keyframeHintStill": "Senza video, questo riferimento resta fisso. Aggiungi il primo fotogramma chiave con ◆ per animarlo: in seguito, ogni spostamento a un altro istante ne aggiunge uno (traiettoria di morphing non lineare).",
+    "selectedCount_one": "{{count, number}} riferimento selezionato",
+    "selectedCount_other": "{{count, number}} riferimenti selezionati",
+    "selectedCount_many": "{{count, number}} riferimenti selezionati",
+    "deleteSelected": "Elimina selezione",
+    "coordinates": "Coordinate",
+    "pts": "{{count, number}} pt."
+  },
+  "layers": {
+    "importFirst": "Importa prima le immagini.",
+    "add": "Aggiungi livello",
+    "defaultName": "Livello {{index}}",
+    "hideLayer": "Nascondi livello",
+    "showLayer": "Mostra livello",
+    "lockLayer": "Blocca livello",
+    "unlockLayer": "Sblocca livello",
+    "moveUp": "Sposta livello in alto",
+    "moveDown": "Sposta livello in basso",
+    "featureCount_one": "{{count, number}} riferimento",
+    "featureCount_other": "{{count, number}} riferimenti",
+    "featureCount_many": "{{count, number}} riferimenti",
+    "globalHint": "Il livello di base Globale usa le impostazioni del progetto. Seleziona un livello aggiunto per modificarne le proprietà.",
+    "status": {
+      "base": "base",
+      "disabled": "disattivato",
+      "hidden": "nascosto",
+      "outside-clip": "fuori clip",
+      "no-contribution": "senza effetto",
+      "masked": "con maschera",
+      "full-frame": "immagine intera"
+    },
+    "baseName": "Globale"
+  },
+  "inspector": {
+    "algorithm": "Algoritmo",
+    "selection": "Selezione",
+    "selectionHint": "Seleziona un riferimento per modificarlo.",
+    "overrideBadge": "algoritmo del livello: {{name}}",
+    "soon": "in arrivo",
+    "panel": "Proprietà"
+  },
+  "algorithms": {
+    "crossfade": "Dissolvenza lineare, senza deformazione",
+    "mesh": "Deformazione mediante triangoli di Delaunay",
+    "thin-plate-spline": "Deformazione RBF globale e fluida",
+    "beier-neely": "Morphing mediante un campo di linee"
+  },
+  "tps": {
+    "smoothing": "Regolarizzazione (λ)",
+    "borderAnchors": "Ancoraggi ai bordi",
+    "anchorsPerSide": "Ancoraggi / lato",
+    "samplePolylines": "Campiona le polilinee",
+    "sampleSpacing": "Distanza tra campioni"
+  },
+  "beier": {
+    "distanceSoftness": "Regolarizzazione della distanza (a)",
+    "falloffExponent": "Esponente di attenuazione (b)",
+    "lineLengthInfluence": "Influenza della lunghezza (p)",
+    "maxLines": "Linee massime",
+    "samplePolylines": "Campiona le polilinee"
+  },
+  "layerInspector": {
+    "title": "Livello",
+    "enabled": "Attivo",
+    "visible": "Visibile",
+    "locked": "Bloccato",
+    "scope": {
+      "base": "Livello di base: mostra il morphing predefinito sotto i livelli aggiunti.",
+      "disabled": "Livello disattivato: non contribuisce né all’anteprima né all’esportazione.",
+      "hidden": "Livello nascosto: viene ignorato nell’anteprima e nell’esportazione.",
+      "outside-clip": "Fuori clip: l’indicatore di riproduzione è fuori dall’intervallo di questo livello.",
+      "no-contribution": "Senza effetto: aggiungi riferimenti o assegna una maschera perché questo livello influisca sul rendering.",
+      "masked": "Livello con maschera: la maschera definisce l’area composta sopra i livelli sottostanti.",
+      "full-frame": "Livello sull’intera immagine: senza maschera, copre i livelli sottostanti."
+    },
+    "algorithm": "Algoritmo",
+    "projectDefault": "Predefinito del progetto",
+    "opacity": "Opacità",
+    "blend": "Fusione",
+    "blendModes": {
+      "normal": "Normale",
+      "source-over": "Normale (source-over)",
+      "multiply": "Moltiplica",
+      "screen": "Scolora",
+      "lighter": "Aggiungi"
+    },
+    "mask": "Maschera",
+    "none": "nessuna",
+    "paintedMask": "Maschera dipinta",
+    "clear": "Cancella",
+    "maskMode": "Modalità maschera",
+    "maskModes": {
+      "hard": "bordo netto",
+      "feathered": "bordo sfumato"
+    },
+    "maskFeather": "Sfumatura",
+    "invertMask": "Inverti maschera",
+    "timelineClip": "Clip nella timeline",
+    "start": "Inizio",
+    "duration": "Durata",
+    "easing": "Interpolazione",
+    "easings": {
+      "linear": "lineare",
+      "ease-in": "accelerazione",
+      "ease-out": "decelerazione",
+      "ease-in-out": "accelerazione/decelerazione",
+      "smoothstep": "smoothstep",
+      "bezier": "personalizzata (Bézier)"
+    },
+    "transition": "Transizione",
+    "warpWindow": "Deformazione (%)",
+    "warpStart": "Inizio deformazione (%)",
+    "warpEnd": "Fine deformazione (%)",
+    "dissolveWindow": "Dissolvenza (%)",
+    "dissolveStart": "Inizio dissolvenza (%)",
+    "dissolveEnd": "Fine dissolvenza (%)",
+    "presets": {
+      "label": "Predefinito",
+      "standard": "Standard",
+      "classicMorph": "Morphing classico",
+      "lateDissolve": "Dissolvenza ritardata",
+      "custom": "Personalizzato"
+    },
+    "distinctDissolveEasing": "Curva separata per la dissolvenza",
+    "dissolveEasing": "Interpolazione della dissolvenza",
+    "bezierCurve": "Curva {{name}}",
+    "bezierHandle1": "Prima maniglia della curva",
+    "bezierHandle2": "Seconda maniglia della curva",
+    "bezier": {
+      "x1": "Maniglia 1 x",
+      "y1": "Maniglia 1 y",
+      "x2": "Maniglia 2 x",
+      "y2": "Maniglia 2 y"
+    },
+    "stackPosition": "Posizione nella pila: {{position}}",
+    "delete": "Elimina livello",
+    "confirmTitle": "Eliminare il livello?",
+    "confirmBody": "Eliminare «{{name}}»? I suoi riferimenti passeranno al livello Globale e non verranno eliminati.",
+    "cancel": "Annulla",
+    "closeConfirm": "Chiudi la conferma di eliminazione"
+  },
+  "timeline": {
+    "videoMissing": "Ricollega i file video mancanti prima della riproduzione.",
+    "time": "Tempo",
+    "layers": "Livelli",
+    "outsideA": "fuori A",
+    "outsideB": "fuori B",
+    "position": "Posizione nella timeline",
+    "prevFrame": "Fotogramma precedente",
+    "prevFrameTitle": "Fotogramma precedente; Alt-clic per andare all’inizio",
+    "nextFrame": "Fotogramma successivo",
+    "nextFrameTitle": "Fotogramma successivo; Alt-clic per andare alla fine",
+    "play": "Riproduci",
+    "pause": "Pausa",
+    "start": "inizio",
+    "in": "attacco",
+    "dur": "durata",
+    "timecodeAria": "Timecode {{label}}",
+    "timecodeTitle": "Timecode {{label}} (secondi:fotogrammi)",
+    "tauTitle": "Posizione nella timeline (secondi:fotogrammi)",
+    "syncWaiting": "rendering… {{elapsed}}",
+    "syncWaitingTitle": "Il motore di anteprima è in attesa: {{phase}}. Le viste mostrano ancora il fotogramma precedente.",
+    "syncPhaseEngine": "apertura del motore video (lettura del file, inizializzazione del decoder)",
+    "syncPhaseFrame": "ricerca e decodifica del fotogramma, invio alla GPU",
+    "syncLast": "ultimo rendering {{elapsed}}",
+    "syncLastTitle": "Durata dell’ultimo rendering dopo lo spostamento nella timeline (mostrata oltre 0,5 s)",
+    "keyframeTitle": "Fotogramma chiave {{time}} s — {{names}} · clic: vai, trascina: sposta, ⌥-clic: elimina",
+    "keyframeTitleShared": "Fotogramma chiave {{time}} s — {{names}} · clic: vai, ⌥-clic: elimina",
+    "keyframeGroupTitle": "{{count, number}} fotogrammi chiave tra {{from}} e {{to}} s — troppo vicini per modificarli qui · clic: vai al primo",
+    "transitionWindows": "{{name}} — dissolvenza {{dissolveStart}}–{{dissolveEnd}} %, deformazione {{warpStart}}–{{warpEnd}} %",
+    "imageClipName": "Immagine · {{name}}",
+    "mediaClip": "Clip {{slot}} — {{name}}",
+    "imageClipHelp": "Immagine fissa: trascina per spostarla, allunga i bordi o seleziona la clip per regolare Inizio e Durata. Allungare la clip può estendere la timeline.",
+    "altClick": "Alt-clic"
+  },
+  "hud": {
+    "releaseToClose": "rilascia per chiudere",
+    "eraser": "gomma",
+    "maskBrushSelectLayer": "pennello maschera · seleziona un livello",
+    "points_one": "{{count, number}} pt.",
+    "points_other": "{{count, number}} pt.",
+    "points_many": "{{count, number}} pt.",
+    "finishHint": "⏎ termina · Esc annulla",
+    "cancelHint": "Esc annulla"
+  },
+  "notices": {
+    "noWebgpu": "Questa demo usa WebGPU per il rendering.\nIl browser o il dispositivo non sembra supportarlo.\n\nProva:\n- una versione recente di Chrome o Edge\n- una versione recente di Safari\n- Firefox con supporto WebGPU",
+    "tooManyFeatures": "Questo progetto contiene molti riferimenti.\nL’anteprima passa a metà risoluzione.\nL’esportazione finale resta disponibile.",
+    "deviceLost": "Il contesto GPU è stato perso (memoria insufficiente o ripristino del driver).",
+    "reload": "Ricarica",
+    "noWebcodecs": "L’anteprima funziona, ma l’esportazione video MP4 non è disponibile in questo browser.",
+    "codecUnsupported": "Il codec richiesto non è disponibile a questa risoluzione. Prova una risoluzione inferiore, un altro formato o un altro browser."
+  },
+  "studio": {
+    "edit": "Modifica",
+    "preview": "Anteprima",
+    "triple": "Tripla",
+    "morphPreview": "Anteprima del morphing",
+    "viewportsLinked": "Zoom e spostamento collegati tra le viste; fai clic per scollegarli",
+    "viewportsUnlinked": "Zoom e spostamento indipendenti per ogni vista; fai clic per collegarli",
+    "importPrompt": "Importa un’immagine o un video di <a>origine</a> e uno di <b>destinazione</b> per vedere l’anteprima del morphing.",
+    "importPromptEdit": "Importa un’immagine o un video di <a>origine</a> e uno di <b>destinazione</b> per iniziare a posizionare i riferimenti.",
+    "preparingGpu": "Preparazione della GPU…",
+    "finishShape": "Completa la forma",
+    "cancelShape": "Annulla la forma",
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci",
+    "zoomReset": "Reimposta zoom (100 %)"
+  },
+  "compare": {
+    "importPrompt": "Importa un’immagine di <a>origine</a> e una di <b>destinazione</b> nello Studio per confrontare gli algoritmi."
+  },
+  "overlays": {
+    "features": "Punti e tracciati",
+    "mesh": "Reticolo interpolato",
+    "tpsGrid": "Griglia di deformazione",
+    "beierField": "Griglia di influenza",
+    "slots": {
+      "source": "Origine",
+      "preview": "Anteprima",
+      "target": "Destinazione"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Reticolo ({{slot}})",
+    "overlayAria": "Sovrapposizione: {{label}}"
+  },
+  "layerDebug": {
+    "final": "Finale",
+    "finalTitle": "Risultato composito",
+    "layer": "Livello",
+    "layerTitle": "Risultato del livello selezionato",
+    "mask": "Maschera",
+    "maskTitle": "Maschera dell’area selezionata o del livello",
+    "contrib": "Contrib.",
+    "contribTitle": "Sovrapposizione del contributo",
+    "selected": "Selezione",
+    "selectedTitle": "Sovrapposizioni del livello selezionato",
+    "all": "Tutti",
+    "allTitle": "Sovrapposizioni di tutti i livelli visibili",
+    "layerStack": "Pila dei livelli",
+    "closeStack": "Chiudi la pila",
+    "opacity": "opacità",
+    "controls": "Controlli anteprima"
+  },
+  "preview": {
+    "outsideVideoBoth": "fuori dai video A/B",
+    "outsideVideoA": "fuori dal video A",
+    "outsideVideoB": "fuori dal video B",
+    "beforeClip": "prima della clip video",
+    "afterClip": "dopo la clip video",
+    "emptyClip": "clip video vuota"
+  },
+  "export": {
+    "videoMissing": "Ricollega tutti i file video mancanti prima dell’esportazione.",
+    "cancel": "Annulla esportazione",
+    "limits": "Limiti: 16–3840 × 16–2160 px, 12–60 fps, 1–15 s, massimo 900 fotogrammi.",
+    "errors": {
+      "unsupportedWebgpu": "Per esportare questo progetto è necessario WebGPU.",
+      "unsupportedWebcodecs": "WebCodecs non è disponibile per l’esportazione video in questo browser.",
+      "unsupportedCodec": "Questo codec non è disponibile alla risoluzione scelta. Prova un altro formato o una risoluzione inferiore.",
+      "invalidDimensions": "La larghezza deve essere compresa tra 16 e 3840 px e l’altezza tra 16 e 2160 px.",
+      "deviceDimensionLimit": "La risoluzione scelta supera il limite delle texture di questa GPU.",
+      "invalidFps": "La frequenza fotogrammi deve essere compresa tra 12 e 60 fps.",
+      "invalidDuration": "L’intervallo scelto nella timeline deve durare da 1 a 15 secondi.",
+      "tooManyFrames": "Un’esportazione può contenere al massimo 900 fotogrammi.",
+      "invalidBitrate": "Il bitrate video deve essere compreso tra 1 e 20 Mbit/s.",
+      "sequenceTooLarge": "Questa sequenza PNG è troppo grande per essere esportata nella memoria del browser. Riduci la risoluzione, la durata o la frequenza fotogrammi.",
+      "mediaMissing": "Ricollega tutti i file video mancanti prima dell’esportazione.",
+      "cancelled": "Esportazione annullata.",
+      "gpuFailure": "Esportazione non riuscita durante il rendering o la codifica. Riprova con impostazioni inferiori."
+    },
+    "title": "Esportazione",
+    "subtitle": "Genera il morphing fotogramma per fotogramma in un file da scaricare.",
+    "output": "Output",
+    "video": "Video",
+    "imageSequence": "Sequenza di immagini",
+    "resolution": "Risoluzione",
+    "presets": {
+      "project": "Progetto",
+      "source": "Origine",
+      "target": "Destinazione",
+      "custom": "Personalizzata"
+    },
+    "effective": "Risoluzione effettiva",
+    "timing": "Tempi",
+    "duration": "Durata",
+    "videoDurationNote": "Le esportazioni video usano la durata della timeline principale.",
+    "frameRate": "Frequenza fotogrammi",
+    "pingPong": "Andata e ritorno (A→B→A)",
+    "encoding": "Codifica",
+    "format": "Formato",
+    "bitrate": "Bitrate",
+    "background": "Sfondo",
+    "backgrounds": {
+      "black": "Nero",
+      "white": "Bianco",
+      "transparent": "Trasparente"
+    },
+    "importPrompt": "Importa un’immagine o un video di origine e uno di destinazione nello Studio per abilitare l’esportazione.",
+    "exporting": "Esportazione in corso…",
+    "exportButton": "Esporta {{format}}",
+    "frameProgress": "fotogramma {{index}} / {{count, number}}",
+    "done": "Esportazione completata: il file è stato scaricato.",
+    "share": "Condividi…",
+    "phases": {
+      "rendering": "Rendering",
+      "encoding": "Codifica",
+      "muxing": "Assemblaggio video",
+      "zipping": "Creazione dell’archivio"
+    },
+    "width": "Larghezza",
+    "height": "Altezza",
+    "secondsValue": "{{value}} s",
+    "frameRateValue": "{{value}} fps",
+    "bitrateValue": "{{value}} Mbit/s"
+  },
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Annulla"
+  },
+  "mobile": {
+    "inspector": "Proprietà",
+    "close": "Chiudi",
+    "closeInspector": "Chiudi proprietà",
+    "more": "Altro",
+    "views": "Viste"
+  },
+  "shell": {
+    "loading": "Caricamento dell’area di lavoro…",
+    "surfaceLoadError": "Impossibile caricare questa parte dell’area di lavoro.",
+    "retry": "Riprova",
+    "panelAria": "Pannello {{tab}}",
+    "collapse": "Comprimi",
+    "panels": {
+      "left": "Pannello media e riferimenti",
+      "right": "Pannello proprietà",
+      "timeline": "Pannello timeline"
+    },
+    "zen": "Modalità zen",
+    "hideChrome": "Nascondi i controlli sovrapposti alle immagini",
+    "showChrome": "Mostra i controlli sovrapposti alle immagini"
+  },
+  "desktopGate": {
+    "title": "Morpher91 è pensato per un computer",
+    "body": "Lo studio di morphing usa WebGPU, un mouse e uno schermo grande. Per l’esperienza completa, apri questa pagina su Mac o PC con una versione recente di Chrome, Edge o Safari. È supportato anche l’iPad.",
+    "unsupported": "L’uso su smartphone non è supportato: interfaccia e prestazioni non sono garantite.",
+    "copyLink": "Copia link",
+    "copied": "Link copiato",
+    "continueAnyway": "Continua comunque (non supportato)"
+  },
+  "assist": {
+    "stepSatisfied": "Passaggio completato. Continua quando vuoi.",
+    "back": "Indietro",
+    "next": "Avanti",
+    "done": "Fine",
+    "quit": "Esci dalla guida",
+    "showMe": "Mostra",
+    "step": "Passaggio {{current}}/{{total}}",
+    "anchorMissing": "Questo elemento non è visibile nella vista attuale.",
+    "launcherTitle": "Che cosa vuoi fare?",
+    "launcherDescription": "Sfoglia o cerca le guide contestuali.",
+    "searchPlaceholder": "Cerca una guida…",
+    "noResults": "Nessuna guida corrispondente.",
+    "suggestions": "Suggerimenti",
+    "categories": {
+      "start": "Per iniziare",
+      "features": "Riferimenti",
+      "layers-masks": "Livelli e maschere",
+      "timeline-video": "Timeline e video",
+      "output": "Output"
+    },
+    "shortcuts": {
+      "undo": "Annulla",
+      "redo": "Ripristina",
+      "delete": "Elimina selezione",
+      "stepFrame": "Avanza/torna indietro di un fotogramma",
+      "jumpEnds": "Vai all’inizio / alla fine",
+      "zen": "Modalità zen (nascondi i pannelli)",
+      "hideChrome": "Nascondi / mostra i controlli sovrapposti alle immagini"
+    }
+  },
+  "about": {
+    "credits": "Crediti",
+    "version": "v{{version}}",
+    "description": "Uno studio WebGPU e WebCodecs di morphing 2D per immagini e video.",
+    "author": "Creato da André Frélicot.",
+    "privacyTitle": "Privacy",
+    "privacy": "Immagini, video e progetti vengono elaborati sul tuo dispositivo. Il rendering e l’esportazione avvengono nel browser, senza inviare i tuoi media a un server.",
+    "close": "Chiudi",
+    "date": "Settembre 2026"
+  },
+  "language": {
+    "title": "Lingua",
+    "description": "Scegli la lingua dell’interfaccia.",
+    "loading": "Caricamento: {{language}}…",
+    "loadError": "Impossibile caricare questa lingua. Verifica la connessione e riprova.",
+    "retry": "Riprova",
+    "names": {
+      "en": "Inglese",
+      "fr": "Francese",
+      "de": "Tedesco",
+      "es": "Spagnolo",
+      "pt-BR": "Portoghese (Brasile)",
+      "it": "Italiano",
+      "tr": "Turco",
+      "id": "Indonesiano",
+      "ru": "Russo",
+      "ja": "Giapponese",
+      "ko": "Coreano",
+      "zh-Hans": "Cinese semplificato",
+      "th": "Thailandese",
+      "hi": "Hindi",
+      "bn": "Bengalese",
+      "ar": "Arabo"
+    },
+    "restoreError": "Impossibile ripristinare la lingua {{language}}. L’interfaccia è in inglese. Collegati a Internet per caricare questa lingua, poi riprova."
+  },
+  "algorithmNames": {
+    "crossfade": "Dissolvenza",
+    "mesh": "Reticolo",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Dissolvenza",
+    "mesh": "Reticolo",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Media dimostrativi",
+    "subtitle": "Scegli due immagini o video per Origine A e Destinazione B.",
+    "slotEmpty": "vuoto — scegli qui sotto",
+    "swap": "Scambia A ↔ B",
+    "filterAll": "Tutti",
+    "filterImages": "Immagini",
+    "filterVideos": "Video",
+    "tabAssets": "Media",
+    "tabPresets": "Esempi",
+    "presetsEmpty": "Non ci sono ancora progetti di esempio.",
+    "load": "Carica nel progetto",
+    "loadError": "Impossibile caricare i media dimostrativi.",
+    "manifestError": "Impossibile caricare il catalogo delle demo.",
+    "cta": "…oppure carica media dimostrativi",
+    "kindImage": "Immagine",
+    "kindVideo": "Video",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "La stessa coppia di volti, con punti e linee. Confronta gli occhi e la bocca a metà transizione.",
+        "name": "Confronto — quattro algoritmi"
+      },
+      "crossfade-reference": {
+        "description": "Senza riferimenti: osserva i contorni doppi, poi prova la vista Confronta.",
+        "name": "Dissolvenza — osservare le immagini doppie"
+      },
+      "faces-points-tps": {
+        "description": "Sposta un punto, mostra la griglia TPS e confronta il risultato con gli ancoraggi ai bordi disattivati.",
+        "name": "Claire → Bunny — punti TPS"
+      },
+      "faces-lines-beier": {
+        "description": "Linee orientate su occhi, naso e bocca. Regolane l’influenza con a, b e p.",
+        "name": "Volti — linee Beier–Neely"
+      },
+      "cars-mesh": {
+        "description": "Le ruote e la sagoma guidano i triangoli. Attiva il reticolo per esaminare la deformazione.",
+        "name": "Auto — reticolo"
+      },
+      "layer-full-frame": {
+        "description": "Nascondi il livello superiore: senza maschera, sostituisce l’intera immagine del livello Globale.",
+        "labels": {
+          "face": "Viso sull’intera immagine"
+        },
+        "name": "Livello — immagine intera"
+      },
+      "layer-region-mask": {
+        "description": "TPS sul viso, Dissolvenza intorno. Esamina le viste Maschera e Contrib.; regola il contorno e la sua sfumatura.",
+        "labels": {
+          "face": "Viso con TPS"
+        },
+        "name": "Area — un algoritmo per zona"
+      },
+      "mask-invert-blend": {
+        "description": "La maschera protegge il viso. Mostra e nascondi il livello per osservare il metodo Moltiplica al 40 % di opacità.",
+        "labels": {
+          "outside": "Esterno con Moltiplica"
+        },
+        "name": "Maschera invertita — Moltiplica"
+      },
+      "blend-light": {
+        "description": "Due livelli schiariscono l’immagine: Scolora sul viso, Aggiungi intorno. Isola ciascun livello e regolane l’opacità.",
+        "labels": {
+          "light": "Viso con Scolora",
+          "glow": "Esterno con Aggiungi"
+        },
+        "name": "Fusione — Scolora e Aggiungi"
+      },
+      "painted-mask": {
+        "description": "La maschera dipinta su A segue la deformazione TPS. Esamina Maschera al 25, 50 e 75 %, poi prova il pennello e la gomma.",
+        "labels": {
+          "paint": "Viso dipinto con TPS"
+        },
+        "name": "Maschera dipinta — seguire il morphing"
+      },
+      "combined-masks": {
+        "description": "L’area a bordo netto si unisce alla maschera dipinta. Esamina Maschera, poi prova la gomma all’esterno dell’area.",
+        "labels": {
+          "paint": "Viso dipinto con TPS"
+        },
+        "name": "Maschere combinate — area e pennello"
+      },
+      "contours-push": {
+        "description": "Seleziona Spingi i punti (K), ritocca la guancia e annulla la modifica. Chiudi una copia del contorno per esplorare i poligoni.",
+        "name": "Contorni — modellare spingendo i punti"
+      },
+      "transition-classic": {
+        "description": "Confronta Standard e Morphing classico: deformazione da 0 a 100 %, dissolvenza da 30 a 70 %. Osserva soprattutto l’inizio e la fine.",
+        "name": "Transizione — morphing classico"
+      },
+      "layers-timing": {
+        "description": "Il viso cambia prima dei capelli. Due intervalli e una curva Bézier; mantieni i livelli visibili fino alla fine.",
+        "labels": {
+          "face": "Viso in anticipo"
+        },
+        "name": "Tempi — prima il viso, poi l’esterno"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Una polilinea chiusa animata su immagini fisse. Sposta i rombi, poi avvia la riproduzione di andata e ritorno.",
+        "labels": {
+          "fruit": "Contorno TPS animato"
+        },
+        "name": "Frutta — fotogrammi chiave e andata e ritorno"
+      },
+      "fruit-to-fox": {
+        "description": "Il ciuffo diventa le orecchie, il frutto diventa il viso. Una corrispondenza tra sagome, senza riferimenti di un volto umano.",
+        "name": "Ananas → Foxy — metamorfosi"
+      },
+      "transparent-cutout": {
+        "description": "Immagini 4:3 in un quadro quadrato: i margini sono trasparenti. Esporta in PNG con sfondo Trasparente; il video riempie lo sfondo.",
+        "name": "Esportazione — quadro trasparente"
+      },
+      "video-faces-keyframes": {
+        "description": "44 riferimenti seguiti in ogni fotogramma: occhi, naso, labbra e mandibola. Il punto di attacco di B è spostato nel video originale per avvicinare le espressioni.",
+        "name": "Video — riferimenti e fotogrammi chiave"
+      },
+      "video-region-keyframes": {
+        "description": "Il contorno e la linea della bocca seguono ogni fotogramma. Esamina la maschera, poi seleziona la linea e i suoi fotogrammi chiave.",
+        "labels": {
+          "videoFace": "Viso animato con TPS"
+        },
+        "name": "Video — maschera e linea animate"
+      },
+      "video-photo-alive": {
+        "description": "La foto diventa il video dello stesso volto in un secondo. Solo B ha fotogrammi chiave; i riferimenti di A restano fissi.",
+        "name": "Foto → video — prendere vita"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 s, B: 1,5–4,5 s. I riferimenti seguono il tempo dei media anche dopo il taglio delle clip; il morphing occupa l’intervallo in cui si sovrappongono.",
+        "name": "Clip — taglio e sovrapposizione"
+      },
+      "video-body-walk": {
+        "description": "16 riferimenti per fotogramma. Posa rilevata sul poliziotto; riferimenti manuali e tracciamento ottico sul robot. Il livello agisce durante la sovrapposizione.",
+        "labels": {
+          "body": "Morphing durante la sovrapposizione"
+        },
+        "name": "Camminata — morphing del corpo intero"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Auto sportiva rossa",
+      "red-city-car": "Utilitaria rossa",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy che canta",
+      "bunny-singing": "Bunny che canta",
+      "claire-singing": "Claire che canta",
+      "anna-singing": "Anna che canta",
+      "cop-body-walk": "Poliziotto che cammina",
+      "karl2000-body-walk": "Karl2000 che cammina",
+      "banana": "Banana",
+      "pineapple": "Ananas"
+    },
+    "presetsNote": "Questi esempi sono generati automaticamente per mostrare le funzionalità dello studio. Il risultato artistico non è garantito."
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Caricare due immagini",
+        "description": "Riempi Origine A e Destinazione B con media dimostrativi o con i tuoi file.",
+        "keywords": "caricare importare immagini demo media esempi origine destinazione aprire file",
+        "steps": {
+          "demo": {
+            "title": "Per iniziare: i media dimostrativi",
+            "body": "In Demo → Esempi trovi un percorso di esercizi. Ogni scheda mostra la coppia origine/destinazione e un esercizio. Inizia con Confronto — quattro algoritmi, poi esplora maschere, transizioni, fotogrammi chiave e video. Gli esempi si aprono a un istante scelto, con la vista e il livello adatti già selezionati. I nomi dei riferimenti restano in inglese in tutte le lingue dell’interfaccia.\n\nQuesti esempi sono generati automaticamente per mostrare le funzionalità dello studio. Il risultato artistico non è garantito.",
+            "missingHint": "Apri il selettore Demo."
+          },
+          "source": {
+            "title": "Oppure importa i tuoi file — Origine A",
+            "body": "Questa posizione accetta un’immagine o un video: è il punto di partenza del morphing.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "target": {
+            "title": "Destinazione B",
+            "body": "Riempi la seconda posizione. Quando entrambi i media sono caricati, il progetto viene creato e appare l’anteprima.",
+            "missingHint": "Apri la scheda Studio."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Scegliere l’algoritmo di morphing",
+        "description": "Scegli l’algoritmo del progetto e scopri le quattro famiglie.",
+        "keywords": "algoritmo dissolvenza reticolo crossfade mesh tps thin-plate spline beier neely deformazione",
+        "preconditionHint": "Carica prima due immagini. Il modo più rapido è il pulsante Demo nella barra superiore.",
+        "steps": {
+          "algorithm-list": {
+            "title": "I quattro algoritmi",
+            "body": "Dissolvenza fonde le immagini senza deformarle. Reticolo deforma triangoli di Delaunay. Thin-Plate Spline curva l’intera immagine in modo fluido. Beier–Neely deforma lungo linee orientate.",
+            "missingHint": "Apri la scheda Studio e la sezione Algoritmo."
+          },
+          "pick-tps": {
+            "title": "Prova Thin-Plate Spline",
+            "body": "Fai clic su Thin-Plate Spline: l’anteprima si aggiorna con la nuova deformazione.",
+            "missingHint": "Apri la scheda Studio e la sezione Algoritmo."
+          },
+          "settings": {
+            "title": "Impostazioni dell’algoritmo",
+            "body": "Le impostazioni dell’algoritmo attivo appaiono sotto i pulsanti. Per TPS, il cursore λ regola il compromesso tra precisione sui riferimenti e regolarità della deformazione.",
+            "missingHint": "Scegli TPS o Beier–Neely per mostrarne le impostazioni."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Usare le viste dello studio",
+        "description": "Modifica, Anteprima e Tripla; ingrandire, spostare e reimpostare la vista.",
+        "keywords": "vista modifica anteprima tripla zoom spostare reimpostare navigare viewport",
+        "preconditionHint": "Carica prima due immagini. Il modo più rapido è il pulsante Demo nella barra superiore.",
+        "steps": {
+          "toggle": {
+            "title": "Tre viste",
+            "body": "Modifica mostra A | B per posizionare i riferimenti, Anteprima mostra il morphing ingrandito e Tripla mostra A | morphing | B. Quando c’è poco spazio, scegli la vista dal menu.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "triple": {
+            "title": "Apri la vista Tripla",
+            "body": "Scegli Tripla: modifichi le immagini ai lati mentre al centro il morphing si aggiorna in tempo reale. Se il pannello di anteprima è stretto, apri Controlli anteprima per scegliere Finale, Livello, Maschera o Contrib., mostrare le sovrapposizioni o esaminare la pila dei livelli.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "zoom-pan": {
+            "title": "Ingrandire, spostare, reimpostare",
+            "body": "Usa la rotella o il gesto di pizzico per lo zoom. Tieni premuta la barra spaziatrice (o usa Sposta la vista, H) e trascina per spostare la vista. Un doppio clic o doppio tocco la reimposta. Sui dispositivi touch, l’area di lavoro resta ferma: puoi scorrere il contenuto dei pannelli e delle finestre.",
+            "missingHint": "Apri la scheda Studio nella vista Modifica o Tripla."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Salvare e riaprire un progetto",
+        "description": "Salva la struttura e le immagini incorporate; ricollega i video locali alla riapertura.",
+        "keywords": "salvare aprire caricare progetto file morph json riaprire",
+        "preconditionHint": "Carica prima due immagini. Il modo più rapido è il pulsante Demo nella barra superiore.",
+        "steps": {
+          "save": {
+            "title": "Salva",
+            "body": "Il pulsante Salva scarica un file .morph.json con le immagini incorporate, i riferimenti, i livelli e la timeline. I file video restano locali e nel progetto sono descritti dai loro metadati. Nessun media viene inviato a un server."
+          },
+          "load": {
+            "title": "Riapri il progetto",
+            "body": "Il pulsante Apri ripristina la struttura del progetto e le immagini incorporate. Per ogni video locale, usa Ricollega nella sua posizione A/B. Riproduzione ed esportazione riprendono quando tutti i file sono ricollegati."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Crediti",
+        "description": "Crediti, versione dell’app ed elaborazione locale dei media.",
+        "keywords": "Informazioni Crediti Privacy",
+        "steps": {
+          "about": {
+            "title": "Aprire Informazioni",
+            "body": "Il pulsante Informazioni nella barra superiore mostra l’autore, la versione dell’app e i dettagli sull’elaborazione locale dei media. Nella vista compatta, apri il menu Altro.",
+            "missingHint": "Esci dalla modalità zen o apri il menu Altro per trovare Informazioni."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Cambiare la lingua dell’interfaccia",
+        "description": "Scegli una lingua per lo studio, gli esempi e le guide.",
+        "keywords": "lingua traduzione preferenze internazionale",
+        "stepTitle": "Scegli la lingua",
+        "body": "Apri il selettore di lingua nella barra superiore. Ogni scheda mostra una bandiera e il nome della lingua nella sua scrittura. La scelta viene memorizzata su questo dispositivo. L’interfaccia cambia al termine del caricamento. Potrebbe servire una connessione per scaricare i caratteri della lingua. Il progetto e i nomi dei riferimenti restano invariati. Se la lingua memorizzata non può essere ripristinata, l’app si apre in inglese con una spiegazione e un pulsante per riprovare. Sugli schermi stretti, la barra superiore può occupare più righe per mantenere visibili tutti i comandi."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Carica prima due immagini. Il modo più rapido è il pulsante Demo nella barra superiore."
+      },
+      "studioHint": "Apri la scheda Studio nella vista Modifica.",
+      "placePointsGuide": {
+        "title": "Posizionare punti di corrispondenza",
+        "description": "I punti indicano a Reticolo e TPS quali posizioni di A corrispondono a quali posizioni di B.",
+        "keywords": "punto riferimento corrispondenza reticolo mesh tps posizionare regolare",
+        "steps": {
+          "pick-tool": {
+            "title": "Lo strumento Punto",
+            "body": "Seleziona lo strumento Punto (scorciatoia P)."
+          },
+          "place-a": {
+            "title": "Scegli un riferimento su A",
+            "body": "Fai clic su un dettaglio riconoscibile (un occhio, un angolo…) nel pannello Origine A. Su B appare una maniglia corrispondente."
+          },
+          "adjust-b": {
+            "title": "Regola il lato B",
+            "body": "Trascina la maniglia in Destinazione B sullo stesso dettaglio dell’altra immagine. Questa corrispondenza guida la deformazione."
+          },
+          "preview": {
+            "title": "Osserva la deformazione",
+            "body": "Passa ad Anteprima o Tripla per vedere come Reticolo/TPS deformano le immagini usando i tuoi punti."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Tracciare linee orientate (Beier–Neely)",
+        "description": "Le coppie di linee guidano la deformazione di Beier–Neely.",
+        "keywords": "linea segmento orientata beier neely contorno tracciare",
+        "steps": {
+          "pick-tool": {
+            "title": "Lo strumento Linea",
+            "body": "Seleziona lo strumento Linea (scorciatoia L)."
+          },
+          "drag-line": {
+            "title": "Trascina lungo un contorno su A",
+            "body": "Premi e trascina per tracciare una linea lungo un contorno ben definito (mandibola, tetto…). Su B appare la linea corrispondente."
+          },
+          "orient-b": {
+            "title": "Mantieni lo stesso verso su B",
+            "body": "Sposta le due estremità su B lungo il contorno corrispondente, mantenendo lo stesso verso. Beier–Neely usa le proiezioni parallele e perpendicolari a ciascuna linea."
+          },
+          "use-beier": {
+            "title": "Passa a Beier–Neely",
+            "body": "Le linee deformano le immagini solo con l’algoritmo Beier–Neely. Seleziona il suo pulsante.",
+            "missingHint": "Apri la scheda Studio e la sezione Algoritmo."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Disegnare una polilinea",
+        "description": "Curve punto per punto o a mano libera, che puoi proseguire da un’estremità.",
+        "keywords": "polilinea curva tracciato mano libera disegnare proseguire estremità",
+        "steps": {
+          "pick-tool": {
+            "title": "Lo strumento Polilinea",
+            "body": "Seleziona lo strumento Polilinea (scorciatoia Y)."
+          },
+          "tap-by-tap": {
+            "title": "Punto per punto",
+            "body": "Fai clic su punti successivi lungo un contorno. ⏎ termina, Esc annulla."
+          },
+          "freehand": {
+            "title": "Oppure a mano libera",
+            "body": "Premi e trascina con un movimento continuo. Il tracciato viene semplificato automaticamente al rilascio."
+          },
+          "resume": {
+            "title": "Proseguire da un’estremità",
+            "body": "Con lo strumento Polilinea attivo, fai clic su un’estremità di una polilinea aperta per continuare il tracciato."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Chiudere una polilinea aperta",
+        "description": "Due modi per trasformare una polilinea aperta in un poligono chiuso.",
+        "keywords": "chiudere poligono polilinea anello estremità primo punto",
+        "steps": {
+          "intro": {
+            "title": "Due modi per chiudere il tracciato",
+            "body": "Puoi chiudere una polilinea mentre la disegni oppure in seguito con lo strumento Selezione."
+          },
+          "close-first": {
+            "title": "Durante il disegno: fai clic sul punto 1",
+            "body": "Mentre disegni, fai di nuovo clic sul primo punto: il contorno si chiude e il tracciato è completato."
+          },
+          "drop-endpoint": {
+            "title": "In seguito: un’estremità sull’altra",
+            "body": "Con lo strumento Selezione, trascina un’estremità della polilinea aperta e rilasciala sull’altra. Ottieni lo stesso risultato."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Disegnare un’area",
+        "description": "Un’area chiusa può fungere da maschera per un livello; regola la sfumatura del bordo.",
+        "keywords": "area maschera lazo contorno sfumatura sfumare disegnare",
+        "steps": {
+          "pick-tool": {
+            "title": "Lo strumento Maschera di area",
+            "body": "Seleziona lo strumento Maschera di area: il suo contorno è sempre chiuso."
+          },
+          "outline": {
+            "title": "Circonda la zona su A",
+            "body": "Fai clic su punti o disegna a mano libera intorno alla zona (un viso, un oggetto). Termina con ⏎ oppure chiudendo il contorno."
+          },
+          "feather": {
+            "title": "Sfumare il bordo",
+            "body": "Seleziona l’area e regola Sfumatura per ammorbidire il bordo. Un livello che usa quest’area come maschera ha anche una propria modalità maschera e una propria impostazione di sfumatura.",
+            "missingHint": "Apri la sezione Selezione nel pannello Proprietà a destra."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Selezionare, rinominare, bloccare, nascondere",
+        "description": "Gestisci i riferimenti e individua le corrispondenze A↔B passando il puntatore sulle maniglie.",
+        "keywords": "selezione multipla maiusc shift rinominare bloccare nascondere evidenziare puntatore riferimento",
+        "steps": {
+          "pick-tool": {
+            "title": "Lo strumento Selezione",
+            "body": "Seleziona lo strumento Selezione (scorciatoia V)."
+          },
+          "select": {
+            "title": "Fai clic su una maniglia",
+            "body": "Fai clic su una maniglia di riferimento per selezionarla; tieni premuto Maiusc per una selezione multipla. Passandoci sopra con il puntatore, viene evidenziata la maniglia corrispondente nell’altro pannello."
+          },
+          "inspector": {
+            "title": "Rinominare, bloccare, nascondere",
+            "body": "Nella sezione Selezione puoi rinominare il riferimento e attivare o disattivare Visibile e Bloccato.",
+            "missingHint": "Apri la sezione Selezione nel pannello Proprietà a destra."
+          },
+          "list": {
+            "title": "L’elenco Riferimenti",
+            "body": "L’elenco a sinistra riflette tutte le modifiche: l’occhio nasconde, il lucchetto blocca e un clic seleziona il riferimento."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Spingere i punti e annullare",
+        "description": "Modella localmente le maniglie con Spingi i punti; annulla e ripristina ogni modifica.",
+        "keywords": "spingere punti modellare deformare locale raggio annullare ripristinare",
+        "steps": {
+          "pick-tool": {
+            "title": "Lo strumento Spingi i punti",
+            "body": "Seleziona Spingi i punti (scorciatoia K)."
+          },
+          "sculpt": {
+            "title": "Trascina per modellare",
+            "body": "Trascina sull’immagine: le maniglie all’interno del cerchio vengono spinte, con un effetto maggiore al centro."
+          },
+          "undo": {
+            "title": "Annullare / ripristinare",
+            "body": "Cmd/Ctrl+Z annulla le modifiche ai riferimenti; Cmd/Ctrl+Shift+Z le ripristina."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Apri la sezione Livelli nel pannello Proprietà a destra.",
+      "needsProject": {
+        "preconditionHint": "Carica prima due immagini. Il modo più rapido è il pulsante Demo nella barra superiore."
+      },
+      "activateLayerStep": {
+        "title": "Attiva un livello aggiunto",
+        "body": "Fai clic su un livello diverso da Globale nella sezione Livelli. Le sue proprietà appaiono subito sotto l’elenco."
+      },
+      "createLayerGuide": {
+        "title": "Creare un livello",
+        "description": "Sovrapponi livelli alla base Globale e leggi gli indicatori del loro contributo.",
+        "keywords": "livello creare aggiungere pila globale ordine indicatore contributo",
+        "steps": {
+          "add": {
+            "title": "Aggiungi un livello",
+            "body": "Fai clic su Aggiungi livello. Il nuovo livello diventa subito attivo."
+          },
+          "global-vs-layers": {
+            "title": "Globale e i livelli aggiunti",
+            "body": "Globale genera il morphing predefinito alla base. Gli altri livelli vengono composti sopra, nell’ordine dell’elenco. Le frecce riordinano la pila."
+          },
+          "badges": {
+            "title": "Indicatori del contributo",
+            "body": "Ogni riga indica l’effetto attuale del livello: immagine intera (copre tutto), con maschera, senza effetto, fuori clip…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Cambiare l’algoritmo di un livello",
+        "description": "Assegna a un livello un algoritmo specifico senza cambiare quello predefinito del progetto.",
+        "keywords": "livello algoritmo specifico override reticolo mesh tps beier per livello",
+        "steps": {
+          "override": {
+            "title": "Scegli un algoritmo specifico",
+            "body": "Il menu Algoritmo nelle proprietà del livello sostituisce quello predefinito del progetto solo per questo livello."
+          },
+          "badge": {
+            "title": "L’indicatore dell’algoritmo specifico",
+            "body": "L’intestazione della sezione Algoritmo mostra ora l’algoritmo del livello. Tutti i comandi restano accessibili anche con un riferimento selezionato.",
+            "missingHint": "Apri la sezione Algoritmo nel pannello Proprietà a destra."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Usare un’area come maschera di un livello",
+        "description": "Limita un livello a un’area assegnata, con bordo netto o sfumato e possibilità di inversione.",
+        "keywords": "maschera area assegnare livello netto sfumato sfumatura invertire",
+        "preconditionHint": "Disegna prima un’area con Maschera di area. Il menu Maschera elenca le aree disponibili.",
+        "steps": {
+          "assign": {
+            "title": "Assegna un’area",
+            "body": "Scegli un’area nel menu Maschera: il livello viene composto solo al suo interno."
+          },
+          "modes": {
+            "title": "Bordo netto, sfumato, maschera invertita",
+            "body": "Modalità maschera alterna tra bordo netto e bordo sfumato (con il valore di Sfumatura). Inverti maschera scambia interno ed esterno."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Dipingere una maschera",
+        "description": "Dipingi una maschera direttamente sull’immagine e osservane l’effetto nell’anteprima in tempo reale.",
+        "keywords": "dipingere pennello maschera diametro durezza intensità gomma cancellare tempo reale",
+        "steps": {
+          "pick-brush": {
+            "title": "Il Pennello maschera",
+            "body": "Seleziona Pennello maschera (scorciatoia B): dipinge la maschera del livello attivo.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "settings": {
+            "title": "Impostazioni del pennello",
+            "body": "Diametro, Durezza e Intensità regolano il tratto. La gomma rimuove la pittura: attiva la casella oppure tieni premuto ⌥ mentre trascini.",
+            "missingHint": "Le impostazioni appaiono sotto gli strumenti quando il pennello è attivo."
+          },
+          "paint": {
+            "title": "Dipingi sull’immagine",
+            "body": "Trascina il pennello su un’immagine: l’anteprima centrale mostra il risultato in tempo reale. Le viste Finale e Maschera permettono di controllare l’effetto. La maschera dipinta segue la deformazione del livello e accompagna così il contenuto durante il morphing.",
+            "missingHint": "Apri la scheda Studio nella vista Modifica."
+          },
+          "clear": {
+            "title": "Cancellare la maschera",
+            "body": "Maschera dipinta → Cancella azzera completamente la maschera dipinta del livello."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opacità, fusione, clip e transizione",
+        "description": "Regola il contributo di un livello, limitalo a un intervallo della timeline e scegli quando avviene la dissolvenza.",
+        "keywords": "opacità fusione metodo composizione clip timeline inizio durata interpolazione transizione deformazione dissolvenza intervallo predefinito morphing classico bezier curva contorni doppi",
+        "steps": {
+          "opacity": {
+            "title": "Opacità",
+            "body": "Porta l’opacità sotto 1 per fondere il livello con quelli sottostanti."
+          },
+          "blend": {
+            "title": "Metodo di fusione",
+            "body": "Il menu Fusione regola come il livello si combina con quelli sottostanti: Normale, Moltiplica, Scolora o Aggiungi. Moltiplica moltiplica i colori; Scolora schiarisce l’immagine; Aggiungi somma i colori premoltiplicati e i valori alfa, limitandoli al massimo consentito."
+          },
+          "clip": {
+            "title": "Limitare il livello nel tempo",
+            "body": "Trascina il blocco del livello nella timeline per spostarlo e i bordi per accorciarlo o allungarlo. Puoi anche regolare Inizio e Durata nelle proprietà del livello."
+          },
+          "windows": {
+            "title": "Deformare gradualmente, accorciare la dissolvenza",
+            "body": "La sezione Transizione definisce due intervalli in percentuale della clip. Deformazione regola il passaggio da una forma all’altra; Dissolvenza regola la fusione delle immagini A e B. Il predefinito Morphing classico mantiene la deformazione su 0–100 % e limita la dissolvenza a 30–70 %. Questo riduce la sovrapposizione dei dettagli disallineati all’inizio e alla fine."
+          },
+          "windows-timeline": {
+            "title": "Leggi gli intervalli nella timeline",
+            "body": "Il blocco del livello mostra i due intervalli lungo il bordo inferiore: una fascia chiara per la dissolvenza e una linea sottile per la deformazione. Puoi così individuare la dissolvenza all’interno della clip."
+          },
+          "easing": {
+            "title": "Modella la curva",
+            "body": "Interpolazione regola la progressione all’interno dei due intervalli: cinque curve predefinite oppure «personalizzata (Bézier)» con due maniglie da spostare. Attiva «Curva separata per la dissolvenza» per regolarne la progressione indipendentemente dalla deformazione."
+          },
+          "global-too": {
+            "title": "Anche il livello Globale",
+            "body": "Seleziona Globale: anche questo livello ha una sezione Transizione. I suoi intervalli coprono 0–100 % per impostazione predefinita. Con l’algoritmo Dissolvenza agisce solo la dissolvenza, perché questo algoritmo non deforma le immagini."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Carica prima due immagini. Il modo più rapido è il pulsante Demo nella barra superiore."
+      },
+      "timelineGuide": {
+        "title": "Usare la timeline",
+        "description": "Esplora l’animazione, avvia la riproduzione, avanza fotogramma per fotogramma e sposta le clip.",
+        "keywords": "timeline scrub riproduzione pausa fotogramma timecode clip spostare tagliare zen tab comprimere pannelli righello indicatore riproduzione",
+        "steps": {
+          "scrub": {
+            "title": "Sposta l’indicatore di riproduzione",
+            "body": "Fai clic o trascina sul righello. L’indicatore di riproduzione si sposta e l’anteprima mostra il fotogramma a quell’istante. Con una penna, tocca la posizione desiderata e mantieni la punta sullo schermo mentre trascini.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "transport": {
+            "title": "Riproduzione, pausa, un fotogramma alla volta",
+            "body": "Riproduci avvia l’animazione in tempo reale. I pulsanti con le frecce o i tasti ←/→ si spostano di un fotogramma; Alt-clic su un pulsante con freccia porta a un’estremità. Il timecode si legge in secondi:fotogrammi.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "clips": {
+            "title": "Sposta e taglia le clip",
+            "body": "Immagini e video hanno clip sulle tracce A/B, sopra i livelli. Trascina un blocco o i suoi bordi; selezionandolo appaiono Inizio e Durata. Un’immagine fissa non ha una durata originale: allungarla può estendere il montaggio. Fuori da una clip contribuisce solo l’altra immagine o l’altro video; se non è presente nessuno dei due, appare lo sfondo.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "still-image-timing": {
+            "title": "Regolare la presenza di un’immagine",
+            "body": "Seleziona una clip immagine su A o B e inserisci la durata in secondi (o secondi:fotogrammi). Accorciare una clip mantiene la durata del montaggio; allungarla estende la timeline se necessario. I fotogrammi chiave dei riferimenti restano legati al tempo della timeline principale: spostare o allungare la clip non sposta né allunga la loro animazione. Le clip vengono salvate nel progetto.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "zen": {
+            "title": "La modalità zen conserva il righello",
+            "body": "{{shortcut}} nasconde i tre pannelli per lasciare tutto lo schermo al morphing. La timeline si riduce a una barra di 40 px con un righello compatto: tacche, timecode e indicatore di riproduzione. Puoi ancora fare clic o trascinare l’indicatore per esplorare l’animazione. Premi di nuovo {{shortcut}} per ripristinare i pannelli."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Creare morphing tra video",
+        "description": "Importa video, posiziona le clip A/B e aggiungi fotogrammi chiave ai riferimenti.",
+        "keywords": "video clip importare fotogrammi chiave aggiungere traccia cantare rombo trascinare riposizionare",
+        "steps": {
+          "get-videos": {
+            "title": "Scegli due video",
+            "body": "La finestra Demo offre quattro clip di canto e due di camminata (filtro Video). Puoi anche trascinare i tuoi video su A/B. È possibile combinare un’immagine e un video. I progetti salvati conservano i metadati dei video e richiedono di ricollegare i file locali alla riapertura.",
+            "missingHint": "Apri il selettore Demo."
+          },
+          "place-clips": {
+            "title": "Posiziona le clip A/B",
+            "body": "Ogni video ha la propria traccia: trascina la clip per spostarla, i bordi per tagliarla e usa i campi inizio/attacco/durata per valori precisi. Spostare o tagliare una clip aggiorna l’anteprima all’indicatore di riproduzione, senza doverlo muovere; la durata del montaggio resta invariata. I fotogrammi chiave dei riferimenti restano legati al tempo del video originale, anche dopo un taglio, e vengono conservati al salvataggio e alla riapertura. Fuori dalla sua clip, quel lato è escluso sia dall’anteprima sia dall’esportazione; l’altro lato riempie l’immagine.",
+            "missingHint": "Apri la scheda Studio."
+          },
+          "keyframes": {
+            "title": "Aggiungi fotogrammi chiave",
+            "body": "Seleziona un riferimento: la riga Fotogrammi chiave offre, per ogni lato, precedente ◀, un rombo ◆ che aggiunge o rimuove un fotogramma chiave all’istante attuale, successivo ▶ e il conteggio. I riferimenti seguono poi il movimento tra i fotogrammi chiave. Su immagini fisse, un riferimento resta fermo finché non aggiungi il primo fotogramma chiave con ◆. In seguito, gli spostamenti ad altri istanti aggiungono fotogrammi chiave e curvano la traiettoria del morphing.",
+            "missingHint": "Apri la sezione Selezione nel pannello Proprietà a destra."
+          },
+          "timeline-keyframes": {
+            "title": "Modifica i fotogrammi chiave nella timeline",
+            "body": "I fotogrammi chiave dei riferimenti selezionati appaiono come rombi sulle tracce A e B, all’istante in cui vengono riprodotti. Fai clic per raggiungerli, trascina per cambiarne il tempo (allineato ai fotogrammi, con un solo annullamento), Alt-clic per eliminarli. I rombi troppo vicini si uniscono in una barra con un conteggio: usa le frecce nel pannello Proprietà per raggiungerli.",
+            "missingHint": "Apri la scheda Studio."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Confrontare gli algoritmi",
+        "description": "Osserva i quattro algoritmi affiancati sullo stesso progetto.",
+        "keywords": "confrontare griglia affiancati dissolvenza reticolo crossfade mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "Apri Confronta",
+            "body": "La scheda Confronta mostra una griglia 2×2 che condivide le tue immagini, i riferimenti e τ."
+          },
+          "read": {
+            "title": "Esamina la griglia",
+            "body": "Dissolvenza produce contorni doppi quando i dettagli delle immagini sono disallineati. Reticolo, TPS e Beier–Neely deformano entrambe le immagini verso una forma intermedia comune per allineare i dettagli corrispondenti."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "Esportare in MP4 o come immagini",
+        "description": "Esporta il morphing come video o come archivio ZIP di immagini PNG.",
+        "keywords": "esportare mp4 webm av1 zip immagini video rendering scaricare",
+        "steps": {
+          "open": {
+            "title": "Apri Esporta",
+            "body": "Il rendering avviene interamente sul dispositivo: nulla viene inviato a un server."
+          },
+          "settings": {
+            "title": "Scegli l’output",
+            "body": "Il video richiede WebCodecs e un codificatore H.264, VP9 o AV1 disponibile. La sequenza di immagini PNG non richiede codec video e può conservare uno sfondo trasparente. Il video viene composto su uno sfondo nero o bianco. Regola risoluzione, durata e frequenza fotogrammi."
+          },
+          "run": {
+            "title": "Esporta",
+            "body": "Lo studio calcola ogni fotogramma e mostra l’avanzamento, poi scarica il file. Durante l’esportazione, lo stesso pulsante permette di annullare l’operazione."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Scorciatoie da tastiera",
+        "description": "Tutte le scorciatoie, ricavate direttamente dalle impostazioni dell’app.",
+        "keywords": "tastiera scorciatoie tasti promemoria",
+        "steps": {
+          "list": {
+            "title": "Scorciatoie da tastiera"
+          }
+        }
+      }
+    }
+  }
+}

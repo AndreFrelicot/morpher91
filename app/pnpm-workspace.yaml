@@ -1,0 +1,9 @@
+overrides:
+  brace-expansion: 5.0.9
+  # Patched release for GHSA-c83g-rgw3-j3cx and GHSA-73wf-gq98-2v4g.
+  browserslist: 4.28.7
+
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - workerd

@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "red-sport-car",
+      "kind": "image",
+      "file": "images/red_sport_car.png",
+      "thumb": "thumbs/red_sport_car.webp",
+      "width": 1774,
+      "height": 887,
+      "durationSec": null,
+      "label": {
+        "en": "Red sport car",
+        "fr": "Voiture de sport rouge"
+      },
+      "group": "cars"
+    },
+    {
+      "id": "red-city-car",
+      "kind": "image",
+      "file": "images/red_city_car.png",
+      "thumb": "thumbs/red_city_car.webp",
+      "width": 1672,
+      "height": 941,
+      "durationSec": null,
+      "label": {
+        "en": "Red city car",
+        "fr": "Citadine rouge"
+      },
+      "group": "cars"
+    },
+    {
+      "id": "foxy",
+      "kind": "image",
+      "file": "images/foxy.png",
+      "thumb": "thumbs/foxy.webp",
+      "width": 1448,
+      "height": 1086,
+      "durationSec": null,
+      "label": {
+        "en": "Foxy",
+        "fr": "Foxy"
+      },
+      "group": "cartoon"
+    },
+    {
+      "id": "bunny",
+      "kind": "image",
+      "file": "images/bunny.png",
+      "thumb": "thumbs/bunny.webp",
+      "width": 1448,
+      "height": 1086,
+      "durationSec": null,
+      "label": {
+        "en": "Bunny",
+        "fr": "Bunny"
+      },
+      "group": "cartoon"
+    },
+    {
+      "id": "claire",
+      "kind": "image",
+      "file": "images/claire.png",
+      "thumb": "thumbs/claire.webp",
+      "width": 1448,
+      "height": 1086,
+      "durationSec": null,
+      "label": {
+        "en": "Claire",
+        "fr": "Claire"
+      },
+      "group": "faces"
+    },
+    {
+      "id": "anna",
+      "kind": "image",
+      "file": "images/anna.png",
+      "thumb": "thumbs/anna.webp",
+      "width": 1448,
+      "height": 1086,
+      "durationSec": null,
+      "label": {
+        "en": "Anna",
+        "fr": "Anna"
+      },
+      "group": "faces"
+    },
+    {
+      "id": "foxy-singing",
+      "kind": "video",
+      "file": "videos/foxy_singing.mp4",
+      "thumb": "thumbs/foxy_singing.webp",
+      "width": 1112,
+      "height": 834,
+      "durationSec": 6.92,
+      "label": {
+        "en": "Foxy singing",
+        "fr": "Foxy qui chante"
+      },
+      "group": "singing"
+    },
+    {
+      "id": "bunny-singing",
+      "kind": "video",
+      "file": "videos/bunny_singing.mp4",
+      "thumb": "thumbs/bunny_singing.webp",
+      "width": 1112,
+      "height": 834,
+      "durationSec": 6.92,
+      "label": {
+        "en": "Bunny singing",
+        "fr": "Bunny qui chante"
+      },
+      "group": "singing"
+    },
+    {
+      "id": "claire-singing",
+      "kind": "video",
+      "file": "videos/claire_singing.mp4",
+      "thumb": "thumbs/claire_singing.webp",
+      "width": 1112,
+      "height": 834,
+      "durationSec": 6.92,
+      "label": {
+        "en": "Claire singing",
+        "fr": "Claire qui chante"
+      },
+      "group": "singing"
+    },
+    {
+      "id": "anna-singing",
+      "kind": "video",
+      "file": "videos/anna_singing.mp4",
+      "thumb": "thumbs/anna_singing.webp",
+      "width": 1112,
+      "height": 834,
+      "durationSec": 6.92,
+      "label": {
+        "en": "Anna singing",
+        "fr": "Anna qui chante"
+      },
+      "group": "singing"
+    },
+    {
+      "id": "cop-body-walk",
+      "kind": "video",
+      "file": "videos/cop_body_walk.mp4",
+      "thumb": "thumbs/cop_body_walk.webp",
+      "width": 768,
+      "height": 1344,
+      "durationSec": 5.18,
+      "label": {
+        "en": "Cop walking",
+        "fr": "Le flic qui marche"
+      },
+      "group": "walking"
+    },
+    {
+      "id": "karl2000-body-walk",
+      "kind": "video",
+      "file": "videos/karl2000_body_walk.mp4",
+      "thumb": "thumbs/karl2000_body_walk.webp",
+      "width": 768,
+      "height": 1344,
+      "durationSec": 5.18,
+      "label": {
+        "en": "Karl2000 walking",
+        "fr": "Karl2000 qui marche"
+      },
+      "group": "walking"
+    },
+    {
+      "id": "banana",
+      "kind": "image",
+      "file": "images/banana.png",
+      "thumb": "thumbs/banana.webp",
+      "width": 1254,
+      "height": 1254,
+      "durationSec": null,
+      "label": {
+        "en": "Banana",
+        "fr": "Banane"
+      },
+      "group": "fruits"
+    },
+    {
+      "id": "pineapple",
+      "kind": "image",
+      "file": "images/pineapple.png",
+      "thumb": "thumbs/pineapple.webp",
+      "width": 1254,
+      "height": 1254,
+      "durationSec": null,
+      "label": {
+        "en": "Pineapple",
+        "fr": "Ananas"
+      },
+      "group": "fruits"
+    }
+  ],
+  "presets": [
+    {
+      "id": "compare-four-methods",
+      "label": {
+        "fr": "Comparer — quatre algorithmes",
+        "en": "Compare — four algorithms"
+      },
+      "thumb": "thumbs/claire.webp",
+      "targetThumb": "thumbs/anna.webp",
+      "file": "presets/compare-four-methods.morph.json",
+      "presentation": {
+        "view": "compare",
+        "timeSec": 2.0
+      }
+    },
+    {
+      "id": "crossfade-reference",
+      "label": {
+        "fr": "Crossfade — voir le ghosting",
+        "en": "Crossfade — see ghosting"
+      },
+      "thumb": "thumbs/foxy.webp",
+      "targetThumb": "thumbs/bunny.webp",
+      "file": "presets/crossfade-reference.morph.json",
+      "presentation": {
+        "view": "preview",
+        "timeSec": 2.0
+      }
+    },
+    {
+      "id": "faces-points-tps",
+      "label": {
+        "fr": "Claire → Bunny — points TPS",
+        "en": "Claire → Bunny — TPS landmarks"
+      },
+      "thumb": "thumbs/claire.webp",
+      "targetThumb": "thumbs/bunny.webp",
+      "file": "presets/faces-points-tps.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "featureId": "nose"
+      }
+    },
+    {
+      "id": "faces-lines-beier",
+      "label": {
+        "fr": "Visages — lignes Beier–Neely",
+        "en": "Faces — Beier–Neely lines"
+      },
+      "thumb": "thumbs/claire.webp",
+      "targetThumb": "thumbs/anna.webp",
+      "file": "presets/faces-lines-beier.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "featureId": "lineMouth"
+      }
+    },
+    {
+      "id": "cars-mesh",
+      "label": {
+        "fr": "Voitures — maillage",
+        "en": "Cars — mesh"
+      },
+      "thumb": "thumbs/red_sport_car.webp",
+      "targetThumb": "thumbs/red_city_car.webp",
+      "file": "presets/cars-mesh.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "featureId": "car0"
+      }
+    },
+    {
+      "id": "layer-full-frame",
+      "label": {
+        "fr": "Calque — plein cadre",
+        "en": "Layer — full frame"
+      },
+      "thumb": "thumbs/anna.webp",
+      "targetThumb": "thumbs/foxy.webp",
+      "file": "presets/layer-full-frame.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "face"
+      }
+    },
+    {
+      "id": "layer-region-mask",
+      "label": {
+        "fr": "Région — un algo par zone",
+        "en": "Region — one algorithm per area"
+      },
+      "thumb": "thumbs/anna.webp",
+      "targetThumb": "thumbs/foxy.webp",
+      "file": "presets/layer-region-mask.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "face",
+        "featureId": "faceRegion"
+      }
+    },
+    {
+      "id": "mask-invert-blend",
+      "label": {
+        "fr": "Masque inversé — Multiply",
+        "en": "Inverted mask — Multiply"
+      },
+      "thumb": "thumbs/bunny.webp",
+      "targetThumb": "thumbs/foxy.webp",
+      "file": "presets/mask-invert-blend.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "outside",
+        "featureId": "faceRegion"
+      }
+    },
+    {
+      "id": "blend-light",
+      "label": {
+        "fr": "Fusion — Screen et Lighter",
+        "en": "Blend — Screen and Lighter"
+      },
+      "thumb": "thumbs/foxy.webp",
+      "targetThumb": "thumbs/anna.webp",
+      "file": "presets/blend-light.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "light"
+      }
+    },
+    {
+      "id": "painted-mask",
+      "label": {
+        "fr": "Masque peint — suivre le morph",
+        "en": "Painted mask — follow the morph"
+      },
+      "thumb": "thumbs/foxy.webp",
+      "targetThumb": "thumbs/bunny.webp",
+      "file": "presets/painted-mask.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "paint"
+      }
+    },
+    {
+      "id": "combined-masks",
+      "label": {
+        "fr": "Masques combinés — région et pinceau",
+        "en": "Combined masks — region and brush"
+      },
+      "thumb": "thumbs/claire.webp",
+      "targetThumb": "thumbs/bunny.webp",
+      "file": "presets/combined-masks.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "paint"
+      }
+    },
+    {
+      "id": "contours-push",
+      "label": {
+        "fr": "Contours — sculpter avec Pousser",
+        "en": "Contours — sculpt with Push"
+      },
+      "thumb": "thumbs/bunny.webp",
+      "targetThumb": "thumbs/anna.webp",
+      "file": "presets/contours-push.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "featureId": "jawCurve"
+      }
+    },
+    {
+      "id": "transition-classic",
+      "label": {
+        "fr": "Transition — morph classique",
+        "en": "Transition — classic morph"
+      },
+      "thumb": "thumbs/foxy.webp",
+      "targetThumb": "thumbs/bunny.webp",
+      "file": "presets/transition-classic.morph.json",
+      "presentation": {
+        "view": "preview",
+        "timeSec": 2.0
+      }
+    },
+    {
+      "id": "layers-timing",
+      "label": {
+        "fr": "Timing — visage puis extérieur",
+        "en": "Timing — face then surroundings"
+      },
+      "thumb": "thumbs/claire.webp",
+      "targetThumb": "thumbs/foxy.webp",
+      "file": "presets/layers-timing.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.5,
+        "layerId": "face"
+      }
+    },
+    {
+      "id": "fruits-banana-pineapple",
+      "label": {
+        "fr": "Fruits — images clés et aller-retour",
+        "en": "Fruit — keyframes and ping-pong"
+      },
+      "thumb": "thumbs/banana.webp",
+      "targetThumb": "thumbs/pineapple.webp",
+      "file": "presets/fruits-banana-pineapple.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "fruit",
+        "featureId": "fruitContour"
+      }
+    },
+    {
+      "id": "fruit-to-fox",
+      "label": {
+        "fr": "Ananas → Foxy — métamorphose",
+        "en": "Pineapple → Foxy — metamorphosis"
+      },
+      "thumb": "thumbs/pineapple.webp",
+      "targetThumb": "thumbs/foxy.webp",
+      "file": "presets/fruit-to-fox.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "featureId": "crownContour"
+      }
+    },
+    {
+      "id": "transparent-cutout",
+      "label": {
+        "fr": "Export — cadre transparent",
+        "en": "Export — transparent canvas"
+      },
+      "thumb": "thumbs/foxy.webp",
+      "targetThumb": "thumbs/bunny.webp",
+      "file": "presets/transparent-cutout.morph.json",
+      "presentation": {
+        "view": "preview",
+        "timeSec": 2.0
+      }
+    },
+    {
+      "id": "video-faces-keyframes",
+      "label": {
+        "fr": "Vidéo — repères et images clés",
+        "en": "Video — landmarks and keyframes"
+      },
+      "thumb": "thumbs/claire_singing.webp",
+      "targetThumb": "thumbs/anna_singing.webp",
+      "file": "presets/video-faces-keyframes.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "featureId": "chin"
+      },
+      "videos": {
+        "source": "claire-singing",
+        "target": "anna-singing"
+      }
+    },
+    {
+      "id": "video-region-keyframes",
+      "label": {
+        "fr": "Vidéo — masque et ligne animés",
+        "en": "Video — animated mask and line"
+      },
+      "thumb": "thumbs/claire_singing.webp",
+      "targetThumb": "thumbs/anna_singing.webp",
+      "file": "presets/video-region-keyframes.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.0,
+        "layerId": "videoFace"
+      },
+      "videos": {
+        "source": "claire-singing",
+        "target": "anna-singing"
+      }
+    },
+    {
+      "id": "video-photo-alive",
+      "label": {
+        "fr": "Photo → vidéo — prendre vie",
+        "en": "Photo → video — come alive"
+      },
+      "thumb": "thumbs/claire.webp",
+      "targetThumb": "thumbs/claire_singing.webp",
+      "file": "presets/video-photo-alive.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 0.5,
+        "featureId": "nose"
+      },
+      "videos": {
+        "target": "claire-singing"
+      }
+    },
+    {
+      "id": "video-clips-timing",
+      "label": {
+        "fr": "Clips — trim et chevauchement",
+        "en": "Clips — trim and overlap"
+      },
+      "thumb": "thumbs/claire_singing.webp",
+      "targetThumb": "thumbs/anna_singing.webp",
+      "file": "presets/video-clips-timing.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 2.25
+      },
+      "videos": {
+        "source": "claire-singing",
+        "target": "anna-singing"
+      }
+    },
+    {
+      "id": "video-body-walk",
+      "label": {
+        "fr": "Marche — morph de corps entier",
+        "en": "Walking — full-body morph"
+      },
+      "thumb": "thumbs/cop_body_walk.webp",
+      "targetThumb": "thumbs/karl2000_body_walk.webp",
+      "file": "presets/video-body-walk.morph.json",
+      "presentation": {
+        "view": "triple",
+        "timeSec": 3,
+        "layerId": "body",
+        "featureId": "body-chin"
+      },
+      "videos": {
+        "source": "cop-body-walk",
+        "target": "karl2000-body-walk"
+      }
+    }
+  ]
+}

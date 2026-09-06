@@ -1,0 +1,13 @@
+{
+  "revision": "5e35378e6bda803962ee6fd257e444a7d459660d",
+  "families": {
+    "cyrillic": {"directory": "notosans", "file": "NotoSans[wdth,wght].ttf", "family": "Noto Sans", "language": "ru"},
+    "japanese": {"directory": "notosansjp", "file": "NotoSansJP[wght].ttf", "family": "Noto Sans JP", "language": "ja"},
+    "korean": {"directory": "notosanskr", "file": "NotoSansKR[wght].ttf", "family": "Noto Sans KR", "language": "ko"},
+    "simplified-chinese": {"directory": "notosanssc", "file": "NotoSansSC[wght].ttf", "family": "Noto Sans SC", "language": "zh-Hans"},
+    "thai": {"directory": "notosansthai", "file": "NotoSansThai[wdth,wght].ttf", "family": "Noto Sans Thai", "language": "th"},
+    "devanagari": {"directory": "notosansdevanagari", "file": "NotoSansDevanagari[wdth,wght].ttf", "family": "Noto Sans Devanagari", "language": "hi"},
+    "bengali": {"directory": "notosansbengali", "file": "NotoSansBengali[wdth,wght].ttf", "family": "Noto Sans Bengali", "language": "bn"},
+    "arabic": {"directory": "notosansarabic", "file": "NotoSansArabic[wdth,wght].ttf", "family": "Noto Sans Arabic", "language": "ar"}
+  }
+}

@@ -1,0 +1,1197 @@
+{
+  "topbar": {
+    "new": "Yeni",
+    "newConfirmTitle": "Yeni proje",
+    "newConfirm": "Geçerli projeden vazgeçip yeni bir proje oluşturulsun mu?",
+    "newConfirmAction": "Yeni proje oluştur",
+    "load": "Aç",
+    "save": "Kaydet",
+    "export": "Dışa aktar",
+    "help": "Yardım",
+    "language": "Dil",
+    "loadErrorTitle": "Yükleme hatası",
+    "loadError": "Proje yüklenemedi.",
+    "videoSaveTitle": "Projeyi kaydet",
+    "videoSaveNote": "Video dosyaları projeye gömülmez. Projeyi yeniden açtığınızda bu dosyaları yeniden bağlamanız gerekir. Yine de kaydedilsin mi?",
+    "videoSaveAction": "Yine de kaydet",
+    "loadErrors": {
+      "invalidJson": "Bu proje dosyası geçerli değil.",
+      "unsupportedVersion": "Bu proje sürümü desteklenmiyor.",
+      "invalidStructure": "Proje geçersiz veya eksik veriler içeriyor.",
+      "limitExceeded": "Proje, uygulamanın güvenlik sınırlarını aşıyor.",
+      "invalidReference": "Projedeki bazı katman veya işaret bağlantıları bozuk.",
+      "invalidMask": "Proje hasarlı bir boyalı maske içeriyor."
+    },
+    "tabs": {
+      "studio": "Stüdyo",
+      "compare": "Karşılaştır"
+    },
+    "about": "Hakkında"
+  },
+  "sidebar": {
+    "tools": "Araçlar",
+    "assets": "Medya",
+    "features": "İşaretler",
+    "layers": "Katmanlar"
+  },
+  "tools": {
+    "select": "Seçim",
+    "point": "Nokta",
+    "line": "Çizgi",
+    "polyline": "Çoklu çizgi",
+    "region": "Bölge maskesi",
+    "brush": "Maske fırçası",
+    "push": "Noktaları it",
+    "pan": "Görünümü kaydır"
+  },
+  "assets": {
+    "sourceA": "Kaynak A",
+    "targetB": "Hedef B",
+    "replace": "Görüntüyü/videoyu değiştir",
+    "choose": "Görüntü/video seç…",
+    "loading": "Yükleniyor…",
+    "video": "video",
+    "videoMissing": "Video dosyası yeniden bağlanmalı",
+    "relink": "Yeniden bağla",
+    "replaceInstead": "Başka bir görüntü veya videoyla değiştir",
+    "relinkVideoOnly": "Bu yuvaya yeniden bağlamak için beklenen video dosyasını seçin.",
+    "relinkMismatch": "Bu video, kaydedilmiş dosyayla eşleşmiyor. Boyutlarını ve süresini kontrol edin veya dosyayı değiştirin.",
+    "relinkNoSavedVideo": "Proje artık bu yuvada bir video beklemiyor.",
+    "relinkAlreadyLinked": "Bu video zaten bağlı.",
+    "loadError": "Seçilen dosya yüklenemedi."
+  },
+  "brush": {
+    "selectLayerHint": "Maskesini boyamak için bir katman seçin. Genel taban katmanının maskesi yoktur.",
+    "diameter": "Çap",
+    "hardness": "Sertlik",
+    "strength": "Güç",
+    "eraser": "Silgi",
+    "eraserHold": "(⌥ tuşunu basılı tutun)"
+  },
+  "features": {
+    "empty": "Bu katmanda işaret yok.",
+    "hide": "Gizle",
+    "show": "Göster",
+    "hideFeature": "İşareti gizle",
+    "showFeature": "İşareti göster",
+    "lock": "Kilitle",
+    "unlock": "Kilidi aç",
+    "lockFeature": "İşareti kilitle",
+    "unlockFeature": "İşaretin kilidini aç",
+    "kinds": {
+      "point": "Nokta",
+      "segment": "Çizgi",
+      "polyline": "Çoklu çizgi",
+      "region": "Bölge"
+    },
+    "visible": "Görünür",
+    "locked": "Kilitli",
+    "weight": "Ağırlık",
+    "layer": "Katman",
+    "landmark": "Anlam",
+    "role": "Rol",
+    "feather": "Kenar yumuşatma",
+    "none": "yok",
+    "semantics": {
+      "left-eye": "sol göz",
+      "right-eye": "sağ göz",
+      "nose": "burun",
+      "mouth": "ağız",
+      "chin": "çene ucu",
+      "jaw": "çene hattı",
+      "hairline": "saç çizgisi",
+      "custom": "özel"
+    },
+    "roles": {
+      "face": "yüz",
+      "hair": "saç",
+      "neck": "boyun",
+      "body": "vücut",
+      "background": "arka plan",
+      "custom": "özel"
+    },
+    "keyframes": "Anahtar kareler",
+    "noKeyframes": "yok",
+    "prevKeyframe": "{{side}} tarafındaki önceki anahtar kare",
+    "nextKeyframe": "{{side}} tarafındaki sonraki anahtar kare",
+    "toggleKeyframe": "Geçerli zamanda {{side}} tarafına anahtar kare ekle / kaldır",
+    "keyframeCount_one": "{{count, number}} anahtar kare",
+    "keyframeCount_other": "{{count, number}} anahtar kare",
+    "keyframeHintStill": "Video yoksa bu işaret sabittir. Canlandırmak için ◆ ile ilk anahtar kareyi ekleyin. Bundan sonra başka bir zamanda yaptığınız her hareket bir anahtar kare ekler ve doğrusal olmayan bir morf yolu oluşturabilir.",
+    "selectedCount_one": "{{count, number}} işaret seçildi",
+    "selectedCount_other": "{{count, number}} işaret seçildi",
+    "deleteSelected": "Seçimi sil",
+    "coordinates": "Koordinatlar",
+    "pts": "{{count, number}} nokta"
+  },
+  "layers": {
+    "importFirst": "Önce görüntüleri içe aktarın.",
+    "add": "Katman ekle",
+    "defaultName": "Katman {{index}}",
+    "hideLayer": "Katmanı gizle",
+    "showLayer": "Katmanı göster",
+    "lockLayer": "Katmanı kilitle",
+    "unlockLayer": "Katmanın kilidini aç",
+    "moveUp": "Katmanı yukarı taşı",
+    "moveDown": "Katmanı aşağı taşı",
+    "featureCount_one": "{{count, number}} işaret",
+    "featureCount_other": "{{count, number}} işaret",
+    "globalHint": "Genel taban katmanı proje ayarlarını kullanır. Özelliklerini düzenlemek için eklenmiş bir katman seçin.",
+    "status": {
+      "base": "taban",
+      "disabled": "devre dışı",
+      "hidden": "gizli",
+      "outside-clip": "klip dışında",
+      "no-contribution": "etkisiz",
+      "masked": "maskeli",
+      "full-frame": "tüm görüntü"
+    },
+    "baseName": "Genel"
+  },
+  "inspector": {
+    "algorithm": "Algoritma",
+    "selection": "Seçim",
+    "selectionHint": "Düzenlemek için bir işaret seçin.",
+    "overrideBadge": "katmana özel: {{name}}",
+    "soon": "yakında",
+    "panel": "Özellikler"
+  },
+  "algorithms": {
+    "crossfade": "Çarpıtma olmadan doğrusal geçiş",
+    "mesh": "Delaunay üçgenleriyle çarpıtma",
+    "thin-plate-spline": "Genel ve yumuşak RBF çarpıtması",
+    "beier-neely": "Çizgi alanıyla morf geçişi"
+  },
+  "tps": {
+    "smoothing": "Yumuşatma (λ)",
+    "borderAnchors": "Kenar sabitleme noktaları",
+    "anchorsPerSide": "Kenar başına nokta",
+    "samplePolylines": "Çoklu çizgilerden örnek al",
+    "sampleSpacing": "Örnek aralığı"
+  },
+  "beier": {
+    "distanceSoftness": "Mesafe yumuşaklığı (a)",
+    "falloffExponent": "Azalma üssü (b)",
+    "lineLengthInfluence": "Çizgi uzunluğu etkisi (p)",
+    "maxLines": "En fazla çizgi",
+    "samplePolylines": "Çoklu çizgilerden örnek al"
+  },
+  "layerInspector": {
+    "title": "Katman",
+    "enabled": "Etkin",
+    "visible": "Görünür",
+    "locked": "Kilitli",
+    "scope": {
+      "base": "Taban katmanı: eklenen katmanların altında varsayılan morf geçişini oluşturur.",
+      "disabled": "Devre dışı katman: önizlemeye veya dışa aktarıma katkıda bulunmaz.",
+      "hidden": "Gizli katman: önizlemede ve dışa aktarımda kullanılmaz.",
+      "outside-clip": "Klip dışında: oynatma kafası bu katmanın bloğunda değil.",
+      "no-contribution": "Etkisiz: bu katmanın sonucu etkilemesi için işaret ekleyin veya maske atayın.",
+      "masked": "Maskeli katman: maske, alt katmanların üzerine birleştirilen alanı belirler.",
+      "full-frame": "Tüm görüntüyü kaplayan katman: maskesi olmadığından alt katmanları örter."
+    },
+    "algorithm": "Algoritma",
+    "projectDefault": "Proje varsayılanı",
+    "opacity": "Opaklık",
+    "blend": "Karıştırma",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Çoğalt",
+      "screen": "Ekran",
+      "lighter": "Ekle"
+    },
+    "mask": "Maske",
+    "none": "yok",
+    "paintedMask": "Boyalı maske",
+    "clear": "Temizle",
+    "maskMode": "Maske modu",
+    "maskModes": {
+      "hard": "keskin",
+      "feathered": "yumuşak kenarlı"
+    },
+    "maskFeather": "Kenar yumuşatma",
+    "invertMask": "Maskeyi ters çevir",
+    "timelineClip": "Zaman çizelgesi klibi",
+    "start": "Başlangıç",
+    "duration": "Süre",
+    "easing": "Hız eğrisi",
+    "easings": {
+      "linear": "doğrusal",
+      "ease-in": "hızlanma",
+      "ease-out": "yavaşlama",
+      "ease-in-out": "hızlanma/yavaşlama",
+      "smoothstep": "smoothstep",
+      "bezier": "özel (Bézier)"
+    },
+    "transition": "Geçiş",
+    "warpWindow": "Çarpıtma (%)",
+    "warpStart": "Çarpıtma başlangıcı (%)",
+    "warpEnd": "Çarpıtma bitişi (%)",
+    "dissolveWindow": "Görüntü geçişi (%)",
+    "dissolveStart": "Görüntü geçişi başlangıcı (%)",
+    "dissolveEnd": "Görüntü geçişi bitişi (%)",
+    "presets": {
+      "label": "Hazır ayar",
+      "standard": "Standart",
+      "classicMorph": "Klasik morf",
+      "lateDissolve": "Gecikmeli görüntü geçişi",
+      "custom": "Özel"
+    },
+    "distinctDissolveEasing": "Görüntü geçişi için ayrı eğri",
+    "dissolveEasing": "Görüntü geçişinin hız eğrisi",
+    "bezierCurve": "{{name}} eğrisi",
+    "bezierHandle1": "Eğrinin birinci tutamacı",
+    "bezierHandle2": "Eğrinin ikinci tutamacı",
+    "bezier": {
+      "x1": "Tutamacın x değeri (1)",
+      "y1": "Tutamacın y değeri (1)",
+      "x2": "Tutamacın x değeri (2)",
+      "y2": "Tutamacın y değeri (2)"
+    },
+    "stackPosition": "Yığındaki konum: {{position}}",
+    "delete": "Katmanı sil",
+    "confirmTitle": "Katman silinsin mi?",
+    "confirmBody": "“{{name}}” silinsin mi? İşaretleri Genel katmanına taşınacak ve silinmeyecek.",
+    "cancel": "İptal",
+    "closeConfirm": "Silme onayını kapat"
+  },
+  "timeline": {
+    "videoMissing": "Oynatmadan önce eksik video dosyalarını yeniden bağlayın.",
+    "time": "Zaman",
+    "layers": "Katmanlar",
+    "outsideA": "A dışında",
+    "outsideB": "B dışında",
+    "position": "Zaman çizelgesi konumu",
+    "prevFrame": "Önceki kare",
+    "prevFrameTitle": "Önceki kare; Alt+tıklama başlangıca gider",
+    "nextFrame": "Sonraki kare",
+    "nextFrameTitle": "Sonraki kare; Alt+tıklama sona gider",
+    "play": "Oynat",
+    "pause": "Duraklat",
+    "start": "başlangıç",
+    "in": "giriş",
+    "dur": "süre",
+    "timecodeAria": "Zaman kodu: {{label}}",
+    "timecodeTitle": "Zaman kodu: {{label}} (saniye:kare)",
+    "tauTitle": "Zaman çizelgesi konumu (saniye:kare)",
+    "syncWaiting": "oluşturuluyor… {{elapsed}}",
+    "syncWaitingTitle": "Önizleme motorunun beklediği işlem: {{phase}}. Görünümler hâlâ önceki kareyi gösteriyor.",
+    "syncPhaseEngine": "video motorunu açma (dosya okuma, kod çözücüyü başlatma)",
+    "syncPhaseFrame": "kareye gitme, kareyi çözme ve GPU'ya gönderme",
+    "syncLast": "son kare: {{elapsed}}",
+    "syncLastTitle": "Zaman çizelgesinde gezinildikten sonraki kare oluşturma süresi (0,5 saniyeyi aşarsa gösterilir)",
+    "keyframeTitle": "Anahtar kare: {{time}} sn — {{names}} · tıklama: git; sürükleme: taşı; ⌥+tıklama: sil",
+    "keyframeTitleShared": "Anahtar kare: {{time}} sn — {{names}} · tıklama: git; ⌥+tıklama: sil",
+    "keyframeGroupTitle": "{{from}}–{{to}} sn arasında {{count, number}} anahtar kare — burada düzenlenemeyecek kadar yakın · tıklama: ilkine git",
+    "transitionWindows": "{{name}} — görüntü geçişi %{{dissolveStart}}–{{dissolveEnd}}, çarpıtma %{{warpStart}}–{{warpEnd}}",
+    "imageClipName": "Görüntü · {{name}}",
+    "mediaClip": "{{slot}} klibi — {{name}}",
+    "imageClipHelp": "Sabit görüntü: taşımak için sürükleyin, kenarlarını uzatın veya klibi seçip Başlangıç ve Süre değerlerini ayarlayın. Klibi uzatmak zaman çizelgesini de uzatabilir.",
+    "altClick": "Alt+tıklama"
+  },
+  "hud": {
+    "releaseToClose": "kapatmak için bırakın",
+    "eraser": "silgi",
+    "maskBrushSelectLayer": "maske fırçası · bir katman seçin",
+    "points_one": "{{count, number}} nokta",
+    "points_other": "{{count, number}} nokta",
+    "finishHint": "⏎ bitir · Esc iptal",
+    "cancelHint": "Esc iptal"
+  },
+  "notices": {
+    "noWebgpu": "Bu demo, görüntü oluşturmak için WebGPU kullanır.\nTarayıcınız veya cihazınız bunu desteklemiyor olabilir.\n\nŞunları deneyin:\n- Güncel Chrome veya Edge\n- Güncel Safari\n- WebGPU destekleyen Firefox",
+    "tooManyFeatures": "Bu proje çok sayıda işaret içeriyor.\nÖnizleme yarı çözünürlüğe geçiyor.\nSonucu dışa aktarmak hâlâ mümkün.",
+    "deviceLost": "GPU bağlamı kayboldu (yetersiz bellek veya sürücünün sıfırlanması).",
+    "reload": "Yeniden yükle",
+    "noWebcodecs": "Önizleme çalışıyor, ancak bu tarayıcıda MP4 video dışa aktarımı kullanılamıyor.",
+    "codecUnsupported": "İstenen codec bu çözünürlükte kullanılamıyor. Daha düşük bir çözünürlük, farklı bir biçim veya başka bir tarayıcı deneyin."
+  },
+  "studio": {
+    "edit": "Düzenleme",
+    "preview": "Önizleme",
+    "triple": "Üçlü",
+    "morphPreview": "Morf önizlemesi",
+    "viewportsLinked": "Görünümlerin yakınlaştırma/kaydırması bağlı — ayırmak için tıklayın",
+    "viewportsUnlinked": "Her görünümün yakınlaştırma/kaydırması bağımsız — bağlamak için tıklayın",
+    "importPrompt": "Morf geçişini önizlemek için bir <a>kaynak</a> ve bir <b>hedef</b> görüntü/video içe aktarın.",
+    "importPromptEdit": "İşaret yerleştirmeye başlamak için bir <a>kaynak</a> ve bir <b>hedef</b> görüntü/video içe aktarın.",
+    "preparingGpu": "GPU hazırlanıyor…",
+    "finishShape": "Şekli bitir",
+    "cancelShape": "Şekli iptal et",
+    "zoomIn": "Yakınlaştır",
+    "zoomOut": "Uzaklaştır",
+    "zoomReset": "Yakınlaştırmayı sıfırla (%100)"
+  },
+  "compare": {
+    "importPrompt": "Algoritmaları karşılaştırmak için Stüdyo'da bir <a>kaynak</a> ve bir <b>hedef</b> görüntü içe aktarın."
+  },
+  "overlays": {
+    "features": "Noktalar ve yollar",
+    "mesh": "Ara değerlenmiş ağ",
+    "tpsGrid": "Çarpıtma ızgarası",
+    "beierField": "Etki ızgarası",
+    "slots": {
+      "source": "Kaynak",
+      "preview": "Önizleme",
+      "target": "Hedef"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Ağ ({{slot}})",
+    "overlayAria": "{{label}} yardımcı çizimi"
+  },
+  "layerDebug": {
+    "final": "Sonuç",
+    "finalTitle": "Birleştirilmiş sonuç",
+    "layer": "Katman",
+    "layerTitle": "Seçili katmanın sonucu",
+    "mask": "Maske",
+    "maskTitle": "Seçili bölgenin maskesi veya katman maskesi",
+    "contrib": "Katkı",
+    "contribTitle": "Katkı görünümü",
+    "selected": "Seçili",
+    "selectedTitle": "Seçili katmanın yardımcı çizimleri",
+    "all": "Tümü",
+    "allTitle": "Görünür tüm katmanların yardımcı çizimleri",
+    "layerStack": "Katman yığını",
+    "closeStack": "Yığını kapat",
+    "opacity": "opaklık",
+    "controls": "Önizleme kontrolleri"
+  },
+  "preview": {
+    "outsideVideoBoth": "A/B videoları dışında",
+    "outsideVideoA": "A videosu dışında",
+    "outsideVideoB": "B videosu dışında",
+    "beforeClip": "video klibinden önce",
+    "afterClip": "video klibinden sonra",
+    "emptyClip": "boş video klibi"
+  },
+  "export": {
+    "videoMissing": "Dışa aktarmadan önce eksik tüm video dosyalarını yeniden bağlayın.",
+    "cancel": "Dışa aktarımı iptal et",
+    "limits": "Sınırlar: 16–3840 × 16–2160 piksel, 12–60 kare/sn, 1–15 sn, en fazla 900 kare.",
+    "errors": {
+      "unsupportedWebgpu": "Bu projeyi dışa aktarmak için WebGPU gerekir.",
+      "unsupportedWebcodecs": "Bu tarayıcıda video dışa aktarımı için WebCodecs kullanılamıyor.",
+      "unsupportedCodec": "Bu codec seçilen çözünürlükte kullanılamıyor. Farklı bir biçim veya daha düşük bir çözünürlük deneyin.",
+      "invalidDimensions": "Genişlik 16–3840 piksel, yükseklik 16–2160 piksel arasında olmalıdır.",
+      "deviceDimensionLimit": "Seçilen çözünürlük bu GPU'nun doku boyutu sınırını aşıyor.",
+      "invalidFps": "Kare hızı saniyede 12–60 kare arasında olmalıdır.",
+      "invalidDuration": "Seçilen zaman çizelgesi aralığı 1–15 saniye sürmelidir.",
+      "tooManyFrames": "Bir dışa aktarım en fazla 900 kare içerebilir.",
+      "invalidBitrate": "Video bit hızı 1–20 Mbit/sn arasında olmalıdır.",
+      "sequenceTooLarge": "Bu PNG dizisi tarayıcı belleğinde dışa aktarılamayacak kadar büyük. Çözünürlüğü, süreyi veya kare hızını azaltın.",
+      "mediaMissing": "Dışa aktarmadan önce eksik tüm video dosyalarını yeniden bağlayın.",
+      "cancelled": "Dışa aktarım iptal edildi.",
+      "gpuFailure": "Kare oluşturma veya kodlama sırasında dışa aktarım başarısız oldu. Daha düşük bir çözünürlük veya kare hızıyla yeniden deneyin."
+    },
+    "title": "Dışa aktarım",
+    "subtitle": "Morf geçişini kare kare oluşturup indirilebilir bir dosyaya kaydeder.",
+    "output": "Çıktı",
+    "video": "Video",
+    "imageSequence": "Görüntü dizisi",
+    "resolution": "Çözünürlük",
+    "presets": {
+      "project": "Proje",
+      "source": "Kaynak",
+      "target": "Hedef",
+      "custom": "Özel"
+    },
+    "effective": "Çıktı çözünürlüğü",
+    "timing": "Zamanlama",
+    "duration": "Süre",
+    "videoDurationNote": "Video dışa aktarımları ana zaman çizelgesinin süresini kullanır.",
+    "frameRate": "Kare hızı",
+    "pingPong": "Gidiş-dönüş (A→B→A)",
+    "encoding": "Kodlama",
+    "format": "Biçim",
+    "bitrate": "Bit hızı",
+    "background": "Arka plan",
+    "backgrounds": {
+      "black": "Siyah",
+      "white": "Beyaz",
+      "transparent": "Saydam"
+    },
+    "importPrompt": "Dışa aktarımı etkinleştirmek için Stüdyo'da kaynak ve hedef görüntü/video içe aktarın.",
+    "exporting": "Dışa aktarılıyor…",
+    "exportButton": "{{format}} olarak dışa aktar",
+    "frameProgress": "kare {{index}} / {{count, number}}",
+    "done": "Dışa aktarım tamamlandı — dosya indirildi.",
+    "share": "Paylaş…",
+    "phases": {
+      "rendering": "Kareler oluşturuluyor",
+      "encoding": "Kodlanıyor",
+      "muxing": "Video dosyası birleştiriliyor",
+      "zipping": "Arşiv oluşturuluyor"
+    },
+    "width": "Genişlik",
+    "height": "Yükseklik",
+    "secondsValue": "{{value}} sn",
+    "frameRateValue": "{{value}} kare/sn",
+    "bitrateValue": "{{value}} Mbit/sn"
+  },
+  "dialog": {
+    "ok": "Tamam",
+    "cancel": "İptal"
+  },
+  "mobile": {
+    "inspector": "Özellikler",
+    "close": "Kapat",
+    "closeInspector": "Özellikleri kapat",
+    "more": "Diğer",
+    "views": "Görünümler"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Demo medyaları",
+    "subtitle": "Kaynak A ve Hedef B için iki görüntü veya video seçin.",
+    "slotEmpty": "boş — aşağıdan seçin",
+    "swap": "A ↔ B değiştir",
+    "filterAll": "Tümü",
+    "filterImages": "Görüntüler",
+    "filterVideos": "Videolar",
+    "tabAssets": "Medya",
+    "tabPresets": "Örnekler",
+    "presetsEmpty": "Henüz örnek proje yok.",
+    "load": "Projeye yükle",
+    "loadError": "Demo medyaları yüklenemedi.",
+    "manifestError": "Demo kataloğu yüklenemedi.",
+    "cta": "…veya demo medyalarını yükleyin",
+    "kindImage": "Görüntü",
+    "kindVideo": "Video",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "Noktalar ve çizgilerle aynı yüz çifti. Geçişin ortasında gözleri ve ağzı karşılaştırın.",
+        "name": "Karşılaştırma — dört algoritma"
+      },
+      "crossfade-reference": {
+        "description": "İşaret yok: çift görünen konturları inceleyin, ardından karşılaştırmayı deneyin.",
+        "name": "Çapraz geçiş — çift görüntüleri inceleyin"
+      },
+      "faces-points-tps": {
+        "description": "Bir noktayı taşıyın, TPS ızgarasını gösterin ve kenar sabitleme noktalarını kapatarak karşılaştırın.",
+        "name": "Claire → Bunny — TPS noktaları"
+      },
+      "faces-lines-beier": {
+        "description": "Gözler, burun ve ağız boyunca yönlendirilmiş çizgiler. Etkilerini a, b ve p ile ayarlayın.",
+        "name": "Yüzler — Beier–Neely çizgileri"
+      },
+      "cars-mesh": {
+        "description": "Tekerlekler ve siluet üçgenlere yön verir. Çarpıtmayı incelemek için ağı açın.",
+        "name": "Arabalar — üçgen ağ"
+      },
+      "layer-full-frame": {
+        "description": "Üst katmanı gizleyin: maskesi olmadığından Genel katmanındaki tüm görüntünün yerini alır.",
+        "labels": {
+          "face": "Tüm görüntüde yüz"
+        },
+        "name": "Katman — tüm görüntü"
+      },
+      "layer-region-mask": {
+        "description": "Yüzde TPS, çevresinde Çapraz geçiş. Maske ve Katkı görünümlerini inceleyin; konturu ve kenar yumuşatmasını ayarlayın.",
+        "labels": {
+          "face": "TPS ile yüz"
+        },
+        "name": "Bölge — her alana bir algoritma"
+      },
+      "mask-invert-blend": {
+        "description": "Maske yüzü korur. %40 opaklıkta Çoğalt modunu gözlemek için katmanı gösterip gizleyin.",
+        "labels": {
+          "outside": "Çoğalt ile dış alan"
+        },
+        "name": "Ters maske — Çoğalt"
+      },
+      "blend-light": {
+        "description": "İki katman görüntüyü aydınlatır: yüzde Ekran, çevresinde Ekle. Her katmanı tek başına inceleyip opaklığını ayarlayın.",
+        "labels": {
+          "light": "Ekran ile yüz",
+          "glow": "Ekle ile dış alan"
+        },
+        "name": "Karıştırma — Ekran ve Ekle"
+      },
+      "painted-mask": {
+        "description": "A üzerine boyanan maske TPS'yi izler. %25, %50 ve %75'te Maske görünümünü inceleyin, sonra fırça ve silgiyi deneyin.",
+        "labels": {
+          "paint": "TPS ile boyalı yüz"
+        },
+        "name": "Boyalı maske — morf hareketini izleme"
+      },
+      "combined-masks": {
+        "description": "Keskin kenarlı bölge boyalı maskeyle birleşir. Maske görünümünü inceleyin, ardından bölgenin dışında silgiyi deneyin.",
+        "labels": {
+          "paint": "TPS ile boyalı yüz"
+        },
+        "name": "Birleşik maskeler — bölge ve fırça"
+      },
+      "contours-push": {
+        "description": "Noktaları it (K) aracını seçin, yanağı düzeltin, ardından geri alın. Çokgenleri denemek için konturun bir kopyasını kapatın.",
+        "name": "Konturlar — noktaları iterek şekillendirme"
+      },
+      "transition-classic": {
+        "description": "Standart ve Klasik morf ayarlarını karşılaştırın: çarpıtma %0–100, görüntü geçişi %30–70. Özellikle başlangıcı ve sonu inceleyin.",
+        "name": "Geçiş — klasik morf"
+      },
+      "layers-timing": {
+        "description": "Yüzün görüntü geçişi saçtan önce gerçekleşir. İki aralık ve bir Bézier eğrisi; katmanları sonuna kadar görünür tutun.",
+        "labels": {
+          "face": "Önce geçiş yapan yüz"
+        },
+        "name": "Zamanlama — önce yüz, sonra dış alan"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Sabit görüntüler üzerinde canlandırılan kapalı bir çoklu çizgi. Elmasları taşıyıp gidiş-dönüş oynatmayı başlatın.",
+        "labels": {
+          "fruit": "Hareketli TPS konturu"
+        },
+        "name": "Meyveler — anahtar kareler ve gidiş-dönüş"
+      },
+      "fruit-to-fox": {
+        "description": "Ananasın yaprakları kulaklara, meyve gövdesi yüze dönüşür. İnsan yüzü işaretleri olmadan siluetleri eşleştirin.",
+        "name": "Ananas → Foxy — dönüşüm"
+      },
+      "transparent-cutout": {
+        "description": "Kare bir alanda 4:3 görüntüler: kenar boşlukları saydamdır. Saydam arka planla PNG olarak dışa aktarın; video arka planı görüntüyle birleştirir.",
+        "name": "Dışa aktarım — saydam kenar boşlukları"
+      },
+      "video-faces-keyframes": {
+        "description": "Her karede izlenen 44 işaret: gözler, burun, dudaklar ve çene hattı. Yüz ifadelerini yaklaştırmak için B klibinin kaynak giriş zamanı kaydırılmıştır.",
+        "name": "Video — işaretler ve anahtar kareler"
+      },
+      "video-region-keyframes": {
+        "description": "Kontur ve ağız çizgisi her kareyi izler. Maskeyi inceleyin, ardından çizgiyi ve anahtar karelerini seçin.",
+        "labels": {
+          "videoFace": "TPS ile hareketli yüz"
+        },
+        "name": "Video — hareketli maske ve çizgi"
+      },
+      "video-photo-alive": {
+        "description": "Fotoğraf bir saniyede aynı yüzün videosuna dönüşür. Yalnızca B tarafında anahtar kare vardır; A işaretleri sabit kalır.",
+        "name": "Fotoğraf → video — canlanma"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 sn, B: 1,5–4,5 sn. İşaretler kırpmadan sonra da medya zamanını izler; morf geçişi örtüşen aralıkta gerçekleşir.",
+        "name": "Klipler — kırpma ve örtüşme"
+      },
+      "video-body-walk": {
+        "description": "Kare başına 16 işaret. Poliste duruş algılama; robotta elle yerleştirilen işaretler ve optik izleme. Katman örtüşme sırasında etkindir.",
+        "labels": {
+          "body": "Örtüşme sırasında morf"
+        },
+        "name": "Yürüyüş — tüm vücutta morf"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Kırmızı spor araba",
+      "red-city-car": "Kırmızı şehir arabası",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Şarkı söyleyen Foxy",
+      "bunny-singing": "Şarkı söyleyen Bunny",
+      "claire-singing": "Şarkı söyleyen Claire",
+      "anna-singing": "Şarkı söyleyen Anna",
+      "cop-body-walk": "Yürüyen polis",
+      "karl2000-body-walk": "Yürüyen Karl2000",
+      "banana": "Muz",
+      "pineapple": "Ananas"
+    },
+    "presetsNote": "Bu örnekler, stüdyonun işlevlerini göstermek için otomatik olarak oluşturulur. Sanatsal sonuç garanti edilmez."
+  },
+  "shell": {
+    "loading": "Çalışma alanı yükleniyor…",
+    "surfaceLoadError": "Çalışma alanının bu bölümü yüklenemedi.",
+    "retry": "Yeniden dene",
+    "panelAria": "{{tab}} paneli",
+    "collapse": "Daralt",
+    "panels": {
+      "left": "Medya ve işaretler paneli",
+      "right": "Özellikler paneli",
+      "timeline": "Zaman çizelgesi paneli"
+    },
+    "zen": "Zen modu",
+    "hideChrome": "Görüntülerin üzerindeki arayüzü gizle",
+    "showChrome": "Görüntülerin üzerindeki arayüzü göster"
+  },
+  "desktopGate": {
+    "title": "Morpher91 bilgisayarlar için tasarlandı",
+    "body": "Morf stüdyosu WebGPU, fare ve geniş ekran kullanır. Tüm işlevlerden yararlanmak için bu sayfayı güncel Chrome, Edge veya Safari ile bir Mac ya da PC'de açın. iPad de desteklenir.",
+    "unsupported": "Akıllı telefon kullanımı desteklenmiyor: bu cihazlarda arayüz ve performans garantisi yoktur.",
+    "copyLink": "Bağlantıyı kopyala",
+    "copied": "Bağlantı kopyalandı",
+    "continueAnyway": "Yine de devam et (desteklenmiyor)"
+  },
+  "assist": {
+    "stepSatisfied": "Adım tamamlandı. Hazır olduğunuzda devam edin.",
+    "back": "Geri",
+    "next": "İleri",
+    "done": "Bitir",
+    "quit": "Kılavuzdan çık",
+    "showMe": "Göster",
+    "step": "Adım {{current}}/{{total}}",
+    "anchorMissing": "Bu öğe geçerli görünümde görünmüyor.",
+    "launcherTitle": "Ne yapmak istiyorsunuz?",
+    "launcherDescription": "İlgili kılavuzlara göz atın veya arama yapın.",
+    "searchPlaceholder": "Kılavuz ara…",
+    "noResults": "Eşleşen kılavuz yok.",
+    "suggestions": "Öneriler",
+    "categories": {
+      "start": "Başlangıç",
+      "features": "İşaretler",
+      "layers-masks": "Katmanlar ve maskeler",
+      "timeline-video": "Zaman çizelgesi ve video",
+      "output": "Çıktı"
+    },
+    "shortcuts": {
+      "undo": "Geri al",
+      "redo": "Yinele",
+      "delete": "Seçimi sil",
+      "stepFrame": "Bir kare ileri/geri git",
+      "jumpEnds": "Başlangıca / sona git",
+      "zen": "Zen modu (panelleri gizle)",
+      "hideChrome": "Görüntülerin üzerindeki arayüzü gizle / göster"
+    }
+  },
+  "about": {
+    "credits": "Emeği geçenler",
+    "version": "v{{version}}",
+    "description": "Görüntüler ve videolar için WebGPU ve WebCodecs tabanlı bir 2B morf stüdyosu.",
+    "author": "André Frélicot tarafından geliştirildi.",
+    "privacyTitle": "Gizlilik",
+    "privacy": "Görüntüleriniz, videolarınız ve projeleriniz cihazınızda işlenir. Kare oluşturma ve dışa aktarma işlemleri tarayıcıda gerçekleşir; medya dosyalarınız bir sunucuya gönderilmez.",
+    "close": "Kapat",
+    "date": "Eylül 2026"
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "İki görüntü yükleme",
+        "description": "Kaynak A ve Hedef B için demo medyalarını veya kendi dosyalarınızı yükleyin.",
+        "keywords": "yükle içe aktar görüntü demo medya örnek kaynak hedef aç dosya",
+        "steps": {
+          "demo": {
+            "title": "Demo medyalarıyla başlayın",
+            "body": "Demo → Örnekler bölümünde adım adım deneyebileceğiniz projeler bulunur. Her kart kaynak/hedef çiftini ve bir alıştırmayı gösterir. Karşılaştırma — dört algoritma ile başlayın; ardından maskeleri, geçişleri, anahtar kareleri ve videoyu inceleyin. Örnekler belirli bir zamanda, uygun görünüm ve katman seçili olarak açılır. Arayüz dili ne olursa olsun işaret adları İngilizce kalır.\n\nBu örnekler, stüdyonun işlevlerini göstermek için otomatik olarak oluşturulur. Sanatsal sonuç garanti edilmez.",
+            "missingHint": "Demo seçicisini açın."
+          },
+          "source": {
+            "title": "Veya kendi dosyanızı yükleyin — Kaynak A",
+            "body": "Bu yuva bir görüntü veya video kabul eder. Morf geçişinin başlangıç tarafıdır.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "target": {
+            "title": "Hedef B",
+            "body": "İkinci yuvayı doldurun. İki medya da yüklendiğinde proje oluşturulur ve önizleme görünür.",
+            "missingHint": "Stüdyo sekmesini açın."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Morf algoritmasını seçme",
+        "description": "Projenin algoritmasını seçin ve dört algoritma ailesini tanıyın.",
+        "keywords": "algoritma çapraz geçiş üçgen ağ crossfade mesh tps thin-plate spline beier neely çarpıtma",
+        "preconditionHint": "Önce iki görüntü yükleyin. Üst çubuktaki Demo düğmesi en hızlı yoldur.",
+        "steps": {
+          "algorithm-list": {
+            "title": "Dört algoritma",
+            "body": "Çapraz geçiş görüntüleri çarpıtmadan karıştırır. Üçgen ağ, Delaunay üçgenlerini çarpıtır. Thin-Plate Spline tüm görüntüyü yumuşak biçimde büker. Beier–Neely, yönlendirilmiş çizgiler boyunca çarpıtır.",
+            "missingHint": "Stüdyo sekmesini ve Algoritma bölümünü açın."
+          },
+          "pick-tps": {
+            "title": "Thin-Plate Spline'ı deneyin",
+            "body": "Thin-Plate Spline'a tıklayın. Önizleme yeni çarpıtmayla güncellenir.",
+            "missingHint": "Stüdyo sekmesini ve Algoritma bölümünü açın."
+          },
+          "settings": {
+            "title": "Algoritma ayarları",
+            "body": "Etkin algoritmanın ayarları kartların altında görünür. TPS'de λ kaydırıcısı doğruluk ile yumuşaklık arasındaki dengeyi ayarlar.",
+            "missingHint": "Ayarlarını görmek için TPS veya Beier–Neely seçin."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Stüdyo görünümlerinde gezinme",
+        "description": "Düzenleme, Önizleme ve Üçlü; yakınlaştırma, kaydırma ve görünümü sıfırlama.",
+        "keywords": "görünüm düzenleme önizleme üçlü yakınlaştır kaydır sıfırla gezin",
+        "preconditionHint": "Önce iki görüntü yükleyin. Üst çubuktaki Demo düğmesi en hızlı yoldur.",
+        "steps": {
+          "toggle": {
+            "title": "Üç görünüm",
+            "body": "Düzenleme, işaret yerleştirmek için A | B'yi; Önizleme, morf sonucunu büyük olarak; Üçlü ise A | morf | B'yi gösterir. Alan dar olduğunda görünümü menüden seçin.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "triple": {
+            "title": "Üçlü görünümü açın",
+            "body": "Üçlü'ye tıklayın. Yanlarda düzenleme yaparken ortada morf sonucu anında görünür. Önizleme paneli dar olduğunda Önizleme kontrolleri düğmesini açın: Sonuç, Katman, Maske veya Katkı seçebilir, yardımcı çizimleri gösterebilir ve katman yığınını inceleyebilirsiniz.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "zoom-pan": {
+            "title": "Yakınlaştırma, kaydırma ve sıfırlama",
+            "body": "Fare tekerleği veya iki parmakla sıkıştırma hareketiyle yakınlaştırın. Boşluk tuşunu basılı tutup sürükleyin ya da Görünümü kaydır (H) aracını kullanın. Çift tıklama veya çift dokunma görünümü sıfırlar. Dokunmatik cihazlarda çalışma alanı sabit kalır; yalnızca paneller kaydırılır.",
+            "missingHint": "Stüdyo sekmesini Düzenleme veya Üçlü görünümünde açın."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Projeyi kaydetme ve yeniden açma",
+        "description": "Yapıyı ve gömülü görüntüleri kaydedin; yeniden açarken yerel videoları bağlayın.",
+        "keywords": "kaydet aç yükle proje dosya morph json yeniden aç",
+        "preconditionHint": "Önce iki görüntü yükleyin. Üst çubuktaki Demo düğmesi en hızlı yoldur.",
+        "steps": {
+          "save": {
+            "title": "Kaydedin",
+            "body": "Kaydet düğmesi gömülü görüntüleri, işaretleri, katmanları ve zaman çizelgesini içeren bir .morph.json dosyası indirir. Video verileri cihazınızda kalır ve projede meta verileriyle tanımlanır. Sunucuya hiçbir şey gönderilmez."
+          },
+          "load": {
+            "title": "Yeniden açın",
+            "body": "Aç düğmesi projenin yapısını ve gömülü görüntülerini geri yükler. Her yerel video için ilgili A/B yuvasında Yeniden bağla seçeneğini kullanın. Tüm dosyalar bağlandığında oynatma ve dışa aktarım yeniden kullanılabilir."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Emeği geçenler",
+        "description": "Geliştirici, uygulama sürümü ve medyaların cihazda işlenmesi.",
+        "keywords": "Hakkında Emeği geçenler Gizlilik",
+        "steps": {
+          "about": {
+            "title": "Hakkında bölümünü açın",
+            "body": "Üst çubuktaki Hakkında düğmesi geliştiriciyi, uygulama sürümünü ve medyalarınızın cihazınızda nasıl işlendiğini gösterir. Dar görünümde Diğer menüsünü açın.",
+            "missingHint": "Hakkında düğmesini bulmak için Zen modundan çıkın veya Diğer menüsünü açın."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Arayüz dilini değiştirme",
+        "description": "Stüdyo, örnekler ve kılavuzlar için bir dil seçin.",
+        "keywords": "dil çeviri tercihler uluslararası",
+        "stepTitle": "Dilinizi seçin",
+        "body": "Üst çubuktaki dil seçicisini açın. Her kart bir bayrak ve dilin adını kendi yazı sistemiyle gösterir. Seçiminiz bu cihazda saklanır. Yükleme tamamlandığında arayüz değişir. Dilin yazı tiplerini indirmek için internet bağlantısı gerekebilir. Projeniz ve işaret adları değişmez. Kaydedilen dil geri yüklenemezse uygulama İngilizce açılır; bir açıklama ve yeniden deneme düğmesi gösterilir. Dar ekranlarda tüm komutların görünür kalması için üst çubuk birden fazla satıra yayılabilir."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Önce iki görüntü yükleyin. Üst çubuktaki Demo düğmesi en hızlı yoldur."
+      },
+      "studioHint": "Stüdyo sekmesini Düzenleme görünümünde açın.",
+      "placePointsGuide": {
+        "title": "Eşleşme noktaları yerleştirme",
+        "description": "Noktalar, Üçgen ağ ve TPS'ye A'daki hangi yerin B'deki hangi yere karşılık geldiğini belirtir.",
+        "keywords": "nokta işaret eşleşme üçgen ağ mesh tps yerleştir ayarla",
+        "steps": {
+          "pick-tool": {
+            "title": "Nokta aracı",
+            "body": "Nokta aracını seçin (P kısayolu)."
+          },
+          "place-a": {
+            "title": "A üzerinde bir ayrıntıyı işaretleyin",
+            "body": "Kaynak A panelinde belirgin bir yere (göz, köşe…) tıklayın. B üzerinde eş tutamacı görünür."
+          },
+          "adjust-b": {
+            "title": "B tarafını ayarlayın",
+            "body": "Hedef B'deki eş tutamacı, diğer görüntüde aynı ayrıntıya sürükleyin. Bu eşleşme çarpıtmaya yön verir."
+          },
+          "preview": {
+            "title": "Çarpıtmayı inceleyin",
+            "body": "Üçgen ağ/TPS'nin noktalarınızla görüntüleri nasıl büktüğünü görmek için Önizleme veya Üçlü görünümüne geçin."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Yönlendirilmiş çizgiler çizme (Beier–Neely)",
+        "description": "Çizgi çiftleri Beier–Neely çarpıtmasına yön verir.",
+        "keywords": "çizgi doğru parçası yön beier neely kontur çiz",
+        "steps": {
+          "pick-tool": {
+            "title": "Çizgi aracı",
+            "body": "Çizgi aracını seçin (L kısayolu)."
+          },
+          "drag-line": {
+            "title": "A üzerinde bir kontur boyunca sürükleyin",
+            "body": "Belirgin bir kontur (çene hattı, çatı…) boyunca çizgi oluşturmak için basıp sürükleyin. Eş çizgi B üzerinde görünür."
+          },
+          "orient-b": {
+            "title": "B üzerinde aynı yönü koruyun",
+            "body": "B'deki iki uç noktayı aynı kontura taşıyın ve çizginin yönünü koruyun. Beier–Neely her çizgi boyunca ve çizgiye dik yönde izdüşüm hesaplar."
+          },
+          "use-beier": {
+            "title": "Beier–Neely'yi seçin",
+            "body": "Çizgiler yalnızca Beier–Neely algoritmasıyla çarpıtma yapar. İlgili kartı seçin.",
+            "missingHint": "Stüdyo sekmesini ve Algoritma bölümünü açın."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Çoklu çizgi çizme",
+        "description": "Nokta nokta veya serbest elle çizin; açık çizgiyi bir ucundan sürdürebilirsiniz.",
+        "keywords": "çoklu çizgi eğri yol serbest el çiz devam uç",
+        "steps": {
+          "pick-tool": {
+            "title": "Çoklu çizgi aracı",
+            "body": "Çoklu çizgi aracını seçin (Y kısayolu)."
+          },
+          "tap-by-tap": {
+            "title": "Nokta nokta",
+            "body": "Kontur boyunca art arda noktalar yerleştirin. ⏎ bitirir, Esc iptal eder."
+          },
+          "freehand": {
+            "title": "Veya serbest elle",
+            "body": "Basılı tutup kesintisiz bir çizgi çizin. Bıraktığınızda yol otomatik olarak sadeleştirilir."
+          },
+          "resume": {
+            "title": "Bir uçtan devam edin",
+            "body": "Çoklu çizgi aracı etkinken açık bir çoklu çizginin ucuna tıklayarak çizime devam edin."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Açık çoklu çizgiyi kapatma",
+        "description": "Açık çoklu çizgiyi kapalı çokgene dönüştürmenin iki yolu.",
+        "keywords": "kapat çokgen çoklu çizgi halka uç ilk nokta",
+        "steps": {
+          "intro": {
+            "title": "İki kapatma yöntemi",
+            "body": "Çoklu çizgiyi çizerken veya daha sonra Seçim aracıyla kapatabilirsiniz."
+          },
+          "close-first": {
+            "title": "Çizerken ilk noktaya tıklayın",
+            "body": "Çizim sırasında ilk noktaya yeniden tıklayın. Halka kapanır ve çizim biter."
+          },
+          "drop-endpoint": {
+            "title": "Sonradan uçları birleştirin",
+            "body": "Seçim aracıyla açık çoklu çizginin bir ucunu diğer ucun üzerine sürükleyip bırakın. Sonuç aynıdır."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Bölge çizme",
+        "description": "Kapalı bir bölgeyi katman maskesi olarak kullanın ve kenarını yumuşatın.",
+        "keywords": "bölge maske kement kontur kenar yumuşatma çiz",
+        "steps": {
+          "pick-tool": {
+            "title": "Bölge maskesi aracı",
+            "body": "Bölge maskesi aracını seçin. Konturu her zaman kapalıdır."
+          },
+          "outline": {
+            "title": "A üzerindeki alanı çevreleyin",
+            "body": "Alanı (yüz, nesne) çevrelemek için noktalar yerleştirin veya serbest elle çizin. ⏎ ile ya da halkayı kapatarak bitirin."
+          },
+          "feather": {
+            "title": "Kenarı yumuşatın",
+            "body": "Bölgeyi seçip Kenar yumuşatma değerini ayarlayın. Bu bölgeyi maske olarak kullanan katmanın ayrıca kendi maske modu ve kenar yumuşatma ayarı vardır.",
+            "missingHint": "Sağdaki özellikler panelinde Seçim bölümünü açın."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Seçme, yeniden adlandırma, kilitleme ve gizleme",
+        "description": "İşaretleri yönetin ve üzerine geldiğinizde A↔B eşleşme göstergesini inceleyin.",
+        "keywords": "seçim çoklu shift yeniden adlandır kilitle gizle gösterge fare işaret",
+        "steps": {
+          "pick-tool": {
+            "title": "Seçim aracı",
+            "body": "Seçim aracını seçin (V kısayolu)."
+          },
+          "select": {
+            "title": "Bir tutamaca tıklayın",
+            "body": "Seçmek için bir işaretin tutamacına tıklayın. Çoklu seçim için Shift kullanın. Fareyle üzerine geldiğinizde diğer paneldeki eş tutamaç vurgulanır."
+          },
+          "inspector": {
+            "title": "Yeniden adlandırma, kilitleme ve gizleme",
+            "body": "Seçim bölümünde işareti yeniden adlandırabilir, Görünür ve Kilitli seçeneklerini değiştirebilirsiniz.",
+            "missingHint": "Sağdaki özellikler panelinde Seçim bölümünü açın."
+          },
+          "list": {
+            "title": "İşaretler listesi",
+            "body": "Soldaki liste işaretlerin durumunu gösterir. Göz simgesi gizler, asma kilit kilitler; bir satıra tıklamak o işareti seçer."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Noktaları itme ve geri alma",
+        "description": "Noktaları it aracıyla tutamaçları yerel olarak şekillendirin; her düzenlemeyi geri alın veya yineleyin.",
+        "keywords": "it şekillendir çarpıt yerel yarıçap geri al yinele",
+        "steps": {
+          "pick-tool": {
+            "title": "Noktaları it aracı",
+            "body": "Noktaları it aracını seçin (K kısayolu)."
+          },
+          "sculpt": {
+            "title": "Şekillendirmek için sürükleyin",
+            "body": "Görüntü üzerinde sürükleyin. Halkanın içindeki her tutamaç itilir; etki merkezde daha güçlüdür."
+          },
+          "undo": {
+            "title": "Geri alma ve yineleme",
+            "body": "Cmd/Ctrl+Z bir işaret düzenlemesini geri alır; Cmd/Ctrl+Shift+Z yeniden uygular."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Sağdaki özellikler panelinde Katmanlar bölümünü açın.",
+      "needsProject": {
+        "preconditionHint": "Önce iki görüntü yükleyin. Üst çubuktaki Demo düğmesi en hızlı yoldur."
+      },
+      "activateLayerStep": {
+        "title": "Eklenmiş bir katmanı etkinleştirin",
+        "body": "Katmanlar bölümünde Genel dışındaki bir katmana tıklayın. Özellikleri listenin hemen altında görünür."
+      },
+      "createLayerGuide": {
+        "title": "Katman oluşturma",
+        "description": "Genel tabanının üzerine katmanlar ekleyin ve katkı göstergelerini okuyun.",
+        "keywords": "katman oluştur ekle yığın genel sıra gösterge katkı",
+        "steps": {
+          "add": {
+            "title": "Bir katman ekleyin",
+            "body": "Katman ekle düğmesine tıklayın. Yeni katman hemen etkinleşir."
+          },
+          "global-vs-layers": {
+            "title": "Genel ve eklenen katmanlar",
+            "body": "Genel, varsayılan morf geçişini en altta oluşturur. Eklenen katmanlar liste sırasına göre üstüne birleştirilir. Oklar yığının sırasını değiştirir."
+          },
+          "badges": {
+            "title": "Katkı göstergeleri",
+            "body": "Her satır katmanın o anda ne yaptığını gösterir: tüm görüntü (her şeyi örter), maskeli, etkisiz, klip dışında…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Bir katmanın algoritmasını değiştirme",
+        "description": "Proje varsayılanını değiştirmeden bir katmana özel algoritma seçin.",
+        "keywords": "katman algoritma özel üçgen ağ mesh tps beier katmana özel",
+        "steps": {
+          "override": {
+            "title": "Katmana özel algoritma seçin",
+            "body": "Katman özelliklerindeki Algoritma menüsü, yalnızca bu katman için proje varsayılanının yerine geçer."
+          },
+          "badge": {
+            "title": "Katmana özel algoritma göstergesi",
+            "body": "Algoritma bölümünün başlığında artık katmana özel algoritma göstergesi görünür. Bir işaret seçili olsa bile tüm kontroller erişilebilir kalır.",
+            "missingHint": "Sağdaki özellikler panelinde Algoritma bölümünü açın."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Bir bölgeyle katmanı maskeleme",
+        "description": "Katmanı atanmış bölgeyle sınırlayın; keskin veya yumuşak kenar kullanın, maskeyi ters çevirin.",
+        "keywords": "maske bölge ata katman keskin kenar yumuşatma ters çevir",
+        "preconditionHint": "Önce Bölge maskesi aracıyla bir bölge çizin. Maske menüsü bölgeleri listeler.",
+        "steps": {
+          "assign": {
+            "title": "Bir bölge atayın",
+            "body": "Maske menüsünden bir bölge seçin. Katman artık yalnızca bu bölgenin içinde birleştirilir."
+          },
+          "modes": {
+            "title": "Keskin, yumuşak veya ters maske",
+            "body": "Maske modu, keskin kesim ile ayarlanabilir yumuşak kenar arasında geçiş yapar. “Maskeyi ters çevir” seçeneği iç ve dış alanı değiştirir."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Maske boyama",
+        "description": "Doğrudan görüntü üzerine maske boyayın ve sonucu önizlemede anında izleyin.",
+        "keywords": "boya fırça maske çap sertlik güç silgi temizle anlık",
+        "steps": {
+          "pick-brush": {
+            "title": "Maske fırçası",
+            "body": "Maske fırçasını seçin (B kısayolu). Etkin katmanın maskesini boyar.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "settings": {
+            "title": "Fırça ayarları",
+            "body": "Çap, Sertlik ve Güç fırça izini belirler. Silgi boyayı kaldırır. Kutuyu işaretleyin veya sürüklerken ⌥ tuşunu basılı tutun.",
+            "missingHint": "Fırça etkinken ayarlar araçların altında görünür."
+          },
+          "paint": {
+            "title": "Görüntü üzerine boyayın",
+            "body": "Fırçayı bir görüntü üzerinde sürükleyin. Ortadaki önizleme sonucu anında gösterir. Etkiyi incelemek için Sonuç ve Maske görünümlerini kullanın. Boyalı maske katmanın çarpıtmasını izler ve morf geçişi boyunca içerikle birlikte hareket eder.",
+            "missingHint": "Stüdyo sekmesini Düzenleme görünümünde açın."
+          },
+          "clear": {
+            "title": "İstediğiniz zaman temizleyin",
+            "body": "Boyalı maske → Temizle, katmanın boyalı maskesini tamamen kaldırır."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opaklık, karıştırma, klip ve geçiş",
+        "description": "Katmanın katkısını ayarlayın, zaman çizelgesindeki bir aralıkla sınırlayın ve görüntü geçişinin zamanını seçin.",
+        "keywords": "opaklık karıştırma mod birleştirme klip zaman çizelgesi başlangıç süre hız eğrisi geçiş çarpıtma aralık hazır ayar klasik morf bézier çift görüntü ışık",
+        "steps": {
+          "opacity": {
+            "title": "Opaklık",
+            "body": "Katmanı altındakilerle karıştırmak için opaklığı 1'in altına indirin."
+          },
+          "blend": {
+            "title": "Karıştırma modu",
+            "body": "Karıştırma menüsü katmanın alt katmanlarla nasıl birleşeceğini belirler: Normal, Çoğalt, Ekran veya Ekle. Çoğalt renk değerlerini çarpar; Ekran görüntüyü aydınlatır; Ekle renkleri ve opaklıklarını toplar, sonucu izin verilen en yüksek değerde sınırlar."
+          },
+          "clip": {
+            "title": "Katmanı zamanda sınırlayın",
+            "body": "Katmanın bloğunu taşımak için zaman çizelgesinde sürükleyin; kırpmak için kenarlarını sürükleyin. Katman özelliklerindeki Başlangıç ve Süre değerlerini de kullanabilirsiniz."
+          },
+          "windows": {
+            "title": "Kademeli çarpıtma, daha kısa görüntü geçişi",
+            "body": "Geçiş bölümü klibin yüzdesi olarak iki aralık tanımlar. Çarpıtma, şekiller arasındaki değişimi; Görüntü geçişi ise A ve B görüntülerinin karışmasını ayarlar. Klasik morf hazır ayarı çarpıtmayı %0–100 boyunca sürdürür ve görüntü geçişini %30–70 ile sınırlar. Böylece başlangıçta ve sonda hizalanmamış ayrıntıların üst üste görünmesi azalır."
+          },
+          "windows-timeline": {
+            "title": "Aralıkları zaman çizelgesinde okuyun",
+            "body": "Katman bloğunun alt kenarı iki aralığı gösterir: görüntü geçişi için açık renkli bir şerit, çarpıtma için ince bir çizgi. Böylece görüntü geçişinin klibin neresinde olduğunu görebilirsiniz."
+          },
+          "easing": {
+            "title": "Eğriyi ayarlayın",
+            "body": "Hız eğrisi, iki aralığın içindeki ilerlemeyi düzenler. Beş hazır eğriden birini veya iki tutamaçla düzenlenen “özel (Bézier)” seçeneğini kullanın. Görüntü geçişinin ilerlemesini çarpıtmadan bağımsız ayarlamak için “Görüntü geçişi için ayrı eğri” seçeneğini işaretleyin."
+          },
+          "global-too": {
+            "title": "Genel katmanında da kullanılabilir",
+            "body": "Genel'i seçin. Bu katmanın da Geçiş bölümü vardır. Aralıkları varsayılan olarak %0–100'ü kapsar. Çapraz geçiş algoritması görüntüleri çarpıtmadığından yalnızca görüntü geçişi etki eder."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Önce iki görüntü yükleyin. Üst çubuktaki Demo düğmesi en hızlı yoldur."
+      },
+      "timelineGuide": {
+        "title": "Zaman çizelgesini kullanma",
+        "description": "Animasyonda gezinin, oynatın, kare kare ilerleyin ve klipleri taşıyın.",
+        "keywords": "zaman çizelgesi gezin oynat duraklat kare zaman kodu klip taşı kırp zen tab daralt panel cetvel oynatma kafası",
+        "steps": {
+          "scrub": {
+            "title": "Oynatma kafasını taşıyın",
+            "body": "Cetvele tıklayın veya üzerinde sürükleyin. Oynatma kafası taşınır ve önizleme o andaki kareyi gösterir. Kalemle istediğiniz konuma dokunun ve sürüklerken kalemin ucunu ekrandan kaldırmayın.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "transport": {
+            "title": "Oynatma, duraklatma ve kare adımları",
+            "body": "Oynat düğmesi animasyonu gerçek zamanlı başlatır. Ok düğmeleri veya ←/→ tuşları bir kare geri ya da ileri gider. Ok düğmesine Alt+tıklama başlangıca veya sona gider. Zaman kodu saniye:kare biçimindedir.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "clips": {
+            "title": "Klipleri taşıyın ve kırpın",
+            "body": "Görüntüler ve videolar, katmanların üstündeki A/B izlerinde klip olarak görünür. Bloğu veya kenarlarını sürükleyin; klibi seçtiğinizde Başlangıç ve Süre alanları açılır. Sabit görüntünün kaynak süresi yoktur. Klibini uzatmak montajı uzatabilir. Bir klibin dışında yalnızca diğer görüntü veya video katkıda bulunur; ikisi de yoksa arka plan görünür.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "still-image-timing": {
+            "title": "Görüntünün görünme süresini ayarlayın",
+            "body": "A veya B üzerindeki bir görüntü klibini seçip süresini saniye ya da saniye:kare olarak girin. Klibi kısaltmak montajın süresini değiştirmez; uzatmak gerektiğinde zaman çizelgesini uzatır. İşaret anahtar kareleri ana zamana bağlı kalır. Klibi taşımak veya uzatmak, animasyonlarını taşımaz ya da uzatmaz. Klipler projeyle birlikte kaydedilir.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "zen": {
+            "title": "Zen modu cetveli korur",
+            "body": "{{shortcut}}, morf geçişinin ekranı doldurması için üç paneli gizler. Zaman çizelgesi 40 piksellik bir çubuğa daralır; cetvel, ölçek işaretleri, zaman kodları ve oynatma kafası görünür kalır. Animasyonda gezinmek için hâlâ tıklayabilir veya oynatma kafasını sürükleyebilirsiniz. Panelleri geri getirmek için yeniden {{shortcut}} tuşuna basın."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Videolar arasında morf geçişi",
+        "description": "Videoları içe aktarın, A/B kliplerini yerleştirin ve işaretlere anahtar kare ekleyin.",
+        "keywords": "video klip içe aktar anahtar kare ekle iz şarkı elmas sürükle zamanını değiştir",
+        "steps": {
+          "get-videos": {
+            "title": "İki video yükleyin",
+            "body": "Demo penceresinde dört şarkı ve iki yürüyüş videosu bulunur (Videolar filtresi). Kendi videolarınızı A/B yuvalarına da bırakabilirsiniz. Bir görüntüyle bir videoyu birleştirmek de mümkündür. Kaydedilen projeler video meta verilerini korur; yeniden açarken yerel dosyaları yeniden bağlamanızı ister.",
+            "missingHint": "Demo seçicisini açın."
+          },
+          "place-clips": {
+            "title": "A/B kliplerini yerleştirin",
+            "body": "Her video kendi izindedir. Taşımak için klibi, kırpmak için kenarlarını sürükleyin; kesin değerler için başlangıç/giriş/süre alanlarını kullanın. Klibi taşımak veya kırpmak, oynatma kafasını hareket ettirmeden o konumdaki önizlemeyi günceller; montaj süresi değişmez. İşaret anahtar kareleri kırpmadan sonra da kaynak medya zamanına bağlı kalır ve kaydedip yeniden açarken korunur. Klibinin dışında bu taraf önizlemeye veya dışa aktarıma katılmaz; görüntüyü diğer taraf doldurur.",
+            "missingHint": "Stüdyo sekmesini açın."
+          },
+          "keyframes": {
+            "title": "Anahtar kare ekleyin",
+            "body": "Bir işaret seçin. Anahtar kareler satırı her taraf için önceki ◀, geçerli zamanda anahtar kare ekleyip kaldıran elmas ◆, sonraki ▶ ve sayaç sunar. İşaretler anahtar kareler arasında hareket eder. Sabit görüntülerde ◆ ile ilk anahtar kareyi ekleyene kadar işaret hareketsizdir. Sonrasında başka zamanlardaki taşımalar yeni anahtar kare ekleyerek morf yolunu eğrisel hâle getirebilir.",
+            "missingHint": "Sağdaki özellikler panelinde Seçim bölümünü açın."
+          },
+          "timeline-keyframes": {
+            "title": "Anahtar kareleri zaman çizelgesinde düzenleyin",
+            "body": "Seçili işaretlerin anahtar kareleri A ve B izlerinde, oynatıldıkları zamanda elmas olarak görünür. Gitmek için tıklayın; zamanı değiştirmek için sürükleyin (kareye hizalanır, tek bir geri alma işlemiyle geri alınabilir); silmek için Alt+tıklama kullanın. Çok yakın elmaslar sayaçlı bir çubukta gruplanır. Bunlara ulaşmak için özellikler panelindeki okları kullanın.",
+            "missingHint": "Stüdyo sekmesini açın."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Algoritmaları karşılaştırma",
+        "description": "Aynı projede dört algoritmayı yan yana görün.",
+        "keywords": "karşılaştır ızgara yan yana çapraz geçiş üçgen ağ crossfade mesh tps beier",
+        "steps": {
+          "open": {
+            "title": "Karşılaştır sekmesini açın",
+            "body": "Karşılaştır sekmesi aynı görüntüleri, işaretleri ve τ değerini kullanan 2×2 bir ızgara gösterir."
+          },
+          "read": {
+            "title": "Izgarayı inceleyin",
+            "body": "Görüntülerdeki ayrıntılar hizalanmadığında Çapraz geçiş çift konturlar oluşturur. Üçgen ağ, TPS ve Beier–Neely, eşleşen ayrıntıları hizalamak için iki görüntüyü ortak bir ara şekle doğru çarpıtır."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "MP4 veya görüntü olarak dışa aktarma",
+        "description": "Morf sonucunu video veya PNG görüntüleri içeren ZIP arşivi olarak dışa aktarın.",
+        "keywords": "dışa aktar mp4 webm av1 zip görüntü video oluştur indir",
+        "steps": {
+          "open": {
+            "title": "Dışa aktar düğmesine tıklayın",
+            "body": "Tüm kareler cihazınızda oluşturulur. Sunucuya hiçbir şey gönderilmez."
+          },
+          "settings": {
+            "title": "Çıktıyı seçin",
+            "body": "Video için WebCodecs ve kullanılabilir bir H.264, VP9 veya AV1 kodlayıcısı gerekir. PNG görüntü dizisi video codec'leri gerektirmez ve saydam arka planı koruyabilir. Video siyah veya beyaz arka planla birleştirilir. Çözünürlük, süre ve kare hızını ayarlayın."
+          },
+          "run": {
+            "title": "Dışa aktarın",
+            "body": "Stüdyo her kareyi hesaplar ve ilerlemeyi gösterir; bitince dosyayı indirir. Dışa aktarım sırasında aynı düğmeyle işlemi iptal edebilirsiniz."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Klavye kısayolları",
+        "description": "Tüm kısayollar, doğrudan uygulamanın tablolarından alınır.",
+        "keywords": "klavye kısayol tuş yardım",
+        "steps": {
+          "list": {
+            "title": "Klavye kısayolları"
+          }
+        }
+      }
+    }
+  },
+  "language": {
+    "title": "Dil",
+    "description": "Arayüz dilini seçin.",
+    "loading": "{{language}} yükleniyor…",
+    "loadError": "Bu dil yüklenemedi. Bağlantınızı kontrol edip yeniden deneyin.",
+    "retry": "Yeniden dene",
+    "names": {
+      "en": "İngilizce",
+      "fr": "Fransızca",
+      "de": "Almanca",
+      "es": "İspanyolca",
+      "pt-BR": "Portekizce (Brezilya)",
+      "it": "İtalyanca",
+      "tr": "Türkçe",
+      "id": "Endonezce",
+      "ru": "Rusça",
+      "ja": "Japonca",
+      "ko": "Korece",
+      "zh-Hans": "Basitleştirilmiş Çince",
+      "th": "Tayca",
+      "hi": "Hintçe",
+      "bn": "Bengalce",
+      "ar": "Arapça"
+    },
+    "restoreError": "{{language}} dili geri yüklenemedi. Arayüz İngilizce açıldı. Bu dili yüklemek için internete bağlanıp yeniden deneyin."
+  },
+  "algorithmNames": {
+    "crossfade": "Çapraz geçiş",
+    "mesh": "Üçgen ağ",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Çapraz geçiş",
+    "mesh": "Üçgen ağ",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  }
+}

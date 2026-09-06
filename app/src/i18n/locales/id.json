@@ -1,0 +1,1193 @@
+{
+  "topbar": {
+    "new": "Baru",
+    "newConfirmTitle": "Proyek baru",
+    "newConfirm": "Tinggalkan proyek saat ini dan buat proyek baru?",
+    "newConfirmAction": "Buat proyek baru",
+    "load": "Buka",
+    "save": "Simpan",
+    "export": "Ekspor",
+    "help": "Bantuan",
+    "language": "Bahasa",
+    "loadErrorTitle": "Gagal membuka proyek",
+    "loadError": "Proyek tidak dapat dibuka.",
+    "videoSaveTitle": "Simpan proyek",
+    "videoSaveNote": "File video tidak disertakan dalam proyek. Anda perlu menghubungkannya kembali saat membuka proyek. Tetap simpan?",
+    "videoSaveAction": "Tetap simpan",
+    "loadErrors": {
+      "invalidJson": "File proyek ini tidak valid.",
+      "unsupportedVersion": "Versi proyek ini tidak didukung.",
+      "invalidStructure": "Proyek berisi data yang tidak valid atau tidak lengkap.",
+      "limitExceeded": "Proyek melampaui batas keamanan aplikasi.",
+      "invalidReference": "Proyek berisi rujukan lapisan atau penanda yang terputus.",
+      "invalidMask": "Proyek berisi masker lukis yang rusak."
+    },
+    "tabs": {
+      "studio": "Studio",
+      "compare": "Bandingkan"
+    },
+    "about": "Tentang"
+  },
+  "sidebar": {
+    "tools": "Alat",
+    "assets": "Media",
+    "features": "Penanda",
+    "layers": "Lapisan"
+  },
+  "tools": {
+    "select": "Seleksi",
+    "point": "Titik",
+    "line": "Garis",
+    "polyline": "Polyline",
+    "region": "Masker area",
+    "brush": "Kuas masker",
+    "push": "Dorong titik",
+    "pan": "Geser tampilan"
+  },
+  "assets": {
+    "sourceA": "Sumber A",
+    "targetB": "Tujuan B",
+    "replace": "Ganti gambar/video",
+    "choose": "Pilih gambar/video…",
+    "loading": "Memuat…",
+    "video": "video",
+    "videoMissing": "File video perlu dihubungkan kembali",
+    "relink": "Hubungkan kembali",
+    "replaceInstead": "Ganti dengan gambar atau video lain",
+    "relinkVideoOnly": "Pilih file video yang sesuai untuk menghubungkan kembali slot ini.",
+    "relinkMismatch": "Video ini tidak cocok dengan file yang tersimpan. Periksa dimensi dan durasinya, atau ganti medianya.",
+    "relinkNoSavedVideo": "Proyek ini tidak lagi memerlukan video di slot ini.",
+    "relinkAlreadyLinked": "Video ini sudah terhubung.",
+    "loadError": "Media yang dipilih tidak dapat dimuat."
+  },
+  "brush": {
+    "selectLayerHint": "Pilih lapisan untuk melukis maskernya. Lapisan dasar Global tidak memiliki masker.",
+    "diameter": "Diameter",
+    "hardness": "Kekerasan",
+    "strength": "Kekuatan",
+    "eraser": "Penghapus",
+    "eraserHold": "(tahan ⌥)"
+  },
+  "features": {
+    "empty": "Tidak ada penanda di lapisan ini.",
+    "hide": "Sembunyikan",
+    "show": "Tampilkan",
+    "hideFeature": "Sembunyikan penanda",
+    "showFeature": "Tampilkan penanda",
+    "lock": "Kunci",
+    "unlock": "Buka kunci",
+    "lockFeature": "Kunci penanda",
+    "unlockFeature": "Buka kunci penanda",
+    "kinds": {
+      "point": "Titik",
+      "segment": "Garis",
+      "polyline": "Polyline",
+      "region": "Area"
+    },
+    "visible": "Terlihat",
+    "locked": "Terkunci",
+    "weight": "Bobot",
+    "layer": "Lapisan",
+    "landmark": "Makna",
+    "role": "Peran",
+    "feather": "Pelembutan tepi",
+    "none": "tidak ada",
+    "semantics": {
+      "left-eye": "mata kiri",
+      "right-eye": "mata kanan",
+      "nose": "hidung",
+      "mouth": "mulut",
+      "chin": "dagu",
+      "jaw": "rahang",
+      "hairline": "garis rambut",
+      "custom": "kustom"
+    },
+    "roles": {
+      "face": "wajah",
+      "hair": "rambut",
+      "neck": "leher",
+      "body": "tubuh",
+      "background": "latar belakang",
+      "custom": "kustom"
+    },
+    "keyframes": "Keyframe",
+    "noKeyframes": "tidak ada",
+    "prevKeyframe": "Keyframe {{side}} sebelumnya",
+    "nextKeyframe": "Keyframe {{side}} berikutnya",
+    "toggleKeyframe": "Pasang / hapus keyframe {{side}} pada waktu saat ini",
+    "keyframeCount_other": "{{count, number}} keyframe",
+    "keyframeHintStill": "Tanpa video, penanda ini tidak bergerak. Pasang keyframe pertama dengan ◆ untuk menganimasikannya. Setelah itu, setiap pemindahan pada waktu lain menambahkan keyframe dan dapat membentuk lintasan morph yang tidak linear.",
+    "selectedCount_other": "{{count, number}} penanda dipilih",
+    "deleteSelected": "Hapus yang dipilih",
+    "coordinates": "Koordinat",
+    "pts": "{{count, number}} titik"
+  },
+  "layers": {
+    "importFirst": "Impor gambar terlebih dahulu.",
+    "add": "Tambah lapisan",
+    "defaultName": "Lapisan {{index}}",
+    "hideLayer": "Sembunyikan lapisan",
+    "showLayer": "Tampilkan lapisan",
+    "lockLayer": "Kunci lapisan",
+    "unlockLayer": "Buka kunci lapisan",
+    "moveUp": "Naikkan lapisan",
+    "moveDown": "Turunkan lapisan",
+    "featureCount_other": "{{count, number}} penanda",
+    "globalHint": "Lapisan dasar Global menggunakan pengaturan proyek. Pilih lapisan tambahan untuk mengedit propertinya.",
+    "status": {
+      "base": "dasar",
+      "disabled": "nonaktif",
+      "hidden": "tersembunyi",
+      "outside-clip": "di luar klip",
+      "no-contribution": "tanpa efek",
+      "masked": "bermasker",
+      "full-frame": "seluruh gambar"
+    },
+    "baseName": "Global"
+  },
+  "inspector": {
+    "algorithm": "Algoritma",
+    "selection": "Seleksi",
+    "selectionHint": "Pilih penanda untuk mengeditnya.",
+    "overrideBadge": "khusus lapisan: {{name}}",
+    "soon": "segera hadir",
+    "panel": "Properti"
+  },
+  "algorithms": {
+    "crossfade": "Transisi pudar linear, tanpa deformasi",
+    "mesh": "Deformasi dengan segitiga Delaunay",
+    "thin-plate-spline": "Deformasi RBF global yang halus",
+    "beier-neely": "Morph dengan medan garis"
+  },
+  "tps": {
+    "smoothing": "Penghalusan (λ)",
+    "borderAnchors": "Penambat tepi",
+    "anchorsPerSide": "Penambat per sisi",
+    "samplePolylines": "Ambil sampel polyline",
+    "sampleSpacing": "Jarak sampel"
+  },
+  "beier": {
+    "distanceSoftness": "Pelunakan jarak (a)",
+    "falloffExponent": "Eksponen peluruhan (b)",
+    "lineLengthInfluence": "Pengaruh panjang garis (p)",
+    "maxLines": "Batas jumlah garis",
+    "samplePolylines": "Ambil sampel polyline"
+  },
+  "layerInspector": {
+    "title": "Lapisan",
+    "enabled": "Aktif",
+    "visible": "Terlihat",
+    "locked": "Terkunci",
+    "scope": {
+      "base": "Lapisan dasar: merender morph bawaan di bawah lapisan tambahan.",
+      "disabled": "Lapisan nonaktif: tidak memengaruhi pratinjau atau ekspor.",
+      "hidden": "Lapisan tersembunyi: diabaikan dalam pratinjau dan ekspor.",
+      "outside-clip": "Di luar klip: penunjuk waktu berada di luar blok lapisan ini.",
+      "no-contribution": "Tanpa efek: tambahkan penanda atau tetapkan masker agar lapisan ini memengaruhi hasil.",
+      "masked": "Lapisan bermasker: masker menentukan area yang digabungkan di atas lapisan di bawahnya.",
+      "full-frame": "Lapisan seluruh gambar: tanpa masker, lapisan ini menutupi lapisan di bawahnya."
+    },
+    "algorithm": "Algoritma",
+    "projectDefault": "Bawaan proyek",
+    "opacity": "Opasitas",
+    "blend": "Campuran",
+    "blendModes": {
+      "normal": "Normal",
+      "source-over": "Normal (source-over)",
+      "multiply": "Kalikan",
+      "screen": "Layar",
+      "lighter": "Tambah"
+    },
+    "mask": "Masker",
+    "none": "tidak ada",
+    "paintedMask": "Masker lukis",
+    "clear": "Bersihkan",
+    "maskMode": "Mode masker",
+    "maskModes": {
+      "hard": "tegas",
+      "feathered": "tepi lembut"
+    },
+    "maskFeather": "Pelembutan tepi",
+    "invertMask": "Balik masker",
+    "timelineClip": "Klip linimasa",
+    "start": "Mulai",
+    "duration": "Durasi",
+    "easing": "Kurva laju",
+    "easings": {
+      "linear": "linear",
+      "ease-in": "percepatan",
+      "ease-out": "perlambatan",
+      "ease-in-out": "percepatan/perlambatan",
+      "smoothstep": "smoothstep",
+      "bezier": "kustom (Bézier)"
+    },
+    "transition": "Transisi",
+    "warpWindow": "Deformasi (%)",
+    "warpStart": "Awal deformasi (%)",
+    "warpEnd": "Akhir deformasi (%)",
+    "dissolveWindow": "Transisi pudar (%)",
+    "dissolveStart": "Awal transisi pudar (%)",
+    "dissolveEnd": "Akhir transisi pudar (%)",
+    "presets": {
+      "label": "Prasetel",
+      "standard": "Standar",
+      "classicMorph": "Morph klasik",
+      "lateDissolve": "Transisi pudar tertunda",
+      "custom": "Kustom"
+    },
+    "distinctDissolveEasing": "Kurva terpisah untuk transisi pudar",
+    "dissolveEasing": "Laju transisi pudar",
+    "bezierCurve": "Kurva {{name}}",
+    "bezierHandle1": "Pegangan kurva pertama",
+    "bezierHandle2": "Pegangan kurva kedua",
+    "bezier": {
+      "x1": "Pegangan 1 x",
+      "y1": "Pegangan 1 y",
+      "x2": "Pegangan 2 x",
+      "y2": "Pegangan 2 y"
+    },
+    "stackPosition": "Posisi dalam tumpukan: {{position}}",
+    "delete": "Hapus lapisan",
+    "confirmTitle": "Hapus lapisan?",
+    "confirmBody": "Hapus “{{name}}”? Penandanya akan menjadi global dan tidak akan dihapus.",
+    "cancel": "Batal",
+    "closeConfirm": "Tutup konfirmasi penghapusan"
+  },
+  "timeline": {
+    "videoMissing": "Hubungkan kembali file video yang hilang sebelum memutar.",
+    "time": "Waktu",
+    "layers": "Lapisan",
+    "outsideA": "di luar A",
+    "outsideB": "di luar B",
+    "position": "Posisi linimasa",
+    "prevFrame": "Bingkai sebelumnya",
+    "prevFrameTitle": "Bingkai sebelumnya; Alt+klik untuk ke awal",
+    "nextFrame": "Bingkai berikutnya",
+    "nextFrameTitle": "Bingkai berikutnya; Alt+klik untuk ke akhir",
+    "play": "Putar",
+    "pause": "Jeda",
+    "start": "mulai",
+    "in": "masuk",
+    "dur": "durasi",
+    "timecodeAria": "Kode waktu {{label}}",
+    "timecodeTitle": "Kode waktu {{label}} (detik:bingkai)",
+    "tauTitle": "Posisi linimasa (detik:bingkai)",
+    "syncWaiting": "merender… {{elapsed}}",
+    "syncWaitingTitle": "Mesin pratinjau menunggu: {{phase}}. Tampilan masih menunjukkan bingkai sebelumnya.",
+    "syncPhaseEngine": "membuka mesin video (membaca file, menyiapkan dekoder)",
+    "syncPhaseFrame": "mencari dan mendekode bingkai, lalu mengirimkannya ke GPU",
+    "syncLast": "render terakhir {{elapsed}}",
+    "syncLastTitle": "Waktu render bingkai terakhir setelah perpindahan di linimasa (ditampilkan jika melebihi 0,5 detik)",
+    "keyframeTitle": "Keyframe {{time}} dtk — {{names}} · klik: tuju; seret: pindahkan; ⌥+klik: hapus",
+    "keyframeTitleShared": "Keyframe {{time}} dtk — {{names}} · klik: tuju; ⌥+klik: hapus",
+    "keyframeGroupTitle": "{{count, number}} keyframe antara {{from}} dan {{to}} dtk — terlalu berdekatan untuk diedit di sini · klik: tuju yang pertama",
+    "transitionWindows": "{{name}} — transisi pudar {{dissolveStart}}–{{dissolveEnd}}%, deformasi {{warpStart}}–{{warpEnd}}%",
+    "imageClipName": "Gambar · {{name}}",
+    "mediaClip": "Klip {{slot}} — {{name}}",
+    "imageClipHelp": "Gambar diam: seret untuk memindahkan, geser tepinya, atau pilih klip untuk mengatur Mulai dan Durasi. Memperpanjang klip dapat memperpanjang linimasa.",
+    "altClick": "Alt+klik"
+  },
+  "hud": {
+    "releaseToClose": "lepaskan untuk menutup",
+    "eraser": "penghapus",
+    "maskBrushSelectLayer": "kuas masker · pilih lapisan",
+    "points_other": "{{count, number}} titik",
+    "finishHint": "⏎ selesai · Esc batal",
+    "cancelHint": "Esc batal"
+  },
+  "notices": {
+    "noWebgpu": "Demo ini menggunakan WebGPU untuk merender.\nBrowser atau perangkat Anda tampaknya tidak mendukungnya.\n\nCoba:\n- Chrome atau Edge versi terbaru\n- Safari versi terbaru\n- Firefox yang mendukung WebGPU",
+    "tooManyFeatures": "Proyek ini berisi banyak penanda.\nResolusi pratinjau diturunkan menjadi setengah.\nHasil akhir tetap dapat diekspor.",
+    "deviceLost": "Konteks GPU terputus (memori tidak cukup atau driver direset).",
+    "reload": "Muat ulang",
+    "noWebcodecs": "Pratinjau berfungsi, tetapi ekspor video MP4 tidak tersedia di browser ini.",
+    "codecUnsupported": "Codec yang diminta tidak tersedia pada resolusi ini. Coba resolusi lebih rendah, format lain, atau browser lain."
+  },
+  "studio": {
+    "edit": "Edit",
+    "preview": "Pratinjau",
+    "triple": "Tiga tampilan",
+    "morphPreview": "Pratinjau morph",
+    "viewportsLinked": "Zoom/geser terhubung antartampilan — klik untuk memisahkan",
+    "viewportsUnlinked": "Zoom/geser terpisah tiap tampilan — klik untuk menghubungkan",
+    "importPrompt": "Impor gambar/video <a>sumber</a> dan <b>tujuan</b> untuk melihat pratinjau morph.",
+    "importPromptEdit": "Impor gambar/video <a>sumber</a> dan <b>tujuan</b> untuk mulai menempatkan penanda.",
+    "preparingGpu": "Menyiapkan GPU…",
+    "finishShape": "Selesaikan bentuk",
+    "cancelShape": "Batalkan bentuk",
+    "zoomIn": "Perbesar",
+    "zoomOut": "Perkecil",
+    "zoomReset": "Reset zoom (100%)"
+  },
+  "compare": {
+    "importPrompt": "Impor gambar <a>sumber</a> dan <b>tujuan</b> di Studio untuk membandingkan algoritma."
+  },
+  "overlays": {
+    "features": "Titik dan jalur",
+    "mesh": "Jaring terinterpolasi",
+    "tpsGrid": "Kisi deformasi",
+    "beierField": "Kisi pengaruh",
+    "slots": {
+      "source": "Sumber",
+      "preview": "Pratinjau",
+      "target": "Tujuan"
+    },
+    "slotLabel": "{{label}} ({{slot}})",
+    "slotMesh": "Jaring ({{slot}})",
+    "overlayAria": "Gambar bantu {{label}}"
+  },
+  "layerDebug": {
+    "final": "Hasil",
+    "finalTitle": "Hasil gabungan",
+    "layer": "Lapisan",
+    "layerTitle": "Hasil lapisan terpilih",
+    "mask": "Masker",
+    "maskTitle": "Masker area terpilih atau masker lapisan",
+    "contrib": "Kontribusi",
+    "contribTitle": "Tampilan kontribusi",
+    "selected": "Terpilih",
+    "selectedTitle": "Gambar bantu lapisan terpilih",
+    "all": "Semua",
+    "allTitle": "Gambar bantu semua lapisan yang terlihat",
+    "layerStack": "Tumpukan lapisan",
+    "closeStack": "Tutup tumpukan",
+    "opacity": "opasitas",
+    "controls": "Kontrol pratinjau"
+  },
+  "preview": {
+    "outsideVideoBoth": "di luar video A/B",
+    "outsideVideoA": "di luar video A",
+    "outsideVideoB": "di luar video B",
+    "beforeClip": "sebelum klip video",
+    "afterClip": "setelah klip video",
+    "emptyClip": "klip video kosong"
+  },
+  "export": {
+    "videoMissing": "Hubungkan kembali semua file video yang hilang sebelum mengekspor.",
+    "cancel": "Batalkan ekspor",
+    "limits": "Batas: 16–3840 × 16–2160 px, 12–60 bingkai/dtk, 1–15 dtk, maksimal 900 bingkai.",
+    "errors": {
+      "unsupportedWebgpu": "WebGPU diperlukan untuk mengekspor proyek ini.",
+      "unsupportedWebcodecs": "WebCodecs tidak tersedia untuk ekspor video di browser ini.",
+      "unsupportedCodec": "Codec ini tidak tersedia pada resolusi yang dipilih. Coba format lain atau resolusi lebih rendah.",
+      "invalidDimensions": "Lebar harus 16–3840 px dan tinggi 16–2160 px.",
+      "deviceDimensionLimit": "Resolusi yang dipilih melampaui batas ukuran tekstur GPU ini.",
+      "invalidFps": "Laju bingkai harus antara 12 dan 60 bingkai per detik.",
+      "invalidDuration": "Rentang linimasa yang dipilih harus berdurasi antara 1 dan 15 detik.",
+      "tooManyFrames": "Satu ekspor dapat berisi maksimal 900 bingkai.",
+      "invalidBitrate": "Bitrate video harus antara 1 dan 20 Mbit/dtk.",
+      "sequenceTooLarge": "Urutan PNG ini terlalu besar untuk diekspor dalam memori browser. Kurangi resolusi, durasi, atau laju bingkai.",
+      "mediaMissing": "Hubungkan kembali semua file video yang hilang sebelum mengekspor.",
+      "cancelled": "Ekspor dibatalkan.",
+      "gpuFailure": "Ekspor gagal saat merender atau melakukan pengodean. Coba lagi dengan resolusi atau laju bingkai lebih rendah."
+    },
+    "title": "Ekspor",
+    "subtitle": "Render morph bingkai demi bingkai menjadi file yang dapat diunduh.",
+    "output": "Keluaran",
+    "video": "Video",
+    "imageSequence": "Urutan gambar",
+    "resolution": "Resolusi",
+    "presets": {
+      "project": "Proyek",
+      "source": "Sumber",
+      "target": "Tujuan",
+      "custom": "Kustom"
+    },
+    "effective": "Resolusi keluaran",
+    "timing": "Waktu",
+    "duration": "Durasi",
+    "videoDurationNote": "Ekspor video menggunakan durasi linimasa utama.",
+    "frameRate": "Laju bingkai",
+    "pingPong": "Bolak-balik (A→B→A)",
+    "encoding": "Pengodean",
+    "format": "Format",
+    "bitrate": "Bitrate",
+    "background": "Latar belakang",
+    "backgrounds": {
+      "black": "Hitam",
+      "white": "Putih",
+      "transparent": "Transparan"
+    },
+    "importPrompt": "Impor gambar/video sumber dan tujuan di Studio untuk mengaktifkan ekspor.",
+    "exporting": "Mengekspor…",
+    "exportButton": "Ekspor {{format}}",
+    "frameProgress": "bingkai {{index}} / {{count, number}}",
+    "done": "Ekspor selesai — file telah diunduh.",
+    "share": "Bagikan…",
+    "phases": {
+      "rendering": "Merender",
+      "encoding": "Mengodekan",
+      "muxing": "Mengemas video",
+      "zipping": "Membuat arsip"
+    },
+    "width": "Lebar",
+    "height": "Tinggi",
+    "secondsValue": "{{value}} dtk",
+    "frameRateValue": "{{value}} bingkai/dtk",
+    "bitrateValue": "{{value}} Mbit/dtk"
+  },
+  "dialog": {
+    "ok": "OK",
+    "cancel": "Batal"
+  },
+  "mobile": {
+    "inspector": "Properti",
+    "close": "Tutup",
+    "closeInspector": "Tutup properti",
+    "more": "Lainnya",
+    "views": "Tampilan"
+  },
+  "shell": {
+    "loading": "Memuat ruang kerja…",
+    "surfaceLoadError": "Bagian ruang kerja ini tidak dapat dimuat.",
+    "retry": "Coba lagi",
+    "panelAria": "Panel {{tab}}",
+    "collapse": "Ciutkan",
+    "panels": {
+      "left": "Panel media dan penanda",
+      "right": "Panel properti",
+      "timeline": "Panel linimasa"
+    },
+    "zen": "Mode zen",
+    "hideChrome": "Sembunyikan antarmuka di atas gambar",
+    "showChrome": "Tampilkan antarmuka di atas gambar"
+  },
+  "desktopGate": {
+    "title": "Morpher91 dirancang untuk komputer",
+    "body": "Studio morph ini menggunakan WebGPU, mouse, dan layar besar. Untuk menggunakan seluruh fiturnya, buka halaman ini di Mac atau PC dengan Chrome, Edge, atau Safari versi terbaru. iPad juga didukung.",
+    "unsupported": "Penggunaan di ponsel tidak didukung: tampilan dan performanya tidak dijamin.",
+    "copyLink": "Salin tautan",
+    "copied": "Tautan disalin",
+    "continueAnyway": "Tetap lanjutkan (tidak didukung)"
+  },
+  "assist": {
+    "stepSatisfied": "Langkah selesai. Lanjutkan jika Anda siap.",
+    "back": "Kembali",
+    "next": "Berikutnya",
+    "done": "Selesai",
+    "quit": "Keluar dari panduan",
+    "showMe": "Tunjukkan",
+    "step": "Langkah {{current}}/{{total}}",
+    "anchorMissing": "Elemen ini tidak terlihat dalam tampilan saat ini.",
+    "launcherTitle": "Apa yang ingin Anda lakukan?",
+    "launcherDescription": "Telusuri atau cari panduan sesuai kebutuhan Anda.",
+    "searchPlaceholder": "Cari panduan…",
+    "noResults": "Tidak ada panduan yang cocok.",
+    "suggestions": "Saran",
+    "categories": {
+      "start": "Mulai",
+      "features": "Penanda",
+      "layers-masks": "Lapisan dan masker",
+      "timeline-video": "Linimasa dan video",
+      "output": "Keluaran"
+    },
+    "shortcuts": {
+      "undo": "Urungkan",
+      "redo": "Ulangi",
+      "delete": "Hapus seleksi",
+      "stepFrame": "Maju/mundur satu bingkai",
+      "jumpEnds": "Ke awal / akhir",
+      "zen": "Mode zen (sembunyikan panel)",
+      "hideChrome": "Sembunyikan / tampilkan antarmuka di atas gambar"
+    }
+  },
+  "about": {
+    "credits": "Kredit",
+    "version": "v{{version}}",
+    "description": "Studio WebGPU dan WebCodecs untuk morph gambar dan video 2D.",
+    "author": "Dibuat oleh André Frélicot.",
+    "privacyTitle": "Privasi",
+    "privacy": "Gambar, video, dan proyek Anda diproses di perangkat Anda. Render dan ekspor berjalan di browser, tanpa mengirim media Anda ke server.",
+    "close": "Tutup",
+    "date": "September 2026"
+  },
+  "language": {
+    "title": "Bahasa",
+    "description": "Pilih bahasa antarmuka.",
+    "loading": "Memuat {{language}}…",
+    "loadError": "Bahasa ini tidak dapat dimuat. Periksa koneksi Anda dan coba lagi.",
+    "retry": "Coba lagi",
+    "names": {
+      "en": "Inggris",
+      "fr": "Prancis",
+      "de": "Jerman",
+      "es": "Spanyol",
+      "pt-BR": "Portugis (Brasil)",
+      "it": "Italia",
+      "tr": "Turki",
+      "id": "Indonesia",
+      "ru": "Rusia",
+      "ja": "Jepang",
+      "ko": "Korea",
+      "zh-Hans": "Tionghoa sederhana",
+      "th": "Thai",
+      "hi": "Hindi",
+      "bn": "Bengali",
+      "ar": "Arab"
+    },
+    "restoreError": "Bahasa {{language}} tidak dapat dipulihkan. Antarmuka ditampilkan dalam bahasa Inggris. Hubungkan ke internet untuk memuat bahasa ini, lalu coba lagi."
+  },
+  "algorithmNames": {
+    "crossfade": "Crossfade",
+    "mesh": "Jaring",
+    "thin-plate-spline": "Thin-Plate Spline",
+    "beier-neely": "Beier–Neely"
+  },
+  "algorithmShortNames": {
+    "crossfade": "Crossfade",
+    "mesh": "Jaring",
+    "thin-plate-spline": "TPS",
+    "beier-neely": "Beier–Neely"
+  },
+  "demo": {
+    "button": "Demo",
+    "title": "Media demo",
+    "subtitle": "Pilih dua gambar atau video untuk mengisi Sumber A dan Tujuan B.",
+    "slotEmpty": "kosong — pilih di bawah",
+    "swap": "Tukar A ↔ B",
+    "filterAll": "Semua",
+    "filterImages": "Gambar",
+    "filterVideos": "Video",
+    "tabAssets": "Media",
+    "tabPresets": "Contoh",
+    "presetsEmpty": "Belum ada contoh proyek.",
+    "load": "Muat ke proyek",
+    "loadError": "Media demo tidak dapat dimuat.",
+    "manifestError": "Katalog demo tidak dapat dimuat.",
+    "cta": "…atau muat media demo",
+    "kindImage": "Gambar",
+    "kindVideo": "Video",
+    "presetContent": {
+      "compare-four-methods": {
+        "description": "Pasangan wajah yang sama, dengan titik dan garis. Bandingkan mata dan mulut di pertengahan transisi.",
+        "name": "Perbandingan — empat algoritma"
+      },
+      "crossfade-reference": {
+        "description": "Tanpa penanda: amati kontur ganda, lalu coba tampilan perbandingan.",
+        "name": "Crossfade — mengamati gambar ganda"
+      },
+      "faces-points-tps": {
+        "description": "Pindahkan titik, tampilkan kisi TPS, lalu bandingkan hasilnya tanpa penambat tepi.",
+        "name": "Claire → Bunny — titik TPS"
+      },
+      "faces-lines-beier": {
+        "description": "Garis berarah pada mata, hidung, dan mulut. Atur pengaruhnya melalui a, b, dan p.",
+        "name": "Wajah — garis Beier–Neely"
+      },
+      "cars-mesh": {
+        "description": "Roda dan siluet memandu segitiga. Tampilkan jaring untuk mengamati deformasinya.",
+        "name": "Mobil — jaring segitiga"
+      },
+      "layer-full-frame": {
+        "description": "Sembunyikan lapisan teratas: tanpa masker, lapisan ini menggantikan seluruh gambar pada lapisan Global.",
+        "labels": {
+          "face": "Wajah seluruh gambar"
+        },
+        "name": "Lapisan — seluruh gambar"
+      },
+      "layer-region-mask": {
+        "description": "TPS pada wajah, Crossfade di sekitarnya. Periksa tampilan Masker dan Kontribusi; sesuaikan kontur dan pelembutan tepinya.",
+        "labels": {
+          "face": "Wajah dengan TPS"
+        },
+        "name": "Area — satu algoritma per bagian"
+      },
+      "mask-invert-blend": {
+        "description": "Masker melindungi wajah. Tampilkan dan sembunyikan lapisan untuk mengamati mode Kalikan dengan opasitas 40%.",
+        "labels": {
+          "outside": "Bagian luar dengan Kalikan"
+        },
+        "name": "Masker terbalik — Kalikan"
+      },
+      "blend-light": {
+        "description": "Dua lapisan mencerahkan gambar: Layar pada wajah, Tambah di sekitarnya. Amati tiap lapisan secara terpisah dan atur opasitasnya.",
+        "labels": {
+          "light": "Wajah dengan Layar",
+          "glow": "Bagian luar dengan Tambah"
+        },
+        "name": "Campuran — Layar dan Tambah"
+      },
+      "painted-mask": {
+        "description": "Masker yang dilukis pada A mengikuti TPS. Periksa tampilan Masker pada 25, 50, dan 75%, lalu coba kuas dan penghapus.",
+        "labels": {
+          "paint": "Wajah bermasker lukis TPS"
+        },
+        "name": "Masker lukis — mengikuti morph"
+      },
+      "combined-masks": {
+        "description": "Area bertepi tegas digabungkan dengan masker lukis. Periksa tampilan Masker, lalu coba penghapus di luar area tersebut.",
+        "labels": {
+          "paint": "Wajah bermasker lukis TPS"
+        },
+        "name": "Gabungan masker — area dan kuas"
+      },
+      "contours-push": {
+        "description": "Pilih Dorong titik (K), sesuaikan pipi, lalu urungkan. Tutup salinan kontur untuk mencoba poligon.",
+        "name": "Kontur — membentuk dengan Dorong titik"
+      },
+      "transition-classic": {
+        "description": "Bandingkan Standar dan Morph klasik: deformasi 0–100%, transisi pudar 30–70%. Perhatikan bagian awal dan akhir.",
+        "name": "Transisi — morph klasik"
+      },
+      "layers-timing": {
+        "description": "Transisi pudar wajah terjadi sebelum rambut. Dua rentang dan satu kurva Bézier; biarkan lapisan terlihat hingga akhir.",
+        "labels": {
+          "face": "Wajah bertransisi lebih awal"
+        },
+        "name": "Waktu — wajah lalu bagian luar"
+      },
+      "fruits-banana-pineapple": {
+        "description": "Polyline tertutup dianimasikan pada gambar diam. Pindahkan simbol berlian, lalu putar bolak-balik.",
+        "labels": {
+          "fruit": "Kontur TPS animasi"
+        },
+        "name": "Buah — keyframe dan bolak-balik"
+      },
+      "fruit-to-fox": {
+        "description": "Mahkota nanas menjadi telinga, buah menjadi wajah. Pasangkan siluet tanpa penanda wajah manusia.",
+        "name": "Nanas → Foxy — perubahan bentuk"
+      },
+      "transparent-cutout": {
+        "description": "Gambar 4:3 dalam kanvas persegi: ruang kosong di tepinya transparan. Ekspor PNG dengan latar Transparan; video menggabungkan latar dengan gambar.",
+        "name": "Ekspor — tepi transparan"
+      },
+      "video-faces-keyframes": {
+        "description": "44 penanda dilacak pada setiap bingkai: mata, hidung, bibir, dan rahang. Waktu masuk sumber klip B digeser untuk mendekatkan ekspresi wajah.",
+        "name": "Video — penanda dan keyframe"
+      },
+      "video-region-keyframes": {
+        "description": "Kontur dan garis mulut mengikuti setiap bingkai. Periksa masker, lalu pilih garis dan keyframe-nya.",
+        "labels": {
+          "videoFace": "Wajah animasi dengan TPS"
+        },
+        "name": "Video — masker dan garis animasi"
+      },
+      "video-photo-alive": {
+        "description": "Foto berubah menjadi video wajah yang sama dalam satu detik. Hanya sisi B yang memiliki keyframe; penanda A tetap diam.",
+        "name": "Foto → video — mulai bergerak"
+      },
+      "video-clips-timing": {
+        "description": "A: 0–3 dtk, B: 1,5–4,5 dtk. Penanda mengikuti waktu media meski klip dipangkas; morph terjadi saat klip bertumpang tindih.",
+        "name": "Klip — pemangkasan dan tumpang tindih"
+      },
+      "video-body-walk": {
+        "description": "16 penanda per bingkai. Pose polisi dideteksi; robot menggunakan penanda manual dan pelacakan optik. Lapisan aktif saat klip bertumpang tindih.",
+        "labels": {
+          "body": "Morph saat tumpang tindih"
+        },
+        "name": "Berjalan — morph seluruh tubuh"
+      }
+    },
+    "assets": {
+      "red-sport-car": "Mobil sport merah",
+      "red-city-car": "Mobil kota merah",
+      "foxy": "Foxy",
+      "bunny": "Bunny",
+      "claire": "Claire",
+      "anna": "Anna",
+      "foxy-singing": "Foxy bernyanyi",
+      "bunny-singing": "Bunny bernyanyi",
+      "claire-singing": "Claire bernyanyi",
+      "anna-singing": "Anna bernyanyi",
+      "cop-body-walk": "Polisi berjalan",
+      "karl2000-body-walk": "Karl2000 berjalan",
+      "banana": "Pisang",
+      "pineapple": "Nanas"
+    },
+    "presetsNote": "Contoh ini dibuat secara otomatis untuk memperagakan fitur studio. Hasil artistik tidak dijamin."
+  },
+  "guideText": {
+    "start": {
+      "loadImagesGuide": {
+        "title": "Memuat dua gambar",
+        "description": "Isi Sumber A dan Tujuan B dengan media demo atau file Anda sendiri.",
+        "keywords": "muat impor gambar demo media contoh prasetel sumber tujuan buka file",
+        "steps": {
+          "demo": {
+            "title": "Mulai dengan media demo",
+            "body": "Demo → Contoh menyediakan proyek untuk belajar. Setiap kartu menunjukkan pasangan sumber/tujuan dan satu latihan. Mulai dari Perbandingan — empat algoritma, lalu jelajahi masker, transisi, keyframe, dan video. Contoh terbuka pada waktu tertentu, dengan tampilan dan lapisan yang sesuai sudah dipilih. Nama penanda tetap dalam bahasa Inggris apa pun bahasa antarmukanya.\n\nContoh ini dibuat secara otomatis untuk memperagakan fitur studio. Hasil artistik tidak dijamin.",
+            "missingHint": "Buka pemilih Demo."
+          },
+          "source": {
+            "title": "Atau impor file sendiri — Sumber A",
+            "body": "Slot ini menerima gambar atau video sebagai sisi awal morph.",
+            "missingHint": "Buka tab Studio."
+          },
+          "target": {
+            "title": "Tujuan B",
+            "body": "Isi slot kedua. Setelah kedua media dimuat, proyek dibuat dan pratinjau muncul.",
+            "missingHint": "Buka tab Studio."
+          }
+        }
+      },
+      "chooseAlgorithmGuide": {
+        "title": "Memilih algoritma morph",
+        "description": "Pilih algoritma proyek dan kenali empat keluarga algoritma.",
+        "keywords": "algoritma crossfade jaring mesh tps thin-plate spline beier neely deformasi",
+        "preconditionHint": "Muat dua gambar terlebih dahulu. Cara tercepat adalah melalui tombol Demo di bilah atas.",
+        "steps": {
+          "algorithm-list": {
+            "title": "Empat algoritma",
+            "body": "Crossfade mencampur gambar tanpa deformasi. Jaring mengubah bentuk segitiga Delaunay. Thin-Plate Spline melengkungkan seluruh gambar dengan halus. Beier–Neely mengubah bentuk gambar mengikuti garis berarah.",
+            "missingHint": "Buka tab Studio dan bagian Algoritma."
+          },
+          "pick-tps": {
+            "title": "Coba Thin-Plate Spline",
+            "body": "Klik Thin-Plate Spline. Pratinjau diperbarui dengan deformasi yang baru.",
+            "missingHint": "Buka tab Studio dan bagian Algoritma."
+          },
+          "settings": {
+            "title": "Pengaturan algoritma",
+            "body": "Pengaturan algoritma aktif muncul di bawah kartu. Untuk TPS, penggeser λ mengatur keseimbangan antara ketepatan dan kehalusan.",
+            "missingHint": "Pilih TPS atau Beier–Neely untuk menampilkan pengaturannya."
+          }
+        }
+      },
+      "navigateViewsGuide": {
+        "title": "Menjelajahi tampilan studio",
+        "description": "Edit, Pratinjau, dan Tiga tampilan; perbesar, geser, dan reset tampilan.",
+        "keywords": "tampilan edit pratinjau tiga zoom perbesar geser reset navigasi viewport",
+        "preconditionHint": "Muat dua gambar terlebih dahulu. Cara tercepat adalah melalui tombol Demo di bilah atas.",
+        "steps": {
+          "toggle": {
+            "title": "Tiga pilihan tampilan",
+            "body": "Edit menampilkan A | B untuk menempatkan penanda. Pratinjau memperbesar hasil morph. Tiga tampilan menampilkan A | morph | B. Saat panel sempit, pilih tampilan dari menu.",
+            "missingHint": "Buka tab Studio."
+          },
+          "triple": {
+            "title": "Buka Tiga tampilan",
+            "body": "Klik Tiga tampilan. Anda dapat mengedit di kedua sisi sambil melihat hasil morph secara langsung di tengah. Jika panel pratinjau sempit, buka Kontrol pratinjau untuk memilih Hasil, Lapisan, Masker, atau Kontribusi, menampilkan gambar bantu, atau memeriksa tumpukan lapisan.",
+            "missingHint": "Buka tab Studio."
+          },
+          "zoom-pan": {
+            "title": "Perbesar, geser, dan reset",
+            "body": "Gunakan roda mouse atau gerakan mencubit untuk mengubah zoom. Tahan Spasi lalu seret, atau gunakan alat Geser tampilan (H). Klik dua kali atau ketuk dua kali untuk mereset tampilan. Pada perangkat sentuh, ruang kerja tetap di tempat; hanya panel yang dapat digulir.",
+            "missingHint": "Buka tab Studio dalam mode Edit atau Tiga tampilan."
+          }
+        }
+      },
+      "saveLoadGuide": {
+        "title": "Menyimpan dan membuka kembali proyek",
+        "description": "Simpan struktur dan gambar yang disertakan; hubungkan kembali video lokal saat membuka proyek.",
+        "keywords": "simpan buka muat proyek file morph json kembali",
+        "preconditionHint": "Muat dua gambar terlebih dahulu. Cara tercepat adalah melalui tombol Demo di bilah atas.",
+        "steps": {
+          "save": {
+            "title": "Simpan",
+            "body": "Klik Simpan untuk mengunduh file .morph.json yang berisi gambar, penanda, lapisan, dan linimasa. Data video tetap di perangkat Anda dan dirujuk melalui metadata. Tidak ada yang dikirim ke server."
+          },
+          "load": {
+            "title": "Buka kembali",
+            "body": "Tombol Buka memulihkan struktur proyek dan gambar yang disertakan. Untuk setiap video lokal, gunakan Hubungkan kembali pada slot A/B yang sesuai. Pemutaran dan ekspor tersedia kembali setelah semua file terhubung."
+          }
+        }
+      },
+      "aboutGuide": {
+        "title": "Kredit",
+        "description": "Pembuat, versi aplikasi, dan pemrosesan media di perangkat.",
+        "keywords": "Tentang Kredit Privasi",
+        "steps": {
+          "about": {
+            "title": "Buka Tentang",
+            "body": "Tentang di bilah atas menampilkan pembuat, versi aplikasi, dan pemrosesan media di perangkat Anda. Pada tampilan ringkas, buka menu Lainnya.",
+            "missingHint": "Keluar dari mode zen atau buka menu Lainnya untuk menemukan Tentang."
+          }
+        }
+      },
+      "languageGuide": {
+        "title": "Mengubah bahasa antarmuka",
+        "description": "Pilih bahasa untuk studio, contoh, dan panduan.",
+        "keywords": "bahasa terjemahan preferensi internasional",
+        "stepTitle": "Pilih bahasa Anda",
+        "body": "Buka pemilih bahasa di bilah atas. Setiap kartu menampilkan bendera dan nama bahasa dalam tulisannya sendiri. Pilihan Anda disimpan di perangkat ini. Antarmuka berubah setelah pemuatan selesai. Koneksi internet mungkin diperlukan untuk mengunduh font bahasa tersebut. Proyek dan nama penanda Anda tidak berubah. Jika bahasa yang tersimpan tidak dapat dipulihkan, aplikasi terbuka dalam bahasa Inggris dengan penjelasan dan tombol untuk mencoba lagi. Pada layar sempit, bilah atas dapat tersusun dalam beberapa baris agar semua perintah tetap terlihat."
+      }
+    },
+    "features": {
+      "needsProject": {
+        "preconditionHint": "Muat dua gambar terlebih dahulu. Cara tercepat adalah melalui tombol Demo di bilah atas."
+      },
+      "studioHint": "Buka tab Studio dalam mode Edit.",
+      "placePointsGuide": {
+        "title": "Menempatkan titik korespondensi",
+        "description": "Titik memberi tahu Jaring dan TPS lokasi mana pada A yang berpasangan dengan lokasi pada B.",
+        "keywords": "titik penanda korespondensi pasangan mesh jaring tps tempatkan sesuaikan",
+        "steps": {
+          "pick-tool": {
+            "title": "Alat Titik",
+            "body": "Pilih alat Titik (pintasan P)."
+          },
+          "place-a": {
+            "title": "Tandai detail pada A",
+            "body": "Klik bagian yang mudah dikenali (mata, sudut…) di panel Sumber A. Pegangan pasangannya muncul pada B."
+          },
+          "adjust-b": {
+            "title": "Sesuaikan sisi B",
+            "body": "Seret pegangan pada Tujuan B ke detail yang sama di gambar kedua. Pasangan ini menentukan deformasi."
+          },
+          "preview": {
+            "title": "Amati deformasi",
+            "body": "Beralih ke Pratinjau atau Tiga tampilan untuk melihat Jaring/TPS mengubah bentuk gambar melalui titik Anda."
+          }
+        }
+      },
+      "drawLinesGuide": {
+        "title": "Menggambar garis berarah (Beier–Neely)",
+        "description": "Pasangan garis mengendalikan medan deformasi Beier–Neely.",
+        "keywords": "garis segmen arah beier neely kontur gambar",
+        "steps": {
+          "pick-tool": {
+            "title": "Alat Garis",
+            "body": "Pilih alat Garis (pintasan L)."
+          },
+          "drag-line": {
+            "title": "Seret sepanjang kontur pada A",
+            "body": "Tekan dan seret untuk menggambar garis sepanjang kontur yang jelas (rahang, atap…). Pasangannya muncul pada B."
+          },
+          "orient-b": {
+            "title": "Pertahankan arah pada B",
+            "body": "Pindahkan kedua ujung garis pada B ke kontur yang sama dengan arah yang tetap sama. Beier–Neely menghitung proyeksi sejajar dan tegak lurus terhadap tiap garis."
+          },
+          "use-beier": {
+            "title": "Pilih Beier–Neely",
+            "body": "Garis hanya menghasilkan deformasi dengan algoritma Beier–Neely. Pilih kartunya.",
+            "missingHint": "Buka tab Studio dan bagian Algoritma."
+          }
+        }
+      },
+      "drawPolylineGuide": {
+        "title": "Menggambar polyline",
+        "description": "Buat garis bersambung titik demi titik atau dengan tangan bebas; lanjutkan dari salah satu ujungnya.",
+        "keywords": "polyline garis bersambung garis bersegmen kurva jalur tangan bebas gambar lanjut ujung",
+        "steps": {
+          "pick-tool": {
+            "title": "Alat Polyline",
+            "body": "Pilih alat Polyline (pintasan Y)."
+          },
+          "tap-by-tap": {
+            "title": "Titik demi titik",
+            "body": "Klik beberapa titik berurutan sepanjang kontur. ⏎ menyelesaikan, Esc membatalkan."
+          },
+          "freehand": {
+            "title": "Atau dengan tangan bebas",
+            "body": "Tekan dan seret dalam satu goresan. Jalur disederhanakan secara otomatis saat Anda melepaskannya."
+          },
+          "resume": {
+            "title": "Lanjutkan dari ujung",
+            "body": "Saat alat Polyline aktif, klik ujung polyline terbuka untuk melanjutkan jalurnya."
+          }
+        }
+      },
+      "closePolygonGuide": {
+        "title": "Menutup polyline terbuka",
+        "description": "Dua cara mengubah polyline terbuka menjadi poligon tertutup.",
+        "keywords": "tutup poligon polyline ujung titik pertama",
+        "steps": {
+          "intro": {
+            "title": "Dua cara menutup",
+            "body": "Polyline dapat ditutup saat menggambar, atau sesudahnya dengan alat Seleksi."
+          },
+          "close-first": {
+            "title": "Saat menggambar: klik titik pertama",
+            "body": "Klik kembali titik pertama saat menggambar. Jalur menutup dan gambar selesai."
+          },
+          "drop-endpoint": {
+            "title": "Sesudahnya: satukan kedua ujung",
+            "body": "Dengan alat Seleksi, seret satu ujung polyline terbuka ke ujung lainnya lalu lepaskan. Hasilnya sama."
+          }
+        }
+      },
+      "drawRegionGuide": {
+        "title": "Menggambar area",
+        "description": "Area tertutup dapat menjadi masker lapisan; atur pelembutan tepinya.",
+        "keywords": "area region masker laso kontur pelembutan tepi gambar",
+        "steps": {
+          "pick-tool": {
+            "title": "Alat Masker area",
+            "body": "Pilih alat Masker area. Konturnya selalu tertutup."
+          },
+          "outline": {
+            "title": "Kelilingi bagian pada A",
+            "body": "Klik titik-titik atau gambar bebas mengelilingi bagian yang diinginkan (wajah, objek). Selesaikan dengan ⏎ atau tutup jalurnya."
+          },
+          "feather": {
+            "title": "Lembutkan tepinya",
+            "body": "Pilih area lalu atur Pelembutan tepi. Lapisan yang menggunakan area ini sebagai masker juga memiliki mode masker dan pengaturan pelembutannya sendiri.",
+            "missingHint": "Buka bagian Seleksi di panel properti kanan."
+          }
+        }
+      },
+      "manageSelectionGuide": {
+        "title": "Memilih, mengganti nama, mengunci, dan menyembunyikan",
+        "description": "Kelola penanda dan amati penyorotan pasangan A↔B saat kursor diarahkan ke penanda.",
+        "keywords": "seleksi pilih banyak shift nama kunci sembunyikan sorot kursor penanda",
+        "steps": {
+          "pick-tool": {
+            "title": "Alat Seleksi",
+            "body": "Pilih alat Seleksi (pintasan V)."
+          },
+          "select": {
+            "title": "Klik pegangan",
+            "body": "Klik pegangan penanda untuk memilihnya. Gunakan Shift untuk memilih lebih dari satu. Saat kursor diarahkan ke pegangan, pasangannya di panel lain disorot."
+          },
+          "inspector": {
+            "title": "Nama, kunci, dan visibilitas",
+            "body": "Di bagian Seleksi, Anda dapat mengganti nama penanda serta mengubah opsi Terlihat dan Terkunci.",
+            "missingHint": "Buka bagian Seleksi di panel properti kanan."
+          },
+          "list": {
+            "title": "Daftar Penanda",
+            "body": "Daftar di kiri menunjukkan status setiap penanda. Ikon mata menyembunyikan, ikon gembok mengunci, dan klik pada baris memilih penanda."
+          }
+        }
+      },
+      "pushPointsGuide": {
+        "title": "Mendorong titik dan mengurungkan",
+        "description": "Bentuk ulang pegangan di sekitar kursor dengan Dorong titik; urungkan atau ulangi setiap perubahan.",
+        "keywords": "dorong bentuk deformasi lokal radius urungkan ulangi",
+        "steps": {
+          "pick-tool": {
+            "title": "Alat Dorong titik",
+            "body": "Pilih alat Dorong titik (pintasan K)."
+          },
+          "sculpt": {
+            "title": "Seret untuk membentuk",
+            "body": "Seret pada gambar. Setiap pegangan di dalam lingkaran terdorong, dengan pengaruh lebih kuat di tengah."
+          },
+          "undo": {
+            "title": "Urungkan / ulangi",
+            "body": "Cmd/Ctrl+Z mengurungkan perubahan penanda; Cmd/Ctrl+Shift+Z menerapkannya kembali."
+          }
+        }
+      }
+    },
+    "layers": {
+      "layersHint": "Buka bagian Lapisan di panel properti kanan.",
+      "needsProject": {
+        "preconditionHint": "Muat dua gambar terlebih dahulu. Cara tercepat adalah melalui tombol Demo di bilah atas."
+      },
+      "activateLayerStep": {
+        "title": "Aktifkan lapisan tambahan",
+        "body": "Klik lapisan selain Global di bagian Lapisan. Propertinya muncul tepat di bawah daftar."
+      },
+      "createLayerGuide": {
+        "title": "Membuat lapisan",
+        "description": "Tumpuk lapisan di atas dasar Global dan baca indikator kontribusinya.",
+        "keywords": "lapisan buat tambah tumpukan global urutan indikator kontribusi",
+        "steps": {
+          "add": {
+            "title": "Tambahkan lapisan",
+            "body": "Klik Tambah lapisan. Lapisan baru langsung menjadi aktif."
+          },
+          "global-vs-layers": {
+            "title": "Global dan lapisan tambahan",
+            "body": "Global merender morph bawaan di bagian bawah. Lapisan tambahan digabungkan di atasnya sesuai urutan daftar. Gunakan panah untuk mengubah urutan tumpukan."
+          },
+          "badges": {
+            "title": "Indikator kontribusi",
+            "body": "Setiap baris menunjukkan pengaruh lapisan saat ini: seluruh gambar (menutupi semuanya), bermasker, tanpa efek, di luar klip…"
+          }
+        }
+      },
+      "layerOverrideGuide": {
+        "title": "Mengubah algoritma lapisan",
+        "description": "Tetapkan algoritma khusus untuk satu lapisan tanpa mengubah bawaan proyek.",
+        "keywords": "lapisan algoritma khusus override jaring mesh tps beier",
+        "steps": {
+          "override": {
+            "title": "Pilih algoritma khusus",
+            "body": "Menu Algoritma dalam properti lapisan menggantikan algoritma bawaan proyek hanya untuk lapisan ini."
+          },
+          "badge": {
+            "title": "Indikator algoritma khusus",
+            "body": "Judul bagian Algoritma kini menampilkan indikator algoritma khusus lapisan. Semua kontrol tetap dapat diakses meski penanda sedang dipilih.",
+            "missingHint": "Buka bagian Algoritma di panel properti kanan."
+          }
+        }
+      },
+      "maskRegionGuide": {
+        "title": "Membatasi lapisan dengan masker area",
+        "description": "Batasi lapisan pada area yang ditetapkan, dengan tepi tegas atau lembut; masker juga dapat dibalik.",
+        "keywords": "masker area tetapkan lapisan tegas pelembutan tepi balik",
+        "preconditionHint": "Gambar area terlebih dahulu dengan alat Masker area. Menu Masker menampilkan daftar area.",
+        "steps": {
+          "assign": {
+            "title": "Tetapkan area",
+            "body": "Pilih area dari menu Masker. Lapisan hanya digabungkan di dalam area tersebut."
+          },
+          "modes": {
+            "title": "Tepi tegas, lembut, atau masker terbalik",
+            "body": "Mode masker beralih antara potongan tegas dan tepi lembut dengan nilai pelembutan yang dapat diatur. Balik masker menukar bagian dalam dan luar."
+          }
+        }
+      },
+      "paintMaskGuide": {
+        "title": "Melukis masker",
+        "description": "Lukis masker langsung pada gambar dan lihat hasilnya seketika di pratinjau.",
+        "keywords": "lukis kuas masker diameter kekerasan kekuatan penghapus bersihkan langsung",
+        "steps": {
+          "pick-brush": {
+            "title": "Kuas masker",
+            "body": "Pilih Kuas masker (pintasan B). Alat ini melukis masker pada lapisan aktif.",
+            "missingHint": "Buka tab Studio."
+          },
+          "settings": {
+            "title": "Pengaturan kuas",
+            "body": "Diameter, Kekerasan, dan Kekuatan menentukan goresan. Penghapus menghapus lukisan: centang kotaknya atau tahan ⌥ sambil menyeret.",
+            "missingHint": "Pengaturan muncul di bawah alat saat kuas aktif."
+          },
+          "paint": {
+            "title": "Lukis pada gambar",
+            "body": "Seret kuas pada gambar. Pratinjau tengah menampilkan hasilnya secara langsung. Gunakan tampilan Hasil dan Masker untuk memeriksa efeknya. Masker lukis mengikuti deformasi lapisan sehingga bergerak bersama isinya selama morph.",
+            "missingHint": "Buka tab Studio dalam mode Edit."
+          },
+          "clear": {
+            "title": "Bersihkan kapan saja",
+            "body": "Masker lukis → Bersihkan menghapus seluruh masker lukis pada lapisan."
+          }
+        }
+      },
+      "layerLookGuide": {
+        "title": "Opasitas, campuran, klip, dan transisi",
+        "description": "Atur kontribusi lapisan, batasi pada rentang linimasa, dan tentukan waktu transisi pudarnya.",
+        "keywords": "opasitas campuran mode komposisi klip linimasa mulai durasi interpolasi transisi deformasi warp dissolve rentang prasetel morph klasik bezier kurva gambar ganda",
+        "steps": {
+          "opacity": {
+            "title": "Opasitas",
+            "body": "Turunkan opasitas di bawah 1 untuk mencampur lapisan dengan yang ada di bawahnya."
+          },
+          "blend": {
+            "title": "Mode campuran",
+            "body": "Menu Campuran mengatur penggabungan lapisan dengan lapisan di bawahnya: Normal, Kalikan, Layar, atau Tambah. Kalikan mengalikan nilai warna; Layar mencerahkan gambar; Tambah menjumlahkan warna beserta opasitasnya dan membatasi hasil pada nilai maksimum yang diizinkan."
+          },
+          "clip": {
+            "title": "Batasi lapisan dalam waktu",
+            "body": "Seret blok lapisan pada linimasa untuk memindahkannya, atau seret tepinya untuk memangkas. Anda juga dapat mengatur Mulai dan Durasi dalam properti lapisan."
+          },
+          "windows": {
+            "title": "Deformasi bertahap, transisi pudar lebih singkat",
+            "body": "Bagian Transisi menentukan dua rentang sebagai persentase klip. Deformasi mengatur perubahan bentuk; Transisi pudar mengatur pencampuran gambar A dan B. Prasetel Morph klasik mempertahankan deformasi pada 0–100% dan membatasi transisi pudar pada 30–70%. Ini mengurangi tumpang tindih detail yang belum sejajar pada awal dan akhir."
+          },
+          "windows-timeline": {
+            "title": "Baca rentang pada linimasa",
+            "body": "Tepi bawah blok lapisan menunjukkan dua rentang: pita terang untuk transisi pudar dan garis tipis untuk deformasi. Anda dapat melihat letak transisi pudar dalam klip."
+          },
+          "easing": {
+            "title": "Atur kurva",
+            "body": "Kurva laju mengatur progres di dalam kedua rentang. Pilih salah satu dari lima kurva bawaan, atau kustom (Bézier) dengan dua pegangan yang dapat digeser. Centang “Kurva terpisah untuk transisi pudar” untuk mengatur progresnya secara terpisah dari deformasi."
+          },
+          "global-too": {
+            "title": "Juga untuk lapisan Global",
+            "body": "Pilih Global. Lapisan ini juga memiliki bagian Transisi, dengan rentang bawaan 0–100%. Pada Crossfade, hanya transisi pudar yang berpengaruh karena algoritma ini tidak mengubah bentuk gambar."
+          }
+        }
+      }
+    },
+    "output": {
+      "needsProject": {
+        "preconditionHint": "Muat dua gambar terlebih dahulu. Cara tercepat adalah melalui tombol Demo di bilah atas."
+      },
+      "timelineGuide": {
+        "title": "Menggunakan linimasa",
+        "description": "Telusuri animasi, putar, maju bingkai demi bingkai, dan pindahkan klip.",
+        "keywords": "linimasa timeline scrub putar jeda bingkai kode waktu klip pindah pangkas zen tab ciutkan panel penggaris penunjuk waktu",
+        "steps": {
+          "scrub": {
+            "title": "Geser penunjuk waktu",
+            "body": "Klik atau seret pada penggaris. Penunjuk waktu berpindah dan pratinjau menampilkan bingkai pada saat tersebut. Dengan stylus, sentuh posisi yang diinginkan dan tetap tempelkan ujungnya pada layar saat menggeser.",
+            "missingHint": "Buka tab Studio."
+          },
+          "transport": {
+            "title": "Putar, jeda, dan langkah per bingkai",
+            "body": "Klik Putar untuk menjalankan animasi dalam waktu nyata. Tombol panah atau tombol ←/→ memundurkan atau memajukan satu bingkai. Alt+klik pada tombol panah berpindah ke awal atau akhir. Kode waktu dibaca sebagai detik:bingkai.",
+            "missingHint": "Buka tab Studio."
+          },
+          "clips": {
+            "title": "Pindahkan dan pangkas klip",
+            "body": "Gambar dan video memiliki klip pada trek A/B di atas lapisan. Seret blok atau tepinya; memilih klip menampilkan Mulai dan Durasi. Gambar diam tidak memiliki durasi sumber. Memperpanjang klipnya dapat memperpanjang proyek. Di luar suatu klip, hanya media lainnya yang berkontribusi. Jika keduanya tidak ada, latar belakang ditampilkan.",
+            "missingHint": "Buka tab Studio."
+          },
+          "still-image-timing": {
+            "title": "Atur lama gambar ditampilkan",
+            "body": "Pilih klip gambar pada A atau B lalu masukkan durasinya dalam detik atau detik:bingkai. Memperpendek klip tidak mengubah durasi proyek; memperpanjangnya akan memperpanjang linimasa jika perlu. Keyframe penanda tetap mengikuti waktu utama. Memindahkan atau memperpanjang klip tidak memindahkan atau meregangkan animasinya. Klip disimpan bersama proyek.",
+            "missingHint": "Buka tab Studio."
+          },
+          "zen": {
+            "title": "Mode zen tetap menampilkan penggaris",
+            "body": "{{shortcut}} menyembunyikan ketiga panel agar morph memenuhi layar. Linimasa diciutkan menjadi bilah setinggi 40 px yang tetap menampilkan penggaris ringkas, tanda skala, kode waktu, dan penunjuk waktu. Anda tetap dapat mengklik atau menyeret penunjuk waktu untuk menelusuri animasi. Tekan {{shortcut}} lagi untuk mengembalikan panel."
+          }
+        }
+      },
+      "videosGuide": {
+        "title": "Membuat morph antarvideo",
+        "description": "Impor video, atur klip A/B, dan pasang keyframe penanda.",
+        "keywords": "video klip impor keyframe bingkai kunci pasang trek bernyanyi berlian seret waktu",
+        "steps": {
+          "get-videos": {
+            "title": "Muat dua video",
+            "body": "Dialog Demo menyediakan empat video bernyanyi dan dua video berjalan melalui filter Video. Anda juga dapat menjatuhkan video sendiri ke slot A/B. Menggabungkan gambar dan video juga bisa. Proyek yang disimpan mempertahankan metadata video dan meminta Anda menghubungkan kembali file lokal saat dibuka lagi.",
+            "missingHint": "Buka pemilih Demo."
+          },
+          "place-clips": {
+            "title": "Atur klip A/B",
+            "body": "Setiap video memiliki trek sendiri. Seret klip untuk memindahkan dan tepinya untuk memangkas; gunakan kolom mulai/masuk/durasi untuk nilai yang tepat. Memindahkan atau memangkas klip memperbarui pratinjau pada posisi penunjuk waktu tanpa harus menggeser penunjuknya; durasi proyek tetap sama. Keyframe penanda tetap terikat pada waktu media sumber, bahkan setelah pemangkasan, serta tersimpan saat proyek disimpan dan dibuka kembali. Di luar klipnya, sisi ini tidak ikut dalam pratinjau maupun ekspor; sisi lainnya mengisi gambar.",
+            "missingHint": "Buka tab Studio."
+          },
+          "keyframes": {
+            "title": "Pasang keyframe",
+            "body": "Pilih penanda. Baris Keyframe menyediakan kontrol per sisi: sebelumnya ◀, berlian ◆ untuk memasang atau menghapus keyframe pada waktu saat ini, berikutnya ▶, dan jumlah keyframe. Penanda bergerak di antara keyframe. Pada gambar diam, penanda tetap diam hingga Anda memasang keyframe pertama dengan ◆. Setelah itu, memindahkan penanda pada waktu lain menambahkan keyframe dan dapat melengkungkan lintasan morph.",
+            "missingHint": "Buka bagian Seleksi di panel properti kanan."
+          },
+          "timeline-keyframes": {
+            "title": "Edit keyframe pada linimasa",
+            "body": "Keyframe penanda terpilih muncul sebagai berlian pada trek A dan B, tepat pada waktu pemutarannya. Klik untuk menuju waktunya, seret untuk mengubah waktu (diselaraskan ke bingkai dan dapat diurungkan sekaligus), atau Alt+klik untuk menghapus. Berlian yang terlalu berdekatan digabungkan menjadi bilah dengan jumlah keyframe. Gunakan panah di panel properti untuk menjangkaunya.",
+            "missingHint": "Buka tab Studio."
+          }
+        }
+      },
+      "compareGuide": {
+        "title": "Membandingkan algoritma",
+        "description": "Lihat keempat algoritma berdampingan pada proyek yang sama.",
+        "keywords": "bandingkan kisi berdampingan crossfade mesh jaring tps beier",
+        "steps": {
+          "open": {
+            "title": "Buka Bandingkan",
+            "body": "Tab Bandingkan menampilkan kisi 2×2 dengan gambar, penanda, dan nilai τ yang sama."
+          },
+          "read": {
+            "title": "Amati kisi",
+            "body": "Crossfade menghasilkan kontur ganda saat detail kedua gambar tidak sejajar. Jaring, TPS, dan Beier–Neely mengubah kedua gambar menuju bentuk perantara yang sama untuk menyelaraskan detail yang berpasangan."
+          }
+        }
+      },
+      "exportGuide": {
+        "title": "Mengekspor ke MP4 atau gambar",
+        "description": "Ekspor morph sebagai video atau arsip ZIP berisi gambar PNG.",
+        "keywords": "ekspor mp4 webm av1 zip gambar video render unduh",
+        "steps": {
+          "open": {
+            "title": "Buka Ekspor",
+            "body": "Semua bingkai dirender di perangkat Anda. Tidak ada yang dikirim ke server."
+          },
+          "settings": {
+            "title": "Pilih keluaran",
+            "body": "Video memerlukan WebCodecs dan enkoder H.264, VP9, atau AV1 yang tersedia. Urutan gambar PNG tidak memerlukan codec video dan dapat mempertahankan latar transparan. Video digabungkan dengan latar hitam atau putih. Atur resolusi, durasi, dan laju bingkai."
+          },
+          "run": {
+            "title": "Ekspor",
+            "body": "Studio menghitung setiap bingkai dan menampilkan progres, lalu mengunduh file. Selama ekspor, tombol yang sama dapat digunakan untuk membatalkannya."
+          }
+        }
+      },
+      "shortcutsGuide": {
+        "title": "Pintasan keyboard",
+        "description": "Semua pintasan diambil langsung dari daftar pintasan aplikasi.",
+        "keywords": "keyboard papan ketik pintasan tombol bantuan",
+        "steps": {
+          "list": {
+            "title": "Pintasan keyboard"
+          }
+        }
+      }
+    }
+  }
+}
