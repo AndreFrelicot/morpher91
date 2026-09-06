@@ -119,3 +119,26 @@ References: [Apple status-bar metadata](https://developer.apple.com/library/arch
 The manifest, icon set and small native service worker follow the approach
 used by [Lorenz Clash](https://github.com/AndreFrelicot/lorenzclash). Morpher91
 precaches all application chunks and lets updates wait for open editors.
+
+## Cloudflare Workers Builds
+
+The existing deployment is a Worker serving static assets, not a Pages project.
+`app/wrangler.jsonc` targets `morpher91`, serves `app/dist/`, and retains the
+existing `morpher91.andrefrelicot.dev` custom domain and workers.dev endpoint.
+Version preview URLs remain disabled, matching the existing Worker configuration.
+
+To connect the existing Worker to GitHub, use Settings → Builds → Connect:
+
+- Repository: `AndreFrelicot/morpher91`; production branch: `main`.
+- Root directory: `app`.
+- Build command: `pnpm build`.
+- Deploy command: `npx wrangler deploy` (or `npx wrangler@4.129.0 deploy` to pin the tested version).
+- Disable preview builds while version preview URLs are disabled.
+- Pin the build environment to Node.js 22.20.0 and pnpm 11.25.0.
+
+The build command must finish before deploying. A local configuration check is
+`wrangler deploy --dry-run` from `app/` after building; this does not upload or
+activate a deployment. No API tokens belong in the repository.
+
+See [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/)
+and [build configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/).
