@@ -65,7 +65,12 @@ beforeEach(() => {
 function dispatchFetch(path: string, mode = "cors") {
   let response: Promise<Response> | undefined;
   handlers.get("fetch")!({
-    request: { method: "GET", url: `https://morpher.test${path}`, mode },
+    request: {
+      method: "GET",
+      url: `https://morpher.test${path}`,
+      mode,
+      redirect: mode === "navigate" ? "manual" : "follow",
+    },
     respondWith: (promise: Promise<Response>) => {
       response = promise;
     },
@@ -121,13 +126,26 @@ describe("font and shell cache policy", () => {
     expect(dispatchFetch("/demo/anna.webp")).toBeUndefined();
   });
 
-  it("keeps navigation tied to the installed shell HTML", async () => {
-    shellCache.match.mockResolvedValue(new Response("installed HTML"));
-    expect(await (await dispatchFetch("/", "navigate"))!.text()).toBe(
-      "installed HTML",
-    );
-    expect(shellCache.match).toHaveBeenCalledWith("/index.html");
-  });
+  it.each(["/", "/?lang=fr", "/index.html"])(
+    "serves non-redirected installed HTML for offline navigation to %s",
+    async (path) => {
+      const html = new Response("installed HTML");
+      // Cloudflare redirects /index.html to /. Cache.addAll follows that
+      // redirect, but navigation cannot consume the resulting response.
+      const redirectedHtml = new Response("redirected HTML");
+      Object.defineProperty(redirectedHtml, "redirected", { value: true });
+      shellCache.match.mockImplementation(async (key: string) =>
+        key === "/" ? html : redirectedHtml,
+      );
+      fetchMock.mockRejectedValue(new TypeError("offline"));
+
+      const response = await dispatchFetch(path, "navigate");
+      expect(response!.redirected).toBe(false);
+      expect(await response!.text()).toBe("installed HTML");
+      expect(shellCache.match).toHaveBeenCalledWith("/");
+      expect(fetchMock).not.toHaveBeenCalled();
+    },
+  );
 
   it("serves an unused JSON catalogue from the installed shell while offline", async () => {
     shellCache.match.mockResolvedValue(Response.json({ language: "ar" }));

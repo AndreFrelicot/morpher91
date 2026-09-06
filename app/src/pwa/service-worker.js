@@ -36,7 +36,9 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET" || url.origin !== self.location.origin) return;
 
   // Keep the HTML and its hashed chunks from the same fully installed build.
-  const path = request.mode === "navigate" ? "/index.html" : url.pathname;
+  // Use the canonical URL: Cloudflare redirects /index.html to /, and a
+  // cached response that followed a redirect cannot satisfy a navigation.
+  const path = request.mode === "navigate" ? "/" : url.pathname;
   if (FONTS.includes(path)) {
     const response = (async () => {
       let cache;

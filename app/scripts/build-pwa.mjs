@@ -36,6 +36,7 @@ const onDemandFonts = fonts.map((font) => font.full.url);
 // Demo media and user files are deliberately outside the application cache.
 const shell = [
   ...new Set([
+    // Cache HTML only at its canonical URL; /index.html redirects on Cloudflare.
     "/",
     ...fonts.flatMap((font) => [font.native.url, font.license]),
     ...sharedFonts.flatMap((font) => [font.url, font.license]),
@@ -47,7 +48,7 @@ const shell = [
           path.startsWith("licenses/") ||
           path === "THIRD_PARTY_NOTICES.txt" ||
           manifests.has(path) ||
-          /^(index\.html|favicon.*|apple-touch-icon(?:-\d+x\d+)?\.png|icon-.*\.png)$/.test(
+          /^(favicon.*|apple-touch-icon(?:-\d+x\d+)?\.png|icon-.*\.png)$/.test(
             path,
           )
         );

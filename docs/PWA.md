@@ -32,6 +32,14 @@ does not reload a live studio session or interrupt an unsaved edit. Cache
 cleanup is restricted to `morpher91-*`; unrelated applications are untouched.
 Keep old hashed assets available during deployment for already-open clients.
 
+Cache and serve the shell HTML at `/`, never `/index.html`. Cloudflare's default
+HTML handling redirects `/index.html` to `/`. Precaching follows that redirect;
+returning the resulting cached response for a navigation is rejected by browsers
+(Safari: "Response served by service worker has redirections"; Chrome:
+`ERR_FAILED`). Navigation uses the non-redirected `/` response from the installed
+build, including when offline. Each origin has its own service worker and cache,
+so the custom domain and workers.dev can exhibit different symptoms.
+
 Verify with `pnpm preview --host 127.0.0.1`: load once online, wait for service
 worker activation, switch the browser offline and reload. Vite's development
 server does not enable the worker.
