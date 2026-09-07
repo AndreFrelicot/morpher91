@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import { FOCUS_RING } from "@/ui/focusRing";
 import { useEditorStore } from "@/store/editorStore";
 import { hasMissingProjectVideos, useProjectStore } from "@/store/projectStore";
-import { usePenScrub } from "../usePenScrub";
+import { usePointerScrub } from "../usePointerScrub";
 
 /**
  * Compact transport for the mobile shell (PRD M12 lot 2): play/pause + a native
@@ -28,7 +28,7 @@ export function MobileTimeline() {
   const project = useProjectStore((s) => s.project);
   const mediaMissing = useProjectStore(hasMissingProjectVideos);
   const durationSec = Math.max(0.001, timelineDurationSec(project));
-  const scrub = usePenScrub(durationSec, seekTimeline);
+  const scrub = usePointerScrub(durationSec, seekTimeline);
 
   return (
     <div

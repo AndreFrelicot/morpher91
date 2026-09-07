@@ -1,7 +1,7 @@
 import { useRef, type ChangeEvent, type PointerEvent } from "react";
 
-/** Explicit Pencil dragging; mouse, keyboard and AT keep the native range. */
-export function usePenScrub(
+/** Direct finger/Pencil dragging; mouse, keyboard and AT keep the native range. */
+export function usePointerScrub(
   durationSec: number,
   onChange: (sec: number) => void,
 ) {
@@ -26,12 +26,20 @@ export function usePenScrub(
   };
 
   return {
+    // Own the gesture before contact so Safari cannot turn it into a pan.
+    style: { touchAction: "none" } as const,
+    "data-timeline-scrub": true,
     onPointerDown: (event: PointerEvent<HTMLInputElement>) => {
       if (pointerId.current !== null) {
         event.preventDefault();
         return;
       }
-      if (event.pointerType !== "pen" || event.button !== 0) return;
+      if (
+        (event.pointerType !== "pen" && event.pointerType !== "touch") ||
+        event.button !== 0 ||
+        event.isPrimary === false
+      )
+        return;
       // Do not let the native range start a competing thumb drag in Safari.
       event.preventDefault();
       pointerId.current = event.pointerId;

@@ -96,13 +96,14 @@ certify pressure behavior, simultaneous palm/finger input or every gesture on
 hardware. In particular the shared canvas gesture recognizer currently treats
 any two pointers as a pinch; Pencil plus palm needs separate device testing.
 
-Timeline scrubbing uses `usePenScrub` for pen input on both ruler variants and
+Timeline scrubbing uses `usePointerScrub` for finger and pen input on both ruler variants and
 the mobile transport. Pointer-down seeks from the contact's horizontal position
 and captures that pointer, so vertical drift outside the ruler does not end the
 drag. Move/up update the same timeline transport; cancel/lost capture end the
-gesture. Values clamp to the timeline endpoints. Mouse, keyboard and assistive
-technology retain the native range behavior. The scrub guide includes the
-stylus gesture in all 16 locales; its existing ruler anchor is unchanged.
+gesture. Values clamp to the timeline endpoints. The scrub controls use `touch-action: none` and are excluded from the document
+touchmove guard, so Safari cannot take over a drag when the finger drifts vertically.
+Mouse, keyboard and assistive technology retain the native range behavior.
+The scrub guide includes the finger and stylus gesture in all 16 locales; its existing ruler anchor is unchanged.
 
 For tablet development over local HTTPS, use a trusted certificate and a reverse
 proxy to the Vite server. Set Vite's allowed hosts explicitly for your own hostname.

@@ -1093,7 +1093,7 @@
         "steps": {
           "scrub": {
             "title": "Geser penunjuk waktu",
-            "body": "Klik atau seret pada penggaris. Penunjuk waktu berpindah dan pratinjau menampilkan bingkai pada saat tersebut. Dengan stylus, sentuh posisi yang diinginkan dan tetap tempelkan ujungnya pada layar saat menggeser.",
+            "body": "Klik atau seret pada penggaris. Penunjuk waktu berpindah dan pratinjau menampilkan bingkai pada saat tersebut. Dengan jari atau stylus, sentuh posisi yang diinginkan dan tetap sentuh layar saat menggeser.",
             "missingHint": "Buka tab Studio."
           },
           "transport": {

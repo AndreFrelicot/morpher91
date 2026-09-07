@@ -43,38 +43,41 @@ beforeEach(() => {
 });
 
 describe("MobileTimeline missing videos", () => {
-  it("seeks immediately and continuously with the Pencil even when playback is unavailable", () => {
-    render(<MobileTimeline />);
-    const slider = screen.getByRole("slider");
-    slider.setPointerCapture = vi.fn();
-    slider.hasPointerCapture = () => true;
-    slider.releasePointerCapture = vi.fn();
-    vi.spyOn(slider, "getBoundingClientRect").mockReturnValue({
-      left: 0,
-      width: 200,
-    } as DOMRect);
-    const pen = (type: string, x: number) => {
-      const event = new MouseEvent(type, {
-        bubbles: true,
-        cancelable: true,
-        clientX: x,
-        button: 0,
-      });
-      Object.defineProperties(event, {
-        pointerId: { value: 1 },
-        pointerType: { value: "pen" },
-      });
-      fireEvent(slider, event);
-    };
-    pen("pointerdown", 150);
-    expect(useEditorStore.getState().tauSec).toBe(3);
-    pen("pointermove", 50);
-    expect(useEditorStore.getState().tauSec).toBe(1);
-    expect(slider).toHaveValue("1");
-    pen("pointerup", 100);
-    expect(useEditorStore.getState().tauSec).toBe(2);
-    expect(slider.releasePointerCapture).toHaveBeenCalledWith(1);
-  });
+  it.each(["pen", "touch"])(
+    "seeks immediately and continuously with %s even when playback is unavailable",
+    (pointerType) => {
+      render(<MobileTimeline />);
+      const slider = screen.getByRole("slider");
+      slider.setPointerCapture = vi.fn();
+      slider.hasPointerCapture = () => true;
+      slider.releasePointerCapture = vi.fn();
+      vi.spyOn(slider, "getBoundingClientRect").mockReturnValue({
+        left: 0,
+        width: 200,
+      } as DOMRect);
+      const pointer = (type: string, x: number) => {
+        const event = new MouseEvent(type, {
+          bubbles: true,
+          cancelable: true,
+          clientX: x,
+          button: 0,
+        });
+        Object.defineProperties(event, {
+          pointerId: { value: 1 },
+          pointerType: { value: pointerType },
+        });
+        fireEvent(slider, event);
+      };
+      pointer("pointerdown", 150);
+      expect(useEditorStore.getState().tauSec).toBe(3);
+      pointer("pointermove", 50);
+      expect(useEditorStore.getState().tauSec).toBe(1);
+      expect(slider).toHaveValue("1");
+      pointer("pointerup", 100);
+      expect(useEditorStore.getState().tauSec).toBe(2);
+      expect(slider.releasePointerCapture).toHaveBeenCalledWith(1);
+    },
+  );
 
   it("disables playback and explains why", () => {
     render(<MobileTimeline />);

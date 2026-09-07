@@ -1059,7 +1059,7 @@
         "steps": {
           "scrub": {
             "title": "Oynatma kafasını taşıyın",
-            "body": "Cetvele tıklayın veya üzerinde sürükleyin. Oynatma kafası taşınır ve önizleme o andaki kareyi gösterir. Kalemle istediğiniz konuma dokunun ve sürüklerken kalemin ucunu ekrandan kaldırmayın.",
+            "body": "Cetvele tıklayın veya üzerinde sürükleyin. Oynatma kafası taşınır ve önizleme o andaki kareyi gösterir. Parmağınızla veya kalemle istediğiniz konuma dokunun ve sürüklerken ekranla teması kesmeyin.",
             "missingHint": "Stüdyo sekmesini açın."
           },
           "transport": {

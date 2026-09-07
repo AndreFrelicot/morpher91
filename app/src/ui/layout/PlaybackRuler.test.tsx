@@ -2,11 +2,18 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import i18n from "@/i18n";
 import { PlaybackRuler } from "./PlaybackRuler";
+import { installViewportScrollLock } from "@/lib/viewport/lockViewportScroll";
 import { buildRulerTicks } from "./timelineFormat";
 
 const position = () => i18n.t("timeline.position");
 
-function penEvent(target: HTMLElement, type: string, x: number, id = 1) {
+function pointerEvent(
+  target: HTMLElement,
+  type: string,
+  x: number,
+  id = 1,
+  pointerType = "pen",
+) {
   const event = new MouseEvent(type, {
     bubbles: true,
     cancelable: true,
@@ -15,7 +22,7 @@ function penEvent(target: HTMLElement, type: string, x: number, id = 1) {
     button: 0,
   });
   Object.defineProperties(event, {
-    pointerType: { value: "pen" },
+    pointerType: { value: pointerType },
     pointerId: { value: id },
   });
   fireEvent(target, event);
@@ -38,9 +45,14 @@ function mockRulerBounds(slider: HTMLElement) {
 }
 
 describe("PlaybackRuler", () => {
-  it.each([false, true])(
-    "scrubs immediately with a captured Pencil, including outside the ruler (compact=%s)",
-    (compact) => {
+  it.each([
+    [false, "pen"],
+    [true, "pen"],
+    [false, "touch"],
+    [true, "touch"],
+  ] as const)(
+    "scrubs immediately with capture, including outside the ruler (compact=%s, pointer=%s)",
+    (compact, pointerType) => {
       const onChange = vi.fn();
       render(
         <PlaybackRuler
@@ -53,29 +65,37 @@ describe("PlaybackRuler", () => {
       );
       const slider = screen.getByRole("slider");
       mockRulerBounds(slider);
-      expect(penEvent(slider, "pointerdown", 260).defaultPrevented).toBe(true);
+      expect(
+        pointerEvent(slider, "pointerdown", 260, 1, pointerType)
+          .defaultPrevented,
+      ).toBe(true);
       expect(onChange).toHaveBeenLastCalledWith(4);
       expect(slider.setPointerCapture).toHaveBeenCalledWith(1);
-      penEvent(slider, "pointermove", 380);
+      pointerEvent(slider, "pointermove", 380, 1, pointerType);
       expect(onChange).toHaveBeenLastCalledWith(7);
-      penEvent(slider, "pointermove", 180);
+      pointerEvent(slider, "pointermove", 180, 1, pointerType);
       expect(onChange).toHaveBeenLastCalledWith(2);
-      penEvent(slider, "pointermove", 50);
+      pointerEvent(slider, "pointermove", 50, 1, pointerType);
       expect(onChange).toHaveBeenLastCalledWith(0);
-      penEvent(slider, "pointermove", 600);
+      pointerEvent(slider, "pointermove", 600, 1, pointerType);
       expect(onChange).toHaveBeenLastCalledWith(10);
-      penEvent(slider, "pointerup", 300);
+      pointerEvent(slider, "pointerup", 300, 1, pointerType);
       expect(onChange).toHaveBeenLastCalledWith(5);
       expect(slider.releasePointerCapture).toHaveBeenCalledWith(1);
       onChange.mockClear();
-      penEvent(slider, "pointermove", 400);
+      pointerEvent(slider, "pointermove", 400, 1, pointerType);
       expect(onChange).not.toHaveBeenCalled();
     },
   );
 
-  it.each(["pointercancel", "lostpointercapture"])(
-    "ends Pencil scrubbing on %s and ignores other pointers",
-    (endType) => {
+  it.each([
+    ["pointercancel", "pen"],
+    ["lostpointercapture", "pen"],
+    ["pointercancel", "touch"],
+    ["lostpointercapture", "touch"],
+  ])(
+    "ends scrubbing on %s with %s and ignores other pointers",
+    (endType, pointerType) => {
       const onChange = vi.fn();
       render(
         <PlaybackRuler
@@ -87,19 +107,74 @@ describe("PlaybackRuler", () => {
       );
       const slider = screen.getByRole("slider");
       mockRulerBounds(slider);
-      penEvent(slider, "pointerdown", 200);
+      pointerEvent(slider, "pointerdown", 200, 1, pointerType);
       onChange.mockClear();
-      penEvent(slider, "pointerdown", 400, 2);
-      penEvent(slider, "pointermove", 400, 2);
-      penEvent(slider, "pointerup", 400, 2);
+      pointerEvent(slider, "pointerdown", 400, 2, pointerType);
+      pointerEvent(slider, "pointermove", 400, 2, pointerType);
+      pointerEvent(slider, "pointerup", 400, 2, pointerType);
       expect(onChange).not.toHaveBeenCalled();
-      penEvent(slider, endType, 400);
-      penEvent(slider, "pointermove", 400);
+      pointerEvent(slider, endType, 400, 1, pointerType);
+      pointerEvent(slider, "pointermove", 400, 1, pointerType);
       expect(onChange).not.toHaveBeenCalled();
-      penEvent(slider, "pointerdown", 300, 3);
+      pointerEvent(slider, "pointerdown", 300, 3, pointerType);
       expect(onChange).toHaveBeenLastCalledWith(5);
     },
   );
+
+  it("preserves a diagonal finger drag with the document scroll lock installed", () => {
+    const onChange = vi.fn();
+    render(
+      <PlaybackRuler
+        durationSec={10}
+        fps={30}
+        tauSec={0}
+        onChange={onChange}
+      />,
+    );
+    const slider = screen.getByRole("slider");
+    mockRulerBounds(slider);
+    const unlock = installViewportScrollLock();
+    const touch = (type: string, x: number, y: number) => {
+      const event = new Event(type, { bubbles: true, cancelable: true });
+      Object.defineProperty(event, "touches", {
+        value: [{ clientX: x, clientY: y }],
+      });
+      fireEvent(slider, event);
+      return event;
+    };
+    try {
+      expect(slider).toHaveStyle({ touchAction: "none" });
+      pointerEvent(slider, "pointerdown", 260, 1, "touch");
+      touch("touchstart", 260, 0);
+      expect(touch("touchmove", 280, 80).defaultPrevented).toBe(false);
+      pointerEvent(slider, "pointermove", 280, 1, "touch");
+      expect(onChange).toHaveBeenLastCalledWith(4.5);
+      pointerEvent(slider, "pointerup", 300, 1, "touch");
+      expect(onChange).toHaveBeenLastCalledWith(5);
+    } finally {
+      unlock();
+    }
+  });
+
+  it("leaves mouse input native", () => {
+    const onChange = vi.fn();
+    render(
+      <PlaybackRuler
+        durationSec={10}
+        fps={30}
+        tauSec={0}
+        onChange={onChange}
+      />,
+    );
+    const slider = screen.getByRole("slider");
+    mockRulerBounds(slider);
+    expect(
+      pointerEvent(slider, "pointerdown", 260, 1, "mouse").defaultPrevented,
+    ).toBe(false);
+    expect(slider.setPointerCapture).not.toHaveBeenCalled();
+    fireEvent.change(slider, { target: { value: "4" } });
+    expect(onChange).toHaveBeenLastCalledWith(4);
+  });
 
   it("labels the major ticks with timecodes", () => {
     render(

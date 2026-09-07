@@ -1063,7 +1063,7 @@
         "steps": {
           "scrub": {
             "title": "Déplacez la tête de lecture",
-            "body": "Cliquez ou faites glisser la souris sur la règle. La tête de lecture se déplace et l’aperçu affiche l’image à cet instant. Au stylet, touchez la position souhaitée et gardez la pointe sur l’écran pendant le glissement.",
+            "body": "Cliquez ou faites glisser la souris sur la règle. La tête de lecture se déplace et l’aperçu affiche l’image à cet instant. Au doigt ou au stylet, touchez la position souhaitée et gardez le contact avec l’écran pendant le glissement.",
             "missingHint": "Ouvrez l'onglet Studio."
           },
           "transport": {

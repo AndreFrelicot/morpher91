@@ -110,6 +110,9 @@ export function installViewportScrollLock(
       event.preventDefault();
       return;
     }
+    // These controls capture finger/pen pointers and disable browser panning
+    // with touch-action: none. Let them keep dragging through vertical drift.
+    if (target.closest('[data-timeline-scrub="true"]')) return;
     if (axis === "x" && target.closest('input[type="range"]')) return;
     if (!hasScrollableAncestor(target, axis, delta)) event.preventDefault();
   };

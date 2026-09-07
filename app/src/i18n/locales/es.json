@@ -1101,7 +1101,7 @@
         "steps": {
           "scrub": {
             "title": "Mueve el cabezal de reproducción",
-            "body": "Haz clic o arrastra sobre la regla. El cabezal se mueve y la vista previa muestra el fotograma de ese instante. Con un lápiz, toca la posición deseada y mantén la punta sobre la pantalla mientras arrastras.",
+            "body": "Haz clic o arrastra sobre la regla. El cabezal se mueve y la vista previa muestra el fotograma de ese instante. Con el dedo o un lápiz, toca la posición deseada y mantén el contacto con la pantalla mientras arrastras.",
             "missingHint": "Abre la pestaña Estudio."
           },
           "transport": {

@@ -6,7 +6,7 @@ import {
   ACTION_SHORTCUT_LABELS,
 } from "@/features/editor/useKeyboardShortcuts";
 import { buildRulerTicks, clamp, formatTimecode, pct } from "./timelineFormat";
-import { usePenScrub } from "./usePenScrub";
+import { usePointerScrub } from "./usePointerScrub";
 
 /**
  * Scrubbable ruler: ticks, timecodes on the major ones, and the playhead.
@@ -34,7 +34,7 @@ export function PlaybackRuler({
     [safeDurationSec],
   );
   const currentSec = clamp(tauSec, 0, safeDurationSec);
-  const scrub = usePenScrub(safeDurationSec, onChange);
+  const scrub = usePointerScrub(safeDurationSec, onChange);
 
   return (
     <div
