@@ -7,6 +7,8 @@ const media = vi.hoisted(() => ({
   createVideoElementForUrl: vi.fn(),
   seekVideoElement: vi.fn(),
   openReader: vi.fn(),
+  constrained: false,
+  proxyEnabled: undefined as boolean | undefined,
 }));
 
 vi.mock("@/lib/video/loadVideo", () => media);
@@ -14,8 +16,18 @@ vi.mock("@/lib/video/WebCodecsVideoReader", () => ({
   WebCodecsVideoReader: { open: media.openReader },
 }));
 vi.mock("@/lib/gpu/constrainedProfile", () => ({
-  matchesConstrainedGpuProfile: () => false,
+  matchesConstrainedGpuProfile: () => media.constrained,
 }));
+
+vi.mock("./proxyScale", async (importOriginal) => {
+  const actual = await importOriginal<typeof import("./proxyScale")>();
+  return {
+    ...actual,
+    get VIDEO_PROXY_ENABLED() {
+      return media.proxyEnabled ?? actual.VIDEO_PROXY_ENABLED;
+    },
+  };
+});
 
 const proxy = vi.hoisted(() => ({
   blit: vi.fn(),
@@ -112,6 +124,8 @@ function loadedVideo(element: HTMLVideoElement): LoadedVideo {
 describe("VideoSource", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    media.constrained = false;
+    media.proxyEnabled = undefined;
     media.openReader.mockResolvedValue(null);
     proxy.createTarget.mockImplementation(() => ({
       createView: () => ({}),
@@ -190,6 +204,10 @@ describe("VideoSource", () => {
   });
 
   describe("whole-clip proxy tier (M23)", () => {
+    beforeEach(() => {
+      // Retain coverage of the dormant proxy path for an easy trial rollback.
+      media.proxyEnabled = true;
+    });
     /** 5-frame clip at 24 fps: frames 0..4. */
     function fiveFrameSource(reader: ReturnType<typeof fakeReader>) {
       media.openReader.mockResolvedValue(reader);
@@ -201,6 +219,42 @@ describe("VideoSource", () => {
         video: { ...base, asset: { ...base.asset, durationSec: 5 / 24 } },
       });
     }
+
+    it.each([false, true])(
+      "defaults to full-resolution frames without proxy allocation or larger caches (constrained=%s)",
+      async (constrained) => {
+        media.proxyEnabled = undefined; // Exercise the actual production default.
+        media.constrained = constrained;
+        const reader = fakeReader([0, 1, 2, 3, 4].map((i) => i / 24));
+        media.openReader.mockResolvedValue(reader);
+        const element = fakeElement();
+        media.createVideoElementForUrl.mockReturnValue(element);
+        const device = fakeDevice();
+        const source = new VideoSource(device, {
+          bitmap: { width: 640, height: 360 } as ImageBitmap,
+          video: loadedVideo(element),
+        });
+        await flush();
+        await source.sweepProxy(() => true);
+        expect(reader.framesInRange).not.toHaveBeenCalled();
+        expect(proxy.createTarget).not.toHaveBeenCalled();
+        expect(source.proxyFrameCount).toBe(0);
+
+        for (let i = 0; i < 50; i++) {
+          await source.prepareScrubFrame(i / 24, 30);
+          source.presentCurrent();
+          expect(source.slot).toMatchObject({ width: 640, height: 360 });
+        }
+        expect(reader.frameAt).toHaveBeenCalledTimes(50);
+        const liveTextures = device.createTexture.mock.results.filter(
+          ({ value }) => value.destroy.mock.calls.length === 0,
+        );
+        // The original base texture plus the existing full-resolution cache.
+        expect(liveTextures).toHaveLength(1 + (constrained ? 16 : 48));
+        expect(await source.ensureFullResCurrent(30, () => true)).toBe(false);
+        source.dispose();
+      },
+    );
 
     it("sweeps the clip into reduced textures and resumes where it stopped", async () => {
       const timestamps = [0, 1, 2, 3, 4].map((i) => i / 24);

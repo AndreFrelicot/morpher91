@@ -44,6 +44,24 @@ Verify with `pnpm preview --host 127.0.0.1`: load once online, wait for service
 worker activation, switch the browser offline and reload. Vite's development
 server does not enable the worker.
 
+## Full-resolution video preview trial
+
+Reduced video proxies are temporarily disabled by default on every device,
+including installed PWAs, for iPad screen-recording tests. There is no URL
+parameter or user setting. `VIDEO_PROXY_ENABLED` in `proxyScale.ts` retains a
+single rollback switch while the proxy implementation remains covered by tests.
+
+Scrubbing decodes the requested source frame at native resolution, or reuses
+its full-resolution cached frame. Until decoding finishes, the previously
+presented frame remains visible, so dragging can be less responsive. Canvas
+resolution, viewport scaling, normal playback and export settings are unchanged.
+
+The full-resolution cache keeps its existing limits (16 frames per video on
+the constrained/touch profile, 48 otherwise); the trial does not cache the entire
+clip at full resolution or increase those limits. Decode performance and screen
+recording overhead still need testing on the actual iPad. The timeline guide
+explains in all 16 languages that the preview may wait briefly for decoding.
+
 ## Branding assets
 
 `pnpm pwa:assets` regenerates the PNG/ICO assets and all localized manifests from the

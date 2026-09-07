@@ -200,9 +200,9 @@ describe("PreviewEngine", () => {
     expect(order).toEqual(["blob:a", "blob:b"]);
   });
 
-  it("serves a proxy frame instantly, then upgrades it and re-emits in idle", async () => {
-    // Readers deliver frames 48..51 (τ = 2 s at 24 fps): outside the
-    // neighbourhood of τ = 0, so only the whole-clip proxy sweep collects them.
+  it("presents both videos at full resolution without a later proxy upgrade", async () => {
+    // Frames 48..51 (τ = 2 s at 24 fps) are outside the neighbourhood
+    // of τ = 0. With proxies disabled, this seek must decode both sides.
     const frameTimes = [48, 49, 50, 51].map((i) => i / 24);
     const readers = new Map<string, { frameAt: ReturnType<typeof vi.fn> }>();
     media.openReader.mockImplementation(async (url: string) => {
@@ -233,22 +233,25 @@ describe("PreviewEngine", () => {
     const emitted: number[] = [];
     preview.subscribe((frame) => emitted.push(frame.tauSec));
 
-    // Idle pass at τ = 0: nothing to upgrade, no neighbours, proxy sweep.
+    // Idle pass at τ = 0 does not preload the requested distant frames.
     await preview.predecodeAround(0, () => true);
     expect(emitted).toEqual([]);
 
-    // Scrub to τ = 2 s: both sides are served from the proxy, no decode.
+    // Scrub to τ = 2 s: publish only after both native frames are available.
     await preview.sync(2);
-    expect(readers.get("blob:a")?.frameAt).not.toHaveBeenCalled();
-    expect(preview.slots().a.width).toBe(32); // 64 → half scale
+    expect(readers.get("blob:a")?.frameAt).toHaveBeenCalledTimes(1);
+    expect(readers.get("blob:b")?.frameAt).toHaveBeenCalledTimes(1);
+    expect(preview.slots().a.width).toBe(64);
+    expect(preview.slots().b.width).toBe(64);
     expect(emitted).toEqual([2]);
 
-    // Idle pass: full-resolution upgrade of the presented frame + re-emit.
+    // Idle work does not need to decode or publish a sharper replacement.
     await preview.predecodeAround(2, () => true);
     expect(readers.get("blob:a")?.frameAt).toHaveBeenCalledTimes(1);
     expect(readers.get("blob:b")?.frameAt).toHaveBeenCalledTimes(1);
     expect(preview.slots().a.width).toBe(64);
-    expect(emitted).toEqual([2, 2]);
+    expect(emitted).toEqual([2]);
+    preview.dispose();
   });
 
   it("publishes only the latest sync when an older seek finishes late", async () => {

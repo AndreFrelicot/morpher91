@@ -1101,7 +1101,7 @@
         "steps": {
           "scrub": {
             "title": "Sposta l’indicatore di riproduzione",
-            "body": "Fai clic o trascina sul righello. L’indicatore di riproduzione si sposta e l’anteprima mostra il fotogramma a quell’istante. Con un dito o una penna, tocca la posizione desiderata e mantieni il contatto con lo schermo mentre trascini.",
+            "body": "Fai clic o trascina sul righello. L’indicatore di riproduzione si sposta e l’anteprima mostra il fotogramma a quell’istante. Con un dito o una penna, tocca la posizione desiderata e mantieni il contatto con lo schermo mentre trascini. L’anteprima video usa fotogrammi a piena risoluzione; l’immagine può fermarsi brevemente durante la decodifica del fotogramma richiesto.",
             "missingHint": "Apri la scheda Studio."
           },
           "transport": {

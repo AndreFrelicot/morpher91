@@ -5,6 +5,10 @@
  * the budget. Below a quarter scale the proxy is not worth its blur: null.
  */
 
+/** Temporary native-resolution preview trial, on desktop and touch devices.
+ * Keep the proxy implementation available for rollback after hardware testing. */
+export const VIDEO_PROXY_ENABLED = false;
+
 /** Per-side GPU budget for the proxy tier. */
 export const PROXY_BUDGET_BYTES = 192 * 1024 * 1024;
 export const PROXY_BUDGET_BYTES_CONSTRAINED = 48 * 1024 * 1024;

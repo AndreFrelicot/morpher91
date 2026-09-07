@@ -1093,7 +1093,7 @@
         "steps": {
           "scrub": {
             "title": "Geser penunjuk waktu",
-            "body": "Klik atau seret pada penggaris. Penunjuk waktu berpindah dan pratinjau menampilkan bingkai pada saat tersebut. Dengan jari atau stylus, sentuh posisi yang diinginkan dan tetap sentuh layar saat menggeser.",
+            "body": "Klik atau seret pada penggaris. Penunjuk waktu berpindah dan pratinjau menampilkan bingkai pada saat tersebut. Dengan jari atau stylus, sentuh posisi yang diinginkan dan tetap sentuh layar saat menggeser. Pratinjau video menggunakan bingkai beresolusi penuh; gambar mungkin berhenti sejenak saat bingkai yang diminta sedang didekode.",
             "missingHint": "Buka tab Studio."
           },
           "transport": {

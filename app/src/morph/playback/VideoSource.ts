@@ -13,6 +13,7 @@ import { frameIndexForTime, timeForFrameIndex } from "@/lib/video/frameIndex";
 import { matchesConstrainedGpuProfile } from "@/lib/gpu/constrainedProfile";
 import { ProxyBlitter } from "./proxyBlit";
 import {
+  VIDEO_PROXY_ENABLED,
   PROXY_BUDGET_BYTES,
   PROXY_BUDGET_BYTES_CONSTRAINED,
   planProxy,
@@ -101,9 +102,13 @@ export class VideoSource {
     this.frameCacheLimit = constrained
       ? FRAME_CACHE_LIMIT_CONSTRAINED
       : FRAME_CACHE_LIMIT;
-    this.proxyBudgetBytes = constrained
-      ? PROXY_BUDGET_BYTES_CONSTRAINED
-      : PROXY_BUDGET_BYTES;
+    // Native-resolution previews by default during the iPad recording trial.
+    // Keep the original full-frame cache limits; do not cache the whole clip.
+    this.proxyBudgetBytes = !VIDEO_PROXY_ENABLED
+      ? 0
+      : constrained
+        ? PROXY_BUDGET_BYTES_CONSTRAINED
+        : PROXY_BUDGET_BYTES;
     this.element = input.video
       ? createVideoElementForUrl(input.video.objectUrl)
       : null;

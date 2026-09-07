@@ -1,7 +1,7 @@
 {
   "name": "morpher91",
   "private": true,
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "A WebGPU & WebCodecs studio for 2D image and video morphing.",
   "type": "module",
   "packageManager": "pnpm@11.25.0",
