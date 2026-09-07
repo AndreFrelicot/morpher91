@@ -96,7 +96,9 @@ function schedulePredecode(): void {
 async function scrubSync(): Promise<void> {
   cancelPredecode(); // clip edits invalidate idle decoding even at fixed τ
   if (syncing) {
-    getPreviewEngine()?.invalidatePendingSync();
+    // Let the active frame finish: cancelling it on every pointermove starves
+    // presentation when decoding is slower than finger/Pencil input. Keep only
+    // the latest pending position, then seek it as soon as this frame is shown.
     pendingSync = true;
     return;
   }

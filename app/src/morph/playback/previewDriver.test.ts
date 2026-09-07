@@ -94,7 +94,7 @@ describe("previewDriver", () => {
     await vi.waitFor(() => expect(engine.play).toHaveBeenCalledTimes(2));
   });
 
-  it("invalidates an obsolete seek and keeps waiting until the final position is presented", async () => {
+  it("finishes the active seek and coalesces pending requests to the final position", async () => {
     const { getPreviewSyncStatus } = await import("./previewSyncStatus");
     let finish!: () => void;
     engine.sync.mockImplementationOnce(
@@ -108,7 +108,7 @@ describe("previewDriver", () => {
     const started = getPreviewSyncStatus().pendingSince;
     useEditorStore.getState().setTimelineTime(2, 4);
     useEditorStore.getState().setTimelineTime(3, 4);
-    expect(engine.invalidatePendingSync).toHaveBeenCalledTimes(2);
+    expect(engine.invalidatePendingSync).not.toHaveBeenCalled();
     expect(getPreviewSyncStatus().pendingSince).toBe(started);
     finish();
     await vi.waitFor(() => expect(engine.sync).toHaveBeenCalledTimes(2));
@@ -116,6 +116,40 @@ describe("previewDriver", () => {
     await vi.waitFor(() =>
       expect(getPreviewSyncStatus().pendingSince).toBeNull(),
     );
+  });
+
+  it("presents frames during a continuous gesture even when decoding is slower than pointer events", async () => {
+    vi.useFakeTimers();
+    try {
+      const presented: number[] = [];
+      engine.sync.mockImplementation((...args: unknown[]) => {
+        const time = args[0] as number;
+        const invalidations = engine.invalidatePendingSync.mock.calls.length;
+        return new Promise<void>((resolve) => {
+          setTimeout(() => {
+            if (
+              engine.invalidatePendingSync.mock.calls.length === invalidations
+            ) {
+              presented.push(time);
+            }
+            resolve();
+          }, 80);
+        });
+      });
+      for (let step = 1; step <= 20; step++) {
+        useEditorStore.getState().setTimelineTime(step / 10, 4);
+        await vi.advanceTimersByTimeAsync(16);
+      }
+      // The gesture is still active: progress must not depend on pointerup.
+      expect(presented.length).toBeGreaterThanOrEqual(3);
+      expect(presented.at(-1)).toBeGreaterThan(presented[0]);
+      await vi.advanceTimersByTimeAsync(160);
+      expect(presented.at(-1)).toBe(2);
+      expect(engine.sync.mock.calls.length).toBeLessThan(20);
+    } finally {
+      await vi.advanceTimersByTimeAsync(200);
+      vi.useRealTimers();
+    }
   });
 
   it("defers background decoding until the gesture settles and cancels it on playback", async () => {

@@ -62,8 +62,10 @@ clip at full resolution or increase those limits. Decode performance and screen
 recording overhead still need testing on the actual iPad. The timeline guide
 explains in all 16 languages that the preview may wait briefly for decoding.
 
-Interactive preview prioritizes the latest request, reuses sequential decoding
-for nearby forward seeks, and defers background prefetch until dragging stops.
+Interactive preview finishes and presents the active frame, then seeks directly
+to the latest pending position. This keeps the preview updating when decoding
+is slower than touch or Pencil input. It reuses sequential decoding for nearby
+forward seeks and defers background prefetch until dragging stops.
 The demo videos have independently decodable frames. Full resolution stays enabled.
 
 ## Branding assets

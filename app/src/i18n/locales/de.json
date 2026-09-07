@@ -1097,7 +1097,7 @@
         "steps": {
           "scrub": {
             "title": "Abspielposition verschieben",
-            "body": "Klicken oder ziehen Sie auf dem Zeitlineal. Die Abspielposition folgt, und die Vorschau zeigt das Bild zu diesem Zeitpunkt. Berühren Sie mit dem Finger oder einem Stift die gewünschte Position und halten Sie beim Ziehen Kontakt zum Bildschirm. Die Videovorschau verwendet Bilder in voller Auflösung; während das angeforderte Bild dekodiert wird, kann die Anzeige kurz stehen bleiben. Beim schnellen Ziehen hat die zuletzt angeforderte Position Vorrang vor früheren Anfragen.",
+            "body": "Klicken oder ziehen Sie auf dem Zeitlineal. Die Abspielposition folgt, und die Vorschau zeigt das Bild zu diesem Zeitpunkt. Berühren Sie mit dem Finger oder einem Stift die gewünschte Position und halten Sie beim Ziehen Kontakt zum Bildschirm. Die Videovorschau verwendet Bilder in voller Auflösung; während das angeforderte Bild dekodiert wird, kann die Anzeige kurz stehen bleiben. Beim schnellen Ziehen wird das aktuelle Bild fertig dekodiert. Danach springt die Vorschau direkt zur zuletzt angeforderten Position.",
             "missingHint": "Öffnen Sie den Tab Studio."
           },
           "transport": {

@@ -1059,7 +1059,7 @@
         "steps": {
           "scrub": {
             "title": "Scrub the ruler",
-            "body": "Click or drag anywhere on the ruler — τ follows and the preview seeks that exact frame. With a finger or stylus, touch any position and keep contact with the screen while dragging. Video previews use full-resolution frames; the image may pause briefly while the requested frame is decoded. During rapid dragging, the latest requested position takes priority over earlier requests.",
+            "body": "Click or drag anywhere on the ruler — τ follows and the preview seeks that exact frame. With a finger or stylus, touch any position and keep contact with the screen while dragging. Video previews use full-resolution frames; the image may pause briefly while the requested frame is decoded. During rapid dragging, the current frame finishes decoding before the preview moves directly to the latest requested position.",
             "missingHint": "Open the Studio tab."
           },
           "transport": {

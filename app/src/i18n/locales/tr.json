@@ -1059,7 +1059,7 @@
         "steps": {
           "scrub": {
             "title": "Oynatma kafasını taşıyın",
-            "body": "Cetvele tıklayın veya üzerinde sürükleyin. Oynatma kafası taşınır ve önizleme o andaki kareyi gösterir. Parmağınızla veya kalemle istediğiniz konuma dokunun ve sürüklerken ekranla teması kesmeyin. Video önizlemesi tam çözünürlüklü kareler kullanır; istenen karenin kodu çözülürken görüntü kısa süreliğine durabilir. Hızlı sürükleme sırasında en son istenen konum, önceki isteklere göre önceliklidir.",
+            "body": "Cetvele tıklayın veya üzerinde sürükleyin. Oynatma kafası taşınır ve önizleme o andaki kareyi gösterir. Parmağınızla veya kalemle istediğiniz konuma dokunun ve sürüklerken ekranla teması kesmeyin. Video önizlemesi tam çözünürlüklü kareler kullanır; istenen karenin kodu çözülürken görüntü kısa süreliğine durabilir. Hızlı sürükleme sırasında mevcut karenin kod çözümü tamamlanır, ardından önizleme doğrudan en son istenen konuma geçer.",
             "missingHint": "Stüdyo sekmesini açın."
           },
           "transport": {
