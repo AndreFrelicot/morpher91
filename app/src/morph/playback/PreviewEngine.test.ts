@@ -226,7 +226,11 @@ describe("PreviewEngine", () => {
         dispose: vi.fn(),
       };
       readers.set(url, reader);
-      return reader;
+      return {
+        ...reader,
+        scrubFrameAt: reader.frameAt,
+        closeScrubCursor: vi.fn(),
+      };
     });
     const { preview } = createEngine();
     await new Promise((resolve) => setTimeout(resolve, 0));

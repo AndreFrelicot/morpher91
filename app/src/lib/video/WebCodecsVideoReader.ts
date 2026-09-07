@@ -16,9 +16,12 @@ import {
 export type SequentialFrameCursor = {
   /** The frame presented at `timeSec` (last frame at or before it; past the
    * end ⇒ the final frame); null when nothing could be decoded. */
-  next(timeSec: number): Promise<VideoFrame | null>;
+  next(
+    timeSec: number,
+    shouldContinue?: () => boolean,
+  ): Promise<VideoFrame | null>;
   /** Releases the decoder stream. */
-  close(): void;
+  close(): Promise<void>;
 };
 
 /** Tolerance when matching a requested time against sample timestamps. */
@@ -46,6 +49,7 @@ export function mapTimeToTrack(
 export class WebCodecsVideoReader {
   private disposed = false;
   private tail: Promise<unknown> = Promise.resolve();
+  private scrubCursor: SequentialFrameCursor | null = null;
   private readonly input: Input;
   private readonly sink: VideoSampleSink;
   /** Presentation time of the track's first frame. */
@@ -104,12 +108,57 @@ export class WebCodecsVideoReader {
    * The caller must `close()` the returned frame. Null when disposed or when
    * nothing could be decoded.
    */
-  frameAt(timeSec: number): Promise<VideoFrame | null> {
+  frameAt(
+    timeSec: number,
+    shouldContinue: () => boolean = () => true,
+  ): Promise<VideoFrame | null> {
+    return this.enqueueFrame(async () => {
+      await this.releaseScrubCursor();
+      if (!shouldContinue()) return null;
+      return this.readFrame(timeSec);
+    }, shouldContinue);
+  }
+
+  /** Interactive seeks reuse a short forward run; large/backward jumps restart
+   * at their destination instead of decoding everything between the two times. */
+  scrubFrameAt(
+    timeSec: number,
+    shouldContinue: () => boolean,
+  ): Promise<VideoFrame | null> {
+    return this.enqueueFrame(async () => {
+      this.scrubCursor ??= this.openSequence(0.25);
+      return this.scrubCursor.next(timeSec, shouldContinue);
+    }, shouldContinue);
+  }
+
+  private enqueueFrame(
+    read: () => Promise<VideoFrame | null>,
+    shouldContinue: () => boolean,
+  ): Promise<VideoFrame | null> {
     const run = this.tail
       .catch(() => undefined)
-      .then(() => this.readFrame(timeSec));
+      .then(async () => {
+        if (this.disposed || !shouldContinue()) return null;
+        const frame = await read();
+        if (this.disposed || !shouldContinue()) {
+          frame?.close();
+          return null;
+        }
+        return frame;
+      });
     this.tail = run;
     return run;
+  }
+
+  private async releaseScrubCursor(): Promise<void> {
+    const cursor = this.scrubCursor;
+    this.scrubCursor = null;
+    await cursor?.close();
+  }
+
+  /** Playback no longer needs an idle preview decoder. */
+  closeScrubCursor(): void {
+    void this.releaseScrubCursor();
   }
 
   /**
@@ -129,7 +178,11 @@ export class WebCodecsVideoReader {
   ): Promise<void> {
     const run = this.tail
       .catch(() => undefined)
-      .then(() => this.readRange(startSec, endSec, onFrame, shouldContinue));
+      .then(async () => {
+        if (this.disposed || !shouldContinue()) return;
+        await this.releaseScrubCursor();
+        await this.readRange(startSec, endSec, onFrame, shouldContinue);
+      });
     this.tail = run;
     return run;
   }
@@ -141,29 +194,40 @@ export class WebCodecsVideoReader {
    * `VideoFrame` clones of the same decoded image. Do not interleave with
    * {@link frameAt}/{@link framesInRange} on the same reader.
    */
-  openSequence(): SequentialFrameCursor {
+  openSequence(
+    maxForwardSec = Number.POSITIVE_INFINITY,
+  ): SequentialFrameCursor {
     let iterator: AsyncIterator<VideoSample> | null = null;
     let current: VideoSample | null = null;
-    // undefined ⇒ not fetched yet; null ⇒ the stream ended after `current`.
     let peek: VideoSample | null | undefined;
     let lastTimeSec = Number.NEGATIVE_INFINITY;
     let chain: Promise<unknown> = Promise.resolve();
     let closed = false;
 
-    const reset = () => {
+    const reset = async () => {
       current?.close();
       current = null;
       peek?.close();
       peek = undefined;
-      void iterator?.return?.();
+      const previous = iterator;
       iterator = null;
+      await previous?.return?.().catch(() => undefined);
     };
 
-    const advance = async (timeSec: number): Promise<VideoFrame | null> => {
-      if (closed || this.disposed) return null;
+    const advance = async (
+      timeSec: number,
+      shouldContinue: () => boolean,
+    ): Promise<VideoFrame | null> => {
+      const active = () => !closed && !this.disposed && shouldContinue();
+      if (!active()) return null;
       const time = mapTimeToTrack(timeSec, this.firstTimestampSec);
-      if (!iterator || time < lastTimeSec) {
-        reset();
+      if (
+        !iterator ||
+        time < lastTimeSec ||
+        time - lastTimeSec > maxForwardSec
+      ) {
+        await reset();
+        if (!active()) return null;
         iterator = this.sink.samples(time)[Symbol.asyncIterator]();
       }
       lastTimeSec = time;
@@ -172,11 +236,22 @@ export class WebCodecsVideoReader {
         if (first.done) return null;
         current = first.value;
       }
-      // Walk forward while the next sample still starts at or before `time`.
       for (;;) {
+        if (!active()) {
+          // Keep decoded samples for a newer forward seek; obsolete output is
+          // discarded without throwing away the useful decoder position.
+          if (closed || this.disposed) await reset();
+          return null;
+        }
         if (peek === undefined) {
           const result = await iterator.next();
           peek = result.done ? null : result.value;
+        }
+        if (!active()) {
+          // Keep decoded samples for a newer forward seek; obsolete output is
+          // discarded without throwing away the useful decoder position.
+          if (closed || this.disposed) await reset();
+          return null;
         }
         if (peek && peek.timestamp <= time + SAMPLE_TIME_EPSILON) {
           current.close();
@@ -189,16 +264,25 @@ export class WebCodecsVideoReader {
     };
 
     return {
-      next: (timeSec) => {
+      next: (timeSec, shouldContinue = () => true) => {
         const run = chain
           .catch(() => undefined)
-          .then(() => advance(timeSec).catch(() => null));
+          .then(async () => {
+            try {
+              return await advance(timeSec, shouldContinue);
+            } catch {
+              await reset();
+              return null;
+            }
+          });
         chain = run;
         return run;
       },
       close: () => {
         closed = true;
-        chain = chain.catch(() => undefined).then(reset);
+        const run = chain.catch(() => undefined).then(reset);
+        chain = run;
+        return run;
       },
     };
   }
@@ -206,6 +290,7 @@ export class WebCodecsVideoReader {
   dispose(): void {
     if (this.disposed) return;
     this.disposed = true;
+    void this.releaseScrubCursor();
     this.input.dispose();
   }
 
@@ -215,7 +300,7 @@ export class WebCodecsVideoReader {
     onFrame: (frame: VideoFrame, timestampSec: number) => void,
     shouldContinue: () => boolean,
   ): Promise<void> {
-    if (this.disposed) return;
+    if (this.disposed || !shouldContinue()) return;
     const start = mapTimeToTrack(startSec, this.firstTimestampSec);
     if (!(endSec > start)) return;
     try {

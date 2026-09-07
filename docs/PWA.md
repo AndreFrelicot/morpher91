@@ -62,6 +62,10 @@ clip at full resolution or increase those limits. Decode performance and screen
 recording overhead still need testing on the actual iPad. The timeline guide
 explains in all 16 languages that the preview may wait briefly for decoding.
 
+Interactive preview prioritizes the latest request, reuses sequential decoding
+for nearby forward seeks, and defers background prefetch until dragging stops.
+The demo videos have independently decodable frames. Full resolution stays enabled.
+
 ## Branding assets
 
 `pnpm pwa:assets` regenerates the PNG/ICO assets and all localized manifests from the

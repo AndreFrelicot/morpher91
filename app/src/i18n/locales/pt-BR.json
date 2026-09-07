@@ -1063,7 +1063,7 @@
         "steps": {
           "scrub": {
             "title": "Mova o indicador de reprodução",
-            "body": "Clique ou arraste sobre a régua. O indicador de reprodução se move e a prévia mostra o quadro daquele instante. Com o dedo ou uma caneta, toque na posição desejada e mantenha o contato com a tela enquanto arrasta. A prévia de vídeo usa quadros em resolução completa; a imagem pode ficar parada por um instante enquanto o quadro solicitado é decodificado.",
+            "body": "Clique ou arraste sobre a régua. O indicador de reprodução se move e a prévia mostra o quadro daquele instante. Com o dedo ou uma caneta, toque na posição desejada e mantenha o contato com a tela enquanto arrasta. A prévia de vídeo usa quadros em resolução completa; a imagem pode ficar parada por um instante enquanto o quadro solicitado é decodificado. Ao arrastar rapidamente, a última posição solicitada tem prioridade sobre as anteriores.",
             "missingHint": "Abra a aba Studio."
           },
           "transport": {

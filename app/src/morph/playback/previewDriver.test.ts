@@ -13,6 +13,7 @@ const engine = vi.hoisted(() => ({
   sync: vi.fn<() => Promise<void>>(),
   play: vi.fn(),
   pause: vi.fn(),
+  invalidatePendingSync: vi.fn(),
   predecodeAround: vi.fn<() => Promise<void>>(),
   setReaderReadyListener: vi.fn(),
   setProject: vi.fn(),
@@ -27,7 +28,7 @@ vi.mock("./previewEngineHost", () => ({
   disposePreviewEngine: vi.fn(),
 }));
 
-import { startPreviewDriver } from "./previewDriver";
+import { PREDECODE_IDLE_MS, startPreviewDriver } from "./previewDriver";
 
 function image(name: string): ImageAsset {
   return {
@@ -52,6 +53,7 @@ beforeEach(async () => {
   engine.sync.mockReset().mockResolvedValue(undefined);
   engine.play.mockReset();
   engine.pause.mockReset();
+  engine.invalidatePendingSync.mockReset();
   engine.predecodeAround.mockReset().mockResolvedValue(undefined);
   const source = loadedImage("source");
   const target = loadedImage("target");
@@ -67,6 +69,7 @@ beforeEach(async () => {
   await vi.waitFor(() => expect(engine.sync).toHaveBeenCalled());
   engine.sync.mockClear();
   engine.pause.mockClear();
+  engine.invalidatePendingSync.mockClear();
 });
 
 describe("previewDriver", () => {
@@ -89,6 +92,57 @@ describe("previewDriver", () => {
     await vi.waitFor(() => expect(engine.sync).toHaveBeenCalledOnce());
     finishRestart();
     await vi.waitFor(() => expect(engine.play).toHaveBeenCalledTimes(2));
+  });
+
+  it("invalidates an obsolete seek and keeps waiting until the final position is presented", async () => {
+    const { getPreviewSyncStatus } = await import("./previewSyncStatus");
+    let finish!: () => void;
+    engine.sync.mockImplementationOnce(
+      () =>
+        new Promise<void>((resolve) => {
+          finish = resolve;
+        }),
+    );
+    useEditorStore.getState().setTimelineTime(1, 4);
+    await vi.waitFor(() => expect(engine.sync).toHaveBeenCalledOnce());
+    const started = getPreviewSyncStatus().pendingSince;
+    useEditorStore.getState().setTimelineTime(2, 4);
+    useEditorStore.getState().setTimelineTime(3, 4);
+    expect(engine.invalidatePendingSync).toHaveBeenCalledTimes(2);
+    expect(getPreviewSyncStatus().pendingSince).toBe(started);
+    finish();
+    await vi.waitFor(() => expect(engine.sync).toHaveBeenCalledTimes(2));
+    expect(engine.sync).toHaveBeenLastCalledWith(3, { realtime: false });
+    await vi.waitFor(() =>
+      expect(getPreviewSyncStatus().pendingSince).toBeNull(),
+    );
+  });
+
+  it("defers background decoding until the gesture settles and cancels it on playback", async () => {
+    vi.useFakeTimers();
+    try {
+      engine.predecodeAround.mockClear();
+      useEditorStore.getState().setTimelineTime(1, 4);
+      await vi.advanceTimersByTimeAsync(PREDECODE_IDLE_MS - 1);
+      expect(engine.predecodeAround).not.toHaveBeenCalled();
+      useEditorStore.getState().setTimelineTime(2, 4);
+      await vi.advanceTimersByTimeAsync(PREDECODE_IDLE_MS - 1);
+      expect(engine.predecodeAround).not.toHaveBeenCalled();
+      await vi.advanceTimersByTimeAsync(1);
+      expect(engine.predecodeAround).toHaveBeenCalledOnce();
+      const active = (
+        engine.predecodeAround.mock.calls[0] as unknown as [
+          number,
+          () => boolean,
+        ]
+      )[1];
+      expect(active()).toBe(true);
+      useEditorStore.getState().setPlaying(true);
+      await vi.advanceTimersByTimeAsync(0);
+      expect(active()).toBe(false);
+    } finally {
+      vi.useRealTimers();
+    }
   });
 
   it("drops back to paused when playback synchronization fails", async () => {

@@ -103,6 +103,11 @@ export class PreviewEngine {
     return run;
   }
 
+  /** Invalidates an obsolete in-flight seek before a coalesced replacement runs. */
+  invalidatePendingSync(): void {
+    this.syncGeneration++;
+  }
+
   /** Starts realtime playback from `startTauSec`; `onTau` receives authoritative τ. */
   play(startTauSec: number, onTau: (tauSec: number) => void): void {
     this.stopClock();
@@ -126,6 +131,7 @@ export class PreviewEngine {
   }
 
   pause(): void {
+    this.invalidatePendingSync();
     this.playing = false;
     this.playGeneration++;
     this.stopClock();
@@ -146,6 +152,7 @@ export class PreviewEngine {
     tauSec: number,
     shouldContinue: () => boolean,
   ): Promise<void> {
+    if (!shouldContinue()) return;
     const fps = this.project.timeline.fps;
     const sourceLocal = videoLocalTimeSec(this.project, "source", tauSec);
     const targetLocal = videoLocalTimeSec(this.project, "target", tauSec);
@@ -197,8 +204,20 @@ export class PreviewEngine {
     const targetActive = videoFrameAvailableAt(this.project, "target", tauSec);
     const fps = this.project.timeline.fps;
     await Promise.all([
-      this.presentSide(this.source, sourceLocal, realtime && sourceActive, fps),
-      this.presentSide(this.target, targetLocal, realtime && targetActive, fps),
+      this.presentSide(
+        this.source,
+        sourceLocal,
+        realtime && sourceActive,
+        fps,
+        () => generation === this.syncGeneration,
+      ),
+      this.presentSide(
+        this.target,
+        targetLocal,
+        realtime && targetActive,
+        fps,
+        () => generation === this.syncGeneration,
+      ),
     ]);
     if (generation !== this.syncGeneration) return;
     this.source.presentCurrent();
@@ -211,13 +230,14 @@ export class PreviewEngine {
     localSec: number,
     realtime: boolean,
     fps: number,
+    shouldContinue: () => boolean,
   ): Promise<void> {
-    if (!src.hasVideo) return; // static texture already holds the bitmap
+    if (!shouldContinue() || !src.hasVideo) return; // static texture already holds the bitmap
     if (realtime) {
       if (src.driftsFrom(localSec, MAX_DRIFT_SEC)) await src.seekTo(localSec);
-      await src.play();
+      if (shouldContinue()) await src.play();
     } else {
-      await src.prepareScrubFrame(localSec, fps);
+      await src.prepareScrubFrame(localSec, fps, shouldContinue);
     }
   }
 

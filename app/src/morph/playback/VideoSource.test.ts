@@ -89,7 +89,7 @@ function fakeReader(timestamps: number[]) {
     ),
     dispose: vi.fn(),
   };
-  return reader;
+  return { ...reader, scrubFrameAt: reader.frameAt, closeScrubCursor: vi.fn() };
 }
 
 const flush = () => new Promise((resolve) => setTimeout(resolve, 0));
@@ -198,7 +198,7 @@ describe("VideoSource", () => {
 
       await source.prepareScrubFrame(2 / 30, 30); // source frame 1
       expect(reader.frameAt).toHaveBeenCalledTimes(2);
-      expect(reader.frameAt).toHaveBeenLastCalledWith(2 / 30);
+      expect(reader.frameAt.mock.calls.at(-1)?.[0]).toBe(2 / 30);
       expect(media.seekVideoElement).not.toHaveBeenCalled();
     });
   });
@@ -306,7 +306,7 @@ describe("VideoSource", () => {
       );
     });
 
-    it("keeps the proxy when the upgrade is cancelled and closes the frame", async () => {
+    it("keeps the proxy without decoding an already cancelled upgrade", async () => {
       const reader = fakeReader([0, 1, 2, 3, 4].map((i) => i / 24));
       const source = fiveFrameSource(reader);
       await flush();
@@ -318,7 +318,7 @@ describe("VideoSource", () => {
         false,
       );
       expect(source.slot.width).toBe(320);
-      expect(reader.closed).toContain(1 / 24);
+      expect(reader.frameAt).not.toHaveBeenCalled();
     });
 
     it("skips the proxy when the frame rate is unknown", async () => {

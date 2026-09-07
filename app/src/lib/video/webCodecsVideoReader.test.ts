@@ -198,6 +198,138 @@ describe("WebCodecsVideoReader.frameAt", () => {
   });
 });
 
+describe("interactive decoding priority", () => {
+  it("skips obsolete queued seeks and prefetch before touching the decoder", async () => {
+    let finish!: (sample: ReturnType<typeof makeSample>) => void;
+    mocks.getSample.mockImplementationOnce(
+      () =>
+        new Promise((resolve) => {
+          finish = resolve;
+        }),
+    );
+    const reader = (await WebCodecsVideoReader.open("blob:x"))!;
+    const first = reader.frameAt(0);
+    await vi.waitFor(() => expect(mocks.getSample).toHaveBeenCalledOnce());
+    let active = true;
+    const stale = reader.scrubFrameAt(1, () => active);
+    const staleRange = reader.framesInRange(0, 2, vi.fn(), () => active);
+    active = false;
+    const final = reader.frameAt(3);
+    finish(makeSample({ close: vi.fn() }));
+    await Promise.all([first, stale, staleRange, final]);
+    expect(mocks.getSample.mock.calls.map(([time]) => time)).toEqual([0, 3]);
+    expect(mocks.samples).not.toHaveBeenCalled();
+    reader.dispose();
+  });
+
+  it("discards a frame cancelled while its decode was in flight", async () => {
+    let finish!: (sample: ReturnType<typeof makeSample>) => void;
+    mocks.getSample.mockImplementationOnce(
+      () =>
+        new Promise((resolve) => {
+          finish = resolve;
+        }),
+    );
+    const reader = (await WebCodecsVideoReader.open("blob:x"))!;
+    let active = true;
+    const pending = reader.frameAt(0, () => active);
+    await vi.waitFor(() => expect(mocks.getSample).toHaveBeenCalledOnce());
+    const frame = { close: vi.fn() };
+    active = false;
+    finish(makeSample(frame));
+    expect(await pending).toBeNull();
+    expect(frame.close).toHaveBeenCalledOnce();
+    reader.dispose();
+  });
+
+  it("reuses one stream for forward scrubbing and restarts for large/backward jumps", async () => {
+    const streams: ReturnType<typeof sampleStream>[] = [];
+    const samples: ReturnType<typeof makeSample>[] = [];
+    mocks.samples.mockImplementation((start: number) => {
+      const first = Math.floor(start * 24);
+      const batch = Array.from({ length: 12 }, (_, n) =>
+        makeSample({ at: (first + n) / 24, close: vi.fn() }, (first + n) / 24),
+      );
+      samples.push(...batch);
+      const stream = sampleStream(batch);
+      streams.push(stream);
+      return stream;
+    });
+    const reader = (await WebCodecsVideoReader.open("blob:x"))!;
+    for (const frame of [0, 1, 3, 4]) {
+      const result = await reader.scrubFrameAt(frame / 24, () => true);
+      expect(result).toMatchObject({ at: frame / 24 });
+      result?.close();
+    }
+    expect(mocks.samples).toHaveBeenCalledTimes(1);
+    await reader.scrubFrameAt(3, () => true);
+    expect(mocks.samples).toHaveBeenLastCalledWith(3);
+    expect(streams[0].returned).toBe(true);
+    await reader.scrubFrameAt(1, () => true);
+    expect(mocks.samples).toHaveBeenLastCalledWith(1);
+    expect(streams[1].returned).toBe(true);
+    await reader.framesInRange(
+      0,
+      0.1,
+      (frame) => frame.close(),
+      () => true,
+    );
+    expect(streams[2].returned).toBe(true);
+    expect(mocks.getSample).not.toHaveBeenCalled();
+    reader.dispose();
+  });
+
+  it("keeps sequential decode progress when a newer position supersedes a running request", async () => {
+    const batch = [0, 1, 2, 3].map((n) => makeSample({ at: n / 24 }, n / 24));
+    let resolvePeek!: (value: {
+      value: (typeof batch)[number];
+      done: false;
+    }) => void;
+    let count = 0;
+    mocks.samples.mockReturnValue({
+      [Symbol.asyncIterator]() {
+        return this;
+      },
+      next: vi.fn(() => {
+        count++;
+        if (count === 2)
+          return new Promise((resolve) => {
+            resolvePeek = resolve;
+          });
+        return Promise.resolve(
+          count <= 4
+            ? { value: batch[count - 1], done: false }
+            : { done: true },
+        );
+      }),
+      return: vi.fn(async () => ({ done: true })),
+    });
+    const reader = (await WebCodecsVideoReader.open("blob:x"))!;
+    let current = true;
+    const old = reader.scrubFrameAt(0, () => current);
+    await vi.waitFor(() => expect(count).toBe(2));
+    current = false;
+    const next = reader.scrubFrameAt(2 / 24, () => true);
+    resolvePeek({ value: batch[1], done: false });
+    expect(await old).toBeNull();
+    expect(await next).toMatchObject({ at: 2 / 24 });
+    expect(mocks.samples).toHaveBeenCalledOnce();
+    reader.dispose();
+  });
+
+  it("releases current and lookahead samples on disposal", async () => {
+    const batch = [0, 1, 2].map((n) => makeSample({ at: n / 24 }, n / 24));
+    const stream = sampleStream(batch);
+    mocks.samples.mockReturnValue(stream);
+    const reader = (await WebCodecsVideoReader.open("blob:x"))!;
+    await reader.scrubFrameAt(0, () => true);
+    reader.dispose();
+    await vi.waitFor(() => expect(stream.returned).toBe(true));
+    expect(batch[0].close).toHaveBeenCalledOnce();
+    expect(batch[1].close).toHaveBeenCalledOnce();
+  });
+});
+
 describe("WebCodecsVideoReader.openSequence", () => {
   const clip = () =>
     [0, 1, 2, 3].map((i) => makeSample({ at: i / 24 }, i / 24));

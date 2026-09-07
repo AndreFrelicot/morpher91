@@ -6,6 +6,7 @@ import { disposePreviewEngine } from "./previewEngineHost";
 import { previewMediaIdentity, samePreviewMedia } from "./previewMediaIdentity";
 import {
   beginPreviewSync,
+  getPreviewSyncStatus,
   endPreviewSync,
   setPreviewSyncPhase,
 } from "./previewSyncStatus";
@@ -28,6 +29,14 @@ let syncing = false;
 let pendingSync = false;
 let playbackRequest = 0;
 let predecodeGeneration = 0;
+let predecodeTimer: ReturnType<typeof setTimeout> | null = null;
+export const PREDECODE_IDLE_MS = 150;
+
+function cancelPredecode(): void {
+  predecodeGeneration++;
+  if (predecodeTimer !== null) clearTimeout(predecodeTimer);
+  predecodeTimer = null;
+}
 
 function duration(): number {
   return timelineDurationSec(useProjectStore.getState().project);
@@ -67,29 +76,32 @@ async function startPlayback(tauSec: number): Promise<void> {
 /** Idle pre-decode around τ after a settled scrub (M22) — never while playing;
  * a new τ (next scrubSync) or playback start cancels it via the generation. */
 function schedulePredecode(): void {
-  const generation = ++predecodeGeneration;
+  cancelPredecode();
+  const generation = predecodeGeneration;
   const engine = getPreviewEngine();
   if (!engine || playing) return;
-  void (async () => {
-    try {
-      await engine.predecodeAround(
-        useEditorStore.getState().tauSec,
-        () => generation === predecodeGeneration && !playing,
-      );
-    } catch {
-      // Best-effort background work; a decode failure never surfaces.
-    }
-  })();
+  const active = () =>
+    generation === predecodeGeneration &&
+    !playing &&
+    engine === getPreviewEngine();
+  predecodeTimer = setTimeout(() => {
+    predecodeTimer = null;
+    if (!active()) return;
+    void engine
+      .predecodeAround(useEditorStore.getState().tauSec, active)
+      .catch(() => undefined);
+  }, PREDECODE_IDLE_MS);
 }
 
 async function scrubSync(): Promise<void> {
-  predecodeGeneration++; // clip edits invalidate idle decoding even at fixed τ
+  cancelPredecode(); // clip edits invalidate idle decoding even at fixed τ
   if (syncing) {
+    getPreviewEngine()?.invalidatePendingSync();
     pendingSync = true;
     return;
   }
   syncing = true;
-  beginPreviewSync("engine");
+  if (getPreviewSyncStatus().pendingSince === null) beginPreviewSync("engine");
   try {
     const engine = await ensurePreviewEngine();
     setPreviewSyncPhase("frame");
@@ -103,12 +115,12 @@ async function scrubSync(): Promise<void> {
   } catch {
     // Best-effort: a transient seek/upload failure must not wedge the driver.
   } finally {
-    endPreviewSync();
     syncing = false;
     if (pendingSync) {
       pendingSync = false;
       void scrubSync();
     } else {
+      endPreviewSync();
       schedulePredecode();
     }
   }
@@ -129,7 +141,7 @@ export function startPreviewDriver(): void {
     if (s.playing !== prev.playing) {
       playing = s.playing;
       if (playing) {
-        predecodeGeneration++; // no pre-decode during playback
+        cancelPredecode(); // no pre-decode during playback
         void startPlayback(s.tauSec);
       } else {
         playbackRequest++;
@@ -152,6 +164,7 @@ export function startPreviewDriver(): void {
 
   useProjectStore.subscribe((s, prev) => {
     if (!s.project || !s.source || !s.target) {
+      cancelPredecode();
       playbackRequest++;
       pendingSync = false;
       getPreviewEngine()?.pause();

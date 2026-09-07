@@ -173,9 +173,13 @@ export class VideoSource {
    * miss) it falls back to the `<video>` element seek; {@link presentCurrent}
    * then uploads.
    */
-  async prepareScrubFrame(localSec: number, fps: number): Promise<void> {
+  async prepareScrubFrame(
+    localSec: number,
+    fps: number,
+    shouldContinue: () => boolean = () => true,
+  ): Promise<void> {
     this.setPending(null, null, false);
-    if (!this.element) return; // static bitmap already in the base texture
+    if (!shouldContinue() || this.disposed || !this.element) return; // static bitmap already in the base texture
     this.element.pause();
     if (this.reader && this.frameRate(fps) > 0) {
       const frameIndex = this.frameIndexAt(localSec, fps);
@@ -192,13 +196,18 @@ export class VideoSource {
         this.setPending(proxy, frameIndex, true);
         return;
       }
-      const frame = await this.reader.frameAt(localSec);
+      const frame = await this.reader.scrubFrameAt(localSec, shouldContinue);
+      if (!shouldContinue() || this.disposed) {
+        frame?.close();
+        return;
+      }
       if (frame) {
         this.setPending(this.cachePut(frameIndex, frame), frameIndex, false);
         return;
       }
     }
-    await seekVideoElement(this.element, localSec);
+    if (shouldContinue() && !this.disposed)
+      await seekVideoElement(this.element, localSec);
   }
 
   private setPending(
@@ -220,7 +229,13 @@ export class VideoSource {
     fps: number,
     shouldContinue: () => boolean,
   ): Promise<boolean> {
-    if (!this.reader || !this.currentIsProxy || this.currentIndex === null) {
+    if (
+      !shouldContinue() ||
+      this.disposed ||
+      !this.reader ||
+      !this.currentIsProxy ||
+      this.currentIndex === null
+    ) {
       return false;
     }
     const frameIndex = this.currentIndex;
@@ -228,6 +243,11 @@ export class VideoSource {
     if (!entry) {
       const frame = await this.reader.frameAt(
         this.frameTimeAt(frameIndex, fps),
+        () =>
+          shouldContinue() &&
+          !this.disposed &&
+          this.currentIsProxy &&
+          this.currentIndex === frameIndex,
       );
       if (!frame) return false;
       if (
@@ -403,6 +423,7 @@ export class VideoSource {
   }
 
   async play(): Promise<void> {
+    this.reader?.closeScrubCursor();
     await this.element?.play().catch(() => undefined);
   }
 

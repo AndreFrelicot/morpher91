@@ -1101,7 +1101,7 @@
         "steps": {
           "scrub": {
             "title": "Mueve el cabezal de reproducción",
-            "body": "Haz clic o arrastra sobre la regla. El cabezal se mueve y la vista previa muestra el fotograma de ese instante. Con el dedo o un lápiz, toca la posición deseada y mantén el contacto con la pantalla mientras arrastras. La vista previa de vídeo utiliza fotogramas a resolución completa; la imagen puede detenerse brevemente mientras se decodifica el fotograma solicitado.",
+            "body": "Haz clic o arrastra sobre la regla. El cabezal se mueve y la vista previa muestra el fotograma de ese instante. Con el dedo o un lápiz, toca la posición deseada y mantén el contacto con la pantalla mientras arrastras. La vista previa de vídeo utiliza fotogramas a resolución completa; la imagen puede detenerse brevemente mientras se decodifica el fotograma solicitado. Al arrastrar rápidamente, la última posición solicitada tiene prioridad sobre las anteriores.",
             "missingHint": "Abre la pestaña Estudio."
           },
           "transport": {

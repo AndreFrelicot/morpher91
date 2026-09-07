@@ -1,6 +1,6 @@
 # Demo media and artwork
 
-The application includes 14 source assets and 22 teaching presets (46.36 MiB under `app/public/demo/`). Presets demonstrate features and are automatically generated; they are not a guarantee of artistic quality.
+The application includes 14 source assets and 22 teaching presets (57.53 MiB under `app/public/demo/`). Presets demonstrate features and are automatically generated; they are not a guarantee of artistic quality.
 
 ## Provenance
 
@@ -43,3 +43,12 @@ Run `python3 app/scripts/rebuild-demo-presets.py` from the repository root to re
 The [authoring notes](../app/scripts/demo-authoring/README.md) describe optional Vision/OpenCV analysis and manual anchor review. These utilities are not required to build or run the studio and do not implement automatic tracking in the app. Use `app/scripts/demo-thumbs.sh` with ffmpeg to regenerate thumbnails.
 
 Validate presets visually after changing coordinates, timing, algorithms or masks. Run the demo-manifest, preset-content, project-validation and locale-parity tests before release.
+
+## Video playback derivatives
+
+On 7 September 2026, all six MP4 demo files were re-encoded as H.264 all-intra
+(every frame independently decodable) for faster random seeking. Their frame
+timestamps, dimensions and cadence are unchanged; optional audio is copied.
+These are derivatives of the same generated media, with the same provenance.
+Encoding uses libx264 at CRF 18 with no B frames, preserving the original video
+track timebase and placing MP4 metadata first (`faststart`).
