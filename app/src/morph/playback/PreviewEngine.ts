@@ -203,23 +203,36 @@ export class PreviewEngine {
     const sourceActive = videoFrameAvailableAt(this.project, "source", tauSec);
     const targetActive = videoFrameAvailableAt(this.project, "target", tauSec);
     const fps = this.project.timeline.fps;
-    await Promise.all([
-      this.presentSide(
-        this.source,
-        sourceLocal,
-        realtime && sourceActive,
-        fps,
-        () => generation === this.syncGeneration,
-      ),
-      this.presentSide(
-        this.target,
-        targetLocal,
-        realtime && targetActive,
-        fps,
-        () => generation === this.syncGeneration,
-      ),
-    ]);
-    if (generation !== this.syncGeneration) return;
+    const corrected = (
+      await Promise.all([
+        this.presentSide(
+          this.source,
+          sourceLocal,
+          realtime && sourceActive,
+          fps,
+          () => generation === this.syncGeneration,
+        ),
+        this.presentSide(
+          this.target,
+          targetLocal,
+          realtime && targetActive,
+          fps,
+          () => generation === this.syncGeneration,
+        ),
+      ])
+    ).some(Boolean);
+    // Exact scrub requests must remain latest-wins. During playback, however,
+    // a corrective seek may span more than one RAF (notably when Zen blocks or
+    // throttles native playback on detached video elements). Present the frame
+    // that did finish as long as this playback session is still active; the
+    // queued latest tick will catch up next. Discarding every completed seek
+    // here otherwise starves the video textures forever while τ keeps moving.
+    if (
+      generation !== this.syncGeneration &&
+      (!realtime || !this.playing || !corrected)
+    ) {
+      return;
+    }
     this.source.presentCurrent();
     this.target.presentCurrent();
     this.emit(tauSec);
@@ -231,13 +244,16 @@ export class PreviewEngine {
     realtime: boolean,
     fps: number,
     shouldContinue: () => boolean,
-  ): Promise<void> {
-    if (!shouldContinue() || !src.hasVideo) return; // static texture already holds the bitmap
+  ): Promise<boolean> {
+    if (!shouldContinue() || !src.hasVideo) return false; // static texture already holds the bitmap
     if (realtime) {
-      if (src.driftsFrom(localSec, MAX_DRIFT_SEC)) await src.seekTo(localSec);
+      const corrected = src.driftsFrom(localSec, MAX_DRIFT_SEC);
+      if (corrected) await src.seekTo(localSec);
       if (shouldContinue()) await src.play();
+      return corrected;
     } else {
       await src.prepareScrubFrame(localSec, fps, shouldContinue);
+      return false;
     }
   }
 

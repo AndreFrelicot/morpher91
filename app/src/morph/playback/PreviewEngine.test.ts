@@ -284,4 +284,80 @@ describe("PreviewEngine", () => {
     expect(frames).toEqual([2]);
     expect(copyExternalImageToTexture).toHaveBeenCalledTimes(4);
   });
+
+  it("presents a completed realtime correction when a newer RAF tick is queued", async () => {
+    const { preview } = createEngine();
+    const frames: number[] = [];
+    preview.subscribe((frame) => frames.push(frame.tauSec));
+
+    const pendingSeeks: Array<() => void> = [];
+    let markCorrectionStarted = () => {};
+    const correctionStarted = new Promise<void>((resolve) => {
+      markCorrectionStarted = resolve;
+    });
+    media.seekVideoElement.mockImplementation((video, timeSec) => {
+      return new Promise<void>((resolve) => {
+        pendingSeeks.push(() => {
+          video.currentTime = timeSec;
+          resolve();
+        });
+        if (pendingSeeks.length === 2) markCorrectionStarted();
+      });
+    });
+
+    const startedAt = performance.now();
+    preview.play(0, vi.fn());
+    const [firstId, firstTick] = [...callbacks.entries()][0];
+    callbacks.delete(firstId);
+    firstTick(startedAt + 100);
+    await correctionStarted;
+
+    // Zen can require corrective seeks because detached muted videos do not
+    // always advance natively. A following RAF must not discard the decoded
+    // frame that is already about to be presented.
+    const [secondId, secondTick] = [...callbacks.entries()].at(-1)!;
+    callbacks.delete(secondId);
+    secondTick(startedAt + 200);
+    pendingSeeks.slice(0, 2).forEach((finish) => finish());
+
+    await vi.waitFor(() => expect(frames).toHaveLength(1));
+    expect(frames[0]).toBeGreaterThan(0.05);
+    expect(frames[0]).toBeLessThan(0.15);
+    preview.pause();
+  });
+
+  it("keeps latest-wins playback when native video advances without correction", async () => {
+    const deferredPlays: Array<() => void> = [];
+    for (const video of media.elements) {
+      vi.mocked(video.play)
+        .mockImplementationOnce(
+          () =>
+            new Promise<void>((resolve) => {
+              deferredPlays.push(resolve);
+            }),
+        )
+        .mockResolvedValue(undefined);
+    }
+    const { preview } = createEngine();
+    const frames: number[] = [];
+    preview.subscribe((frame) => frames.push(frame.tauSec));
+
+    const startedAt = performance.now();
+    preview.play(0, vi.fn());
+    const [firstId, firstTick] = [...callbacks.entries()][0];
+    callbacks.delete(firstId);
+    firstTick(startedAt + 10);
+    await vi.waitFor(() => expect(deferredPlays).toHaveLength(2));
+
+    const [secondId, secondTick] = [...callbacks.entries()].at(-1)!;
+    callbacks.delete(secondId);
+    secondTick(startedAt + 20);
+    deferredPlays.forEach((finish) => finish());
+
+    await vi.waitFor(() => expect(frames).toHaveLength(1));
+    expect(frames[0]).toBeGreaterThan(0.01);
+    expect(frames[0]).toBeLessThan(0.03);
+    expect(media.seekVideoElement).not.toHaveBeenCalled();
+    preview.pause();
+  });
 });
