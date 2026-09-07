@@ -93,11 +93,12 @@ export class PreviewEngine {
    */
   sync(tauSec: number, { realtime = false } = {}): Promise<void> {
     const generation = ++this.syncGeneration;
+    const playbackGeneration = this.playGeneration;
     const run = this.syncTail
       .catch(() => undefined)
       .then(async () => {
         if (generation !== this.syncGeneration) return;
-        await this.applyFrame(tauSec, realtime, generation);
+        await this.applyFrame(tauSec, realtime, generation, playbackGeneration);
       });
     this.syncTail = run;
     return run;
@@ -197,13 +198,17 @@ export class PreviewEngine {
     tauSec: number,
     realtime: boolean,
     generation: number,
+    playbackGeneration: number,
   ): Promise<void> {
     const sourceLocal = videoLocalTimeSec(this.project, "source", tauSec);
     const targetLocal = videoLocalTimeSec(this.project, "target", tauSec);
     const sourceActive = videoFrameAvailableAt(this.project, "source", tauSec);
     const targetActive = videoFrameAvailableAt(this.project, "target", tauSec);
     const fps = this.project.timeline.fps;
-    const corrected = (
+    const shouldCompleteRealtimeFrame = () =>
+      generation === this.syncGeneration ||
+      (realtime && this.playing && playbackGeneration === this.playGeneration);
+    const completedRealtimeFrame = (
       await Promise.all([
         this.presentSide(
           this.source,
@@ -211,6 +216,7 @@ export class PreviewEngine {
           realtime && sourceActive,
           fps,
           () => generation === this.syncGeneration,
+          shouldCompleteRealtimeFrame,
         ),
         this.presentSide(
           this.target,
@@ -218,18 +224,18 @@ export class PreviewEngine {
           realtime && targetActive,
           fps,
           () => generation === this.syncGeneration,
+          shouldCompleteRealtimeFrame,
         ),
       ])
     ).some(Boolean);
     // Exact scrub requests must remain latest-wins. During playback, however,
-    // a corrective seek may span more than one RAF (notably when Zen blocks or
-    // throttles native playback on detached video elements). Present the frame
-    // that did finish as long as this playback session is still active; the
-    // queued latest tick will catch up next. Discarding every completed seek
-    // here otherwise starves the video textures forever while τ keeps moving.
+    // a corrective seek or fallback decode may span more than one RAF. Present
+    // the frame that did finish while this playback session is still active;
+    // the queued latest tick catches up next. Discarding every completed frame
+    // here otherwise starves the video textures while τ keeps moving.
     if (
       generation !== this.syncGeneration &&
-      (!realtime || !this.playing || !corrected)
+      (!realtime || !this.playing || !completedRealtimeFrame)
     ) {
       return;
     }
@@ -244,13 +250,24 @@ export class PreviewEngine {
     realtime: boolean,
     fps: number,
     shouldContinue: () => boolean,
+    shouldCompleteRealtimeFrame: () => boolean,
   ): Promise<boolean> {
     if (!shouldContinue() || !src.hasVideo) return false; // static texture already holds the bitmap
     if (realtime) {
       const corrected = src.driftsFrom(localSec, MAX_DRIFT_SEC);
       if (corrected) await src.seekTo(localSec);
-      if (shouldContinue()) await src.play();
-      return corrected;
+      // A completed correction is worth presenting even if the next RAF was
+      // queued while the seek ran. The queued tick catches up immediately.
+      if (!shouldContinue()) return corrected;
+      if (await src.play()) return corrected;
+
+      // Zen and hardened Firefox profiles can reject play() for a detached
+      // muted element. Drive only that side through the same frame-exact path
+      // used by scrubbing; native playback remains unchanged everywhere it
+      // starts successfully. This work may outlive a newer RAF, but never a
+      // pause or a replacement playback session.
+      await src.prepareScrubFrame(localSec, fps, shouldCompleteRealtimeFrame);
+      return true;
     } else {
       await src.prepareScrubFrame(localSec, fps, shouldContinue);
       return false;

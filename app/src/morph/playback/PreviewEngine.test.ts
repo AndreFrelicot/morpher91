@@ -67,6 +67,30 @@ function loadedVideo(id: string): LoadedVideo {
   };
 }
 
+type ClosableTestFrame = { close: ReturnType<typeof vi.fn> };
+
+function deferredPlaybackReader(
+  pendingFrames: Array<() => void>,
+  decodedFrames: ClosableTestFrame[] = [],
+) {
+  return {
+    nativeFps: 24,
+    firstTimestampSec: 0,
+    scrubFrameAt: vi.fn(
+      () =>
+        new Promise<VideoFrame>((resolve) => {
+          const frame = { close: vi.fn() };
+          decodedFrames.push(frame);
+          pendingFrames.push(() => resolve(frame as unknown as VideoFrame));
+        }),
+    ),
+    closeScrubCursor: vi.fn(),
+    frameAt: vi.fn(async () => null),
+    framesInRange: vi.fn(async () => undefined),
+    dispose: vi.fn(),
+  };
+}
+
 function createEngine() {
   const copyExternalImageToTexture = vi.fn();
   const device = {
@@ -359,5 +383,82 @@ describe("PreviewEngine", () => {
     expect(frames[0]).toBeLessThan(0.03);
     expect(media.seekVideoElement).not.toHaveBeenCalled();
     preview.pause();
+  });
+
+  it("falls back to frame-exact decoding when native playback is rejected", async () => {
+    const pendingFrames: Array<() => void> = [];
+    const readers: Array<ReturnType<typeof deferredPlaybackReader>> = [];
+    media.openReader.mockImplementation(async () => {
+      const reader = deferredPlaybackReader(pendingFrames);
+      readers.push(reader);
+      return reader;
+    });
+    for (const video of media.elements) {
+      vi.mocked(video.play).mockRejectedValue(
+        new DOMException("Autoplay is blocked", "NotAllowedError"),
+      );
+    }
+    const { preview } = createEngine();
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    const frames: number[] = [];
+    preview.subscribe((frame) => {
+      frames.push(frame.tauSec);
+      preview.pause();
+    });
+
+    const startedAt = performance.now();
+    preview.play(0, vi.fn());
+    const [firstId, firstTick] = [...callbacks.entries()][0];
+    callbacks.delete(firstId);
+    firstTick(startedAt + 10);
+    await vi.waitFor(() => expect(pendingFrames).toHaveLength(2));
+
+    // Queue a newer RAF while both fallback decodes are in flight. The
+    // completed frame must still be presented instead of being starved by the
+    // continuously advancing playback generation.
+    const [secondId, secondTick] = [...callbacks.entries()].at(-1)!;
+    callbacks.delete(secondId);
+    secondTick(startedAt + 20);
+    pendingFrames.forEach((finish) => finish());
+
+    await vi.waitFor(() => expect(frames).toHaveLength(1));
+    expect(frames[0]).toBeGreaterThan(0);
+    expect(frames[0]).toBeLessThan(0.02);
+    expect(readers).toHaveLength(2);
+    expect(readers[0].scrubFrameAt).toHaveBeenCalledTimes(1);
+    expect(readers[1].scrubFrameAt).toHaveBeenCalledTimes(1);
+  });
+
+  it("discards an in-flight fallback frame after playback is paused", async () => {
+    const decodedFrames: ClosableTestFrame[] = [];
+    const pendingFrames: Array<() => void> = [];
+    media.openReader.mockImplementation(async () =>
+      deferredPlaybackReader(pendingFrames, decodedFrames),
+    );
+    for (const video of media.elements) {
+      vi.mocked(video.play).mockRejectedValue(
+        new DOMException("Autoplay is blocked", "NotAllowedError"),
+      );
+    }
+    const { preview } = createEngine();
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    const frames: number[] = [];
+    preview.subscribe((frame) => frames.push(frame.tauSec));
+
+    const startedAt = performance.now();
+    preview.play(0, vi.fn());
+    const [firstId, firstTick] = [...callbacks.entries()][0];
+    callbacks.delete(firstId);
+    firstTick(startedAt + 10);
+    await vi.waitFor(() => expect(pendingFrames).toHaveLength(2));
+    preview.pause();
+    pendingFrames.forEach((finish) => finish());
+
+    await vi.waitFor(() =>
+      expect(
+        decodedFrames.every((frame) => frame.close.mock.calls.length === 1),
+      ).toBe(true),
+    );
+    expect(frames).toEqual([]);
   });
 });

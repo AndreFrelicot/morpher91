@@ -177,6 +177,22 @@ describe("VideoSource", () => {
     expect(source.driftsFrom(1, 0.05)).toBe(false);
   });
 
+  it("reports whether native playback could start", async () => {
+    const element = fakeElement();
+    media.createVideoElementForUrl.mockReturnValue(element);
+    const source = new VideoSource(fakeDevice(), {
+      bitmap: { width: 640, height: 360 } as ImageBitmap,
+      video: loadedVideo(element),
+    });
+
+    await expect(source.play()).resolves.toBe(true);
+
+    vi.mocked(element.play).mockRejectedValueOnce(
+      new DOMException("Autoplay is blocked", "NotAllowedError"),
+    );
+    await expect(source.play()).resolves.toBe(false);
+  });
+
   describe("scrub cache keyed on the source frame rate (M23)", () => {
     it("shares one decode between timeline frames that show the same source frame", async () => {
       // 24 fps clip scrubbed at 30 fps: τ = 0 and τ = 1/30 both show frame 0.

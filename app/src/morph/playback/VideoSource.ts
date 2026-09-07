@@ -422,9 +422,18 @@ export class VideoSource {
     this.currentIsProxy = false;
   }
 
-  async play(): Promise<void> {
+  /** Starts native element playback. False lets the engine select its
+   * frame-exact decode fallback when browser autoplay/privacy policy rejects
+   * detached media playback. */
+  async play(): Promise<boolean> {
     this.reader?.closeScrubCursor();
-    await this.element?.play().catch(() => undefined);
+    if (!this.element) return false;
+    try {
+      await this.element.play();
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   pause(): void {
